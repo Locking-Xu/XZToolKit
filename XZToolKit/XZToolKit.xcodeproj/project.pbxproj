@@ -24,6 +24,7 @@
 		E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32471C4F1E350016D25D /* XZCalendarViewController.m */; };
 		E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E324B1C4F1E350016D25D /* XZHomeViewController.m */; };
 		E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E99E324C1C4F1E350016D25D /* XZHomeViewController.xib */; };
+		E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E325A1C4F6B3D0016D25D /* XZUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		E99E324B1C4F1E350016D25D /* XZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeViewController.m; sourceTree = "<group>"; };
 		E99E324C1C4F1E350016D25D /* XZHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZHomeViewController.xib; sourceTree = "<group>"; };
 		E99E32541C4F1EE70016D25D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E99E32591C4F6B3D0016D25D /* XZUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZUtils.h; sourceTree = "<group>"; };
+		E99E325A1C4F6B3D0016D25D /* XZUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +123,7 @@
 				E99E32221C4F1D5A0016D25D /* Category */,
 				E99E32251C4F1D780016D25D /* Macro */,
 				E99E31FC1C4F1B2E0016D25D /* Supporting Files */,
-				E99E32231C4F1D640016D25D /* Utils */,
+				E99E32581C4F6B2A0016D25D /* Utils */,
 				E99E32241C4F1D6B0016D25D /* ViewController */,
 				E99E32081C4F1B2E0016D25D /* Assets.xcassets */,
 				E99E320D1C4F1B2E0016D25D /* Info.plist */,
@@ -173,13 +176,6 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		E99E32231C4F1D640016D25D /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +188,8 @@
 		E99E32251C4F1D780016D25D /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				E99E32361C4F1E1F0016D25D /* XZMacro.h */,
 				E99E32351C4F1E1F0016D25D /* XZLogMacro.h */,
+				E99E32361C4F1E1F0016D25D /* XZMacro.h */,
 				E99E32371C4F1E1F0016D25D /* XZMethodMacro.h */,
 				E99E32381C4F1E1F0016D25D /* XZPropertyMacro.h */,
 			);
@@ -265,6 +261,15 @@
 				E99E324C1C4F1E350016D25D /* XZHomeViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E99E32581C4F6B2A0016D25D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E99E32591C4F6B3D0016D25D /* XZUtils.h */,
+				E99E325A1C4F6B3D0016D25D /* XZUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +377,7 @@
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
+				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
