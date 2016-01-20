@@ -38,8 +38,6 @@ static NSInteger const monthNumberOfYear = 12;
             
             XZMonthView *monthView = [[XZMonthView alloc] init];
             
-            monthView.backgroundColor = [UIColor greenColor];
-            
             [self.contentView addSubview:monthView];
             
             [_monthViewArray addObject:monthView];
@@ -57,7 +55,6 @@ static NSInteger const monthNumberOfYear = 12;
     [super layoutSubviews];
     
     _yearLabel.frame = CGRectMake(defaultMargin, 0, self.width - 2*defaultMargin, yearTitleHeight);
-    _yearLabel.backgroundColor = [UIColor redColor];
     
     CGFloat monthViewWidth = (UISCREEN_WIDTH - 4*defaultMargin)/3;
     
@@ -91,7 +88,7 @@ static NSInteger const monthNumberOfYear = 12;
     CGSize size = CGSizeMake(monthViewWidth, monthViewWidth);
     
     [_monthViewArray enumerateObjectsUsingBlock:^(XZMonthView *monthView, NSUInteger idx, BOOL * _Nonnull stop) {
-       
+  
         [monthView setMonthImageWithDate:[date dateByAddingValue:idx forKey:@"month"] size:size];
         
     }];

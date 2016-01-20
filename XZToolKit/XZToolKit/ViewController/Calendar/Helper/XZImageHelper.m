@@ -126,6 +126,8 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
         
         UIImage *image = UIGraphicsGetImageFromContext(context);
         
+        CGContextRelease(context);
+        
         return image;
     }
     return nil;

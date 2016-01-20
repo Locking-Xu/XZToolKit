@@ -78,15 +78,12 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGPoint contentOffset  = scrollView.contentOffset;
-    
-    //    NSLog(@"%f",contentOffset.y);
-    
+
     if (contentOffset.y <= _cellHeight) {
         
         contentOffset.y = scrollView.contentSize.height/2 + _cellHeight;
         
         _offset--;
-        //        NSLog(@"size = %@",NSStringFromCGSize(scrollView.contentSize));
         
     }else if (contentOffset.y >= scrollView.contentSize.height - _cellHeight*2){
         
