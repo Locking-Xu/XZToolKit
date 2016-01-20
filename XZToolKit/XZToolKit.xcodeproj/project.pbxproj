@@ -25,6 +25,10 @@
 		E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E324B1C4F1E350016D25D /* XZHomeViewController.m */; };
 		E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E99E324C1C4F1E350016D25D /* XZHomeViewController.xib */; };
 		E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E325A1C4F6B3D0016D25D /* XZUtils.m */; };
+		E99E32611C4F7F6B0016D25D /* XZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32601C4F7F6B0016D25D /* XZTabBarController.m */; };
+		E99E32641C4F81790016D25D /* XZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32631C4F81790016D25D /* XZScrollView.m */; };
+		E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32661C4F81BE0016D25D /* XZPageControl.m */; };
+		E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,14 @@
 		E99E32541C4F1EE70016D25D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E99E32591C4F6B3D0016D25D /* XZUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZUtils.h; sourceTree = "<group>"; };
 		E99E325A1C4F6B3D0016D25D /* XZUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZUtils.m; sourceTree = "<group>"; };
+		E99E325F1C4F7F6B0016D25D /* XZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBarController.h; sourceTree = "<group>"; };
+		E99E32601C4F7F6B0016D25D /* XZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBarController.m; sourceTree = "<group>"; };
+		E99E32621C4F81790016D25D /* XZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZScrollView.h; sourceTree = "<group>"; };
+		E99E32631C4F81790016D25D /* XZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZScrollView.m; sourceTree = "<group>"; };
+		E99E32651C4F81BE0016D25D /* XZPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPageControl.h; sourceTree = "<group>"; };
+		E99E32661C4F81BE0016D25D /* XZPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPageControl.m; sourceTree = "<group>"; };
+		E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTelephoneHelper.h; sourceTree = "<group>"; };
+		E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTelephoneHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,8 @@
 			children = (
 				E99E32211C4F1D4E0016D25D /* AppDelegate */,
 				E99E32221C4F1D5A0016D25D /* Category */,
+				E99E325C1C4F7E200016D25D /* General */,
+				E99E32681C4F835A0016D25D /* Helper */,
 				E99E32251C4F1D780016D25D /* Macro */,
 				E99E31FC1C4F1B2E0016D25D /* Supporting Files */,
 				E99E32581C4F6B2A0016D25D /* Utils */,
@@ -272,6 +286,44 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E99E325C1C4F7E200016D25D /* General */ = {
+			isa = PBXGroup;
+			children = (
+				E99E325D1C4F7E780016D25D /* ScrollView */,
+				E99E325E1C4F7F3F0016D25D /* TabBarController */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		E99E325D1C4F7E780016D25D /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E99E32651C4F81BE0016D25D /* XZPageControl.h */,
+				E99E32661C4F81BE0016D25D /* XZPageControl.m */,
+				E99E32621C4F81790016D25D /* XZScrollView.h */,
+				E99E32631C4F81790016D25D /* XZScrollView.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		E99E325E1C4F7F3F0016D25D /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E99E325F1C4F7F6B0016D25D /* XZTabBarController.h */,
+				E99E32601C4F7F6B0016D25D /* XZTabBarController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		E99E32681C4F835A0016D25D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */,
+				E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,16 +424,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99E32611C4F7F6B0016D25D /* XZTabBarController.m in Sources */,
 				E99E324E1C4F1E350016D25D /* XZGlyphsHelper.m in Sources */,
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
+				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
+				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
+				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
