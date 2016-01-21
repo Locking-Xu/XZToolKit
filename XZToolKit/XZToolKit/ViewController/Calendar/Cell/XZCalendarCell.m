@@ -89,6 +89,9 @@ static NSInteger const monthNumberOfYear = 12;
     
     [_monthViewArray enumerateObjectsUsingBlock:^(XZMonthView *monthView, NSUInteger idx, BOOL * _Nonnull stop) {
   
+        monthView.year = [NSDate stringFromDate:date format:@"yyyy"].integerValue;
+        monthView.month = idx;
+        
         [monthView setMonthImageWithDate:[date dateByAddingValue:idx forKey:@"month"] size:size];
         
     }];

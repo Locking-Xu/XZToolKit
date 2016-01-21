@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */; };
+		E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE341C5079C800F08A9C /* XZAddressBookViewController.m */; };
+		E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE3D1C5098BB00F08A9C /* XZAddressBookCell.m */; };
+		E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E920DE3E1C5098BB00F08A9C /* XZAddressBookCell.xib */; };
+		E920DE431C50AD8800F08A9C /* XZMonthCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE421C50AD8800F08A9C /* XZMonthCalendarViewController.m */; };
 		E99E31FE1C4F1B2E0016D25D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E31FD1C4F1B2E0016D25D /* main.m */; };
 		E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32001C4F1B2E0016D25D /* AppDelegate.m */; };
 		E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99E32081C4F1B2E0016D25D /* Assets.xcassets */; };
@@ -42,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookHelper.h; sourceTree = "<group>"; };
+		E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookHelper.m; sourceTree = "<group>"; };
+		E920DE331C5079C800F08A9C /* XZAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookViewController.h; sourceTree = "<group>"; };
+		E920DE341C5079C800F08A9C /* XZAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookViewController.m; sourceTree = "<group>"; };
+		E920DE3C1C5098BB00F08A9C /* XZAddressBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookCell.h; sourceTree = "<group>"; };
+		E920DE3D1C5098BB00F08A9C /* XZAddressBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookCell.m; sourceTree = "<group>"; };
+		E920DE3E1C5098BB00F08A9C /* XZAddressBookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZAddressBookCell.xib; sourceTree = "<group>"; };
+		E920DE411C50AD8800F08A9C /* XZMonthCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMonthCalendarViewController.h; sourceTree = "<group>"; };
+		E920DE421C50AD8800F08A9C /* XZMonthCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMonthCalendarViewController.m; sourceTree = "<group>"; };
 		E99E31F91C4F1B2E0016D25D /* XZToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99E31FD1C4F1B2E0016D25D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E99E31FF1C4F1B2E0016D25D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +124,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E920DE311C50795800F08A9C /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				E920DE361C50987300F08A9C /* Cell */,
+				E920DE321C50798400F08A9C /* Controller */,
+			);
+			name = AddressBook;
+			sourceTree = "<group>";
+		};
+		E920DE321C50798400F08A9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E920DE331C5079C800F08A9C /* XZAddressBookViewController.h */,
+				E920DE341C5079C800F08A9C /* XZAddressBookViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E920DE361C50987300F08A9C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E920DE3C1C5098BB00F08A9C /* XZAddressBookCell.h */,
+				E920DE3D1C5098BB00F08A9C /* XZAddressBookCell.m */,
+				E920DE3E1C5098BB00F08A9C /* XZAddressBookCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		E99E31F01C4F1B2E0016D25D = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +235,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E920DE311C50795800F08A9C /* AddressBook */,
 				E99E32391C4F1E350016D25D /* Calendar */,
 				E99E32481C4F1E350016D25D /* Home */,
 			);
@@ -255,6 +298,8 @@
 			children = (
 				E99E32461C4F1E350016D25D /* XZCalendarViewController.h */,
 				E99E32471C4F1E350016D25D /* XZCalendarViewController.m */,
+				E920DE411C50AD8800F08A9C /* XZMonthCalendarViewController.h */,
+				E920DE421C50AD8800F08A9C /* XZMonthCalendarViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -320,6 +365,8 @@
 			children = (
 				E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */,
 				E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */,
+				E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */,
+				E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -405,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
+				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E99E320C1C4F1B2E0016D25D /* LaunchScreen.storyboard in Resources */,
 				E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */,
 			);
@@ -434,13 +482,17 @@
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
+				E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
+				E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
+				E920DE431C50AD8800F08A9C /* XZMonthCalendarViewController.m in Sources */,
+				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
 				E99E324D1C4F1E350016D25D /* XZCalendarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

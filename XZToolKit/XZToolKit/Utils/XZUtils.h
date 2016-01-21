@@ -23,6 +23,13 @@
  */
 + (CGSize)stringAdaptive:(NSString *)content width:(CGFloat)width lineSpace:(CGFloat)lineSpace font:(CGFloat)font mode:(NSLineBreakMode)lineBrekMode;
 
+/**
+ *  获得当前的ViewController
+ *
+ *  @return UIViewController
+ */
++ (UIViewController *)getCurrentViewController;
+
 #pragma mark - About Empty Object
 /**
  *  判断是否为nil、NSNull

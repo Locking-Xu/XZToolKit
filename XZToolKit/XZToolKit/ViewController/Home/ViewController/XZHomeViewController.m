@@ -8,10 +8,11 @@
 
 #import "XZHomeViewController.h"
 #import "XZCalendarViewController.h"
+#import "XZAddressBookViewController.h"
 #import "UINavigationController+Common.h"
 
 
-#define TitleList @[@"日历"]
+#define TitleList @[@"日历",@"通讯录"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -34,6 +35,8 @@
     _tableView.dataSource = self;
     
     _tableView.tableFooterView = [UIView new];
+    
+    _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -79,12 +82,22 @@
         {
             XZCalendarViewController *calendarVc = [[XZCalendarViewController alloc] init];
             
+            XZObjectLog(self.navigationController);
+            
             [self.navigationController setBackItemTitle:@"" viewController:self];
             
             [self.navigationController pushViewController:calendarVc animated:YES];
         }
             break;
+        case 1:
+        {
+            XZAddressBookViewController *addressBookVc = [[XZAddressBookViewController alloc] init];
             
+            [self.navigationController setBackItemTitle:@"" viewController:self];
+            
+            [self.navigationController pushViewController:addressBookVc animated:YES];
+        }
+            break;
         default:
             break;
     }

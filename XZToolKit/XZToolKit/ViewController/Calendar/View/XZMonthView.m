@@ -8,6 +8,9 @@
 
 #import "XZMonthView.h"
 #import "XZImageHelper.h"
+#import "XZUtils.h"
+#import "XZMonthCalendarViewController.h"
+#import "UINavigationController+Common.h"
 
 @implementation XZMonthView
 
@@ -16,8 +19,13 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.imageView = [[UIImageView alloc] init];
+        self.imageView = [[UIImageView alloc] initWithFrame:self.bounds];
         [self addSubview:self.imageView];
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture_Pressed)];
+        
+        [self addGestureRecognizer:tapGesture];
+        
     }
     
     return self;
@@ -33,4 +41,29 @@
     UIImage *image = [[XZImageHelper shareInstance] getMonthImageWithDate:date size:size];
     self.imageView.image = image;
 }
+
+#pragma mark UIGestureRecoginzer
+- (void)tapGesture_Pressed{
+
+    UIViewController *vc = [XZUtils getCurrentViewController];
+    
+    XZMonthCalendarViewController *monthCalendarVC = [[XZMonthCalendarViewController alloc] init];
+    
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *nav = (UINavigationController *)vc;
+        
+        [nav setBackItemTitle:XZIntToString(self.year) viewController:nav.viewControllers.lastObject];
+        [nav pushViewController:monthCalendarVC animated:YES];
+
+    }else{
+        
+        [vc.navigationController setBackItemTitle:XZIntToString(self.year) viewController:vc];
+        [vc.navigationController pushViewController:monthCalendarVC animated:YES];
+        
+    }
+    
+//    XZIntLog(self.month);
+//    XZIntLog(self.year);
+}
+
 @end
