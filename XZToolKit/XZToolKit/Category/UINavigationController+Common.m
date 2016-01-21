@@ -43,26 +43,15 @@
 }
 
 /**
- *   设置标题字体颜色
+ *   设置标题字体颜色和字体大小
  *
  *  @param titleColor 字体颜色
+ *  @param titleFont  字体大小
  */
-- (void)setTitleColor:(UIColor *)titleColor{
+- (void)setTitleColor:(UIColor *)titleColor font:(UIFont *)titleFont{
     
-    NSDictionary *attributes=[NSDictionary dictionaryWithObjectsAndKeys:titleColor,NSForegroundColorAttributeName, nil];
+    NSDictionary *attributes=[NSDictionary dictionaryWithObjectsAndKeys:titleColor,NSForegroundColorAttributeName,titleFont,NSFontAttributeName, nil];
     
-    [self.navigationBar setTitleTextAttributes:attributes];
-}
-
-/**
- *  设置标题字体大小
- *
- *  @param titleFont 字体大小
- */
-- (void)setTitleFont:(UIFont *)titleFont{
-
-    //设置字体和字体颜色
-    NSDictionary *attributes=[NSDictionary dictionaryWithObjectsAndKeys:titleFont,NSFontAttributeName, nil];
     [self.navigationBar setTitleTextAttributes:attributes];
 }
 

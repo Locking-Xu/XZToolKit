@@ -10,4 +10,6 @@
 
 @interface XZMonthCalendarViewController : UIViewController
 
+@property (nonatomic, strong) NSString *year;
+@property (nonatomic, strong) NSString *month;
 @end

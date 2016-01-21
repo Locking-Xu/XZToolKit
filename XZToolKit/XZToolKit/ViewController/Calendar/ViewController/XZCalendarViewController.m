@@ -27,8 +27,6 @@
     
     self.title = @"日历";
     
-
-    
     _cellHeight = [XZCalendarCell heightOfCell];
     self.tableView.rowHeight = _cellHeight;
     

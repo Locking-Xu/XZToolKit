@@ -12,7 +12,7 @@
 #import "UINavigationController+Common.h"
 
 
-#define TitleList @[@"日历",@"通讯录"]
+#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -81,8 +81,6 @@
         case 0:
         {
             XZCalendarViewController *calendarVc = [[XZCalendarViewController alloc] init];
-            
-            XZObjectLog(self.navigationController);
             
             [self.navigationController setBackItemTitle:@"" viewController:self];
             

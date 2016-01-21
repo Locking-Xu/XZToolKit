@@ -28,6 +28,8 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    CGContextRelease(context);
+    
     [self setBackgroundImage:image forState:state];
 }
 

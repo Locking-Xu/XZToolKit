@@ -27,8 +27,8 @@
     
     [navigation setBarBackgroundColor:[UIColor colorWithHexString:@"#72a4d3"]];
     [navigation setBackColor:[UIColor whiteColor]];
-    [navigation setTitleFont:[UIFont systemFontOfSize:20.0f]];
-    [navigation setTitleColor:[UIColor whiteColor]];
+    
+    [navigation setTitleColor:[UIColor whiteColor] font:[UIFont systemFontOfSize:20.0f]];
     [navigation setIsTranslucent:NO];
     
     self.window.rootViewController = navigation;

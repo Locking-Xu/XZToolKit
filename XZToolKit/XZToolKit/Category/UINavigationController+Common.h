@@ -18,14 +18,8 @@
 /** NavigationBar是否半透明显示，会对整体是否下移64有影响*/
 - (void)setIsTranslucent:(BOOL)isTranslucent;
 
-/**
- *  PS:如果同时设置标题字体大小和颜色的话，的先设置大小再设置颜色
- */
 /** 标题字体颜色*/
-- (void)setTitleColor:(UIColor *)titleColor;
-/** 标题字体大小*/
-- (void)setTitleFont:(UIFont *)titleFont;
-
+- (void)setTitleColor:(UIColor *)titleColor font:(UIFont *)titleFont;
 
 /**
  *  设置返回键标题

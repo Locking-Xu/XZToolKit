@@ -49,6 +49,9 @@
     
     XZMonthCalendarViewController *monthCalendarVC = [[XZMonthCalendarViewController alloc] init];
     
+    monthCalendarVC.year = XZIntToString(self.year);
+    monthCalendarVC.month = XZIntToString(self.month);
+    
     if ([vc isKindOfClass:[UINavigationController class]]) {
         UINavigationController *nav = (UINavigationController *)vc;
         
@@ -61,9 +64,7 @@
         [vc.navigationController pushViewController:monthCalendarVC animated:YES];
         
     }
-    
-//    XZIntLog(self.month);
-//    XZIntLog(self.year);
+
 }
 
 @end
