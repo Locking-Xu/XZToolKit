@@ -13,6 +13,7 @@
 #import "XZImageHelper.h"
 #import "XZGlyphsHelper.h"
 #import "NSDate+String.h"
+#import "XZUtils.h"
 
 /** 7列*/
 static NSUInteger const monthColumns = 7;
@@ -105,6 +106,13 @@ CG_INLINE CGContextRef CGContextCreate(CGSize size){
     
 }
 
+/**
+ *  从CGContextRef转成图片
+ *
+ *  @param context CGContext
+ *
+ *  @return 图片
+ */
 CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
 
     CGImageRef cgImage = CGBitmapContextCreateImage(context);
@@ -115,7 +123,14 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
 }
 
 #pragma mark Private_Methods
-
+/**
+ *  获得年日历的图片
+ *
+ *  @param date 日期
+ *  @param size 尺寸
+ *
+ *  @return UIImage
+ */
 - (UIImage *)getMonthImageWithDate:(NSDate *)date size:(CGSize)size{
     
     if (!CGSizeEqualToSize(CGSizeZero, size)) {
@@ -132,6 +147,82 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
     }
     return nil;
 } 
+
+/**
+ *  获得月日历的图片
+ *
+ *  @param date 日期
+ *  @param size 尺寸
+ *
+ *  @return UIImage
+ */
+- (UIImage *)getDayImageWithDate:(NSDate *)date size:(CGSize)size{
+    
+    if (!CGSizeEqualToSize(CGSizeZero, size)) {
+        
+        CGContextRef context = CGContextCreate(size);
+        
+        [self drawDayInContext:context date:date size:size];
+        
+        UIImage *image = UIGraphicsGetImageFromContext(context);
+        
+        CGContextRelease(context);
+        
+        return image;
+    }
+    return nil;
+}
+
+/**
+ *  绘制月日历
+ *
+ *  @param context CGContextRef
+ *  @param date    日期
+ *  @param size    尺寸
+ */
+- (void)drawDayInContext:(CGContextRef)context date:(NSDate *)date size:(CGSize)size{
+    
+    XZObjectLog(date);
+    
+    CGRect gregorianRect = CGRectMake(0, 0, size.width, size.height*2/3);
+    
+    [self drawGregorianDate:context rect:gregorianRect title:[NSDate stringFromDate:date format:@"d"]];
+
+}
+
+/**
+ *  绘制月日历中的内容
+ *
+ *  @param context CGcontextRef
+ *  @param rect    绘制的范围
+ *  @param title   绘制的内容
+ */
+- (void)drawGregorianDate:(CGContextRef)context rect:(CGRect)rect title:(NSString *)title{
+    
+    CGSize size = [XZUtils stringAdaptive:title width:0 lineSpace:0 font:20.0f mode:NSLineBreakByCharWrapping];
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    rect.origin.x = (rect.size.width - size.width)/2;
+    
+    CGPathAddRect(path, NULL, rect);
+    
+    NSDictionary *dic = @{
+                          (id)kCTForegroundColorAttributeName:(id)[UIColor blackColor].CGColor,
+                          NSFontAttributeName:[UIFont systemFontOfSize:20.0f]
+                          };
+    NSAttributedString *attString = [[NSAttributedString alloc] initWithString:title attributes:dic];
+    
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)attString);
+    
+    CTFrameRef frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, attString.length), path,NULL);
+    
+    CTFrameDraw(frame, context);
+    
+    CFRelease(frame);
+    CFRelease(path);
+    CFRelease(framesetter);
+}
 
 /**
  *  绘制日历
@@ -188,6 +279,14 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
     
 }
 
+/**
+ *  绘制月份中的每一天
+ *
+ *  @param context     CGContextRef
+ *  @param date        日期
+ *  @param size        CGSize
+ *  @param dayAreaSize 绘制区域大小
+ */
 - (void)drawDayOfMonthInContext:(CGContextRef)context date:(NSDate *)date size:(CGSize)size dayAreaSize:(CGSize)dayAreaSize{
     
     //一天所占的区域

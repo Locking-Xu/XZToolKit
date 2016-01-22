@@ -15,8 +15,7 @@
  *  自适应label的frame
  *
  *  @param label     自适应的label
- *  @param width     如果自适应高度，给定一个宽度，高度填0|如果自适应宽度，给定一个高度，宽度填0
- *  @param height    如果自适应高度，给定一个宽度，高度填0|如果自适应宽度，给定一个高度，宽度填0
+ *  @param width     如果自适应高度，给定一个宽度，高度填0
  *  @param lineSpace 行间距，没有填0
  *  @param font      字体大小
  */

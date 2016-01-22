@@ -11,4 +11,5 @@
 @interface XZDayView : UIView
 
 @property (nonatomic, strong) UIImageView *imageView;
+
 @end

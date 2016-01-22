@@ -14,4 +14,6 @@
 + (XZImageHelper *)shareInstance;
 
 - (UIImage *)getMonthImageWithDate:(NSDate *)date size:(CGSize)size;
+
+- (UIImage *)getDayImageWithDate:(NSDate *)date size:(CGSize)size;
 @end

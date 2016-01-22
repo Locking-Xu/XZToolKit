@@ -96,8 +96,6 @@
     
     dateComponent = [self.calendar components:unit fromDate:self];
     
-    
-    
     return [self.calendar dateFromComponents:dateComponent];
 }
 

@@ -9,7 +9,8 @@
 #import "XZMonthCalendarCell.h"
 #import "UIView+Frame.h"
 #import "XZDayView.h"
-#import "XZImageTest.h"
+#import "XZImageHelper.h"
+#import "NSDate+String.h"
 
 @implementation XZMonthCalendarCell{
 
@@ -39,8 +40,8 @@
     self.titleLab = ({
         
         UILabel *label = [[UILabel alloc] init];
-        
-        label.backgroundColor = [UIColor yellowColor];
+        label.font = [UIFont systemFontOfSize:23.0f];
+        label.textColor = [UIColor redColor];
         [self addSubview:label];
         
         label;
@@ -56,6 +57,8 @@
         
         XZDayView *view = [[XZDayView alloc] init];
         
+        view.tag = i;
+        
         [self addSubview:view];
         
         [_dayViewArray addObject:view];
@@ -66,18 +69,48 @@
     
     [super layoutSubviews];
     
-    self.titleLab.frame = CGRectMake(0, 0, UISCREEN_WIDTH, _dayViewWidth);
-    
     for (XZDayView *view in _dayViewArray) {
         
         NSInteger i = [_dayViewArray indexOfObject:view];
-        
+    
         view.frame = CGRectMake(_dayViewWidth*(i%7), _dayViewWidth*(i/7+1), _dayViewWidth, _dayViewWidth);
-        
-        view.imageView.image = [[XZImageTest shareInstance] getMonthImageWithDate:nil size:view.size];
-        
     }
     
+}
+
+/**
+ *  设置cell具体的内容
+ *
+ *  @param date 内容相对应的时间
+ */
+- (void)setUpCellWithDate:(NSDate *)date{
+
+    [self clear];
+    
+    NSInteger numberOfDays = [date numberOfDayInMonth];
+    NSInteger weekday = [date weekDay];
+    
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:date];
+    
+    self.titleLab.frame = CGRectMake(_dayViewWidth*(weekday-1), 0, UISCREEN_WIDTH, _dayViewWidth);
+    
+    for (NSInteger i = weekday-1;i< numberOfDays + weekday-1; i++) {
+    
+        XZDayView *view = _dayViewArray[i];
+  
+        [components setDay:(i - (weekday -1) + 1)];
+        
+        view.imageView.image = [[XZImageHelper shareInstance] getDayImageWithDate:[[NSCalendar currentCalendar] dateFromComponents:components] size:CGSizeMake(_dayViewWidth, _dayViewWidth)];
+    }
+    
+}
+
+- (void)clear{
+    
+    for (XZDayView *view in _dayViewArray) {
+        
+        view.imageView.image = nil;
+    }
 }
 
 /**

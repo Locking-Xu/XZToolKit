@@ -11,6 +11,7 @@
 #import "XZUtils.h"
 #import "XZMonthCalendarViewController.h"
 #import "UINavigationController+Common.h"
+#import "NSDate+String.h"
 
 @implementation XZMonthView
 
@@ -49,14 +50,20 @@
     
     XZMonthCalendarViewController *monthCalendarVC = [[XZMonthCalendarViewController alloc] init];
     
-    monthCalendarVC.year = XZIntToString(self.year);
-    monthCalendarVC.month = XZIntToString(self.month);
+    NSDateComponents *dateComponents = [NSDateComponents new];
+    [dateComponents setYear:self.year];
+    [dateComponents setMonth:self.month + 1];
+    
+    NSDate *date = [[NSCalendar currentCalendar] dateFromComponents:dateComponents];
+    
+    monthCalendarVC.date = date;
     
     if ([vc isKindOfClass:[UINavigationController class]]) {
         UINavigationController *nav = (UINavigationController *)vc;
         
-        [nav setBackItemTitle:XZIntToString(self.year) viewController:nav.viewControllers.lastObject];
+        [nav setBackItemTitle:[NSDate stringFromDate:date format:@"yyyy年MM月"] viewController:nav.viewControllers.lastObject];
         [nav pushViewController:monthCalendarVC animated:YES];
+        
 
     }else{
         

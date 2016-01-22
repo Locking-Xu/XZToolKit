@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) UILabel *titleLab;
 
+@property (nonatomic, strong) NSDate *date;
+
 /**
  *  设置cell具体的内容
  *

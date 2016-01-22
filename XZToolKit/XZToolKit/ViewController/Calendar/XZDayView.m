@@ -17,7 +17,6 @@
     if (self) {
         
         self.imageView = [[UIImageView alloc] initWithFrame:frame];
-        self.imageView.backgroundColor = RandomColor;
         [self addSubview:self.imageView];
         
     }
@@ -28,7 +27,6 @@
 - (void)layoutSubviews{
     
     [super layoutSubviews];
-    
     self.imageView.frame = self.bounds;
 }
 @end
