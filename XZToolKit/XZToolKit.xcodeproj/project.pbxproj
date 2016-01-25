@@ -22,6 +22,8 @@
 		E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97006741C55CBF60071E0E3 /* XZDayCalendarCell.xib */; };
 		E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97006781C5614000071E0E3 /* XZTimeRecordCell.m */; };
 		E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97006791C5614000071E0E3 /* XZTimeRecordCell.xib */; };
+		E97006801C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */; };
+		E97006851C5620A40071E0E3 /* XZDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97006841C5620A40071E0E3 /* XZDemoViewController.m */; };
 		E99E31FE1C4F1B2E0016D25D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E31FD1C4F1B2E0016D25D /* main.m */; };
 		E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32001C4F1B2E0016D25D /* AppDelegate.m */; };
 		E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99E32081C4F1B2E0016D25D /* Assets.xcassets */; };
@@ -82,6 +84,10 @@
 		E97006771C5614000071E0E3 /* XZTimeRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTimeRecordCell.h; sourceTree = "<group>"; };
 		E97006781C5614000071E0E3 /* XZTimeRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTimeRecordCell.m; sourceTree = "<group>"; };
 		E97006791C5614000071E0E3 /* XZTimeRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZTimeRecordCell.xib; sourceTree = "<group>"; };
+		E970067E1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTableViewKnowledgeViewController.h; sourceTree = "<group>"; };
+		E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTableViewKnowledgeViewController.m; sourceTree = "<group>"; };
+		E97006831C5620A40071E0E3 /* XZDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDemoViewController.h; sourceTree = "<group>"; };
+		E97006841C5620A40071E0E3 /* XZDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDemoViewController.m; sourceTree = "<group>"; };
 		E99E31F91C4F1B2E0016D25D /* XZToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99E31FD1C4F1B2E0016D25D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E99E31FF1C4F1B2E0016D25D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -261,6 +267,41 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E970067C1C561D340071E0E3 /* TableViewKnowledge */ = {
+			isa = PBXGroup;
+			children = (
+				E97006811C56204A0071E0E3 /* Source */,
+				E970067D1C561D420071E0E3 /* ViewController */,
+			);
+			name = TableViewKnowledge;
+			sourceTree = "<group>";
+		};
+		E970067D1C561D420071E0E3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E970067E1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.h */,
+				E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E97006811C56204A0071E0E3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E97006821C5620620071E0E3 /* TableView下划线左到头显示 */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E97006821C5620620071E0E3 /* TableView下划线左到头显示 */ = {
+			isa = PBXGroup;
+			children = (
+				E97006831C5620A40071E0E3 /* XZDemoViewController.h */,
+				E97006841C5620A40071E0E3 /* XZDemoViewController.m */,
+			);
+			name = "TableView下划线左到头显示";
+			sourceTree = "<group>";
+		};
 		E99E31F01C4F1B2E0016D25D = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +385,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E99E32391C4F1E350016D25D /* Calendar */,
 				E99E32481C4F1E350016D25D /* Home */,
@@ -583,6 +625,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9318B651C51E9380039D357 /* XZTipView.m in Sources */,
+				E97006851C5620A40071E0E3 /* XZDemoViewController.m in Sources */,
+				E97006801C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m in Sources */,
 				E99E32611C4F7F6B0016D25D /* XZTabBarController.m in Sources */,
 				E99E324E1C4F1E350016D25D /* XZGlyphsHelper.m in Sources */,
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,

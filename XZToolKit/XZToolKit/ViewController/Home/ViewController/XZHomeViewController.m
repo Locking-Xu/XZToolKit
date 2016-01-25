@@ -10,9 +10,10 @@
 #import "XZCalendarViewController.h"
 #import "XZAddressBookViewController.h"
 #import "UINavigationController+Common.h"
+#import "XZTableViewKnowledgeViewController.h"
 
 
-#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar"]
+#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"TableView相关知识"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -77,12 +78,12 @@
 #pragma mark - UITableView_Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    [self.navigationController setBackItemTitle:@"" viewController:self];
+    
     switch (indexPath.row) {
         case 0:
         {
             XZCalendarViewController *calendarVc = [[XZCalendarViewController alloc] init];
-            
-            [self.navigationController setBackItemTitle:@"" viewController:self];
             
             [self.navigationController pushViewController:calendarVc animated:YES];
         }
@@ -91,10 +92,25 @@
         {
             XZAddressBookViewController *addressBookVc = [[XZAddressBookViewController alloc] init];
             
-            [self.navigationController setBackItemTitle:@"" viewController:self];
-            
             [self.navigationController pushViewController:addressBookVc animated:YES];
         }
+            break;
+        case 2:
+        {
+        
+        }
+            break;
+        case 3:
+        {
+        
+        }
+            break;
+        case 4:
+        {
+            XZTableViewKnowledgeViewController *tableViewKnowledgeVc = [[XZTableViewKnowledgeViewController alloc] init];
+            
+            [self.navigationController pushViewController:tableViewKnowledgeVc animated:YES];
+         }
             break;
         default:
             break;
