@@ -22,7 +22,7 @@
 /** 符号的size数组*/
 @property (nonatomic, assign) CGSize *glyphsAdvances;
 
-+ (XZGlyphsHelper *)glyphsHelperWithFontName:(NSString *)fontName fontSize:(CGFloat)fontSize;
++ (XZGlyphsHelper*)glyphsHelperWithString:(NSString*)dayChars FontName:(NSString *)fontName fontSize:(CGFloat)fontSize;
 
 
 

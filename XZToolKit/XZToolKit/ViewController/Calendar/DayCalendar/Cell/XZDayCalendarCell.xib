@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XZDayCalendarCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjQ-q2-28d">
+                        <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xjQ-q2-28d" secondAttribute="height" multiplier="1:1" id="g6J-uI-YId"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-fZ-MGy">
+                        <rect key="frame" x="0.0" y="40" width="60" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="xjQ-q2-28d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Efv-T3-jNS"/>
+                <constraint firstItem="S3j-fZ-MGy" firstAttribute="height" secondItem="xjQ-q2-28d" secondAttribute="height" multiplier="0.5" id="FEn-aq-j2K"/>
+                <constraint firstAttribute="trailing" secondItem="S3j-fZ-MGy" secondAttribute="trailing" id="KCa-7h-Zwl"/>
+                <constraint firstItem="S3j-fZ-MGy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bHi-Lw-MoZ"/>
+                <constraint firstItem="xjQ-q2-28d" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fed-v5-rOL"/>
+                <constraint firstItem="S3j-fZ-MGy" firstAttribute="top" secondItem="xjQ-q2-28d" secondAttribute="bottom" id="hjd-F0-MTP"/>
+                <constraint firstAttribute="bottom" secondItem="S3j-fZ-MGy" secondAttribute="bottom" id="wQS-fd-O7b"/>
+            </constraints>
+            <connections>
+                <outlet property="gregorianLabel" destination="xjQ-q2-28d" id="zw6-xc-aJI"/>
+                <outlet property="lunarLabel" destination="S3j-fZ-MGy" id="Lj4-4x-lxE"/>
+            </connections>
+            <point key="canvasLocation" x="160" y="181"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -123,6 +123,7 @@
                 <constraint firstItem="uyU-Us-Ryl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zMp-Hp-Mjs"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="169" y="281"/>
         </view>
     </objects>
 </document>

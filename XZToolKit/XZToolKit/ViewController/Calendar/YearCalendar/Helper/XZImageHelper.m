@@ -15,6 +15,9 @@
 #import "NSDate+String.h"
 #import "XZUtils.h"
 
+#define ChineseMonths @[@"正月", @"二月", @"三月", @"四月", @"五月", @"六月", @"七月", @"八月",@"九月", @"十月", @"冬月", @"腊月"]
+#define ChineseDays @[@"初一", @"初二", @"初三", @"初四", @"初五", @"初六", @"初七", @"初八", @"初九", @"初十",@"十一", @"十二", @"十三", @"十四", @"十五", @"十六", @"十七", @"十八", @"十九", @"二十", @"廿一", @"廿二", @"廿三", @"廿四", @"廿五", @"廿六", @"廿七", @"廿八", @"廿九", @"三十"]
+
 /** 7列*/
 static NSUInteger const monthColumns = 7;
 /** 6行*/
@@ -73,7 +76,7 @@ static XZImageHelper *imageHelper = nil;
     _dateFormatter = [NSDateFormatter new];
     [_dateFormatter setDateFormat:@"MMMM"];
     
-    _glyphsHepler = [XZGlyphsHelper glyphsHelperWithFontName:@"Helvetica" fontSize:8.0f];
+    _glyphsHepler = [XZGlyphsHelper glyphsHelperWithString:@"12345678910111213141516171819202122232425262728293031" FontName:@"Helvetica" fontSize:8.0f];
 }
 
 #pragma mark CGContexrRef & CGImageRef
@@ -182,11 +185,14 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
  */
 - (void)drawDayInContext:(CGContextRef)context date:(NSDate *)date size:(CGSize)size{
     
-    XZObjectLog(date);
-    
+    //阳历
     CGRect gregorianRect = CGRectMake(0, 0, size.width, size.height*2/3);
+    [self drawDayDate:context rect:gregorianRect title:[NSDate stringFromDate:date format:@"d"] font:15.0f];
+    //阴历
+    CGRect lunarRect = CGRectMake(0, size.height*2/3, size.width, size.height/3);
     
-    [self drawGregorianDate:context rect:gregorianRect title:[NSDate stringFromDate:date format:@"d"]];
+    [self drawDayDate:context rect:lunarRect title:[date dateOfChinese] font:10.0f];
+    
 
 }
 
@@ -197,19 +203,27 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
  *  @param rect    绘制的范围
  *  @param title   绘制的内容
  */
-- (void)drawGregorianDate:(CGContextRef)context rect:(CGRect)rect title:(NSString *)title{
+- (void)drawDayDate:(CGContextRef)context rect:(CGRect)rect title:(NSString *)title font:(CGFloat)font{
     
-    CGSize size = [XZUtils stringAdaptive:title width:0 lineSpace:0 font:20.0f mode:NSLineBreakByCharWrapping];
+    _glyphsHepler = [XZGlyphsHelper glyphsHelperWithString:title FontName:@"Helvetica" fontSize:font];
+    
+    CGFloat width = 0.0f;
+    
+    for (int i=0; i < _glyphsHepler.length; i++) {
+        
+        CGSize size = _glyphsHepler.glyphsAdvances[i];
+        width += size.width;
+    }
     
     CGMutablePathRef path = CGPathCreateMutable();
     
-    rect.origin.x = (rect.size.width - size.width)/2;
+    rect.origin.x = (rect.size.width - width)/2;
     
     CGPathAddRect(path, NULL, rect);
     
     NSDictionary *dic = @{
                           (id)kCTForegroundColorAttributeName:(id)[UIColor blackColor].CGColor,
-                          NSFontAttributeName:[UIFont systemFontOfSize:20.0f]
+                          NSFontAttributeName:[UIFont systemFontOfSize:font]
                           };
     NSAttributedString *attString = [[NSAttributedString alloc] initWithString:title attributes:dic];
     
@@ -300,7 +314,7 @@ CG_INLINE UIImage* UIGraphicsGetImageFromContext(CGContextRef context){
     //符号串的下标
     NSInteger glyphsIndex = 0;
     
-    for (int i=0; i<[date numberOfDayInMonth]; i++) {
+    for (int i=0; i<[date numberOfDayInCurrentMonth]; i++) {
         
         CGPoint offset = CGPointMake(weekDayIndex % monthColumns, weekDayIndex / monthColumns);
         

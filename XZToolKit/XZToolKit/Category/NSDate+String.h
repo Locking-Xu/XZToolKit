@@ -49,14 +49,30 @@
  *
  *  @return NSDate
  */
-- (NSDate *)getValueForUnit:(NSCalendarUnit)unit;
+- (NSDate *)getDateForUnit:(NSCalendarUnit)unit;
+
+/**
+ *  获得date的某一单元的值
+ *
+ *  @param key 单元名
+ *
+ *  @return NSString
+ */
+- (NSInteger)getValueForUnit:(NSCalendarUnit)unit;
 
 /**
  *  当前月份的总天数
  *
  *  @return 天数
  */
-- (NSInteger)numberOfDayInMonth;
+- (NSInteger)numberOfDayInCurrentMonth;
+
+/**
+ *  当前月份的前一个月的总天数
+ *
+ *  @return 天数
+ */
+- (NSInteger)numberOfDayInPreviousMonth;
 
 /**
  *  获得当前日期是周几
@@ -64,4 +80,25 @@
  *  @return 1:星期日2:星期一3:星期二4:星期三5:星期四6:星期五7:星期六
  */
 - (NSInteger)weekDay;
+
+/**
+ *  获得当前月的第一天是星期几
+ *
+ *  @return 1:星期日2:星期一3:星期二4:星期三5:星期四6:星期五7:星期六
+ */
+- (NSInteger)weekdayOfFirstDay;
+
+/**
+ *  获得当前月的最后一天是星期几
+ *
+ *  @return 1:星期日2:星期一3:星期二4:星期三5:星期四6:星期五7:星期六
+ */
+- (NSInteger)weekDayOfLastDay;
+
+/**
+ *  获得某一天的阴历
+ *
+ *  @return 阴历
+ */
+- (NSString *)dateOfChinese;
 @end

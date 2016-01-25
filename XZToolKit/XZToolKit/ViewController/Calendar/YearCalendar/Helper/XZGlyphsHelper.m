@@ -11,11 +11,11 @@
  */
 #import "XZGlyphsHelper.h"
 /** 代表1号～31号*/
-static NSString *const dayChars = @"12345678910111213141516171819202122232425262728293031";
+//static NSString *const dayChars = @"12345678910111213141516171819202122232425262728293031";
 
 @implementation XZGlyphsHelper
 
-+ (XZGlyphsHelper*)glyphsHelperWithFontName:(NSString *)fontName fontSize:(CGFloat)fontSize{
++ (XZGlyphsHelper*)glyphsHelperWithString:(NSString*)dayChars FontName:(NSString *)fontName fontSize:(CGFloat)fontSize{
     
     XZGlyphsHelper *glyphsHelper = [[XZGlyphsHelper alloc] init];
     //符号串的长度

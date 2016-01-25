@@ -40,7 +40,7 @@
     self.titleLab = ({
         
         UILabel *label = [[UILabel alloc] init];
-        label.font = [UIFont systemFontOfSize:23.0f];
+        label.font = [UIFont systemFontOfSize:20.0f];
         label.textColor = [UIColor redColor];
         [self addSubview:label];
         
@@ -87,7 +87,7 @@
 
     [self clear];
     
-    NSInteger numberOfDays = [date numberOfDayInMonth];
+    NSInteger numberOfDays = [date numberOfDayInCurrentMonth];
     NSInteger weekday = [date weekDay];
     
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:date];
@@ -100,7 +100,11 @@
   
         [components setDay:(i - (weekday -1) + 1)];
         
-        view.imageView.image = [[XZImageHelper shareInstance] getDayImageWithDate:[[NSCalendar currentCalendar] dateFromComponents:components] size:CGSizeMake(_dayViewWidth, _dayViewWidth)];
+        NSDate *tmpDate = [[NSCalendar currentCalendar] dateFromComponents:components];
+        
+        view.date = tmpDate;
+        
+        view.imageView.image = [[XZImageHelper shareInstance] getDayImageWithDate:tmpDate size:CGSizeMake(_dayViewWidth, _dayViewWidth)];
     }
     
 }

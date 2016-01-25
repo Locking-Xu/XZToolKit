@@ -83,7 +83,7 @@ static NSInteger const monthNumberOfYear = 12;
 
 - (void)setUpCellWithDate:(NSDate *)date{
     
-    date = [date getValueForUnit:NSCalendarUnitYear];
+    date = [date getDateForUnit:NSCalendarUnitYear];
     CGFloat monthViewWidth = (UISCREEN_WIDTH - 4*defaultMargin)/3;
     CGSize size = CGSizeMake(monthViewWidth, monthViewWidth);
     
