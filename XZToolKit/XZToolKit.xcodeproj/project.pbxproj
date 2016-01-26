@@ -46,6 +46,18 @@
 		E99E32641C4F81790016D25D /* XZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32631C4F81790016D25D /* XZScrollView.m */; };
 		E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32661C4F81BE0016D25D /* XZPageControl.m */; };
 		E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */; };
+		E9E0C18E1C5705CE0041193A /* TableView下划线左右间距.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */; };
+		E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C1901C570C400041193A /* XZCodeViewController.m */; };
+		E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C1911C570C400041193A /* XZCodeViewController.xib */; };
+		E9E0C1FF1C571D090041193A /* XZImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C1FD1C571D090041193A /* XZImageCell.m */; };
+		E9E0C2001C571D090041193A /* XZImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C1FE1C571D090041193A /* XZImageCell.xib */; };
+		E9E0C2111C575A420041193A /* setLeftMargin.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C2101C575A420041193A /* setLeftMargin.png */; };
+		E9E0C2141C575ABF0041193A /* defaultMargin.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C2121C575ABF0041193A /* defaultMargin.png */; };
+		E9E0C2151C575ABF0041193A /* setRightMargin.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C2131C575ABF0041193A /* setRightMargin.png */; };
+		E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C2191C576C4F0041193A /* XZImageBrowserViewController.m */; };
+		E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */; };
+		E9E0C2211C57731B0041193A /* XZimageBorwserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C21F1C57731B0041193A /* XZimageBorwserCell.m */; };
+		E9E0C2221C57731B0041193A /* XZimageBorwserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C2201C57731B0041193A /* XZimageBorwserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +148,22 @@
 		E99E32661C4F81BE0016D25D /* XZPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPageControl.m; sourceTree = "<group>"; };
 		E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTelephoneHelper.h; sourceTree = "<group>"; };
 		E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTelephoneHelper.m; sourceTree = "<group>"; };
+		E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView下划线左右间距.txt"; sourceTree = "<group>"; };
+		E9E0C18F1C570C400041193A /* XZCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCodeViewController.h; sourceTree = "<group>"; };
+		E9E0C1901C570C400041193A /* XZCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCodeViewController.m; sourceTree = "<group>"; };
+		E9E0C1911C570C400041193A /* XZCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCodeViewController.xib; sourceTree = "<group>"; };
+		E9E0C1FC1C571D090041193A /* XZImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageCell.h; sourceTree = "<group>"; };
+		E9E0C1FD1C571D090041193A /* XZImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageCell.m; sourceTree = "<group>"; };
+		E9E0C1FE1C571D090041193A /* XZImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageCell.xib; sourceTree = "<group>"; };
+		E9E0C2101C575A420041193A /* setLeftMargin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setLeftMargin.png; sourceTree = "<group>"; };
+		E9E0C2121C575ABF0041193A /* defaultMargin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultMargin.png; sourceTree = "<group>"; };
+		E9E0C2131C575ABF0041193A /* setRightMargin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setRightMargin.png; sourceTree = "<group>"; };
+		E9E0C2181C576C4F0041193A /* XZImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageBrowserViewController.h; sourceTree = "<group>"; };
+		E9E0C2191C576C4F0041193A /* XZImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserViewController.m; sourceTree = "<group>"; };
+		E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserViewController.xib; sourceTree = "<group>"; };
+		E9E0C21E1C57731B0041193A /* XZimageBorwserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZimageBorwserCell.h; sourceTree = "<group>"; };
+		E9E0C21F1C57731B0041193A /* XZimageBorwserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZimageBorwserCell.m; sourceTree = "<group>"; };
+		E9E0C2201C57731B0041193A /* XZimageBorwserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZimageBorwserCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,36 +298,33 @@
 		E970067C1C561D340071E0E3 /* TableViewKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E9E0C1FB1C571CDF0041193A /* Cell */,
 				E97006811C56204A0071E0E3 /* Source */,
 				E970067D1C561D420071E0E3 /* ViewController */,
 			);
-			name = TableViewKnowledge;
+			path = TableViewKnowledge;
 			sourceTree = "<group>";
 		};
 		E970067D1C561D420071E0E3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9E0C18F1C570C400041193A /* XZCodeViewController.h */,
+				E9E0C1901C570C400041193A /* XZCodeViewController.m */,
+				E9E0C1911C570C400041193A /* XZCodeViewController.xib */,
+				E97006831C5620A40071E0E3 /* XZDemoViewController.h */,
+				E97006841C5620A40071E0E3 /* XZDemoViewController.m */,
 				E970067E1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.h */,
 				E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E97006811C56204A0071E0E3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E97006821C5620620071E0E3 /* TableView下划线左到头显示 */,
+				E9E0C2011C573E030041193A /* TableView下划线左右间距 */,
 			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		E97006821C5620620071E0E3 /* TableView下划线左到头显示 */ = {
-			isa = PBXGroup;
-			children = (
-				E97006831C5620A40071E0E3 /* XZDemoViewController.h */,
-				E97006841C5620A40071E0E3 /* XZDemoViewController.m */,
-			);
-			name = "TableView下划线左到头显示";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E99E31F01C4F1B2E0016D25D = {
@@ -385,10 +410,11 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E99E32391C4F1E350016D25D /* Calendar */,
 				E99E32481C4F1E350016D25D /* Home */,
+				E9E0C2161C576A650041193A /* ImageBrowser */,
+				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -519,6 +545,56 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		E9E0C1FB1C571CDF0041193A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9E0C1FC1C571D090041193A /* XZImageCell.h */,
+				E9E0C1FD1C571D090041193A /* XZImageCell.m */,
+				E9E0C1FE1C571D090041193A /* XZImageCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E9E0C2011C573E030041193A /* TableView下划线左右间距 */ = {
+			isa = PBXGroup;
+			children = (
+				E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */,
+				E9E0C2121C575ABF0041193A /* defaultMargin.png */,
+				E9E0C2101C575A420041193A /* setLeftMargin.png */,
+				E9E0C2131C575ABF0041193A /* setRightMargin.png */,
+			);
+			path = "TableView下划线左右间距";
+			sourceTree = "<group>";
+		};
+		E9E0C2161C576A650041193A /* ImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				E9E0C21D1C5772F60041193A /* Cell */,
+				E9E0C2171C576C200041193A /* ViewController */,
+			);
+			path = ImageBrowser;
+			sourceTree = "<group>";
+		};
+		E9E0C2171C576C200041193A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9E0C2181C576C4F0041193A /* XZImageBrowserViewController.h */,
+				E9E0C2191C576C4F0041193A /* XZImageBrowserViewController.m */,
+				E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9E0C21D1C5772F60041193A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9E0C21E1C57731B0041193A /* XZimageBorwserCell.h */,
+				E9E0C21F1C57731B0041193A /* XZimageBorwserCell.m */,
+				E9E0C2201C57731B0041193A /* XZimageBorwserCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -599,13 +675,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E0C2221C57731B0041193A /* XZimageBorwserCell.xib in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
+				E9E0C2151C575ABF0041193A /* setRightMargin.png in Resources */,
 				E99E320C1C4F1B2E0016D25D /* LaunchScreen.storyboard in Resources */,
+				E9E0C2141C575ABF0041193A /* defaultMargin.png in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
+				E9E0C2111C575A420041193A /* setLeftMargin.png in Resources */,
+				E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */,
+				E9E0C2001C571D090041193A /* XZImageCell.xib in Resources */,
 				E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */,
+				E9E0C18E1C5705CE0041193A /* TableView下划线左右间距.txt in Resources */,
 				E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */,
+				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
 				E920DE4B1C50B7CB00F08A9C /* XZMonthCalendarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */,
 				E9318B651C51E9380039D357 /* XZTipView.m in Sources */,
 				E97006851C5620A40071E0E3 /* XZDemoViewController.m in Sources */,
 				E97006801C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m in Sources */,
@@ -644,14 +729,17 @@
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
 				E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
+				E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */,
 				E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
+				E9E0C2211C57731B0041193A /* XZimageBorwserCell.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
+				E9E0C1FF1C571D090041193A /* XZImageCell.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
 				E99E324D1C4F1E350016D25D /* XZCalendarCell.m in Sources */,
 			);

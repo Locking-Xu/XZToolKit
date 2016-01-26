@@ -13,7 +13,7 @@
 #import "XZTableViewKnowledgeViewController.h"
 
 
-#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"TableView相关知识"]
+#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"TableView相关知识",@"图片浏览器"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     

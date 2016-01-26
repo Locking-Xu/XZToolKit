@@ -320,4 +320,28 @@
     return format;
     
 }
+
+#pragma mark - About UIImage
+/**
+ *  将图片按一定的比例缩放
+ *
+ *  @param proportion 缩放的比例
+ *
+ *  @return 新的图片
+ */
++ (UIImage *)scaleImage:(UIImage *)image toProportion:(CGFloat)proportion{
+    
+    CGSize size = CGSizeMake(image.size.width*proportion, image.size.height*proportion);
+    
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+        UIGraphicsBeginImageContextWithOptions (size, NO, [[UIScreen mainScreen] scale]);
+    } else {
+        UIGraphicsBeginImageContext (size);
+    }
+    [image drawInRect:CGRectMake (0, 0, size.width, size.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext ();
+    UIGraphicsEndImageContext ();
+    
+    return newImage;
+}
 @end

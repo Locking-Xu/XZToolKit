@@ -22,4 +22,9 @@
 #define XZIntToString(int)  [NSString stringWithFormat:@"%ld",(long)int]
 #define XZFloatToString(float)  [NSString stringWithFormat:@"%f",float]
 
+
+/** 获得Bundle的Image*/
+#define XZGetImageFromBundle(name,type) \
+[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:type]];    \
+
 #endif /* XZMethodMacro_h */

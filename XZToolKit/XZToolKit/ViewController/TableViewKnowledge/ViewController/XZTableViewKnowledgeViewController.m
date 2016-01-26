@@ -7,10 +7,11 @@
 //
 
 #import "XZTableViewKnowledgeViewController.h"
+#import "XZCodeViewController.h"
 #import "XZDemoViewController.h"
 #import "UINavigationController+Common.h"
 
-#define TitleArray @[@"TableView下划线左到头显示"]
+#define TitleArray @[@"TableView下划线左右间距",@"测试"]
 
 @interface XZTableViewKnowledgeViewController ()
 
@@ -62,12 +63,19 @@
     switch (indexPath.row) {
         case 0:
         {
+            XZCodeViewController *codeVc = [[XZCodeViewController alloc] init];
+            codeVc.knowledgeTitle = TitleArray[indexPath.row];
+            codeVc.imageArray = @[@"defaultMargin",@"setLeftMargin",@"setRightMargin"];
+            codeVc.imageTitleArray = @[@"不设置",@"设置左边距",@"设置右边距"];
+            [self.navigationController pushViewController:codeVc animated:YES];
+        }
+            break;
+        case 1:
+        {
             XZDemoViewController *demoVc = [[XZDemoViewController alloc] init];
-            
             [self.navigationController pushViewController:demoVc animated:YES];
         }
             break;
-            
         default:
             break;
     }
