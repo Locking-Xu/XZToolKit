@@ -7,8 +7,9 @@
 //
 
 #import "XZImageBrowserViewController.h"
-#import "XZimageBorwserCell.h"
+
 #import "XZImageBrowserLayout.h"
+#import "XZImageBrowserCell.h"
 
 @interface XZImageBrowserViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>{
 
@@ -31,6 +32,8 @@
     _closeBtn.layer.borderWidth = 1.0f;
     _closeBtn.layer.cornerRadius = 5.0f;
     
+    [self.view bringSubviewToFront:_titleLabel];
+    
     [self setUpCollectionView];
     
 }
@@ -45,7 +48,7 @@
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.collectionViewLayout = [[XZImageBrowserLayout alloc] init];
-    [_collectionView registerNib:[UINib nibWithNibName:@"XZImageBorwserCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"imageBorwserCell"];
+    [_collectionView registerNib:[UINib nibWithNibName:@"XZImageBrowserCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"imageBorwserCell"];
 }
 #pragma mark - UIButton_Actions
 - (IBAction)closeBtn_Pressed:(id)sender {
@@ -57,13 +60,18 @@
 #pragma mark - UICollectionView_DataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
-    return 20;
+    return self.imageArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    XZimageBorwserCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageBorwserCell" forIndexPath:indexPath];
+    XZImageBrowserCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageBorwserCell" forIndexPath:indexPath];
+    
+    [cell setUpWithImageName:self.imageArray[indexPath.row]];
+    
     
     return cell;
 }
+
+#pragma mark 
 @end

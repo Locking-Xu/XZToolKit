@@ -47,6 +47,9 @@
 		E99E32641C4F81790016D25D /* XZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32631C4F81790016D25D /* XZScrollView.m */; };
 		E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32661C4F81BE0016D25D /* XZPageControl.m */; };
 		E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */; };
+		E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */; };
+		E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */; };
+		E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05F1C59058F003B8855 /* libReveal.dylib */; };
 		E9E0C18E1C5705CE0041193A /* TableView下划线左右间距.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */; };
 		E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C1901C570C400041193A /* XZCodeViewController.m */; };
 		E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C1911C570C400041193A /* XZCodeViewController.xib */; };
@@ -57,8 +60,6 @@
 		E9E0C2151C575ABF0041193A /* setRightMargin.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C2131C575ABF0041193A /* setRightMargin.png */; };
 		E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C2191C576C4F0041193A /* XZImageBrowserViewController.m */; };
 		E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */; };
-		E9E0C2211C57731B0041193A /* XZImageBorwserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C21F1C57731B0041193A /* XZImageBorwserCell.m */; };
-		E9E0C2221C57731B0041193A /* XZImageBorwserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C2201C57731B0041193A /* XZImageBorwserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,10 @@
 		E99E32661C4F81BE0016D25D /* XZPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPageControl.m; sourceTree = "<group>"; };
 		E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTelephoneHelper.h; sourceTree = "<group>"; };
 		E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTelephoneHelper.m; sourceTree = "<group>"; };
+		E9A4D05A1C59000C003B8855 /* XZImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageBrowserCell.h; sourceTree = "<group>"; };
+		E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserCell.m; sourceTree = "<group>"; };
+		E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserCell.xib; sourceTree = "<group>"; };
+		E9A4D05F1C59058F003B8855 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
 		E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView下划线左右间距.txt"; sourceTree = "<group>"; };
 		E9E0C18F1C570C400041193A /* XZCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCodeViewController.h; sourceTree = "<group>"; };
 		E9E0C1901C570C400041193A /* XZCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCodeViewController.m; sourceTree = "<group>"; };
@@ -164,9 +169,6 @@
 		E9E0C2181C576C4F0041193A /* XZImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageBrowserViewController.h; sourceTree = "<group>"; };
 		E9E0C2191C576C4F0041193A /* XZImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserViewController.m; sourceTree = "<group>"; };
 		E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserViewController.xib; sourceTree = "<group>"; };
-		E9E0C21E1C57731B0041193A /* XZImageBorwserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageBorwserCell.h; sourceTree = "<group>"; };
-		E9E0C21F1C57731B0041193A /* XZImageBorwserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBorwserCell.m; sourceTree = "<group>"; };
-		E9E0C2201C57731B0041193A /* XZImageBorwserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBorwserCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +274,7 @@
 				E9522C751C58C75B00A896FF /* XZImageBrowserLayout.h */,
 				E9522C761C58C75B00A896FF /* XZImageBrowserLayout.m */,
 			);
-			name = Layout;
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		E970066A1C55C8FC0071E0E3 /* DayCalendar */ = {
@@ -362,6 +364,7 @@
 			children = (
 				E99E32211C4F1D4E0016D25D /* AppDelegate */,
 				E99E32221C4F1D5A0016D25D /* Category */,
+				E9A4D0621C590D3B003B8855 /* Frameworks */,
 				E99E325C1C4F7E200016D25D /* General */,
 				E99E32681C4F835A0016D25D /* Helper */,
 				E99E32251C4F1D780016D25D /* Macro */,
@@ -557,6 +560,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		E9A4D0621C590D3B003B8855 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9A4D05F1C59058F003B8855 /* libReveal.dylib */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9E0C1FB1C571CDF0041193A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,8 +592,8 @@
 		E9E0C2161C576A650041193A /* ImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				E9522C741C58C6D900A896FF /* Layout */,
 				E9E0C21D1C5772F60041193A /* Cell */,
+				E9522C741C58C6D900A896FF /* Layout */,
 				E9E0C2171C576C200041193A /* ViewController */,
 			);
 			path = ImageBrowser;
@@ -601,9 +612,9 @@
 		E9E0C21D1C5772F60041193A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E9E0C21E1C57731B0041193A /* XZImageBorwserCell.h */,
-				E9E0C21F1C57731B0041193A /* XZImageBorwserCell.m */,
-				E9E0C2201C57731B0041193A /* XZImageBorwserCell.xib */,
+				E9A4D05A1C59000C003B8855 /* XZImageBrowserCell.h */,
+				E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */,
+				E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -688,7 +699,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E0C2221C57731B0041193A /* XZImageBorwserCell.xib in Resources */,
+				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
+				E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
@@ -748,9 +760,9 @@
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
+				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
-				E9E0C2211C57731B0041193A /* XZImageBorwserCell.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
 				E9E0C1FF1C571D090041193A /* XZImageCell.m in Sources */,
@@ -880,6 +892,10 @@
 				INFOPLIST_FILE = XZToolKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -893,6 +909,10 @@
 				INFOPLIST_FILE = XZToolKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
