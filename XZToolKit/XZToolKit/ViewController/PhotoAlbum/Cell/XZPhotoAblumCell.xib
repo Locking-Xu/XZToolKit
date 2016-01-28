@@ -7,26 +7,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XZImageBrowserCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XZPhotoAblumCell">
             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dRR-BR-DVG">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-HK-1Kt">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="dRR-BR-DVG" secondAttribute="trailing" id="PXR-BU-oHB"/>
-                <constraint firstItem="dRR-BR-DVG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RVe-Br-EB9"/>
-                <constraint firstItem="dRR-BR-DVG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mEW-gV-OSW"/>
-                <constraint firstAttribute="bottom" secondItem="dRR-BR-DVG" secondAttribute="bottom" id="uLu-LA-83h"/>
+                <constraint firstItem="ZyJ-HK-1Kt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gq6-dw-QrH"/>
+                <constraint firstAttribute="bottom" secondItem="ZyJ-HK-1Kt" secondAttribute="bottom" id="gg5-0l-hQH"/>
+                <constraint firstAttribute="trailing" secondItem="ZyJ-HK-1Kt" secondAttribute="trailing" id="u0h-tw-C9c"/>
+                <constraint firstItem="ZyJ-HK-1Kt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yxr-Ct-qbK"/>
             </constraints>
             <connections>
-                <outlet property="imageView" destination="dRR-BR-DVG" id="vQ2-bJ-WbG"/>
+                <outlet property="_imageView" destination="ZyJ-HK-1Kt" id="1ZA-U1-iPt"/>
             </connections>
         </collectionViewCell>
     </objects>

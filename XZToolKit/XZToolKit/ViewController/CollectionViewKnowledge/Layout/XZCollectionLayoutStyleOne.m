@@ -1,16 +1,17 @@
 //
-//  XZImageBrowserLayout.m
+//  XZCollectionLayoutStyleOne.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/1/27.
+//  Created by 徐章 on 16/1/28.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZImageBrowserLayout.h"
+#import "XZCollectionLayoutStyleOne.h"
+
 #define ACTIVE_DISTANCE 200
 #define ZOOM_FACTOR 0.4
 
-@implementation XZImageBrowserLayout
+@implementation XZCollectionLayoutStyleOne
 
 - (id)init{
     
@@ -21,7 +22,7 @@
         self.itemSize = CGSizeMake(UISCREEN_WIDTH/2, UISCREEN_HEIGHT/2);
         
         self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-
+        
         self.sectionInset = UIEdgeInsetsMake((UISCREEN_HEIGHT - self.itemSize.height)/2, (UISCREEN_WIDTH - self.itemSize.width)/2, (UISCREEN_HEIGHT - self.itemSize.height)/2, (UISCREEN_WIDTH - self.itemSize.width)/2);
         
         self.minimumLineSpacing = (UISCREEN_WIDTH - self.itemSize.width)/2;
@@ -88,5 +89,6 @@
     
     return CGPointMake(proposedContentOffset.x + offsetAdjustment, proposedContentOffset.y);
 }
+
 
 @end

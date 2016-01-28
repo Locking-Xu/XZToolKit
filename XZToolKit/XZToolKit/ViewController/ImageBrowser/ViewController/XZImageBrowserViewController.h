@@ -10,10 +10,9 @@
 
 @interface XZImageBrowserViewController : UIViewController
 
-@property (nonatomic, strong) NSArray *imageArray;
-
-@property (nonatomic, strong) NSArray *imageTitleArray;
-
+/** 图片名称数组*/
+@property (nonatomic, strong) NSArray *imageNameArray;
+/** 当前的下标*/
 @property (nonatomic, strong) NSIndexPath *indexPath;
 
 @end

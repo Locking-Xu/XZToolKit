@@ -1,28 +1,25 @@
 //
-//  XZTableViewKnowledgeViewController.m
+//  XZCollectionKnowledgeViewController.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/1/25.
+//  Created by 徐章 on 16/1/28.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZTableViewKnowledgeViewController.h"
-#import "XZCodeViewController.h"
-#import "XZDemoViewController.h"
+#import "XZCollectionKnowledgeViewController.h"
+#import "XZCollectionDemoViewController.h"
 #import "UINavigationController+Common.h"
 
-#define TitleArray @[@"TableView下划线左右间距",@"TableView不显示多余Cell",@"TableView索引"]
+#define TitleArray @[@"Layout样式一",@"Layout样式二",@"Layout样式三"]
 
-@interface XZTableViewKnowledgeViewController ()
+@interface XZCollectionKnowledgeViewController ()
 
 @end
 
-@implementation XZTableViewKnowledgeViewController
+@implementation XZCollectionKnowledgeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"TableView相关知识";
     
     self.tableView.tableFooterView = [UIView new];
 }
@@ -33,14 +30,15 @@
 }
 
 #pragma mark - TableView_DataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
     return TitleArray.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *identifier = @"myCell";
+    static NSString *identifier = @"MY_CELL";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
@@ -50,20 +48,21 @@
     }
     
     cell.textLabel.text = TitleArray[indexPath.row];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     return cell;
 }
 
-#pragma mark - TableView_Delegate
+
+#pragma mark UITableView_Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    XZCollectionDemoViewController *collectionViewDemoVc = [[XZCollectionDemoViewController alloc] init];
+    
+    collectionViewDemoVc.title = TitleArray[indexPath.row];
+    
     [self.navigationController setBackItemTitle:@"" viewController:self];
-
-    XZCodeViewController *codeVc = [[XZCodeViewController alloc] init];
-    codeVc.knowledgeTitle = TitleArray[indexPath.row];
-    [self.navigationController pushViewController:codeVc animated:YES];
+    [self.navigationController pushViewController:collectionViewDemoVc animated:YES];
 }
-
 
 @end

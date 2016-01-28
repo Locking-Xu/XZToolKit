@@ -64,7 +64,7 @@
     
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:column*7-1 inSection:0];
     
-    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+    [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
     
 }
 

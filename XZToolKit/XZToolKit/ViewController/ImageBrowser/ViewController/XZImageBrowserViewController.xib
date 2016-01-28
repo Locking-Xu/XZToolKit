@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZImageBrowserViewController">
             <connections>
                 <outlet property="_closeBtn" destination="hpb-fH-Yrj" id="u3S-tD-Mj7"/>
-                <outlet property="_collectionView" destination="seL-1M-W4d" id="VAg-iE-PY8"/>
+                <outlet property="_pageLabel" destination="VEv-Mr-GQL" id="Hux-gs-qxQ"/>
                 <outlet property="_titleLabel" destination="mpi-Ac-SRv" id="Fvs-0p-l5P"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,21 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="seL-1M-W4d">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bie-VW-qT4">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpb-fH-Yrj">
-                    <rect key="frame" x="255" y="20" width="50" height="30"/>
+                    <rect key="frame" x="255" y="30" width="50" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="50" id="k9T-sx-iGN"/>
-                        <constraint firstAttribute="height" constant="30" id="sjr-1n-uQj"/>
+                        <constraint firstAttribute="height" constant="30" id="QmC-P4-AGM"/>
+                        <constraint firstAttribute="width" constant="50" id="bYH-ur-R51"/>
                     </constraints>
                     <state key="normal" title="关闭">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,28 +31,36 @@
                         <action selector="closeBtn_Pressed:" destination="-1" eventType="touchUpInside" id="fdn-fe-Kne"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="121" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpi-Ac-SRv">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpi-Ac-SRv">
                     <rect key="frame" x="0.0" y="528" width="320" height="40"/>
-                    <color key="backgroundColor" red="0.86666666670000003" green="0.23529411759999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="fmi-78-g5q"/>
+                        <constraint firstAttribute="height" constant="40" id="GVv-5U-e5i"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEv-Mr-GQL">
+                    <rect key="frame" x="0.0" y="508" width="320" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="HjP-LN-Rkr"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="mpi-Ac-SRv" secondAttribute="trailing" id="13J-s9-c3V"/>
-                <constraint firstAttribute="bottom" secondItem="mpi-Ac-SRv" secondAttribute="bottom" id="5vn-1P-LjI"/>
-                <constraint firstAttribute="trailing" secondItem="seL-1M-W4d" secondAttribute="trailing" id="7ne-PW-gE8"/>
-                <constraint firstItem="mpi-Ac-SRv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AVZ-ud-oyu"/>
-                <constraint firstItem="seL-1M-W4d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PHS-RQ-WQ6"/>
-                <constraint firstItem="seL-1M-W4d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cUj-yy-n0D"/>
-                <constraint firstItem="hpb-fH-Yrj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="g3a-jK-xJe"/>
-                <constraint firstAttribute="trailing" secondItem="hpb-fH-Yrj" secondAttribute="trailing" constant="15" id="wkd-DM-ytg"/>
-                <constraint firstAttribute="bottom" secondItem="seL-1M-W4d" secondAttribute="bottom" id="xRg-XV-osJ"/>
+                <constraint firstItem="VEv-Mr-GQL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8ta-lA-Nv4"/>
+                <constraint firstAttribute="trailing" secondItem="hpb-fH-Yrj" secondAttribute="trailing" constant="15" id="H9N-Fv-bvT"/>
+                <constraint firstAttribute="bottom" secondItem="mpi-Ac-SRv" secondAttribute="bottom" id="Jv6-9f-d1b"/>
+                <constraint firstItem="mpi-Ac-SRv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sl6-Bc-hHp"/>
+                <constraint firstItem="hpb-fH-Yrj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="TnX-fV-IED"/>
+                <constraint firstAttribute="trailing" secondItem="mpi-Ac-SRv" secondAttribute="trailing" id="etM-tU-JUK"/>
+                <constraint firstAttribute="trailing" secondItem="VEv-Mr-GQL" secondAttribute="trailing" id="nvC-fk-4iT"/>
+                <constraint firstItem="mpi-Ac-SRv" firstAttribute="top" secondItem="VEv-Mr-GQL" secondAttribute="bottom" id="wwQ-nx-zEi"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

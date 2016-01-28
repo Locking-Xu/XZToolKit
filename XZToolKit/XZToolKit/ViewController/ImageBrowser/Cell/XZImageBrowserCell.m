@@ -13,17 +13,23 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(close)];
+    [self addGestureRecognizer:tapGesture];
 }
 
 - (void)setUpWithImageName:(NSString *)imageName{
 
     UIImage *image = XZGetImageFromBundle(imageName, @"png");
     
-    UIImage *newImage = [XZUtils scaleImage:image toProportion:UISCREEN_WIDTH/2/image.size.width];
+    self.imageView.image = image;
+}
+
+- (void)close{
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        self.imageView.image = newImage;
-    });
+    UIViewController *vc = [XZUtils getCurrentViewController];
+    
+    [vc dismissViewControllerAnimated:YES completion:nil];
 }
 @end

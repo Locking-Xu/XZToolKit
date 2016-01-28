@@ -12,7 +12,4 @@
 
 @property (nonatomic, strong) NSString *knowledgeTitle;
 
-@property (nonatomic, strong) NSArray *imageArray;
-
-@property (nonatomic, strong) NSArray *imageTitleArray;
 @end

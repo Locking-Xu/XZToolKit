@@ -11,9 +11,11 @@
 #import "XZAddressBookViewController.h"
 #import "UINavigationController+Common.h"
 #import "XZTableViewKnowledgeViewController.h"
+#import "XZPhotoAlbumViewController.h"
+#import "XZCollectionKnowledgeViewController.h"
 
 
-#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"TableView相关知识",@"图片浏览器"]
+#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"UITableView相关",@"相册",@"UICollectionView相关"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -81,6 +83,7 @@
     [self.navigationController setBackItemTitle:@"" viewController:self];
     
     switch (indexPath.row) {
+        //日历
         case 0:
         {
             XZCalendarViewController *calendarVc = [[XZCalendarViewController alloc] init];
@@ -88,6 +91,7 @@
             [self.navigationController pushViewController:calendarVc animated:YES];
         }
             break;
+        //通讯录
         case 1:
         {
             XZAddressBookViewController *addressBookVc = [[XZAddressBookViewController alloc] init];
@@ -95,22 +99,47 @@
             [self.navigationController pushViewController:addressBookVc animated:YES];
         }
             break;
+        //轮播图
         case 2:
         {
         
         }
             break;
+        //TabBar
         case 3:
         {
         
         }
             break;
+        //UITableView相关
         case 4:
         {
             XZTableViewKnowledgeViewController *tableViewKnowledgeVc = [[XZTableViewKnowledgeViewController alloc] init];
             
             [self.navigationController pushViewController:tableViewKnowledgeVc animated:YES];
          }
+            break;
+        //图片浏览器
+        case 5:
+        {
+            XZPhotoAlbumViewController *photoAlbumVc = [[XZPhotoAlbumViewController alloc] initWithNibName:@"XZPhotoAlbumViewController" bundle:[NSBundle mainBundle]];
+            
+            photoAlbumVc.title = TitleList[indexPath.row];
+            
+            [self.navigationController pushViewController:photoAlbumVc animated:YES];
+            
+        }
+            break;
+        //UICollectionView相关
+        case 6:
+        {
+            XZCollectionKnowledgeViewController *collectionViewKnowledgeVc = [[XZCollectionKnowledgeViewController alloc] init];
+            
+            collectionViewKnowledgeVc.title = TitleList[indexPath.row];
+            
+            [self.navigationController pushViewController:collectionViewKnowledgeVc animated:YES];
+            
+        }
             break;
         default:
             break;

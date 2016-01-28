@@ -1,0 +1,15 @@
+//设置索引
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    
+    return NSArray;
+}
+
+//设置索引点击
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index{
+    
+    return [NSArray indexOfObject:title];
+    
+}
+
+//设置索引字体颜色
+_tableView.sectionIndexColor = [UIColor redColor];
