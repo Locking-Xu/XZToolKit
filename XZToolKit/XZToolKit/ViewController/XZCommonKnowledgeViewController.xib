@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZHomeViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZCommonKnowledgeViewController">
             <connections>
-                <outlet property="_tableView" destination="ilx-7S-7yF" id="3z8-6N-t0q"/>
+                <outlet property="_tableView" destination="2bo-Od-qCH" id="V80-yU-3E1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,27 +16,27 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="jwF-nl-x1j">
+                <searchBar contentMode="redraw" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="iYK-3J-54h">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="tCd-2P-bP3"/>
+                        <constraint firstAttribute="height" constant="44" id="Rd7-8T-PSU"/>
                     </constraints>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ilx-7S-7yF">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2bo-Od-qCH">
                     <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ilx-7S-7yF" firstAttribute="top" secondItem="jwF-nl-x1j" secondAttribute="bottom" id="1fb-Xg-gAd"/>
-                <constraint firstItem="ilx-7S-7yF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="52l-f4-1yV"/>
-                <constraint firstItem="jwF-nl-x1j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VUX-vD-17P"/>
-                <constraint firstItem="jwF-nl-x1j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z1f-5D-Tmz"/>
-                <constraint firstAttribute="trailing" secondItem="ilx-7S-7yF" secondAttribute="trailing" id="hMB-t8-A4V"/>
-                <constraint firstAttribute="trailing" secondItem="jwF-nl-x1j" secondAttribute="trailing" id="maL-gH-GdR"/>
-                <constraint firstAttribute="bottom" secondItem="ilx-7S-7yF" secondAttribute="bottom" id="yND-fd-eSL"/>
+                <constraint firstAttribute="trailing" secondItem="2bo-Od-qCH" secondAttribute="trailing" id="7x1-Am-YFW"/>
+                <constraint firstAttribute="bottom" secondItem="2bo-Od-qCH" secondAttribute="bottom" id="LSJ-5v-D4r"/>
+                <constraint firstItem="iYK-3J-54h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XNp-YZ-Hnv"/>
+                <constraint firstItem="2bo-Od-qCH" firstAttribute="top" secondItem="iYK-3J-54h" secondAttribute="bottom" id="ZnQ-q7-vFC"/>
+                <constraint firstAttribute="trailing" secondItem="iYK-3J-54h" secondAttribute="trailing" id="caz-st-yyL"/>
+                <constraint firstItem="iYK-3J-54h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kKx-66-iEg"/>
+                <constraint firstItem="2bo-Od-qCH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q3f-bl-r5V"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
