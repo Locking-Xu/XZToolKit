@@ -41,6 +41,8 @@
 		E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97006791C5614000071E0E3 /* XZTimeRecordCell.xib */; };
 		E97006801C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */; };
 		E97006851C5620A40071E0E3 /* XZDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97006841C5620A40071E0E3 /* XZDemoViewController.m */; };
+		E984B9BC1C5E178100C00BC7 /* XZPopViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E984B9BB1C5E178100C00BC7 /* XZPopViewViewController.m */; };
+		E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E984B9BE1C5E18FF00C00BC7 /* XZPopView.m */; };
 		E99E31FE1C4F1B2E0016D25D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E31FD1C4F1B2E0016D25D /* main.m */; };
 		E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32001C4F1B2E0016D25D /* AppDelegate.m */; };
 		E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99E32081C4F1B2E0016D25D /* Assets.xcassets */; };
@@ -138,6 +140,10 @@
 		E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTableViewKnowledgeViewController.m; sourceTree = "<group>"; };
 		E97006831C5620A40071E0E3 /* XZDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDemoViewController.h; sourceTree = "<group>"; };
 		E97006841C5620A40071E0E3 /* XZDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDemoViewController.m; sourceTree = "<group>"; };
+		E984B9BA1C5E178100C00BC7 /* XZPopViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPopViewViewController.h; sourceTree = "<group>"; };
+		E984B9BB1C5E178100C00BC7 /* XZPopViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPopViewViewController.m; sourceTree = "<group>"; };
+		E984B9BD1C5E18FF00C00BC7 /* XZPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPopView.h; sourceTree = "<group>"; };
+		E984B9BE1C5E18FF00C00BC7 /* XZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPopView.m; sourceTree = "<group>"; };
 		E99E31F91C4F1B2E0016D25D /* XZToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99E31FD1C4F1B2E0016D25D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E99E31FF1C4F1B2E0016D25D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -459,6 +465,33 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		E984B9B61C5E173D00C00BC7 /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				E984B9B91C5E176000C00BC7 /* View */,
+				E984B9B71C5E175100C00BC7 /* ViewController */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+		E984B9B71C5E175100C00BC7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E984B9BA1C5E178100C00BC7 /* XZPopViewViewController.h */,
+				E984B9BB1C5E178100C00BC7 /* XZPopViewViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E984B9B91C5E176000C00BC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E984B9BD1C5E18FF00C00BC7 /* XZPopView.h */,
+				E984B9BE1C5E18FF00C00BC7 /* XZPopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E99E31F01C4F1B2E0016D25D = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +583,7 @@
 				E99E32481C4F1E350016D25D /* Home */,
 				E9E0C2161C576A650041193A /* ImageBrowser */,
 				E938216E1C59E873004F7EC4 /* PhotoAlbum */,
+				E984B9B61C5E173D00C00BC7 /* PopView */,
 				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 			);
 			path = ViewController;
@@ -854,6 +888,7 @@
 				E97006801C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m in Sources */,
 				E99E32611C4F7F6B0016D25D /* XZTabBarController.m in Sources */,
 				E99E324E1C4F1E350016D25D /* XZGlyphsHelper.m in Sources */,
+				E984B9BC1C5E178100C00BC7 /* XZPopViewViewController.m in Sources */,
 				E93821A01C5A0B6F004F7EC4 /* XZCollectionLayoutStyleOne.m in Sources */,
 				E938219D1C5A0B3F004F7EC4 /* XZCollectionDemoCell.m in Sources */,
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,
@@ -873,6 +908,7 @@
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
 				E93821991C5A0B00004F7EC4 /* XZCollectionDemoViewController.m in Sources */,
+				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
 				E93821961C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.m in Sources */,
 				E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,

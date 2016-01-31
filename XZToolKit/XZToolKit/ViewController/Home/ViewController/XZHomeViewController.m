@@ -13,9 +13,10 @@
 #import "XZTableViewKnowledgeViewController.h"
 #import "XZPhotoAlbumViewController.h"
 #import "XZCollectionKnowledgeViewController.h"
+#import "XZPopViewViewController.h"
 
 
-#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"UITableView相关",@"相册",@"UICollectionView相关"]
+#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"UITableView相关",@"相册",@"UICollectionView相关",@"PopView"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -139,6 +140,16 @@
             
             [self.navigationController pushViewController:collectionViewKnowledgeVc animated:YES];
             
+        }
+            break;
+        //popView
+        case 7:
+        {
+         
+            XZPopViewViewController *popViewVc = [[XZPopViewViewController alloc] init];
+            
+            popViewVc.title = TitleList[indexPath.row];
+            [self.navigationController pushViewController:popViewVc animated:YES];
         }
             break;
         default:
