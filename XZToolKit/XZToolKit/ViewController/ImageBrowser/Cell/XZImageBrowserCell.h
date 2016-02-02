@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZImageBrowserCell : UICollectionViewCell
-
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@interface XZImageBrowserCell : UICollectionViewCell<UIScrollViewDelegate>
 
 - (void)setUpWithImageName:(NSString *)imageName;
 @end

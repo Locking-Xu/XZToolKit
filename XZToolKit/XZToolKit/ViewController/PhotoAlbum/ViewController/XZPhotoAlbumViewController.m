@@ -9,12 +9,15 @@
 #import "XZPhotoAlbumViewController.h"
 #import "XZPhotoAblumCell.h"
 #import "XZImageBrowserViewController.h"
+#import <Photos/Photos.h>
+#import "XZAlbumAndCameraHelper.h"
 
 @interface XZPhotoAlbumViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>{
 
     __weak IBOutlet UICollectionView *_collectionView;
     
     NSArray *_imageNameArray;
+    PHFetchResult *_result;
 }
 
 @end
@@ -27,6 +30,28 @@
     _imageNameArray = @[@"1",@"2",@"3",@"4",@"5"];
     
     [self setUpCollectionView];
+    
+    _result = [XZAlbumAndCameraHelper getDataSourceInIOS8];
+    
+    NSMutableArray *array = [NSMutableArray array];
+
+    
+
+    
+    [_result enumerateObjectsUsingBlock:^(PHAsset *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        if (obj) {
+            
+            [array addObject:obj];
+        }
+        
+        if (idx == _result.count-1) {
+            
+            [_collectionView reloadData];
+        }
+    }];
+    
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -38,27 +63,38 @@
 - (void)setUpCollectionView{
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.minimumLineSpacing = 0.0f;
-    layout.minimumInteritemSpacing = 0.0f;
-    layout.itemSize = CGSizeMake(UISCREEN_WIDTH/4, UISCREEN_WIDTH/4);
+    layout.minimumLineSpacing = 2.0f;
+    layout.minimumInteritemSpacing = 2.0f;
+    layout.itemSize = CGSizeMake((UISCREEN_WIDTH-2*3)/4, (UISCREEN_WIDTH-5*3)/4);
     
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.collectionViewLayout = layout;
+    
     [_collectionView registerNib:[UINib nibWithNibName:@"XZPhotoAblumCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"photoAblumCell"];
 }
 
 #pragma mark - UICollectionView_DataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return _imageNameArray.count;
+    return _result.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     XZPhotoAblumCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photoAblumCell" forIndexPath:indexPath];
     
-    [cell setUpCellWithImageName:_imageNameArray[indexPath.row]];
+    PHAsset *asset = _result[indexPath.row];
+    
+//    CGImageRef imageRef = asset
+    
+    [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake((UISCREEN_WIDTH-2*3)/4, (UISCREEN_WIDTH-5*3)/4) contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage *result, NSDictionary *info){
+        
+        [cell setUpCellWithImageName:result];
+        
+    }];
+    
+    
 
     return cell;
 }

@@ -20,8 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.title = @"通讯录";
     
     self.tableView.tableFooterView = [UIView new];
     

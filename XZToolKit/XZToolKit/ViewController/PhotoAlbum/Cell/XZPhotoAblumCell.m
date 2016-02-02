@@ -19,13 +19,13 @@
     // Initialization code
 }
 
-- (void)setUpCellWithImageName:(NSString *)imageName{
+- (void)setUpCellWithImageName:(UIImage *)imageName{
     
-    UIImage *image = XZGetImageFromBundle(imageName, @"png");
+//    UIImage *image = XZGetImageFromBundle(imageName, @"png");
+//    
+//    UIImage *newImage = [XZUtils scaleImage:image toProportion:(UISCREEN_WIDTH)/4/image.size.width];
     
-    UIImage *newImage = [XZUtils scaleImage:image toProportion:(UISCREEN_WIDTH)/4/image.size.width];
-    
-    _imageView.image = newImage;
+    _imageView.image = imageName;
 }
 
 @end

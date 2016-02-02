@@ -25,8 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"年历";
-    
     _cellHeight = [XZCalendarCell heightOfCell];
     self.tableView.rowHeight = _cellHeight;
     

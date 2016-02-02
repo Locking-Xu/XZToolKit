@@ -14,7 +14,7 @@
 
     __weak IBOutlet UIButton *_closeBtn;
     
-//    __weak IBOutlet UICollectionView *_collectionView;
+    UICollectionView *_collectionView;
     
     __weak IBOutlet UILabel *_titleLabel;
     
@@ -58,7 +58,7 @@
     layout.minimumLineSpacing = 0.0;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
-    UICollectionView *_collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_HEIGHT) collectionViewLayout:layout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_HEIGHT) collectionViewLayout:layout];
     
     _collectionView.delegate = self;
     _collectionView.dataSource = self;

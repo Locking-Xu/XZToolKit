@@ -1,30 +1,33 @@
 //
-//  XZTableViewKnowledgeViewController.m
+//  XZCommonListViewController.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/1/25.
+//  Created by 徐章 on 16/2/2.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZTableViewKnowledgeViewController.h"
+#import "XZCommonListViewController.h"
 #import "XZCodeViewController.h"
-#import "XZDemoViewController.h"
 #import "UINavigationController+Common.h"
 
-#define TitleArray @[@"TableView下划线左右间距",@"TableView不显示多余Cell",@"TableView索引"]
+@interface XZCommonListViewController ()<UITableViewDataSource,UITableViewDelegate>{
 
-@interface XZTableViewKnowledgeViewController ()
+    __weak IBOutlet UITableView *_tableView;
+    
+}
 
 @end
 
-@implementation XZTableViewKnowledgeViewController
+@implementation XZCommonListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"TableView相关知识";
+    _tableView.tableFooterView = [UIView new];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
     
-    self.tableView.tableFooterView = [UIView new];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,15 +35,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - TableView_DataSource
+#pragma mark - UITableView_DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
-    return TitleArray.count;
+    
+    return self.titleList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *identifier = @"myCell";
+    static NSString *identifier = @"homeCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
@@ -49,19 +52,21 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = TitleArray[indexPath.row];
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.text = self.titleList[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     return cell;
 }
 
-#pragma mark - TableView_Delegate
+#pragma mark - UITableView_Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [self.navigationController setBackItemTitle:@"" viewController:self];
-
+    
     XZCodeViewController *codeVc = [[XZCodeViewController alloc] init];
-    codeVc.knowledgeTitle = TitleArray[indexPath.row];
+    codeVc.knowledgeTitle = self.titleList[indexPath.row];
     [self.navigationController pushViewController:codeVc animated:YES];
 }
 

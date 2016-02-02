@@ -25,7 +25,6 @@
 		E938218D1C59F167004F7EC4 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E93821881C59F167004F7EC4 /* 3.png */; };
 		E938218E1C59F167004F7EC4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E93821891C59F167004F7EC4 /* 1.png */; };
 		E938218F1C59F167004F7EC4 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E938218A1C59F167004F7EC4 /* 2.png */; };
-		E93821961C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821951C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.m */; };
 		E93821991C5A0B00004F7EC4 /* XZCollectionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821981C5A0B00004F7EC4 /* XZCollectionDemoViewController.m */; };
 		E938219D1C5A0B3F004F7EC4 /* XZCollectionDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E938219C1C5A0B3F004F7EC4 /* XZCollectionDemoCell.m */; };
 		E93821A01C5A0B6F004F7EC4 /* XZCollectionLayoutStyleOne.m in Sources */ = {isa = PBXBuildFile; fileRef = E938219F1C5A0B6F004F7EC4 /* XZCollectionLayoutStyleOne.m */; };
@@ -54,12 +53,8 @@
 		E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97006741C55CBF60071E0E3 /* XZDayCalendarCell.xib */; };
 		E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97006781C5614000071E0E3 /* XZTimeRecordCell.m */; };
 		E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97006791C5614000071E0E3 /* XZTimeRecordCell.xib */; };
-		E97006801C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */; };
-		E97006851C5620A40071E0E3 /* XZDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97006841C5620A40071E0E3 /* XZDemoViewController.m */; };
 		E984B9BC1C5E178100C00BC7 /* XZPopViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E984B9BB1C5E178100C00BC7 /* XZPopViewViewController.m */; };
 		E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E984B9BE1C5E18FF00C00BC7 /* XZPopView.m */; };
-		E984B9C51C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E984B9C31C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.m */; };
-		E984B9C61C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E984B9C41C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.xib */; };
 		E984B9C91C5E227700C00BC7 /* 内联函数.txt in Resources */ = {isa = PBXBuildFile; fileRef = E984B9C81C5E227700C00BC7 /* 内联函数.txt */; };
 		E99E31FE1C4F1B2E0016D25D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E31FD1C4F1B2E0016D25D /* main.m */; };
 		E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E32001C4F1B2E0016D25D /* AppDelegate.m */; };
@@ -85,6 +80,10 @@
 		E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */; };
 		E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */; };
 		E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05F1C59058F003B8855 /* libReveal.dylib */; };
+		E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74271C6045900033BF4D /* XZCommonListViewController.m */; };
+		E9BC742A1C6045900033BF4D /* XZCommonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */; };
+		E9BC74301C6056320033BF4D /* XZCollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC742F1C6056320033BF4D /* XZCollectionViewLayoutViewController.m */; };
+		E9BC74351C6089110033BF4D /* XZAlbumAndCameraHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74341C6089110033BF4D /* XZAlbumAndCameraHelper.m */; };
 		E9E0C18E1C5705CE0041193A /* TableView下划线左右间距.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */; };
 		E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C1901C570C400041193A /* XZCodeViewController.m */; };
 		E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C1911C570C400041193A /* XZCodeViewController.xib */; };
@@ -130,8 +129,6 @@
 		E93821881C59F167004F7EC4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		E93821891C59F167004F7EC4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		E938218A1C59F167004F7EC4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		E93821941C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionKnowledgeViewController.h; sourceTree = "<group>"; };
-		E93821951C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionKnowledgeViewController.m; sourceTree = "<group>"; };
 		E93821971C5A0B00004F7EC4 /* XZCollectionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionDemoViewController.h; sourceTree = "<group>"; };
 		E93821981C5A0B00004F7EC4 /* XZCollectionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionDemoViewController.m; sourceTree = "<group>"; };
 		E938219B1C5A0B3F004F7EC4 /* XZCollectionDemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionDemoCell.h; sourceTree = "<group>"; };
@@ -168,17 +165,10 @@
 		E97006771C5614000071E0E3 /* XZTimeRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTimeRecordCell.h; sourceTree = "<group>"; };
 		E97006781C5614000071E0E3 /* XZTimeRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTimeRecordCell.m; sourceTree = "<group>"; };
 		E97006791C5614000071E0E3 /* XZTimeRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZTimeRecordCell.xib; sourceTree = "<group>"; };
-		E970067E1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTableViewKnowledgeViewController.h; sourceTree = "<group>"; };
-		E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTableViewKnowledgeViewController.m; sourceTree = "<group>"; };
-		E97006831C5620A40071E0E3 /* XZDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDemoViewController.h; sourceTree = "<group>"; };
-		E97006841C5620A40071E0E3 /* XZDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDemoViewController.m; sourceTree = "<group>"; };
 		E984B9BA1C5E178100C00BC7 /* XZPopViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPopViewViewController.h; sourceTree = "<group>"; };
 		E984B9BB1C5E178100C00BC7 /* XZPopViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPopViewViewController.m; sourceTree = "<group>"; };
 		E984B9BD1C5E18FF00C00BC7 /* XZPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPopView.h; sourceTree = "<group>"; };
 		E984B9BE1C5E18FF00C00BC7 /* XZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPopView.m; sourceTree = "<group>"; };
-		E984B9C21C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCommonKnowledgeViewController.h; sourceTree = "<group>"; };
-		E984B9C31C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCommonKnowledgeViewController.m; sourceTree = "<group>"; };
-		E984B9C41C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCommonKnowledgeViewController.xib; sourceTree = "<group>"; };
 		E984B9C81C5E227700C00BC7 /* 内联函数.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "内联函数.txt"; sourceTree = "<group>"; };
 		E99E31F91C4F1B2E0016D25D /* XZToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99E31FD1C4F1B2E0016D25D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -231,6 +221,13 @@
 		E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserCell.m; sourceTree = "<group>"; };
 		E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserCell.xib; sourceTree = "<group>"; };
 		E9A4D05F1C59058F003B8855 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
+		E9BC74261C6045900033BF4D /* XZCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCommonListViewController.h; sourceTree = "<group>"; };
+		E9BC74271C6045900033BF4D /* XZCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCommonListViewController.m; sourceTree = "<group>"; };
+		E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCommonListViewController.xib; sourceTree = "<group>"; };
+		E9BC742E1C6056320033BF4D /* XZCollectionViewLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionViewLayoutViewController.h; sourceTree = "<group>"; };
+		E9BC742F1C6056320033BF4D /* XZCollectionViewLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionViewLayoutViewController.m; sourceTree = "<group>"; };
+		E9BC74331C6089110033BF4D /* XZAlbumAndCameraHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAlbumAndCameraHelper.h; sourceTree = "<group>"; };
+		E9BC74341C6089110033BF4D /* XZAlbumAndCameraHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumAndCameraHelper.m; sourceTree = "<group>"; };
 		E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TableView下划线左右间距.txt"; path = "TableView下划线左右间距/TableView下划线左右间距.txt"; sourceTree = "<group>"; };
 		E9E0C18F1C570C400041193A /* XZCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCodeViewController.h; sourceTree = "<group>"; };
 		E9E0C1901C570C400041193A /* XZCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCodeViewController.m; sourceTree = "<group>"; };
@@ -340,6 +337,7 @@
 		E938216E1C59E873004F7EC4 /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				E9BC74321C60878B0033BF4D /* Helper */,
 				E93821751C59E96B004F7EC4 /* Cell */,
 				E938217B1C59E9C1004F7EC4 /* Source */,
 				E938216F1C59E881004F7EC4 /* ViewController */,
@@ -412,8 +410,8 @@
 			children = (
 				E93821971C5A0B00004F7EC4 /* XZCollectionDemoViewController.h */,
 				E93821981C5A0B00004F7EC4 /* XZCollectionDemoViewController.m */,
-				E93821941C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.h */,
-				E93821951C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.m */,
+				E9BC742E1C6056320033BF4D /* XZCollectionViewLayoutViewController.h */,
+				E9BC742F1C6056320033BF4D /* XZCollectionViewLayoutViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -476,20 +474,9 @@
 			isa = PBXGroup;
 			children = (
 				E97006811C56204A0071E0E3 /* Source */,
-				E970067D1C561D420071E0E3 /* ViewController */,
 			);
-			path = TableViewKnowledge;
-			sourceTree = "<group>";
-		};
-		E970067D1C561D420071E0E3 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E97006831C5620A40071E0E3 /* XZDemoViewController.h */,
-				E97006841C5620A40071E0E3 /* XZDemoViewController.m */,
-				E970067E1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.h */,
-				E970067F1C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m */,
-			);
-			path = ViewController;
+			name = TableViewKnowledge;
+			path = ViewController/TableViewKnowledge;
 			sourceTree = "<group>";
 		};
 		E97006811C56204A0071E0E3 /* Source */ = {
@@ -533,19 +520,9 @@
 			isa = PBXGroup;
 			children = (
 				E984B9C71C5E1F6700C00BC7 /* Source */,
-				E984B9C11C5E1DAC00C00BC7 /* ViewController */,
 			);
 			name = CommonKnowledge;
-			sourceTree = "<group>";
-		};
-		E984B9C11C5E1DAC00C00BC7 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E984B9C21C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.h */,
-				E984B9C31C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.m */,
-				E984B9C41C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.xib */,
-			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E984B9C71C5E1F6700C00BC7 /* Source */ = {
@@ -592,6 +569,7 @@
 		E99E31FB1C4F1B2E0016D25D /* XZToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				E9BC74311C6056E80033BF4D /* Source */,
 				E99E32211C4F1D4E0016D25D /* AppDelegate */,
 				E99E32221C4F1D5A0016D25D /* Category */,
 				E9A4D0621C590D3B003B8855 /* Frameworks */,
@@ -654,7 +632,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */,
+				E9BC74241C60454B0033BF4D /* CommonListViewController */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E99E32391C4F1E350016D25D /* Calendar */,
 				E93821911C5A05CF004F7EC4 /* CodeDetail */,
@@ -663,7 +641,6 @@
 				E9E0C2161C576A650041193A /* ImageBrowser */,
 				E938216E1C59E873004F7EC4 /* PhotoAlbum */,
 				E984B9B61C5E173D00C00BC7 /* PopView */,
-				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -802,6 +779,59 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		E9BC741C1C6042AB0033BF4D /* NavigationControllerKnowledge */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC741E1C6042E10033BF4D /* Source */,
+			);
+			name = NavigationControllerKnowledge;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9BC741E1C6042E10033BF4D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E9BC74241C60454B0033BF4D /* CommonListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC74251C6045710033BF4D /* ViewController */,
+			);
+			name = CommonListViewController;
+			sourceTree = "<group>";
+		};
+		E9BC74251C6045710033BF4D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC74261C6045900033BF4D /* XZCommonListViewController.h */,
+				E9BC74271C6045900033BF4D /* XZCommonListViewController.m */,
+				E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9BC74311C6056E80033BF4D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
+				E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */,
+				E9BC741C1C6042AB0033BF4D /* NavigationControllerKnowledge */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E9BC74321C60878B0033BF4D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC74331C6089110033BF4D /* XZAlbumAndCameraHelper.h */,
+				E9BC74341C6089110033BF4D /* XZAlbumAndCameraHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		E9E0C2161C576A650041193A /* ImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -932,6 +962,7 @@
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
 				E938218D1C59F167004F7EC4 /* 3.png in Resources */,
 				E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */,
+				E9BC742A1C6045900033BF4D /* XZCommonListViewController.xib in Resources */,
 				E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */,
 				E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */,
 				E9543EFE1C5F3954006D7BEF /* BOOL类型.txt in Resources */,
@@ -947,7 +978,6 @@
 				E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */,
 				E984B9C91C5E227700C00BC7 /* 内联函数.txt in Resources */,
 				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
-				E984B9C61C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.xib in Resources */,
 				E920DE4B1C50B7CB00F08A9C /* XZMonthCalendarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -969,8 +999,7 @@
 				E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */,
 				E9318B651C51E9380039D357 /* XZTipView.m in Sources */,
 				E93821A91C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m in Sources */,
-				E97006851C5620A40071E0E3 /* XZDemoViewController.m in Sources */,
-				E97006801C561DA90071E0E3 /* XZTableViewKnowledgeViewController.m in Sources */,
+				E9BC74351C6089110033BF4D /* XZAlbumAndCameraHelper.m in Sources */,
 				E99E32611C4F7F6B0016D25D /* XZTabBarController.m in Sources */,
 				E99E324E1C4F1E350016D25D /* XZGlyphsHelper.m in Sources */,
 				E984B9BC1C5E178100C00BC7 /* XZPopViewViewController.m in Sources */,
@@ -992,10 +1021,9 @@
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
-				E984B9C51C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.m in Sources */,
 				E93821991C5A0B00004F7EC4 /* XZCollectionDemoViewController.m in Sources */,
 				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
-				E93821961C5A0905004F7EC4 /* XZCollectionKnowledgeViewController.m in Sources */,
+				E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */,
 				E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
 				E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */,
@@ -1010,6 +1038,7 @@
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
 				E99E324D1C4F1E350016D25D /* XZCalendarCell.m in Sources */,
+				E9BC74301C6056320033BF4D /* XZCollectionViewLayoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1119,6 +1148,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XZToolKit/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = XZToolKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1138,6 +1168,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XZToolKit/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = XZToolKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

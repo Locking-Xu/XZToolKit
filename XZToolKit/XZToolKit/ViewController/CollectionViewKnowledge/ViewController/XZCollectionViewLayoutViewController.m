@@ -1,22 +1,22 @@
 //
-//  XZCollectionKnowledgeViewController.m
+//  XZCollectionViewLayoutViewController.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/1/28.
+//  Created by 徐章 on 16/2/2.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZCollectionKnowledgeViewController.h"
+#import "XZCollectionViewLayoutViewController.h"
 #import "XZCollectionDemoViewController.h"
 #import "UINavigationController+Common.h"
 
 #define TitleArray @[@"Layout样式一",@"Layout样式二",@"Layout样式三"]
 
-@interface XZCollectionKnowledgeViewController ()
+@interface XZCollectionViewLayoutViewController ()
 
 @end
 
-@implementation XZCollectionKnowledgeViewController
+@implementation XZCollectionViewLayoutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

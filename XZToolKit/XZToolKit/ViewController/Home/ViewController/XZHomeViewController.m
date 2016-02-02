@@ -9,15 +9,19 @@
 #import "XZHomeViewController.h"
 #import "XZCalendarViewController.h"
 #import "XZAddressBookViewController.h"
-#import "UINavigationController+Common.h"
-#import "XZTableViewKnowledgeViewController.h"
 #import "XZPhotoAlbumViewController.h"
-#import "XZCollectionKnowledgeViewController.h"
 #import "XZPopViewViewController.h"
-#import "XZCommonKnowledgeViewController.h"
+#import "XZCommonListViewController.h"
+#import "XZCollectionViewLayoutViewController.h"
+
+#import "UINavigationController+Common.h"
+#import "XZAlbumAndCameraHelper.h"
+#import "XZUtils.h"
 
 
-#define TitleList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"UITableView相关",@"相册",@"UICollectionView相关",@"PopView",@"知识杂记"]
+#define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关"]
+
+#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -52,9 +56,40 @@
 }
 
 #pragma mark - UITableView_DataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+    return 2;
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return TitleList.count;
+    if (section == 0) {
+        
+        return DemoList.count;
+    }else if (section == 1){
+        
+        return KnowledgeList.count;
+    }
+    
+    return 0;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    if (section == 0) {
+        return @"Demo";
+        
+    }else if (section == 1){
+        
+        return @"Knoeledge";
+    }
+    return @"";
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 30.0f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -73,8 +108,16 @@
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = TitleList[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    if (indexPath.section == 0) {
+        
+        cell.textLabel.text = DemoList[indexPath.row];
+        
+    }else if (indexPath.section == 1){
+    
+        cell.textLabel.text = KnowledgeList[indexPath.row];
+    }
     
     return cell;
 }
@@ -84,87 +127,131 @@
     
     [self.navigationController setBackItemTitle:@"" viewController:self];
     
-    switch (indexPath.row) {
-        //日历
-        case 0:
-        {
-            XZCalendarViewController *calendarVc = [[XZCalendarViewController alloc] init];
+    //Demo
+    if (indexPath.section == 0)
+    {
+        switch (indexPath.row) {
+            //日历
+            case 0:
+            {
+                XZCalendarViewController *calendarVc = [[XZCalendarViewController alloc] init];
+                
+                calendarVc.title = @"年历";
+                
+                [self.navigationController pushViewController:calendarVc animated:YES];
+            }
+                break;
+            //通讯录
+            case 1:
+            {
+                XZAddressBookViewController *addressBookVc = [[XZAddressBookViewController alloc] init];
+                
+                addressBookVc.title = DemoList[indexPath.row];
+                
+                [self.navigationController pushViewController:addressBookVc animated:YES];
+            }
+                break;
+            //轮播图
+            case 2:
+            {
+                
+            }
+                break;
+            //TabBar
+            case 3:
+            {
+                
+            }
+                break;
+            //相册
+            case 4:
+            {
+                
+                WS(weakSelf);
+                
+                [XZAlbumAndCameraHelper getPermissionsSuccessful:^(NSString *message) {
+                    
+                    XZPhotoAlbumViewController *photoAlbumVc = [[XZPhotoAlbumViewController alloc] initWithNibName:@"XZPhotoAlbumViewController" bundle:[NSBundle mainBundle]];
+                    
+                    photoAlbumVc.title = DemoList[indexPath.row];
+                    
+                    [weakSelf.navigationController pushViewController:photoAlbumVc animated:YES];
+                    
+                } fail:^(NSString *message) {
+                    
+                    [XZUtils showAlertView:message];
+                }];
+                
+                
+                
+            }
+                break;
+            //popView
+            case 5:
+            {
+                
+                XZPopViewViewController *popViewVc = [[XZPopViewViewController alloc] init];
+    
+                popViewVc.title = DemoList[indexPath.row];
+                [self.navigationController pushViewController:popViewVc animated:YES];
+            }
+                break;
             
-            [self.navigationController pushViewController:calendarVc animated:YES];
+            case 6:
+            {
+                XZCollectionViewLayoutViewController *collectionViewLayoutVc = [[XZCollectionViewLayoutViewController alloc] init];
+                collectionViewLayoutVc.title = DemoList[indexPath.row];
+                [self.navigationController pushViewController:collectionViewLayoutVc animated:YES];
+            }
+            default:
+                break;
         }
-            break;
-        //通讯录
-        case 1:
-        {
-            XZAddressBookViewController *addressBookVc = [[XZAddressBookViewController alloc] init];
-            
-            [self.navigationController pushViewController:addressBookVc animated:YES];
-        }
-            break;
-        //轮播图
-        case 2:
-        {
         
-        }
-            break;
-        //TabBar
-        case 3:
-        {
         
-        }
-            break;
-        //UITableView相关
-        case 4:
-        {
-            XZTableViewKnowledgeViewController *tableViewKnowledgeVc = [[XZTableViewKnowledgeViewController alloc] init];
-            
-            [self.navigationController pushViewController:tableViewKnowledgeVc animated:YES];
-         }
-            break;
-        //图片浏览器
-        case 5:
-        {
-            XZPhotoAlbumViewController *photoAlbumVc = [[XZPhotoAlbumViewController alloc] initWithNibName:@"XZPhotoAlbumViewController" bundle:[NSBundle mainBundle]];
-            
-            photoAlbumVc.title = TitleList[indexPath.row];
-            
-            [self.navigationController pushViewController:photoAlbumVc animated:YES];
-            
-        }
-            break;
-        //UICollectionView相关
-        case 6:
-        {
-            XZCollectionKnowledgeViewController *collectionViewKnowledgeVc = [[XZCollectionKnowledgeViewController alloc] init];
-            
-            collectionViewKnowledgeVc.title = TitleList[indexPath.row];
-            
-            [self.navigationController pushViewController:collectionViewKnowledgeVc animated:YES];
-            
-        }
-            break;
-        //popView
-        case 7:
-        {
-         
-            XZPopViewViewController *popViewVc = [[XZPopViewViewController alloc] init];
-            
-            popViewVc.title = TitleList[indexPath.row];
-            [self.navigationController pushViewController:popViewVc animated:YES];
-        }
-            break;
-        //知识杂记
-        case 8:
-        {
-            
-            XZCommonKnowledgeViewController *commonKnowledgeVc = [[XZCommonKnowledgeViewController alloc] init];
-            
-            commonKnowledgeVc.title = TitleList[indexPath.row];
-            [self.navigationController pushViewController:commonKnowledgeVc animated:YES];
-        }
-            break;
-        default:
-            break;
     }
+    //Knowledge
+    else if (indexPath.section == 1){
+        
+        NSArray *titleList;
+        
+        switch (indexPath.row) {
+            //@"知识杂记"
+            case 0:
+            {
+                titleList = @[@"内联函数",@"ViewController的生命周期",@"Objective-C中关键字",@"单例创建",@"copy的setter方法",@"深拷贝与浅拷贝",@"OOP语言三大特征",@"new和alloc init",@"BOOL类型",@"Block使用",@"@synchronized",@"代理和通知的区别",@"类别和类扩展",@"initWithCoder和initWithFrame",@"单例继承",@"Documents、Library、tmp区别"];
+            }
+                break;
+            //@"UITableView相关"
+            case 1:
+            {
+                titleList = @[@"TableView下划线左右间距",@"TableView不显示多余Cell",@"TableView索引"];
+            }
+                break;
+            //@"UICollectionView相关"
+            case 2:
+            {
+                titleList = @[];
+            }
+                break;
+            //@"UINavigationController相关"
+            case 3:
+            {
+                titleList = @[];
+            }
+                
+                break;
+            default:
+                break;
+        }
+        
+        
+        XZCommonListViewController *commonListVc = [[XZCommonListViewController alloc] initWithNibName:@"XZCommonListViewController" bundle:[NSBundle mainBundle]];
+        
+        commonListVc.title = KnowledgeList[indexPath.row];
+        commonListVc.titleList = titleList;
+        
+        [self.navigationController pushViewController:commonListVc animated:YES];
+    }
+    
 }
 @end
