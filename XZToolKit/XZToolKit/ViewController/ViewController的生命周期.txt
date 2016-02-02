@@ -1,0 +1,20 @@
+当一个进入一个新viewController的时候，viewController的view的生命周期一般是这样的：
+
+1.先判断内存是否有这个View
+
+a.没有的话：生命周期为loadView->viewDidLoad->viewWillAppear->viewDidAppear->viewWillDisAppear->viewDidDisAppear
+
+注：（1）loadView一半不需要重写,除非这个ViewController没有任何的nib与他关联,需要在loadView中创建view并赋给viewController的view
+
+　　（2）在viewDidAppear之后如果内存不足会直接进入didReceiveMemoryWarning->unloadView（现在该方法不允许重写）,从内存中释放掉
+
+b.有的话：生命周期为viewWillAppear->viewDidAppear->viewWillDisAppear->viewDidDisAppear
+
+2.loadView与ViewDidLoad的区别
+    就是当view的nib文件为nil时,手工创建视图界面时调用loadVIew,当view的nib文件存在的时候，初始化工作在viewDidLoad中实现;loadView时view还没有生成,viewDidLoad时,view已经生成了,loadView只会被调用一次,而viewDidLoad可能会被调用多次（View可能会被多次加载）
+
+3.例如在UITabbarController和UINavigationController中（在不考虑内存警告的问题的情况下）
+
+UITabbarController：切换页面时，只有第一次进入该页面的时候会从生命周期loadView开始，加载一次后就会在内存中，再次进入该页面的时候，就都是从viewWillAppear开始
+
+UINavigationController：如果将A push进来，A是一个新页面内存中不存在所以从loadView开始，再push B进来，B也是同样的情况，将B pop出去，A已经存在于内存中所以直接从viewWillAppear开始，被pop的viewController已经从内存中释放，所以在进行push B操作还是从loadView开始。

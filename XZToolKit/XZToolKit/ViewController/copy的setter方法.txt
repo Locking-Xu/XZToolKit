@@ -1,0 +1,19 @@
+@property (setter=method1:,getter=method2,copy) NSString *name;
+
+//setter
+- (void)method1:(NSString *)name
+{
+    
+    if (self.name != name) {
+        
+        self.name = [name copy];
+    }
+    
+}
+
+//getter
+- (NSString *)method2
+{
+    
+    return self.name;
+}

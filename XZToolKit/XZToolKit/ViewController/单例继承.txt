@@ -1,0 +1,18 @@
+
++ (id)shareInstance{
+
+　　static NSMutableDictionary *dic = nil;
+
+　　static dispatch_once_t once;
+
+　　dispatch_once(&once, ^{
+
+　　　　dic = [[NSMutableDictionary alloc] init];
+
+           [dic setObject:[[self alloc] init] forKey:(id<NSCopying>)[self class]];
+
+　　});
+
+    return [dic objectForKey:[self class]];
+
+}

@@ -1,0 +1,19 @@
+方法一:    
+NSString* (^my_block)(NSInteger a) = ^(NSInteger a){
+        
+    return [NSString stringWithFormat:@"%ld",(long)a];
+};
+    
+NSLog(@"%ld",(long)my_block(10));
+
+方法二:
+typedef NSString* (^my_block)(NSInteger a);
+
+my_block block = ^(NSInteger a){
+        
+    return [NSString stringWithFormat:@"%ld",(long)a];
+};
+    
+NSString *string = block(10);
+
+PS:本地变量,代码块会在定义的时候复制并保存他们的状态

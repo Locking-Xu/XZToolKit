@@ -1,0 +1,18 @@
+方法一:
+static A *a = nil;  
++ (A *)shareInstance 
+{  
+    if (!a) 
+       a = [[self alloc] init];  
+    return a;  
+}  
+方法二:
++ (A *)shareInstance  
+{  
+    static A *a = nil;  
+    static dispatch_once_t once;  
+    dispatch_once(&once, ^{  
+       a = [[self alloc] init];   
+    });  
+    return a;  
+} 

@@ -33,6 +33,21 @@
 		E93821A91C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821A81C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m */; };
 		E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */ = {isa = PBXBuildFile; fileRef = E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */; };
 		E93821AD1C5A1709004F7EC4 /* TableView索引.txt in Resources */ = {isa = PBXBuildFile; fileRef = E93821AC1C5A1709004F7EC4 /* TableView索引.txt */; };
+		E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */; };
+		E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */; };
+		E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF31C5F0C73006D7BEF /* 单例创建.txt */; };
+		E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF51C5F0FC0006D7BEF /* copy的setter方法.txt */; };
+		E9543EF81C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF71C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt */; };
+		E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF91C5F30B2006D7BEF /* OOP语言三大特征.txt */; };
+		E9543EFC1C5F3177006D7BEF /* new和alloc init.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EFB1C5F3177006D7BEF /* new和alloc init.txt */; };
+		E9543EFE1C5F3954006D7BEF /* BOOL类型.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EFD1C5F3954006D7BEF /* BOOL类型.txt */; };
+		E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EFF1C5F3FAA006D7BEF /* Block使用.txt */; };
+		E9543F021C5F45FD006D7BEF /* @synchronized.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F011C5F45FD006D7BEF /* @synchronized.txt */; };
+		E9543F041C5F480D006D7BEF /* 代理和通知的区别.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F031C5F480D006D7BEF /* 代理和通知的区别.txt */; };
+		E9543F091C5F4FD4006D7BEF /* 类别和类扩展.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F081C5F4FD4006D7BEF /* 类别和类扩展.txt */; };
+		E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */; };
+		E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */; };
+		E9543F211C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */; };
 		E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970066D1C55C96C0071E0E3 /* XZDayCalendarViewController.m */; };
 		E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E970066E1C55C96C0071E0E3 /* XZDayCalendarViewController.xib */; };
 		E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97006731C55CBF60071E0E3 /* XZDayCalendarCell.m */; };
@@ -129,6 +144,21 @@
 		E93821A81C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionLayoutStyleThree.m; sourceTree = "<group>"; };
 		E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TableView不显示多余Cell.txt"; path = "TableView下划线左右间距/TableView不显示多余Cell.txt"; sourceTree = "<group>"; };
 		E93821AC1C5A1709004F7EC4 /* TableView索引.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TableView索引.txt"; path = "TableView下划线左右间距/TableView索引.txt"; sourceTree = "<group>"; };
+		E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ViewController的生命周期.txt"; sourceTree = "<group>"; };
+		E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objective-C中关键字.txt"; sourceTree = "<group>"; };
+		E9543EF31C5F0C73006D7BEF /* 单例创建.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单例创建.txt"; sourceTree = "<group>"; };
+		E9543EF51C5F0FC0006D7BEF /* copy的setter方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "copy的setter方法.txt"; sourceTree = "<group>"; };
+		E9543EF71C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "深拷贝与浅拷贝.txt"; sourceTree = "<group>"; };
+		E9543EF91C5F30B2006D7BEF /* OOP语言三大特征.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OOP语言三大特征.txt"; sourceTree = "<group>"; };
+		E9543EFB1C5F3177006D7BEF /* new和alloc init.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "new和alloc init.txt"; sourceTree = "<group>"; };
+		E9543EFD1C5F3954006D7BEF /* BOOL类型.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BOOL类型.txt"; sourceTree = "<group>"; };
+		E9543EFF1C5F3FAA006D7BEF /* Block使用.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Block使用.txt"; sourceTree = "<group>"; };
+		E9543F011C5F45FD006D7BEF /* @synchronized.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "@synchronized.txt"; sourceTree = "<group>"; };
+		E9543F031C5F480D006D7BEF /* 代理和通知的区别.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "代理和通知的区别.txt"; sourceTree = "<group>"; };
+		E9543F081C5F4FD4006D7BEF /* 类别和类扩展.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "类别和类扩展.txt"; sourceTree = "<group>"; };
+		E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "initWithCoder和initWithFrame.txt"; sourceTree = "<group>"; };
+		E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单例继承.txt"; sourceTree = "<group>"; };
+		E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Documents、Library、tmp区别.txt"; sourceTree = "<group>"; };
 		E970066C1C55C96C0071E0E3 /* XZDayCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDayCalendarViewController.h; sourceTree = "<group>"; };
 		E970066D1C55C96C0071E0E3 /* XZDayCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDayCalendarViewController.m; sourceTree = "<group>"; };
 		E970066E1C55C96C0071E0E3 /* XZDayCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZDayCalendarViewController.xib; sourceTree = "<group>"; };
@@ -521,6 +551,21 @@
 		E984B9C71C5E1F6700C00BC7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */,
+				E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */,
+				E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */,
+				E9543F081C5F4FD4006D7BEF /* 类别和类扩展.txt */,
+				E9543F031C5F480D006D7BEF /* 代理和通知的区别.txt */,
+				E9543F011C5F45FD006D7BEF /* @synchronized.txt */,
+				E9543EFF1C5F3FAA006D7BEF /* Block使用.txt */,
+				E9543EFD1C5F3954006D7BEF /* BOOL类型.txt */,
+				E9543EFB1C5F3177006D7BEF /* new和alloc init.txt */,
+				E9543EF91C5F30B2006D7BEF /* OOP语言三大特征.txt */,
+				E9543EF71C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt */,
+				E9543EF51C5F0FC0006D7BEF /* copy的setter方法.txt */,
+				E9543EF31C5F0C73006D7BEF /* 单例创建.txt */,
+				E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */,
+				E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */,
 				E984B9C81C5E227700C00BC7 /* 内联函数.txt */,
 			);
 			name = Source;
@@ -866,11 +911,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9543F091C5F4FD4006D7BEF /* 类别和类扩展.txt in Resources */,
 				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
+				E9543EF81C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt in Resources */,
 				E938218B1C59F167004F7EC4 /* 5.png in Resources */,
+				E9543F211C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt in Resources */,
+				E9543F041C5F480D006D7BEF /* 代理和通知的区别.txt in Resources */,
+				E9543EFC1C5F3177006D7BEF /* new和alloc init.txt in Resources */,
 				E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */,
+				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
+				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
+				E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */,
+				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
+				E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */,
+				E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
@@ -878,13 +934,17 @@
 				E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */,
 				E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */,
 				E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */,
+				E9543EFE1C5F3954006D7BEF /* BOOL类型.txt in Resources */,
 				E93821AD1C5A1709004F7EC4 /* TableView索引.txt in Resources */,
 				E938218C1C59F167004F7EC4 /* 4.png in Resources */,
 				E938217A1C59E988004F7EC4 /* XZPhotoAblumCell.xib in Resources */,
 				E938218F1C59F167004F7EC4 /* 2.png in Resources */,
 				E9E0C18E1C5705CE0041193A /* TableView下划线左右间距.txt in Resources */,
 				E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */,
+				E9543F021C5F45FD006D7BEF /* @synchronized.txt in Resources */,
+				E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */,
 				E938218E1C59F167004F7EC4 /* 1.png in Resources */,
+				E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */,
 				E984B9C91C5E227700C00BC7 /* 内联函数.txt in Resources */,
 				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
 				E984B9C61C5E1DD300C00BC7 /* XZCommonKnowledgeViewController.xib in Resources */,

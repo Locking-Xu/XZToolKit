@@ -1,0 +1,4 @@
+
+initWithFrame:非.xib的手动编码,视图加载时默认调用的是该方法,是由自己调用,来初始化对象的
+
+initWithCoder:对于.xib,当你嵌入一个视图对象到xib,视图加载时默认调用的是该方法,例如:假如创建的view来自nib,那么将会调用initWithCoder,由系统来调用,自己不能调用
