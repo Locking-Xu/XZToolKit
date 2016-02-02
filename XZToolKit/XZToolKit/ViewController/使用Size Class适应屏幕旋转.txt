@@ -1,0 +1,14 @@
+
+Size Class将屏幕的宽度和高度分别分成三种情况:Compact(紧凑)、Regular(正常)、Any(任意)
+
+一格:Compact(紧凑)
+
+两格:Any(任意)
+
+三格:Regular(正常)
+
+一般竖屏:w Compact(紧凑)、h Regular(正常)
+
+一般横屏:h Compact(紧凑)、w Regular(正常)
+
+可以为不同的Size Class添加自动布局

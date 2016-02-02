@@ -1,0 +1,25 @@
+
+应用程序的状态:
+
+1.Not running:程序未运行或被终止
+
+2.Inactive:程序在前台运行,但不能接受时间处理
+
+3.Active:程序在前台运行并且能接受时间处理
+
+4.Background:程序处在后台运行,并且还能执行代码
+
+5.Suspended:程序处于后台,并且没有执行任何代码,当系统发生内存警告时,Suspended状态的应用彻底移出内存
+
+回调时机:
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions:程序启动时调用
+
+-(void)applicationWillResignActive:(UIApplication *)application:程序将要从前台运行状态离开时
+
+-(void)applicationDidEnterBackground:(UIApplication *)application:程序进入后台
+
+-(void)applicationWillEnterForeground:(UIApplication *)application:程序将要进入前台
+
+-(void)applicationDidBecomeActive:(UIApplication *)application:程序进入Active状态
+
+-(void)applicationWillTerminate:(UIApplication *)application:程序即将被终止时

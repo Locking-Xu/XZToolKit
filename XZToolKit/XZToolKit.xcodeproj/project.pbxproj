@@ -47,6 +47,10 @@
 		E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */; };
 		E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */; };
 		E9543F211C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */; };
+		E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */ = {isa = PBXBuildFile; fileRef = E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */; };
+		E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */ = {isa = PBXBuildFile; fileRef = E96A9E571C60E7B50082AAA0 /* 枚举.txt */; };
+		E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */ = {isa = PBXBuildFile; fileRef = E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */; };
+		E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */ = {isa = PBXBuildFile; fileRef = E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */; };
 		E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970066D1C55C96C0071E0E3 /* XZDayCalendarViewController.m */; };
 		E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E970066E1C55C96C0071E0E3 /* XZDayCalendarViewController.xib */; };
 		E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97006731C55CBF60071E0E3 /* XZDayCalendarCell.m */; };
@@ -156,6 +160,10 @@
 		E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "initWithCoder和initWithFrame.txt"; sourceTree = "<group>"; };
 		E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单例继承.txt"; sourceTree = "<group>"; };
 		E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Documents、Library、tmp区别.txt"; sourceTree = "<group>"; };
+		E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "静态Cell.txt"; sourceTree = "<group>"; };
+		E96A9E571C60E7B50082AAA0 /* 枚举.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "枚举.txt"; sourceTree = "<group>"; };
+		E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "使用Size Class适应屏幕旋转.txt"; sourceTree = "<group>"; };
+		E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "IOS的生命周期.txt"; sourceTree = "<group>"; };
 		E970066C1C55C96C0071E0E3 /* XZDayCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDayCalendarViewController.h; sourceTree = "<group>"; };
 		E970066D1C55C96C0071E0E3 /* XZDayCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDayCalendarViewController.m; sourceTree = "<group>"; };
 		E970066E1C55C96C0071E0E3 /* XZDayCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZDayCalendarViewController.xib; sourceTree = "<group>"; };
@@ -528,6 +536,10 @@
 		E984B9C71C5E1F6700C00BC7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */,
+				E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */,
+				E96A9E571C60E7B50082AAA0 /* 枚举.txt */,
+				E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */,
 				E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */,
 				E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */,
 				E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */,
@@ -942,6 +954,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9543F091C5F4FD4006D7BEF /* 类别和类扩展.txt in Resources */,
+				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
+				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
 				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
 				E9543EF81C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt in Resources */,
 				E938218B1C59F167004F7EC4 /* 5.png in Resources */,
@@ -955,11 +969,13 @@
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
 				E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */,
 				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
+				E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */,
 				E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */,
 				E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
+				E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */,
 				E938218D1C59F167004F7EC4 /* 3.png in Resources */,
 				E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */,
 				E9BC742A1C6045900033BF4D /* XZCommonListViewController.xib in Resources */,

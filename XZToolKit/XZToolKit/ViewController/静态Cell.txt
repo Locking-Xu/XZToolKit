@@ -1,0 +1,6 @@
+
+使用静态cell有两个条件
+
+1.在storyBoard上
+
+2.使用UITableViewController
