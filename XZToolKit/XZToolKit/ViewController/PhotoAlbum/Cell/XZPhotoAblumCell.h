@@ -10,6 +10,6 @@
 
 @interface XZPhotoAblumCell : UICollectionViewCell
 
-- (void)setUpCellWithImageName:(NSString *)imageName;
+- (void)setUpCellWithImage:(UIImage *)image;
 
 @end

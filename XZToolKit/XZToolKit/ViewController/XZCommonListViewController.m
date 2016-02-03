@@ -27,6 +27,7 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
+    _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     // Do any additional setup after loading the view from its nib.
 }
 

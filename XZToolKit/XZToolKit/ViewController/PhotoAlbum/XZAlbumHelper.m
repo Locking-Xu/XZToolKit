@@ -6,7 +6,7 @@
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZAlbumAndCameraHelper.h"
+#import "XZAlbumHelper.h"
 #import "XZUtils.h"
 
 //拍照
@@ -22,7 +22,21 @@
 //    }
 
 
-@implementation XZAlbumAndCameraHelper
+@implementation XZAlbumHelper{
+    
+    ALAssetsLibrary *_library;
+}
+
++ (XZAlbumHelper *)shareInstance{
+    
+    static XZAlbumHelper *albumHelper = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        
+        albumHelper = [[XZAlbumHelper alloc] init];
+    });
+    return albumHelper;
+}
 
 #pragma mark - About Authorization
 /**
@@ -30,15 +44,15 @@
  *
  *  @return YES:获得权限 NO:未获得权限
  */
-+ (void)getPermissionsSuccessful:(authorizationSuccessful)success fail:(authorizationFail)fail{
+- (void)getAlbumPermissionsSuccessful:(authorizationSuccessful)success fail:(authorizationFail)fail{
     
     
     if (DEVICE_VERSION >= 8.0) {
         
-        [XZAlbumAndCameraHelper getPermissionsInIOS8Successful:success fail:fail];
+        [self getPermissionsInIOS8Successful:success fail:fail];
     }else{
         
-        [XZAlbumAndCameraHelper getPermissionsInIOS7Successful:success fail:fail];
+        [self getPermissionsInIOS7Successful:success fail:fail];
     }
 }
 
@@ -48,30 +62,30 @@
  *  @param success 成功获取权限Block
  *  @param fail    没有获取权限Block
  */
-+ (void)getPermissionsInIOS8Successful:(authorizationSuccessful)success fail:(authorizationFail)fail{
+- (void)getPermissionsInIOS8Successful:(authorizationSuccessful)success fail:(authorizationFail)fail{
     
     //相册权限判断
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
-
+    
     if (status == PHAuthorizationStatusDenied) {
         //相册权限未开启
-
+        
         fail(@"相册没有授权");
-
+        
     }else if (status == PHAuthorizationStatusNotDetermined){
         //相册进行授权
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-
+            
             //授权回调
             if (status == PHAuthorizationStatusAuthorized) {
-
+                
                 success(@"授权成功");
             }
             else{
                 fail(@"相册没有授权");
             }
         }];
-
+        
     }else if (status == PHAuthorizationStatusAuthorized){
         //相册已授权
         
@@ -85,7 +99,7 @@
  *  @param success 成功获取权限Block
  *  @param fail    没有获取权限Block
  */
-+ (void)getPermissionsInIOS7Successful:(authorizationSuccessful)success fail:(authorizationFail)fail{
+- (void)getPermissionsInIOS7Successful:(authorizationSuccessful)success fail:(authorizationFail)fail{
     
     ALAuthorizationStatus status = [ALAssetsLibrary authorizationStatus];
     
@@ -105,21 +119,32 @@
     }
 }
 
-#pragma mark - About Source
+#pragma mark - About GetSource
+
+- (void)getAlbumSourceSuccessful:(getSourceSuccessful)success fail:(getSourceFail)fail{
+    
+    if (DEVICE_VERSION >= 8.0) {
+
+        [self getDataSourceInIOS8Successful:success fail:fail];
+
+    }else{
+    
+    [self getDataSourceInIOS7Successful:success fail:fail];
+    }
+}
+
+
 /**
  *  获取相册中的资源(在IOS7系统下)
  */
-+ (void)getDataSourceInIOS7{
-    
-    //http://blog.csdn.net/july_sal/article/details/39433269
+- (void)getDataSourceInIOS7Successful:(getSourceSuccessful)success fail:(getSourceFail)fail{
     
     NSMutableArray *array = [NSMutableArray array];
     
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    _library = [[ALAssetsLibrary alloc] init];
     
-    
-    [library enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        
+    [_library enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+
         if (group) {
             
             [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
@@ -127,36 +152,67 @@
                 if (result) {
                     
                     [array addObject:result];
-                    XZIntLog(array.count);
                 }
                 
             }];
-
+            
         }else{
-
-        NSLog(@"Finish");
+            
+            success(array);
         }
         
-    }
-    failureBlock:^(NSError *error) {
-                             
-    }];
+        }
+          failureBlock:^(NSError *error) {
+              
+              fail();
+          }];
     
 }
 
 /**
  *  获取相册中的资源(在IOS8系统下)
  */
-+ (PHFetchResult *)getDataSourceInIOS8{
+- (PHFetchResult *)getDataSourceInIOS8Successful:(getSourceSuccessful)success fail:(getSourceFail)fail{
     
-    //http://blog.csdn.net/jeffasd/article/details/49680513
+    PHAsset *asset = [[PHAsset alloc] init];
     
-        
     PHFetchOptions *fetchOptions = [[PHFetchOptions alloc] init];
     PHFetchResult *result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:fetchOptions];
     
     return result;
     
 }
+
+#pragma mark - Save Source
+/**
+ *  保存图片到本地相册(IOS7及其以上)
+ *
+ *  @param image  需要保存的图片
+ *  @param isReverse 是否逆序保存(即从最后一个开始添加)
+ *  @param isReplace 是否替换当前位置的图片文件
+ *  @param success 成功Block
+ *  @param fail    失败Block
+ */
+- (void)saveImageToAblumWithImage:(UIImage *)image successful:(saveImageSuccessful)success fail:(saveImagefail)fail;{
+    
+    if (!_library) {
+        
+        _library = [[ALAssetsLibrary alloc] init];
+    }
+    
+    [_library writeImageToSavedPhotosAlbum:image.CGImage metadata:nil completionBlock:^(NSURL *assetURL, NSError *error) {
+       
+        if (error) {
+            fail(error.description);
+        }else{
+            
+            success(assetURL);
+        }
+        
+    }];
+
+}
+
+
 
 @end

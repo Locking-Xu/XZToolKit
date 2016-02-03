@@ -1,0 +1,73 @@
+
+ALAssetsLibrary:图片库,使用时必须作为一个强持有的property或私有变量,不能被释放,不然取出的数据也会消失
+
+旋转方向:
+typedef NS_ENUM(NSInteger, ALAssetOrientation){
+    ALAssetOrientationUp:正常
+    ALAssetOrientationDown:旋转180度  
+    ALAssetOrientationLeft:左旋转90度
+    ALAssetOrientationRight:右旋转90度
+    ALAssetOrientationUpMirrored:正常+镜像
+    ALAssetOrientationDownMirrored:旋转180度+镜像
+    ALAssetOrientationLeftMirrored:左旋转90度+镜像
+    ALAssetOrientationRightMirrored:右旋转90度+镜像
+}
+
+遍历的相册类型:
+enum {
+    ALAssetsGroupLibrary:包含所有文件的Group
+    ALAssetsGroupAlbum:设备创建的相册和iTunes同步过来的
+    ALAssetsGroupEvent:iTunes同步过来的时间
+    ALAssetsGroupFaces:从iTunes同步过来的Faces Ablum
+    ALAssetsGroupSavedPhotos:保存的相册
+    ALAssetsGroupPhotoStream:照片流
+    ALAssetsGroupAll:所有可提供的Group
+};
+
+ALAssetsGroupType:Group的类型
+
+相册权限:
+typedef NS_ENUM(NSInteger, ALAuthorizationStatus) {
+    ALAuthorizationStatusNotDetermined:不确定
+    ALAuthorizationStatusRestricted:受限制的
+    ALAuthorizationStatusDenied:不允许访问的
+    ALAuthorizationStatusAuthorized:允许访问的
+}
+
+API:
+-(void)enumerateGroupsWithTypes:(ALAssetsGroupType)types usingBlock:(ALAssetsLibraryGroupsEnumerationResultsBlock)enumerationBlock failureBlock:(ALAssetsLibraryAccessFailureBlock)failureBlock:遍历Library中符合types的Group
+
+-(void)assetForURL:(NSURL *)assetURL resultBlock:(ALAssetsLibraryAssetForURLResultBlock)resultBlock failureBlock:(ALAssetsLibraryAccessFailureBlock)failureBlock:获取URL位置的资源文件
+
+-(void)groupForURL:(NSURL *)groupURL resultBlock:(ALAssetsLibraryGroupResultBlock)resultBlock failureBlock:(ALAssetsLibraryAccessFailureBlock)failureBlock:获取URL位置的Group文件
+
+-(void)addAssetsGroupAlbumWithName:(NSString *)name resultBlock:(ALAssetsLibraryGroupResultBlock)resultBlock failureBlock:(ALAssetsLibraryAccessFailureBlock)failureBlock:创建一个相册到Library中
+
+-(void)writeImageToSavedPhotosAlbum:(CGImageRef)imageRef orientation:(ALAssetOrientation)orientation completionBlock:(ALAssetsLibraryWriteImageCompletionBlock)completionBlock:保存图片到系统默认的相册中
+
+-(void)writeImageToSavedPhotosAlbum:(CGImageRef)imageRef metadata:(NSDictionary *)metadata completionBlock:(ALAssetsLibraryWriteImageCompletionBlock)completionBlock:保存图片到系统默认的相册中 
+
+-(void)writeImageDataToSavedPhotosAlbum:(NSData *)imageData metadata:(NSDictionary *)metadata completionBlock:(ALAssetsLibraryWriteImageCompletionBlock)completionBlock:保存图片到系统默认的相册中 
+
+-(void)writeVideoAtPathToSavedPhotosAlbum:(NSURL *)videoPathURL completionBlock:(ALAssetsLibraryWriteVideoCompletionBlock)completionBlock:保存视频到系统默认的相册中 
+
+-(BOOL)videoAtPathIsCompatibleWithSavedPhotosAlbum:(NSURL *)videoPathURL:videoPathURL是否兼容系统的保存相册
+
++ (ALAuthorizationStatus)authorizationStatus:当前Library的权限
+
++ (void)disableSharedPhotoStreamsSupport:关闭监听共享照片流产生的频繁通知
+
+通知:
+ALAssetsLibraryChangedNotification:相片库改变 
+
+ALAssetLibraryUpdatedAssetsKey:相片库更新
+
+ALAssetLibraryInsertedAssetGroupsKey:相册插入文件 
+
+ALAssetLibraryUpdatedAssetGroupsKey:相册更新
+
+ALAssetLibraryDeletedAssetGroupsKey:相册删除文件  
+
+错误:
+ALAssetsLibraryErrorDomain:错误信息
+

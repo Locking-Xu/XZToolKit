@@ -15,11 +15,11 @@
 #import "XZCollectionViewLayoutViewController.h"
 
 #import "UINavigationController+Common.h"
-#import "XZAlbumAndCameraHelper.h"
+#import "XZAlbumHelper.h"
 #import "XZUtils.h"
 
 
-#define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关"]
+#define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关",@"相册资源文件相关"]
 
 #define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout"]
 
@@ -169,7 +169,7 @@
                 
                 WS(weakSelf);
                 
-                [XZAlbumAndCameraHelper getPermissionsSuccessful:^(NSString *message) {
+                [[XZAlbumHelper shareInstance] getAlbumPermissionsSuccessful:^(NSString *message) {
                     
                     XZPhotoAlbumViewController *photoAlbumVc = [[XZPhotoAlbumViewController alloc] initWithNibName:@"XZPhotoAlbumViewController" bundle:[NSBundle mainBundle]];
                     
@@ -218,7 +218,7 @@
             //@"知识杂记"
             case 0:
             {
-                titleList = @[@"内联函数",@"ViewController的生命周期",@"Objective-C中关键字",@"单例创建",@"copy的setter方法",@"深拷贝与浅拷贝",@"OOP语言三大特征",@"new和alloc init",@"BOOL类型",@"Block使用",@"@synchronized",@"代理和通知的区别",@"类别和类扩展",@"initWithCoder和initWithFrame",@"单例继承",@"Documents、Library、tmp区别",@"静态Cell",@"枚举",@"使用Size Class适应屏幕旋转",@"IOS的生命周期"];
+                titleList = @[@"内联函数",@"ViewController的生命周期",@"Objective-C中关键字",@"单例创建",@"copy的setter方法",@"深拷贝与浅拷贝",@"OOP语言三大特征",@"new和alloc init",@"BOOL类型",@"Block使用",@"@synchronized",@"代理和通知的区别",@"类别和类扩展",@"initWithCoder和initWithFrame",@"单例继承",@"Documents、Library、tmp区别",@"静态Cell",@"枚举",@"使用Size Class适应屏幕旋转",@"IOS的生命周期",@"类方法"];
             }
                 break;
             //@"UITableView相关"
@@ -237,6 +237,12 @@
             case 3:
             {
                 titleList = @[];
+            }
+                break;
+            //相册资源文件相关
+            case 4:
+            {
+                titleList = @[@"ALAssetRepresentation",@"ALAsset",@"ALAssetsGroup",@"ALAssetsFilter",@"ALAssetsLibrary"];
             }
                 
                 break;

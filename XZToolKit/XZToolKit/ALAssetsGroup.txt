@@ -1,0 +1,32 @@
+
+ALAssetsGroup相当于相片库的每一个相册
+
+void (^ALAssetsGroupEnumerationResultsBlock)(ALAsset *result, NSUInteger index, BOOL *stop):迭代Block
+
+属性:
+ALAssetsGroupPropertyName:相册名
+
+ALAssetsGroupPropertyType:相册类型
+
+ALAssetsGroupPropertyPersistentID:相册的ID
+
+ALAssetsGroupPropertyURL:相册的URL
+
+API:
+-(id)valueForProperty:(NSString *)property:获取特定属性的值
+
+-(CGImageRef)posterImage:相册的封面图片
+
+-(void)setAssetsFilter:(ALAssetsFilter *)filter:设置筛选条件
+
+-(NSInteger)numberOfAssets:相册中文件的数量
+
+-(void)enumerateAssetsUsingBlock:(ALAssetsGroupEnumerationResultsBlock)enumerationBlock:迭代出每一个文件
+
+-(void)enumerateAssetsWithOptions:(NSEnumerationOptions)options usingBlock:(ALAssetsGroupEnumerationResultsBlock)enumerationBlock:根据options进行迭代
+
+-(void)enumerateAssetsAtIndexes:(NSIndexSet *)indexSet options:(NSEnumerationOptions)options usingBlock:(ALAssetsGroupEnumerationResultsBlock)enumerationBlock:根据options和indexSet进行迭代
+
+editable:是否可以编辑
+
+-(BOOL)addAsset:(ALAsset *)asset:向Group中添加文件,YES:添加成功,NO:添加失败

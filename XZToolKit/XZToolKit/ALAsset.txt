@@ -1,0 +1,51 @@
+ALAsset:是具体的相册每个资源文件类
+
+属性:
+ALErrorInvalidProperty:错误
+
+ALAssetPropertyType:文件类型
+
+ALAssetPropertyLocation:位置
+
+ALAssetPropertyDuration:视频文件的时长
+
+ALAssetPropertyOrientation:方向
+
+ALAssetPropertyDate:创建的时间
+
+ALAssetPropertyRepresentations:representations的数组
+
+ALAssetPropertyURLs:url的字典
+
+ALAssetPropertyAssetURL:url
+
+文件的类型:
+ALAssetTypePhoto:照片类
+
+ALAssetTypeVideo:视频类
+
+ALAssetTypeUnknown:未知类型
+
+API:
+-(id)valueForProperty:(NSString *)property:获取特定属性的值 
+
+-(ALAssetRepresentation *)defaultRepresentation:文件详细资源信息
+
+
+-(ALAssetRepresentation *)representationForUTI:(NSString *)representationUTI:获得指定标识符的ALAssetRepresentation
+
+-(CGImageRef)thumbnail:缩略图
+
+-(CGImageRef)aspectRatioThumbnail:原图等比的缩略图
+
+- (void)writeModifiedImageDataToSavedPhotosAlbum:(NSData *)imageData metadata:(NSDictionary *)metadata completionBlock:(ALAssetsLibraryWriteImageCompletionBlock)completionBlock:向相册中添加新图片
+
+- (void)writeModifiedVideoAtPathToSavedPhotosAlbum:(NSURL *)videoPathURL completionBlock:(ALAssetsLibraryWriteVideoCompletionBlock)completionBlock:向相册中添加新视频
+
+originalAsset:原始文件 
+
+editable:是否可以被修改
+
+-(void)setImageData:(NSData *)imageData metadata:(NSDictionary *)metadata completionBlock:(ALAssetsLibraryWriteImageCompletionBlock)completionBlock:修改指定路径的图片内容,替换原来的内容
+
+-(void)setVideoAtPath:(NSURL *)videoPathURL completionBlock:(ALAssetsLibraryWriteVideoCompletionBlock)completionBlock:修改指定路径的视频内容,替换原来的内容

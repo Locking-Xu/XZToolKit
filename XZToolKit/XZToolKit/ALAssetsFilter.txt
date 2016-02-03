@@ -1,0 +1,8 @@
+
+ALAssetsFilter是ALAssetsGroup使用的筛选条件
+
++(ALAssetsFilter *)allPhotos:所有照片
+
++(ALAssetsFilter *)allVideos:所有视频
+
++(ALAssetsFilter *)allAssets:所有文件

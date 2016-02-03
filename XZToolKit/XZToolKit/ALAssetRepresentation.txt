@@ -1,0 +1,26 @@
+ALAssetRepresentation:是每个资源文件的详细信息
+
+-(NSString *)UTI:类型标识符
+
+-(CGSize)dimensions:文件的Size
+
+-(long long)size:文件的大小
+
+-(NSUInteger)getBytes:(uint8_t *)buffer fromOffset:(long long)offset length:(NSUInteger)length error:(NSError **)error:获得特定要求的文件字节大小
+
+-(CGImageRef)fullResolutionImage:高清图 
+
+-(CGImageRef)CGImageWithOptions:(NSDictionary *)options: 
+
+-(CGImageRef)fullScreenImage:全屏图
+
+-(NSURL *)url:文件Url
+
+-(NSDictionary *)metadata:文件的原数据
+
+-(ALAssetOrientation)orientation:旋转方向
+
+-(float)scale:缩放的倍数
+
+-(NSString *)filename:文件名 
+

@@ -10,14 +10,14 @@
 #import "XZPhotoAblumCell.h"
 #import "XZImageBrowserViewController.h"
 #import <Photos/Photos.h>
-#import "XZAlbumAndCameraHelper.h"
+#import "XZAlbumHelper.h"
 
 @interface XZPhotoAlbumViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>{
 
     __weak IBOutlet UICollectionView *_collectionView;
     
     NSArray *_imageNameArray;
-    PHFetchResult *_result;
+//    PHFetchResult *_result;
 }
 
 @end
@@ -27,29 +27,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _imageNameArray = @[@"1",@"2",@"3",@"4",@"5"];
-    
     [self setUpCollectionView];
     
-    _result = [XZAlbumAndCameraHelper getDataSourceInIOS8];
     
-    NSMutableArray *array = [NSMutableArray array];
-
     
-
-    
-    [_result enumerateObjectsUsingBlock:^(PHAsset *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        if (obj) {
-            
-            [array addObject:obj];
-        }
-        
-        if (idx == _result.count-1) {
-            
-            [_collectionView reloadData];
-        }
-    }];
+//    [_result enumerateObjectsUsingBlock:^(PHAsset *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        
+//        if (obj) {
+//            
+//            [array addObject:obj];
+//        }
+//        
+//        if (idx == _result.count-1) {
+//            
+//            [_collectionView reloadData];
+//        }
+//    }];
     
     
     // Do any additional setup after loading the view from its nib.
@@ -77,22 +70,32 @@
 #pragma mark - UICollectionView_DataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return _result.count;
+    return _imageNameArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     XZPhotoAblumCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photoAblumCell" forIndexPath:indexPath];
     
-    PHAsset *asset = _result[indexPath.row];
+    ALAsset *asset = _imageNameArray[indexPath.row];
     
-//    CGImageRef imageRef = asset
     
-    [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake((UISCREEN_WIDTH-2*3)/4, (UISCREEN_WIDTH-5*3)/4) contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage *result, NSDictionary *info){
-        
-        [cell setUpCellWithImageName:result];
-        
-    }];
+    CGImageRef imageRef = asset.thumbnail;
+    
+    UIImage *image = [UIImage imageWithCGImage:imageRef];
+    
+    [cell setUpCellWithImage:image];
+    
+    
+//    PHAsset *asset = _result[indexPath.row];
+//    
+////    CGImageRef imageRef = asset
+//    
+//    [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake((UISCREEN_WIDTH-2*3)/4, (UISCREEN_WIDTH-5*3)/4) contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage *result, NSDictionary *info){
+//        
+//        [cell setUpCellWithImageName:result];
+//        
+//    }];
     
     
 
