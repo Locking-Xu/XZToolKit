@@ -1,0 +1,6 @@
+
+-(BOOL)isMemberOfClass:判断该对象是否为某类的实例
+
+-(BOOL)isKindOfClass:判断该对象是否为某类或者其子类的实例
+
++(BOOL)isSubclassOfClass:判断当前类是否为某类的子类

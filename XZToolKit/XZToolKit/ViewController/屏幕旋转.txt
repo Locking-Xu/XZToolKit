@@ -1,0 +1,22 @@
+
+-(BOOL)shouldAutorotate:该视图控制器是否支持自动旋转
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations:返回视图控制器所支持的方向,当视图控制器旋转时,会执行该方法,如果该方法中包含设备所旋转的方向,视图控制器则会旋转
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation:初始显示的时候屏幕的方向
+
+interfaceOrientation:只读属性,当前屏幕的方向
+
+typedef NS_ENUM(NSInteger, UIInterfaceOrientation) {
+    //未知
+    UIInterfaceOrientationUnknown            = UIDeviceOrientationUnknown,
+    //Home键位于下方
+    UIInterfaceOrientationPortrait           = UIDeviceOrientationPortrait,
+    //Home键位于上方
+    UIInterfaceOrientationPortraitUpsideDown = UIDeviceOrientationPortraitUpsideDown,
+    //Home键位于左侧
+    UIInterfaceOrientationLandscapeLeft      = UIDeviceOrientationLandscapeRight,
+    //Home键位于右侧
+    UIInterfaceOrientationLandscapeRight     = UIDeviceOrientationLandscapeLeft
+}
+

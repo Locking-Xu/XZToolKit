@@ -88,6 +88,16 @@
 		E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */; };
 		E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */; };
 		E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05F1C59058F003B8855 /* libReveal.dylib */; };
+		E9B1B2651C621F6400B7AADB /* 形参个数可变方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */; };
+		E9B1B2671C62259D00B7AADB /* 屏幕旋转.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */; };
+		E9B1B2691C62275B00B7AADB /* 键值编码KVC.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */; };
+		E9B1B26B1C62276200B7AADB /* 键值监听KVO.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B26A1C62276200B7AADB /* 键值监听KVO.txt */; };
+		E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B26C1C62289900B7AADB /* 判断指针变量的实际类型.txt */; };
+		E9B1B26F1C622AE100B7AADB /* ==和isEqual方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B26E1C622AE100B7AADB /* ==和isEqual方法.txt */; };
+		E9B1B2711C622DC900B7AADB /* 动态调用方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2701C622DC900B7AADB /* 动态调用方法.txt */; };
+		E9B1B2731C622E4A00B7AADB /* 面向对象相关.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2721C622E4A00B7AADB /* 面向对象相关.txt */; };
+		E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2741C6230ED00B7AADB /* 对象复制.txt */; };
+		E9B1B2771C62330C00B7AADB /* NSSet.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2761C62330C00B7AADB /* NSSet.txt */; };
 		E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74271C6045900033BF4D /* XZCommonListViewController.m */; };
 		E9BC742A1C6045900033BF4D /* XZCommonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */; };
 		E9BC74301C6056320033BF4D /* XZCollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC742F1C6056320033BF4D /* XZCollectionViewLayoutViewController.m */; };
@@ -239,6 +249,16 @@
 		E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserCell.m; sourceTree = "<group>"; };
 		E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserCell.xib; sourceTree = "<group>"; };
 		E9A4D05F1C59058F003B8855 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
+		E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "形参个数可变方法.txt"; sourceTree = "<group>"; };
+		E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "屏幕旋转.txt"; sourceTree = "<group>"; };
+		E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "键值编码KVC.txt"; sourceTree = "<group>"; };
+		E9B1B26A1C62276200B7AADB /* 键值监听KVO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "键值监听KVO.txt"; sourceTree = "<group>"; };
+		E9B1B26C1C62289900B7AADB /* 判断指针变量的实际类型.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "判断指针变量的实际类型.txt"; sourceTree = "<group>"; };
+		E9B1B26E1C622AE100B7AADB /* ==和isEqual方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "==和isEqual方法.txt"; sourceTree = "<group>"; };
+		E9B1B2701C622DC900B7AADB /* 动态调用方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "动态调用方法.txt"; sourceTree = "<group>"; };
+		E9B1B2721C622E4A00B7AADB /* 面向对象相关.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "面向对象相关.txt"; sourceTree = "<group>"; };
+		E9B1B2741C6230ED00B7AADB /* 对象复制.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "对象复制.txt"; sourceTree = "<group>"; };
+		E9B1B2761C62330C00B7AADB /* NSSet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSSet.txt; sourceTree = "<group>"; };
 		E9BC74261C6045900033BF4D /* XZCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCommonListViewController.h; sourceTree = "<group>"; };
 		E9BC74271C6045900033BF4D /* XZCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCommonListViewController.m; sourceTree = "<group>"; };
 		E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCommonListViewController.xib; sourceTree = "<group>"; };
@@ -531,6 +551,16 @@
 		E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E9B1B2761C62330C00B7AADB /* NSSet.txt */,
+				E9B1B2741C6230ED00B7AADB /* 对象复制.txt */,
+				E9B1B2721C622E4A00B7AADB /* 面向对象相关.txt */,
+				E9B1B2701C622DC900B7AADB /* 动态调用方法.txt */,
+				E9B1B26E1C622AE100B7AADB /* ==和isEqual方法.txt */,
+				E9B1B26C1C62289900B7AADB /* 判断指针变量的实际类型.txt */,
+				E9B1B26A1C62276200B7AADB /* 键值监听KVO.txt */,
+				E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */,
+				E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */,
+				E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */,
 				E9F0E8581C61C85800268CE2 /* 类方法.txt */,
 				E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */,
 				E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */,
@@ -958,11 +988,16 @@
 				E9543F091C5F4FD4006D7BEF /* 类别和类扩展.txt in Resources */,
 				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
 				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
+				E9B1B2671C62259D00B7AADB /* 屏幕旋转.txt in Resources */,
 				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
 				E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */,
 				E9543EF81C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt in Resources */,
 				E908D0C91C61EFE400F95A8F /* ALAssetsLibrary.txt in Resources */,
+				E9B1B2731C622E4A00B7AADB /* 面向对象相关.txt in Resources */,
+				E9B1B2711C622DC900B7AADB /* 动态调用方法.txt in Resources */,
+				E9B1B26B1C62276200B7AADB /* 键值监听KVO.txt in Resources */,
 				E938218B1C59F167004F7EC4 /* 5.png in Resources */,
+				E9B1B26F1C622AE100B7AADB /* ==和isEqual方法.txt in Resources */,
 				E9543F211C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt in Resources */,
 				E9543F041C5F480D006D7BEF /* 代理和通知的区别.txt in Resources */,
 				E9543EFC1C5F3177006D7BEF /* new和alloc init.txt in Resources */,
@@ -971,19 +1006,24 @@
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
+				E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */,
 				E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */,
 				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
 				E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */,
 				E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */,
+				E9B1B2651C621F6400B7AADB /* 形参个数可变方法.txt in Resources */,
 				E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
+				E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */,
 				E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */,
 				E938218D1C59F167004F7EC4 /* 3.png in Resources */,
 				E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */,
+				E9B1B2691C62275B00B7AADB /* 键值编码KVC.txt in Resources */,
 				E9BC742A1C6045900033BF4D /* XZCommonListViewController.xib in Resources */,
 				E9F0E8591C61C85800268CE2 /* 类方法.txt in Resources */,
+				E9B1B2771C62330C00B7AADB /* NSSet.txt in Resources */,
 				E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */,
 				E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */,
 				E9543EFE1C5F3954006D7BEF /* BOOL类型.txt in Resources */,

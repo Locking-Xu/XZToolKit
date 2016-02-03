@@ -1,0 +1,8 @@
+
+copy:返回对象不可修改的副本,copy一般是浅复制
+
+mutableCopy:返回对象可修改的副本,mutableCopy一般是深复制
+
+自定义类实现copy、mutableCopy方法是要遵循NSCopying、NSMutableCopying协议，实现copyWithZone：、mutableCopyWithZone：方法
+
+如果父类有重写copyWithzone方法，子类应该先调用父类copy方法

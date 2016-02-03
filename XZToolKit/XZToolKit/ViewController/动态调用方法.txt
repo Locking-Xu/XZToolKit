@@ -1,0 +1,12 @@
+
+1.respondsToSelector:
+
+2.@selector()
+
+3.NSSelectorFromString(NSString *)
+
+4.objc_msgSend(receiver,selector,...)
+
+5.(IMP)methodForSelector:(SEL)aSelector
+
+6.IMP代表指向OC方法的函数指针，IMP的定义：返回类型 (* 指针变量名)(id,SEL,...)

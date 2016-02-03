@@ -1,0 +1,8 @@
+
+addObserver:forKeyPath:options:context:注册一个监听器监听指定的key路径
+
+removeObserver:forKeyPath:为key路径删除指定的监听器
+
+removeObserver:forKeyPath:context:同上多了一个context参数
+
+observerValueForKeyPath:ofObject:change:context:监听回调

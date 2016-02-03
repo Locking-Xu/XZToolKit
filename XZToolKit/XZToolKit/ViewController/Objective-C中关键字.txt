@@ -16,6 +16,8 @@ retain:指针拷贝,调用对象的引用计数+1
 
 @synthesize:助生成成员变量的setter和getter方法的实现
 
+@dynamic:getter和setter方法会在程序运行的时候或者用其他方式动态绑定
+
 self:是类的隐藏的参数,指向当前当前调用方法的类
 
 super:super并不是隐藏的参数,它只是一个“编译器指示符”,它和 self 指向的是相同的消息接收者,super 告诉编译器,当调用 setName 的方法时,要去调用父类的方法,而不是本类里的

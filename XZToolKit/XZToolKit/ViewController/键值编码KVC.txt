@@ -1,0 +1,16 @@
+
+setValue:forKey:@“name"方法,底层实现的流程是:
+	1. 优先调用setter方法
+	2. 没有setter方法,搜索_name的成员变量
+	3. 没有_name,搜索name成员变量
+	4. 以上三步都没有的话,执行setValue:forUndefinedKey:
+
+valueForKey,底层实现的流程是:
+	1. 优先调用getter方法
+	2. 没有getter方法,搜索_name的成员变量
+	3. 没有_name,搜索name成员变量
+	4. 以上三步都没有的话,执行valueforUndefinedKey:
+
+setValue:forKeyPath:@“item.name"
+
+valueForKeyPAth:@“item.name”

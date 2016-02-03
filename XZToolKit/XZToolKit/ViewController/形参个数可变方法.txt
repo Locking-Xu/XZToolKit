@@ -1,0 +1,24 @@
+
+-(void)test:(NSString *)name,...{
+
+    //...是可变形参列表不包括name
+    //定义一个指针变量指向可变形参列表
+    va_list argList;
+
+    if (name) {
+
+    //argList指向可变形参列表的第一个参数
+    va_start(argList, name);
+
+    //va_arg提取当前指向的形参，并移动下一个参数
+    NSString *arg = va_arg(argList, id);
+
+    while (arg) {
+
+    arg = va_arg(argList, id);
+    }
+
+    //释放指针
+    va_end(argList);
+    }
+}

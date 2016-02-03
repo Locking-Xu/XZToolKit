@@ -1,0 +1,16 @@
+
+NSSet是无序的，内部不能有重复元素
+
+判断集合元素重复的标准:
+
+1.两个对象通过isEqual:方法比较返回YES
+
+2.两个对象的hash方法返回值也相等
+
+3.NSString已经重写hash方法，只要两个字符串所包含的字符序列相同，那么它们的hash方法返回值也是相同的
+
+NSCountSet:每个元素会维护一个添加次数的状态
+
+NSOrderSet:内部不能用重复元素,可以保持元素的添加顺序
+
+NSMutableOrderSet:基本等于NSSet
