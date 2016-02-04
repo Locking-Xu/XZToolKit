@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9036A081C62E93900384199 /* PHFetchOptions.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A071C62E93900384199 /* PHFetchOptions.txt */; };
+		E9036A0A1C62F03800384199 /* PHAssetCollection.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A091C62F03800384199 /* PHAssetCollection.txt */; };
+		E9036A0C1C62F2F600384199 /* PHFetchResult.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A0B1C62F2F600384199 /* PHFetchResult.txt */; };
+		E9036A0E1C62F3DC00384199 /* PHAsset.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A0D1C62F3DC00384199 /* PHAsset.txt */; };
+		E9036A101C62F46200384199 /* PhotosTypes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A0F1C62F46200384199 /* PhotosTypes.txt */; };
+		E9036A121C62FA5500384199 /* PHImageRequestOptions.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A111C62FA5500384199 /* PHImageRequestOptions.txt */; };
+		E9036A141C62FBB800384199 /* PHImageManager.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A131C62FBB800384199 /* PHImageManager.txt */; };
+		E9036A201C63020100384199 /* XZPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9036A1E1C63020100384199 /* XZPhotoCell.m */; };
+		E9036A211C63020100384199 /* XZPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9036A1F1C63020100384199 /* XZPhotoCell.xib */; };
+		E9036A241C63027600384199 /* XZAlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9036A231C63027600384199 /* XZAlbumListController.m */; };
+		E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9036A261C633AC500384199 /* XZAlbumCell.m */; };
+		E9036A291C633AC500384199 /* XZAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9036A271C633AC500384199 /* XZAlbumCell.xib */; };
 		E908D0C31C61D71200F95A8F /* ALAsset.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C21C61D71200F95A8F /* ALAsset.txt */; };
 		E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */; };
 		E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */; };
@@ -22,8 +34,6 @@
 		E9318B651C51E9380039D357 /* XZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9318B641C51E9380039D357 /* XZTipView.m */; };
 		E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821711C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m */; };
 		E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93821721C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib */; };
-		E93821791C59E988004F7EC4 /* XZPhotoAblumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821771C59E988004F7EC4 /* XZPhotoAblumCell.m */; };
-		E938217A1C59E988004F7EC4 /* XZPhotoAblumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93821781C59E988004F7EC4 /* XZPhotoAblumCell.xib */; };
 		E938218B1C59F167004F7EC4 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E93821861C59F167004F7EC4 /* 5.png */; };
 		E938218C1C59F167004F7EC4 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E93821871C59F167004F7EC4 /* 4.png */; };
 		E938218D1C59F167004F7EC4 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E93821881C59F167004F7EC4 /* 3.png */; };
@@ -122,6 +132,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9036A071C62E93900384199 /* PHFetchOptions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHFetchOptions.txt; sourceTree = "<group>"; };
+		E9036A091C62F03800384199 /* PHAssetCollection.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHAssetCollection.txt; sourceTree = "<group>"; };
+		E9036A0B1C62F2F600384199 /* PHFetchResult.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHFetchResult.txt; sourceTree = "<group>"; };
+		E9036A0D1C62F3DC00384199 /* PHAsset.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHAsset.txt; sourceTree = "<group>"; };
+		E9036A0F1C62F46200384199 /* PhotosTypes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PhotosTypes.txt; sourceTree = "<group>"; };
+		E9036A111C62FA5500384199 /* PHImageRequestOptions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHImageRequestOptions.txt; sourceTree = "<group>"; };
+		E9036A131C62FBB800384199 /* PHImageManager.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHImageManager.txt; sourceTree = "<group>"; };
+		E9036A1D1C63020100384199 /* XZPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPhotoCell.h; sourceTree = "<group>"; };
+		E9036A1E1C63020100384199 /* XZPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPhotoCell.m; sourceTree = "<group>"; };
+		E9036A1F1C63020100384199 /* XZPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZPhotoCell.xib; sourceTree = "<group>"; };
+		E9036A221C63027600384199 /* XZAlbumListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAlbumListController.h; sourceTree = "<group>"; };
+		E9036A231C63027600384199 /* XZAlbumListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumListController.m; sourceTree = "<group>"; };
+		E9036A251C633AC500384199 /* XZAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAlbumCell.h; sourceTree = "<group>"; };
+		E9036A261C633AC500384199 /* XZAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumCell.m; sourceTree = "<group>"; };
+		E9036A271C633AC500384199 /* XZAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZAlbumCell.xib; sourceTree = "<group>"; };
 		E908D0C21C61D71200F95A8F /* ALAsset.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAsset.txt; sourceTree = "<group>"; };
 		E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsGroup.txt; sourceTree = "<group>"; };
 		E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsFilter.txt; sourceTree = "<group>"; };
@@ -145,9 +170,6 @@
 		E93821701C59E8B3004F7EC4 /* XZPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPhotoAlbumViewController.h; sourceTree = "<group>"; };
 		E93821711C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPhotoAlbumViewController.m; sourceTree = "<group>"; };
 		E93821721C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZPhotoAlbumViewController.xib; sourceTree = "<group>"; };
-		E93821761C59E988004F7EC4 /* XZPhotoAblumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPhotoAblumCell.h; sourceTree = "<group>"; };
-		E93821771C59E988004F7EC4 /* XZPhotoAblumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPhotoAblumCell.m; sourceTree = "<group>"; };
-		E93821781C59E988004F7EC4 /* XZPhotoAblumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZPhotoAblumCell.xib; sourceTree = "<group>"; };
 		E93821861C59F167004F7EC4 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		E93821871C59F167004F7EC4 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		E93821881C59F167004F7EC4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -163,8 +185,8 @@
 		E93821A51C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionLayoutStyleTwo.m; sourceTree = "<group>"; };
 		E93821A71C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionLayoutStyleThree.h; sourceTree = "<group>"; };
 		E93821A81C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionLayoutStyleThree.m; sourceTree = "<group>"; };
-		E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TableView不显示多余Cell.txt"; path = "Source/TableView下划线左右间距/TableView不显示多余Cell.txt"; sourceTree = "<group>"; };
-		E93821AC1C5A1709004F7EC4 /* TableView索引.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TableView索引.txt"; path = "Source/TableView下划线左右间距/TableView索引.txt"; sourceTree = "<group>"; };
+		E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView不显示多余Cell.txt"; sourceTree = "<group>"; };
+		E93821AC1C5A1709004F7EC4 /* TableView索引.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView索引.txt"; sourceTree = "<group>"; };
 		E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ViewController的生命周期.txt"; sourceTree = "<group>"; };
 		E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objective-C中关键字.txt"; sourceTree = "<group>"; };
 		E9543EF31C5F0C73006D7BEF /* 单例创建.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单例创建.txt"; sourceTree = "<group>"; };
@@ -264,7 +286,7 @@
 		E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCommonListViewController.xib; sourceTree = "<group>"; };
 		E9BC742E1C6056320033BF4D /* XZCollectionViewLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionViewLayoutViewController.h; sourceTree = "<group>"; };
 		E9BC742F1C6056320033BF4D /* XZCollectionViewLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionViewLayoutViewController.m; sourceTree = "<group>"; };
-		E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TableView下划线左右间距.txt"; path = "Source/TableView下划线左右间距/TableView下划线左右间距.txt"; sourceTree = "<group>"; };
+		E9E0C18D1C5705CE0041193A /* TableView下划线左右间距.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView下划线左右间距.txt"; sourceTree = "<group>"; };
 		E9E0C18F1C570C400041193A /* XZCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCodeViewController.h; sourceTree = "<group>"; };
 		E9E0C1901C570C400041193A /* XZCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCodeViewController.m; sourceTree = "<group>"; };
 		E9E0C1911C570C400041193A /* XZCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCodeViewController.xib; sourceTree = "<group>"; };
@@ -377,8 +399,8 @@
 		E938216E1C59E873004F7EC4 /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				E9BC74321C60878B0033BF4D /* Helper */,
 				E93821751C59E96B004F7EC4 /* Cell */,
+				E9BC74321C60878B0033BF4D /* Helper */,
 				E938217B1C59E9C1004F7EC4 /* Source */,
 				E938216F1C59E881004F7EC4 /* ViewController */,
 			);
@@ -388,6 +410,8 @@
 		E938216F1C59E881004F7EC4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9036A221C63027600384199 /* XZAlbumListController.h */,
+				E9036A231C63027600384199 /* XZAlbumListController.m */,
 				E93821701C59E8B3004F7EC4 /* XZPhotoAlbumViewController.h */,
 				E93821711C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m */,
 				E93821721C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib */,
@@ -398,9 +422,12 @@
 		E93821751C59E96B004F7EC4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E93821761C59E988004F7EC4 /* XZPhotoAblumCell.h */,
-				E93821771C59E988004F7EC4 /* XZPhotoAblumCell.m */,
-				E93821781C59E988004F7EC4 /* XZPhotoAblumCell.xib */,
+				E9036A251C633AC500384199 /* XZAlbumCell.h */,
+				E9036A261C633AC500384199 /* XZAlbumCell.m */,
+				E9036A271C633AC500384199 /* XZAlbumCell.xib */,
+				E9036A1D1C63020100384199 /* XZPhotoCell.h */,
+				E9036A1E1C63020100384199 /* XZPhotoCell.m */,
+				E9036A1F1C63020100384199 /* XZPhotoCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -517,8 +544,7 @@
 				E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */,
 				E93821AC1C5A1709004F7EC4 /* TableView索引.txt */,
 			);
-			name = TableViewKnowledge;
-			path = ViewController/TableViewKnowledge;
+			path = TableViewKnowledge;
 			sourceTree = "<group>";
 		};
 		E984B9B61C5E173D00C00BC7 /* PopView */ = {
@@ -551,40 +577,39 @@
 		E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				E9B1B2761C62330C00B7AADB /* NSSet.txt */,
-				E9B1B2741C6230ED00B7AADB /* 对象复制.txt */,
-				E9B1B2721C622E4A00B7AADB /* 面向对象相关.txt */,
-				E9B1B2701C622DC900B7AADB /* 动态调用方法.txt */,
 				E9B1B26E1C622AE100B7AADB /* ==和isEqual方法.txt */,
-				E9B1B26C1C62289900B7AADB /* 判断指针变量的实际类型.txt */,
-				E9B1B26A1C62276200B7AADB /* 键值监听KVO.txt */,
-				E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */,
-				E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */,
-				E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */,
-				E9F0E8581C61C85800268CE2 /* 类方法.txt */,
-				E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */,
-				E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */,
-				E96A9E571C60E7B50082AAA0 /* 枚举.txt */,
-				E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */,
-				E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */,
-				E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */,
-				E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */,
-				E9543F081C5F4FD4006D7BEF /* 类别和类扩展.txt */,
-				E9543F031C5F480D006D7BEF /* 代理和通知的区别.txt */,
 				E9543F011C5F45FD006D7BEF /* @synchronized.txt */,
-				E9543EFF1C5F3FAA006D7BEF /* Block使用.txt */,
 				E9543EFD1C5F3954006D7BEF /* BOOL类型.txt */,
-				E9543EFB1C5F3177006D7BEF /* new和alloc init.txt */,
+				E9543EFF1C5F3FAA006D7BEF /* Block使用.txt */,
+				E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */,
+				E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */,
+				E9B1B2761C62330C00B7AADB /* NSSet.txt */,
 				E9543EF91C5F30B2006D7BEF /* OOP语言三大特征.txt */,
-				E9543EF71C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt */,
-				E9543EF51C5F0FC0006D7BEF /* copy的setter方法.txt */,
-				E9543EF31C5F0C73006D7BEF /* 单例创建.txt */,
 				E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */,
 				E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */,
+				E9543EF51C5F0FC0006D7BEF /* copy的setter方法.txt */,
+				E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */,
+				E9543EFB1C5F3177006D7BEF /* new和alloc init.txt */,
+				E9543F031C5F480D006D7BEF /* 代理和通知的区别.txt */,
+				E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */,
 				E984B9C81C5E227700C00BC7 /* 内联函数.txt */,
+				E9B1B26C1C62289900B7AADB /* 判断指针变量的实际类型.txt */,
+				E9B1B2701C622DC900B7AADB /* 动态调用方法.txt */,
+				E9543EF31C5F0C73006D7BEF /* 单例创建.txt */,
+				E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */,
+				E9B1B2741C6230ED00B7AADB /* 对象复制.txt */,
+				E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */,
+				E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */,
+				E96A9E571C60E7B50082AAA0 /* 枚举.txt */,
+				E9543EF71C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt */,
+				E9543F081C5F4FD4006D7BEF /* 类别和类扩展.txt */,
+				E9F0E8581C61C85800268CE2 /* 类方法.txt */,
+				E9B1B26A1C62276200B7AADB /* 键值监听KVO.txt */,
+				E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */,
+				E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */,
+				E9B1B2721C622E4A00B7AADB /* 面向对象相关.txt */,
 			);
-			name = CommonKnowledge;
-			path = ViewController;
+			path = CommonKnowledge;
 			sourceTree = "<group>";
 		};
 		E99E31F01C4F1B2E0016D25D = {
@@ -608,13 +633,13 @@
 		E99E31FB1C4F1B2E0016D25D /* XZToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				E9BC74311C6056E80033BF4D /* Source */,
 				E99E32211C4F1D4E0016D25D /* AppDelegate */,
 				E99E32221C4F1D5A0016D25D /* Category */,
 				E9A4D0621C590D3B003B8855 /* Frameworks */,
 				E99E325C1C4F7E200016D25D /* General */,
 				E99E32681C4F835A0016D25D /* Helper */,
 				E99E32251C4F1D780016D25D /* Macro */,
+				E9BC74311C6056E80033BF4D /* Source */,
 				E99E31FC1C4F1B2E0016D25D /* Supporting Files */,
 				E99E32581C4F6B2A0016D25D /* Utils */,
 				E99E32241C4F1D6B0016D25D /* ViewController */,
@@ -671,11 +696,11 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E9BC74241C60454B0033BF4D /* CommonListViewController */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E99E32391C4F1E350016D25D /* Calendar */,
 				E93821911C5A05CF004F7EC4 /* CodeDetail */,
 				E93821901C5A053D004F7EC4 /* CollectionViewKnowledge */,
+				E9BC74241C60454B0033BF4D /* CommonListViewController */,
 				E99E32481C4F1E350016D25D /* Home */,
 				E9E0C2161C576A650041193A /* ImageBrowser */,
 				E938216E1C59E873004F7EC4 /* PhotoAlbum */,
@@ -822,8 +847,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = NavigationControllerKnowledge;
-			path = ViewController;
+			path = NavigationControllerKnowledge;
 			sourceTree = "<group>";
 		};
 		E9BC74241C60454B0033BF4D /* CommonListViewController */ = {
@@ -831,7 +855,7 @@
 			children = (
 				E9BC74251C6045710033BF4D /* ViewController */,
 			);
-			name = CommonListViewController;
+			path = CommonListViewController;
 			sourceTree = "<group>";
 		};
 		E9BC74251C6045710033BF4D /* ViewController */ = {
@@ -841,18 +865,18 @@
 				E9BC74271C6045900033BF4D /* XZCommonListViewController.m */,
 				E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E9BC74311C6056E80033BF4D /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				E9F0E8551C61A88C00268CE2 /* AblumSourceKnowledge */,
-				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 				E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */,
 				E9BC741C1C6042AB0033BF4D /* NavigationControllerKnowledge */,
+				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 			);
-			name = Source;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E9BC74321C60878B0033BF4D /* Helper */ = {
@@ -861,7 +885,7 @@
 				E9F0E8521C61A3A700268CE2 /* XZAlbumHelper.h */,
 				E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		E9E0C2161C576A650041193A /* ImageBrowser */ = {
@@ -896,13 +920,20 @@
 		E9F0E8551C61A88C00268CE2 /* AblumSourceKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */,
-				E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */,
-				E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */,
 				E908D0C21C61D71200F95A8F /* ALAsset.txt */,
 				E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */,
+				E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */,
+				E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */,
+				E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */,
+				E9036A0D1C62F3DC00384199 /* PHAsset.txt */,
+				E9036A091C62F03800384199 /* PHAssetCollection.txt */,
+				E9036A071C62E93900384199 /* PHFetchOptions.txt */,
+				E9036A0B1C62F2F600384199 /* PHFetchResult.txt */,
+				E9036A131C62FBB800384199 /* PHImageManager.txt */,
+				E9036A111C62FA5500384199 /* PHImageRequestOptions.txt */,
+				E9036A0F1C62F46200384199 /* PhotosTypes.txt */,
 			);
-			name = AblumSourceKnowledge;
+			path = AblumSourceKnowledge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -987,6 +1018,7 @@
 			files = (
 				E9543F091C5F4FD4006D7BEF /* 类别和类扩展.txt in Resources */,
 				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
+				E9036A141C62FBB800384199 /* PHImageManager.txt in Resources */,
 				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
 				E9B1B2671C62259D00B7AADB /* 屏幕旋转.txt in Resources */,
 				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
@@ -1004,6 +1036,7 @@
 				E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */,
 				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
+				E9036A0A1C62F03800384199 /* PHAssetCollection.txt in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
 				E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */,
@@ -1011,6 +1044,7 @@
 				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
 				E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */,
 				E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */,
+				E9036A081C62E93900384199 /* PHFetchOptions.txt in Resources */,
 				E9B1B2651C621F6400B7AADB /* 形参个数可变方法.txt in Resources */,
 				E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
@@ -1018,6 +1052,7 @@
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
 				E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */,
 				E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */,
+				E9036A211C63020100384199 /* XZPhotoCell.xib in Resources */,
 				E938218D1C59F167004F7EC4 /* 3.png in Resources */,
 				E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */,
 				E9B1B2691C62275B00B7AADB /* 键值编码KVC.txt in Resources */,
@@ -1030,15 +1065,19 @@
 				E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */,
 				E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */,
 				E93821AD1C5A1709004F7EC4 /* TableView索引.txt in Resources */,
+				E9036A101C62F46200384199 /* PhotosTypes.txt in Resources */,
 				E938218C1C59F167004F7EC4 /* 4.png in Resources */,
 				E908D0C31C61D71200F95A8F /* ALAsset.txt in Resources */,
-				E938217A1C59E988004F7EC4 /* XZPhotoAblumCell.xib in Resources */,
+				E9036A0E1C62F3DC00384199 /* PHAsset.txt in Resources */,
 				E938218F1C59F167004F7EC4 /* 2.png in Resources */,
 				E9E0C18E1C5705CE0041193A /* TableView下划线左右间距.txt in Resources */,
+				E9036A0C1C62F2F600384199 /* PHFetchResult.txt in Resources */,
+				E9036A121C62FA5500384199 /* PHImageRequestOptions.txt in Resources */,
 				E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */,
 				E9543F021C5F45FD006D7BEF /* @synchronized.txt in Resources */,
 				E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */,
 				E938218E1C59F167004F7EC4 /* 1.png in Resources */,
+				E9036A291C633AC500384199 /* XZAlbumCell.xib in Resources */,
 				E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */,
 				E984B9C91C5E227700C00BC7 /* 内联函数.txt in Resources */,
 				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
@@ -1072,6 +1111,7 @@
 				E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
 				E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */,
+				E9036A201C63020100384199 /* XZPhotoCell.m in Sources */,
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
 				E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */,
@@ -1079,7 +1119,6 @@
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
-				E93821791C59E988004F7EC4 /* XZPhotoAblumCell.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
@@ -1096,7 +1135,9 @@
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
+				E9036A241C63027600384199 /* XZAlbumListController.m in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
+				E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,

@@ -1,0 +1,96 @@
+
+PHCollection:类似于一个集合
+
+PHCollectionList:表示一组PHCollection,本身也是一个PHCollection
+
+PHAssetCollection:类似于相册集合
+
+PHCollection:
+属性:
+canContainAssets:是否可以包含文件
+
+canContainCollections:是否可以包含集合
+
+localizedTitle:标题
+
+API:
+- (BOOL)canPerformEditOperation:(PHCollectionEditOperation)anOperation:是否可以执行制定操作
+
+
++ (PHFetchResult<PHCollection *> *)fetchCollectionsInCollectionList:(PHCollectionList *)collectionList options:(nullable PHFetchOptions *)options:从collectionList获取符合options的collection
+
++ (PHFetchResult<PHCollection *> *)fetchTopLevelUserCollectionsWithOptions:(nullable PHFetchOptions *)options:获取用户自己创建的collection
+
+
+PHAssetCollection:
+属性:
+assetCollectionType:相册类型
+
+assetCollectionSubtype:相册具体类型
+
+estimatedAssetCount:预估的文件数量
+
+startDate:第一个文件的创建时间
+
+endDate:最后一个文件创建的时间
+
+approximateLocation:所有文件的代表位置
+
+localizedLocationNames:地点名称数组
+
+API:
+#pragma mark - Fetching asset collections
+
++ (PHFetchResult<PHAssetCollection *> *)fetchAssetCollectionsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options:获得符合identifiers和options的collection
+
++ (PHFetchResult<PHAssetCollection *> *)fetchAssetCollectionsWithType:(PHAssetCollectionType)type subtype:(PHAssetCollectionSubtype)subtype options:(nullable PHFetchOptions *)options:获得符合type、subtype和options的collection
+
++ (PHFetchResult<PHAssetCollection *> *)fetchAssetCollectionsContainingAsset:(PHAsset *)asset withType:(PHAssetCollectionType)type options:(nullable PHFetchOptions *)options:获得包含asset,类型是type,符合条件options的collection(不支持smart Album)
+
++ (PHFetchResult<PHAssetCollection *> *)fetchAssetCollectionsWithALAssetGroupURLs:(NSArray<NSURL *> *)assetGroupURLs options:(nullable PHFetchOptions *)options:根据Url获取特定的collection
+
+#pragma mark - Fetching moment asset collections
+
++ (PHFetchResult<PHAssetCollection *> *)fetchMomentsInMomentList:(PHCollectionList *)momentList options:(nullable PHFetchOptions *)options:获取在momentList中符合options的collection
+
++ (PHFetchResult<PHAssetCollection *> *)fetchMomentsWithOptions:(nullable PHFetchOptions *)options:获取符合options的collection
+
+#pragma mark - Transient asset collections
+
+//获得只是在内存中的相册,并没有写到硬盘
+
++ (PHAssetCollection *)transientAssetCollectionWithAssets:(NSArray<PHAsset *> *)assets title:(nullable NSString *)title:获得一个内容为assets,标题为title的collection
+
++ (PHAssetCollection *)transientAssetCollectionWithAssetFetchResult:(PHFetchResult<PHAsset *> *)fetchResult title:(nullable NSString *)title:获得一个内容为fetchResult,标题为title的collection
+
+PHCollectionList:
+属性:
+collectionListType:类型
+
+collectionListSubtype:具体类型
+
+startDate:第一个文件的创建时间
+
+endDate:最后一个文件创建的时间
+
+localizedLocationNames:地点名称数组
+
+#pragma mark - Fetching collection lists
+
++ (PHFetchResult<PHCollectionList *> *)fetchCollectionListsContainingCollection:(PHCollection *)collection options:(nullable PHFetchOptions *)options
+
++ (PHFetchResult<PHCollectionList *> *)fetchCollectionListsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options
+
++ (PHFetchResult<PHCollectionList *> *)fetchCollectionListsWithType:(PHCollectionListType)collectionListType subtype:(PHCollectionListSubtype)subtype options:(nullable PHFetchOptions *)options
+
+#pragma mark - Fetching moment collection lists
+
++ (PHFetchResult<PHCollectionList *> *)fetchMomentListsWithSubtype:(PHCollectionListSubtype)momentListSubtype containingMoment:(PHAssetCollection *)moment options:(nullable PHFetchOptions *)options
+
++ (PHFetchResult<PHCollectionList *> *)fetchMomentListsWithSubtype:(PHCollectionListSubtype)momentListSubtype options:(nullable PHFetchOptions *)options
+
+#pragma mark - Transient collection lists
+
++ (PHCollectionList *)transientCollectionListWithCollections:(NSArray<PHCollection *> *)collections title:(nullable NSString *)title
+
++ (PHCollectionList *)transientCollectionListWithCollectionsFetchResult:(PHFetchResult<PHCollection *> *)fetchResult title:(nullable NSString *)title

@@ -9,10 +9,10 @@
 #import "XZHomeViewController.h"
 #import "XZCalendarViewController.h"
 #import "XZAddressBookViewController.h"
-#import "XZPhotoAlbumViewController.h"
 #import "XZPopViewViewController.h"
 #import "XZCommonListViewController.h"
 #import "XZCollectionViewLayoutViewController.h"
+#import "XZAlbumListController.h"
 
 #import "UINavigationController+Common.h"
 #import "XZAlbumHelper.h"
@@ -171,7 +171,7 @@
                 
                 [[XZAlbumHelper shareInstance] getAlbumPermissionsSuccessful:^(NSString *message) {
                     
-                    XZPhotoAlbumViewController *photoAlbumVc = [[XZPhotoAlbumViewController alloc] initWithNibName:@"XZPhotoAlbumViewController" bundle:[NSBundle mainBundle]];
+                    XZAlbumListController *photoAlbumVc = [[XZAlbumListController alloc] init];
                     
                     photoAlbumVc.title = DemoList[indexPath.row];
                     
@@ -242,7 +242,7 @@
             //相册资源文件相关
             case 4:
             {
-                titleList = @[@"ALAssetRepresentation",@"ALAsset",@"ALAssetsGroup",@"ALAssetsFilter",@"ALAssetsLibrary"];
+                titleList = @[@"ALAssetRepresentation",@"ALAsset",@"ALAssetsGroup",@"ALAssetsFilter",@"ALAssetsLibrary",@"PHFetchOptions",@"PHAssetCollection",@"PHFetchResult",@"PHAsset",@"PhotosTypes",@"PHImageRequestOptions",@"PHImageManager"];
             }
                 
                 break;

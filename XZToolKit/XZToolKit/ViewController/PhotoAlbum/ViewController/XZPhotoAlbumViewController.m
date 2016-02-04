@@ -7,17 +7,18 @@
 //
 
 #import "XZPhotoAlbumViewController.h"
-#import "XZPhotoAblumCell.h"
+#import "XZPhotoCell.h"
 #import "XZImageBrowserViewController.h"
 #import <Photos/Photos.h>
 #import "XZAlbumHelper.h"
+#import "XZUtils.h"
 
 @interface XZPhotoAlbumViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>{
 
     __weak IBOutlet UICollectionView *_collectionView;
     
-    NSArray *_imageNameArray;
-//    PHFetchResult *_result;
+    NSMutableArray *_dataArray;
+
 }
 
 @end
@@ -27,23 +28,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[XZAlbumHelper shareInstance] getAlbumAssetWithGroupUrl:self.groupUrl identifier:self.groupID successful:^(NSMutableArray *fileArray) {
+        
+        _dataArray = fileArray;
+        
+        [_collectionView reloadData];
+        
+    } fail:^(NSString *error) {
+       
+        [XZUtils showAlertView:error];
+        
+    }];
+    
     [self setUpCollectionView];
-    
-    
-    
-//    [_result enumerateObjectsUsingBlock:^(PHAsset *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        
-//        if (obj) {
-//            
-//            [array addObject:obj];
-//        }
-//        
-//        if (idx == _result.count-1) {
-//            
-//            [_collectionView reloadData];
-//        }
-//    }];
-    
+
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -56,60 +54,42 @@
 - (void)setUpCollectionView{
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.minimumLineSpacing = 2.0f;
-    layout.minimumInteritemSpacing = 2.0f;
-    layout.itemSize = CGSizeMake((UISCREEN_WIDTH-2*3)/4, (UISCREEN_WIDTH-5*3)/4);
+    layout.minimumLineSpacing = 1.0f;
+    layout.minimumInteritemSpacing = 1.0f;
+    layout.itemSize = CGSizeMake((UISCREEN_WIDTH-1*3)/4, (UISCREEN_WIDTH-1*3)/4);
     
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.collectionViewLayout = layout;
     
-    [_collectionView registerNib:[UINib nibWithNibName:@"XZPhotoAblumCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"photoAblumCell"];
+    [_collectionView registerNib:[UINib nibWithNibName:@"XZPhotoCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"photoCell"];
 }
 
 #pragma mark - UICollectionView_DataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return _imageNameArray.count;
+    return _dataArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    XZPhotoAblumCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photoAblumCell" forIndexPath:indexPath];
+    XZPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photoCell" forIndexPath:indexPath];
     
-    ALAsset *asset = _imageNameArray[indexPath.row];
+    id object = _dataArray[indexPath.row];
     
+    [cell setUpCellWithObject:object];
     
-    CGImageRef imageRef = asset.thumbnail;
-    
-    UIImage *image = [UIImage imageWithCGImage:imageRef];
-    
-    [cell setUpCellWithImage:image];
-    
-    
-//    PHAsset *asset = _result[indexPath.row];
-//    
-////    CGImageRef imageRef = asset
-//    
-//    [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake((UISCREEN_WIDTH-2*3)/4, (UISCREEN_WIDTH-5*3)/4) contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage *result, NSDictionary *info){
-//        
-//        [cell setUpCellWithImageName:result];
-//        
-//    }];
-    
-    
-
     return cell;
 }
 #pragma mark - UICollectionView_Delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    XZImageBrowserViewController *imageBrowserVc = [[XZImageBrowserViewController alloc] initWithNibName:@"XZImageBrowserViewController" bundle:[NSBundle mainBundle]];
-    
-    imageBrowserVc.imageNameArray = _imageNameArray;
-    imageBrowserVc.indexPath = indexPath;
-    
-    [self presentViewController:imageBrowserVc animated:YES completion:nil];
+//    XZImageBrowserViewController *imageBrowserVc = [[XZImageBrowserViewController alloc] initWithNibName:@"XZImageBrowserViewController" bundle:[NSBundle mainBundle]];
+//    
+//    imageBrowserVc.imageNameArray = _imageNameArray;
+//    imageBrowserVc.indexPath = indexPath;
+//    
+//    [self presentViewController:imageBrowserVc animated:YES completion:nil];
 }
 
 @end

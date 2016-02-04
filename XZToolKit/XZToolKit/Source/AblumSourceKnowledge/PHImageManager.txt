@@ -1,0 +1,52 @@
+
+PHImageManager:用于处理资源的加载，加载图片的过程带有缓存处理，可以通过传入一个PHImageRequestOptions控制资源的输出尺寸等规格
+
+#pragma mark - PHImageManager - Fetching
+
+PHInvalidImageRequestID = 0
+
+PHImageManagerMaximumSize 
+
+PHImageResultIsInCloudKey 
+
+PHImageResultIsDegradedKey 
+
+PHImageResultRequestIDKey 
+
+PHImageCancelledKey 
+
+PHImageErrorKey 
+
+PHImageManager : NSObject
+
++(PHImageManager *)defaultManager
+
+#pragma mark - Image
+
+-(PHImageRequestID)requestImageForAsset:(PHAsset *)asset targetSize:(CGSize)targetSize contentMode:(PHImageContentMode)contentMode options:(nullable PHImageRequestOptions *)options resultHandler:(void (^)(UIImage *__nullable result, NSDictionary *__nullable info))resultHandler
+
+-(PHImageRequestID)requestImageDataForAsset:(PHAsset *)asset options:(nullable PHImageRequestOptions *)options resultHandler:(void(^)(NSData *__nullable imageData, NSString *__nullable dataUTI, UIImageOrientation orientation, NSDictionary *__nullable info))resultHandler
+
+-(void)cancelImageRequest:(PHImageRequestID)requestID
+
+#pragma mark - Live Photo
+
+- (PHImageRequestID)requestLivePhotoForAsset:(PHAsset *)asset targetSize:(CGSize)targetSize contentMode:(PHImageContentMode)contentMode options:(nullable PHLivePhotoRequestOptions *)options resultHandler:(void (^)(PHLivePhoto *__nullable livePhoto, NSDictionary *__nullable info))resultHandler
+
+#pragma mark - Video
+
+- (PHImageRequestID)requestPlayerItemForVideo:(PHAsset *)asset options:(nullable PHVideoRequestOptions *)options resultHandler:(void (^)(AVPlayerItem *__nullable playerItem, NSDictionary *__nullable info))resultHandler
+
+- (PHImageRequestID)requestExportSessionForVideo:(PHAsset *)asset options:(nullable PHVideoRequestOptions *)options exportPreset:(NSString *)exportPreset resultHandler:(void (^)(AVAssetExportSession *__nullable exportSession, NSDictionary *__nullable info))resultHandler
+
+- (PHImageRequestID)requestAVAssetForVideo:(PHAsset *)asset options:(nullable PHVideoRequestOptions *)options resultHandler:(void (^)(AVAsset *__nullable asset, AVAudioMix *__nullable audioMix, NSDictionary *__nullable info))resultHandler
+
+#pragma mark - PHCachingImageManager
+
+allowsCachingHighQualityImages
+
+- (void)startCachingImagesForAssets:(NSArray<PHAsset *> *)assets targetSize:(CGSize)targetSize contentMode:(PHImageContentMode)contentMode options:(nullable PHImageRequestOptions *)options
+
+- (void)stopCachingImagesForAssets:(NSArray<PHAsset *> *)assets targetSize:(CGSize)targetSize contentMode:(PHImageContentMode)contentMode options:(nullable PHImageRequestOptions *)options
+
+- (void)stopCachingImagesForAllAssets

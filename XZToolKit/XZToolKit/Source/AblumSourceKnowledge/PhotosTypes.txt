@@ -1,0 +1,144 @@
+
+PhotosTypes:一些枚举定义
+
+照片的mode:
+typedef NS_ENUM(NSInteger, PHImageContentMode) {
+    PHImageContentModeAspectFit
+    PHImageContentModeAspectFill
+    PHImageContentModeDefault = PHImageContentModeAspectFit
+}
+
+CollectionList类型:
+typedef NS_ENUM(NSInteger, PHCollectionListType) {
+    PHCollectionListTypeMomentList
+    PHCollectionListTypeFolder
+    PHCollectionListTypeSmartFolder
+}
+
+
+CollectionList具体类型:
+typedef NS_ENUM(NSInteger, PHCollectionListSubtype) {
+    
+    // PHCollectionListTypeMomentList subtypes
+    PHCollectionListSubtypeMomentListCluster    = 1,
+    PHCollectionListSubtypeMomentListYear       = 2,
+    
+    // PHCollectionListTypeFolder subtypes
+    PHCollectionListSubtypeRegularFolder        = 100,
+    
+    // PHCollectionListTypeSmartFolder subtypes
+    PHCollectionListSubtypeSmartFolderEvents    = 200,
+    PHCollectionListSubtypeSmartFolderFaces     = 201,
+    
+    // Used for fetching if you don't care about the exact subtype
+    PHCollectionListSubtypeAny = NSIntegerMax
+}
+
+
+相册操作:
+typedef NS_ENUM(NSInteger, PHCollectionEditOperation) {
+    PHCollectionEditOperationDeleteContent:删除相册中的一个内容
+    PHCollectionEditOperationRemoveContent:移除相册中的一个内容
+    PHCollectionEditOperationAddContent:增加一个来自于其他相册内容
+    PHCollectionEditOperationCreateContent:创建或者复制一个新内容
+    PHCollectionEditOperationRearrangeContent:改变被容的顺序
+    PHCollectionEditOperationDelete:删除相册
+    PHCollectionEditOperationRename:相册重命名
+}
+相册类型
+typedef NS_ENUM(NSInteger, PHAssetCollectionType) {
+    PHAssetCollectionTypeAlbum:相册
+    PHAssetCollectionTypeSmartAlbum:智能相册
+    PHAssetCollectionTypeMoment:时间相册
+}
+
+相册的具体类型:
+typedef NS_ENUM(NSInteger, PHAssetCollectionSubtype) {
+    
+    // PHAssetCollectionTypeAlbum regular subtypes
+    PHAssetCollectionSubtypeAlbumRegular
+    PHAssetCollectionSubtypeAlbumSyncedEvent
+    PHAssetCollectionSubtypeAlbumSyncedFaces
+    PHAssetCollectionSubtypeAlbumSyncedAlbum
+    PHAssetCollectionSubtypeAlbumImported
+    
+    // PHAssetCollectionTypeAlbum shared subtypes
+    PHAssetCollectionSubtypeAlbumMyPhotoStream,
+    PHAssetCollectionSubtypeAlbumCloudShared,
+    
+    // PHAssetCollectionTypeSmartAlbum subtypes
+    PHAssetCollectionSubtypeSmartAlbumGeneric
+    PHAssetCollectionSubtypeSmartAlbumPanoramas
+    PHAssetCollectionSubtypeSmartAlbumVideos
+    PHAssetCollectionSubtypeSmartAlbumFavorites
+    PHAssetCollectionSubtypeSmartAlbumTimelapses
+    PHAssetCollectionSubtypeSmartAlbumAllHidden
+    PHAssetCollectionSubtypeSmartAlbumRecentlyAdded
+    PHAssetCollectionSubtypeSmartAlbumBursts
+    PHAssetCollectionSubtypeSmartAlbumSlomoVideos
+    PHAssetCollectionSubtypeSmartAlbumUserLibrary
+    PHAssetCollectionSubtypeSmartAlbumSelfPortraits
+    PHAssetCollectionSubtypeSmartAlbumScreenshots
+    
+    // Used for fetching, if you don't care about the exact subtype
+    PHAssetCollectionSubtypeAny = NSIntegerMax
+}
+
+操作:
+typedef NS_ENUM(NSInteger, PHAssetEditOperation) {
+    PHAssetEditOperationDelete:可以被删除
+    PHAssetEditOperationContent:内容可以被编辑
+    PHAssetEditOperationProperties:文件的元数据属性可以被编辑
+}
+
+文件类型:
+typedef NS_ENUM(NSInteger, PHAssetMediaType) {
+    PHAssetMediaTypeUnknown:未知类型
+    PHAssetMediaTypeImage:图片类型
+    PHAssetMediaTypeVideo:视频类型
+    PHAssetMediaTypeAudio:音频类型
+}
+
+文件具体类型
+typedef NS_OPTIONS(NSUInteger, PHAssetMediaSubtype) {
+    PHAssetMediaSubtypeNone:无
+    
+    图片:
+    PHAssetMediaSubtypePhotoPanorama:全景图
+    PHAssetMediaSubtypePhotoHDR:高动态范围图
+    PHAssetMediaSubtypePhotoScreenshot:截图
+    PHAssetMediaSubtypePhotoLive:直播图
+
+    视频:
+    PHAssetMediaSubtypeVideoStreamed:流
+    PHAssetMediaSubtypeVideoHighFrameRate:高帧速率
+    PHAssetMediaSubtypeVideoTimelapse:间隔拍摄
+}
+
+一个文件是否或者如何被标记成喜欢:
+typedef NS_OPTIONS(NSUInteger, PHAssetBurstSelectionType) {
+    PHAssetBurstSelectionTypeNone:没有
+    PHAssetBurstSelectionTypeAutoPick:自动选择
+    PHAssetBurstSelectionTypeUserPick:用户选择
+}
+
+文件的资源类型:
+typedef NS_OPTIONS(NSUInteger, PHAssetSourceType) {
+    PHAssetSourceTypeNone:无
+    PHAssetSourceTypeUserLibrary:用户的图库
+    PHAssetSourceTypeCloudShared:iCloud分享
+    PHAssetSourceTypeiTunesSynced:iTunes同步
+}
+
+typedef NS_ENUM(NSInteger, PHAssetResourceType) {
+    PHAssetResourceTypePhoto                             = 1,
+    PHAssetResourceTypeVideo                             = 2,
+    PHAssetResourceTypeAudio                             = 3,
+    PHAssetResourceTypeAlternatePhoto                    = 4,
+    PHAssetResourceTypeFullSizePhoto                     = 5,
+    PHAssetResourceTypeFullSizeVideo                     = 6,
+    PHAssetResourceTypeAdjustmentData                    = 7,
+    PHAssetResourceTypeAdjustmentBasePhoto               = 8,
+    PHAssetResourceTypePairedVideo NS_AVAILABLE_IOS(9_1) = 9,
+}
+

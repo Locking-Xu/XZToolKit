@@ -1,0 +1,50 @@
+
+PHAsset:代表照片库中的一个资源
+
+属性:
+mediaType:文件类型
+
+mediaSubtypes:文件的具体的类型
+
+pixelWidth:像素宽
+
+pixelHeight:像素高
+
+creationDate:创建时间
+
+modificationDate:修改时间
+
+location:位置
+
+duration:视频文件的时长
+
+hidden:文件是否隐藏
+
+favorite:文件是否喜欢
+
+burstIdentifier:唯一标识符
+
+burstSelectionTypes:指示一个文件是否或者如何被标记成喜欢
+
+representsBurst:文件是否是来自照片序列的代表照片
+
+sourceType:文件的资源类型
+
+API:
+- (BOOL)canPerformEditOperation:(PHAssetEditOperation)editOperation:是否可以执行指定操作
+
+#pragma mark - Fetching assets
+
++ (PHFetchResult<PHAsset *> *)fetchAssetsInAssetCollection:(PHAssetCollection *)assetCollection options:(nullable PHFetchOptions *)options
+
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithLocalIdentifiers:(NSArray<NSString *> *)identifiers options:(nullable PHFetchOptions *)options
+
++ (nullable PHFetchResult<PHAsset *> *)fetchKeyAssetsInAssetCollection:(PHAssetCollection *)assetCollection options:(nullable PHFetchOptions *)options
+
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithBurstIdentifier:(NSString *)burstIdentifier options:(nullable PHFetchOptions *)options
+
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithOptions:(nullable PHFetchOptions *)options;
+
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithMediaType:(PHAssetMediaType)mediaType options:(nullable PHFetchOptions *)options
+
++ (PHFetchResult<PHAsset *> *)fetchAssetsWithALAssetURLs:(NSArray<NSURL *> *)assetURLs options:(nullable PHFetchOptions *)options;

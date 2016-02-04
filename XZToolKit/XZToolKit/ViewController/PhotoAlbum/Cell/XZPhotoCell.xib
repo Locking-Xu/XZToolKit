@@ -7,26 +7,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XZPhotoAblumCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="gTV-IL-0wX" customClass="XZPhotoCell">
             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-HK-1Kt">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-Ab-slh">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="ZyJ-HK-1Kt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gq6-dw-QrH"/>
-                <constraint firstAttribute="bottom" secondItem="ZyJ-HK-1Kt" secondAttribute="bottom" id="gg5-0l-hQH"/>
-                <constraint firstAttribute="trailing" secondItem="ZyJ-HK-1Kt" secondAttribute="trailing" id="u0h-tw-C9c"/>
-                <constraint firstItem="ZyJ-HK-1Kt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yxr-Ct-qbK"/>
+                <constraint firstAttribute="trailing" secondItem="fXQ-Ab-slh" secondAttribute="trailing" id="OkN-aT-pRv"/>
+                <constraint firstItem="fXQ-Ab-slh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zcl-UF-CKA"/>
+                <constraint firstItem="fXQ-Ab-slh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aTV-wA-C5r"/>
+                <constraint firstAttribute="bottom" secondItem="fXQ-Ab-slh" secondAttribute="bottom" id="zFz-SH-GTA"/>
             </constraints>
             <connections>
-                <outlet property="_imageView" destination="ZyJ-HK-1Kt" id="1ZA-U1-iPt"/>
+                <outlet property="imageView" destination="fXQ-Ab-slh" id="lqF-31-JpB"/>
             </connections>
         </collectionViewCell>
     </objects>

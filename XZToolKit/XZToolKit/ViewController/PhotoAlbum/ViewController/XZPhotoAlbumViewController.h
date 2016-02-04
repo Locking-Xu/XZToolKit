@@ -10,4 +10,9 @@
 
 @interface XZPhotoAlbumViewController : UIViewController
 
+//相册的URL(IOS7下使用)
+@property (nonatomic, strong) NSURL *groupUrl;
+//相册的ID(IOS8下使用)
+@property (nonatomic, strong) NSString *groupID;
+
 @end

@@ -1,0 +1,74 @@
+
+PHImageRequestOptions:控制加载图片时的一系列参数
+
+图片版本:
+typedef NS_ENUM(NSInteger, PHImageRequestOptionsVersion) {
+    PHImageRequestOptionsVersionCurrent
+    PHImageRequestOptionsVersionUnadjusted
+    PHImageRequestOptionsVersionOriginal
+}
+
+传递模式:
+typedef NS_ENUM(NSInteger, PHImageRequestOptionsDeliveryMode) {
+    PHImageRequestOptionsDeliveryModeOpportunistic
+    PHImageRequestOptionsDeliveryModeHighQualityFormat
+    PHImageRequestOptionsDeliveryModeFastFormat
+}
+
+调整模式:
+typedef NS_ENUM(NSInteger, PHImageRequestOptionsResizeMode) {
+    PHImageRequestOptionsResizeModeNone
+    PHImageRequestOptionsResizeModeFast
+    PHImageRequestOptionsResizeModeExact
+}
+
+PHImageRequestOptions :
+
+属性(同上):
+version:版本
+
+deliveryMode:传递模式
+
+resizeMode:调整模式
+
+normalizedCropRect:指定的巨型区域
+
+networkAccessAllowed:是否可以从iCloud下载
+
+synchronous:是否可以同步
+
+progressHandler:获得从iCloud获得的资源的进度
+
+PHLivePhotoRequestOptions:动态照片
+
+
+deliveryMode;
+
+networkAccessAllowed;
+
+progressHandler;
+
+PHVideoRequestOptions:视频
+
+typedef NS_ENUM(NSInteger, PHVideoRequestOptionsVersion) {
+    PHVideoRequestOptionsVersionCurrent
+    PHVideoRequestOptionsVersionOriginal
+}
+
+typedef NS_ENUM(NSInteger, PHVideoRequestOptionsDeliveryMode) {
+    PHVideoRequestOptionsVersionCurrent
+    PHVideoRequestOptionsDeliveryModeAutomatic
+    PHVideoRequestOptionsDeliveryModeMediumQualityFormat
+    PHVideoRequestOptionsDeliveryModeHighQualityFormat
+    PHVideoRequestOptionsDeliveryModeMediumQualityFormat
+    PHVideoRequestOptionsDeliveryModeFastFormat 
+}
+
+属性(同上):
+networkAccessAllowed;
+
+version;
+
+deliveryMode;
+
+progressHandler;

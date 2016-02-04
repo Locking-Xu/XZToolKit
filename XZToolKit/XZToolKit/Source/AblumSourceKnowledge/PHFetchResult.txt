@@ -1,0 +1,28 @@
+
+PHFetchResult表示资源的结果集合
+
+count:集合中元素的数量
+
+firstObject:第一个元素
+
+lastObject:最后一个元素
+
+-(ObjectType)objectAtIndex:(NSUInteger)index:下标为index的元素
+
+-(ObjectType)objectAtIndexedSubscript:(NSUInteger)idx:下标为index的元素
+
+-(BOOL)containsObject:(ObjectType)anObject:是否包含anObject
+
+-(NSUInteger)indexOfObject:(ObjectType)anObject:anObject的下标
+
+-(NSUInteger)indexOfObject:(ObjectType)anObject inRange:(NSRange)range:anObject在range范围内的下标
+
+-(NSArray<ObjectType> *)objectsAtIndexes:(NSIndexSet *)indexes:获得indexes下标集合的元素
+
+-(void)enumerateObjectsUsingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block:枚举集合中的元素
+
+-(void)enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block:枚举集合中的元素可利用opts进行反序枚举
+
+-(void)enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block:枚举s集合中的元素
+
+- (NSUInteger)countOfAssetsWithMediaType:(PHAssetMediaType)mediaType:特定媒体类型的元素数量

@@ -1,0 +1,17 @@
+
+PHFetchOptions:获取资源时的参数，可以传 nil，即使用系统默认值
+
+属性:
+predicate:谓词
+
+sortDescriptors:NSSortDescriptor的数组,指定获取的文件的排序(按时间排序)
+
+includeHiddenAssets:是否获取被hidden的文件
+
+includeAllBurstAssets:是否获取burst photo sequences的文件
+
+includeAssetSourceTypes:文件的类型
+
+fetchLimit:获取数据的数量限制
+
+wantsIncrementalChangeDetails:是否收到文件详细的变化信息
