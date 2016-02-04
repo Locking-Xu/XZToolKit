@@ -1,0 +1,29 @@
+
+Clear Button:清楚按钮
+Never Appears:从不显示
+Appears while editing:编辑时显示
+Appears unless editing:除编辑外显示
+Is Always Appears:一直显示
+
+Capitalization:是否自动转换大小写
+None:不自动切换大小写
+Words:每个单词首字母大写
+Sentence:每个句子首字母大写
+All Characters:所有都大写
+
+Correction:是否自动纠正
+
+Spell Checking:是否进行拼写检查
+
+Keyboard Type:键盘类型
+Default:默认
+ASCII Capable:英文键盘
+Numbers and Punctuation:数字和标点符号
+Number Pad:数字
+Phone Pad:拨号键盘
+E-mail Address:邮箱键盘
+Decimal Pad:数字和小数点
+
+Return Key:返回键
+Auto-enable Return Key:return默认禁用,输入内容后才可用
+Secure Text Entry:密码输入框

@@ -9,8 +9,9 @@
 #import "XZCollectionViewLayoutViewController.h"
 #import "XZCollectionDemoViewController.h"
 #import "UINavigationController+Common.h"
+#import "XZCodeViewController.h"
 
-#define TitleArray @[@"Layout样式一",@"Layout样式二",@"Layout样式三"]
+#define TitleArray @[@"UICollectionViewLayout",@"Layout样式一",@"Layout样式二",@"Layout样式三"]
 
 @interface XZCollectionViewLayoutViewController ()
 
@@ -57,11 +58,21 @@
 #pragma mark UITableView_Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    [self.navigationController setBackItemTitle:@"" viewController:self];
+    
+    if (indexPath.row == 0) {
+        
+        XZCodeViewController *codeVc = [[XZCodeViewController alloc] init];
+        codeVc.knowledgeTitle = TitleArray[indexPath.row];
+        [self.navigationController pushViewController:codeVc animated:YES];
+        
+        return;
+    }
+    
     XZCollectionDemoViewController *collectionViewDemoVc = [[XZCollectionDemoViewController alloc] init];
     
     collectionViewDemoVc.title = TitleArray[indexPath.row];
-    
-    [self.navigationController setBackItemTitle:@"" viewController:self];
+
     [self.navigationController pushViewController:collectionViewDemoVc animated:YES];
 }
 

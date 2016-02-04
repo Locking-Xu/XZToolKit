@@ -1,0 +1,18 @@
+
+Line Breaks:
+
+1.Truncate Head:对字符串多余部分的开始部分进行截断，用...代替
+
+2.Truncate Middle:对字符串多余部分的中间部分进行截断，用...代替
+
+3.Truncate Tail:对字符串多余部分的结尾部分进行截断，用...代替
+		
+AutoShrink(自动收缩):
+
+1.Fixed Font Size:不缩放
+
+2.Minimum Font Scale:控制文本缩放的比例
+
+3.Minimum Font Size:设置文本字体缩放
+
+4.Tighten Letter Spacing复选框:系统会自动压缩字符之间的空白

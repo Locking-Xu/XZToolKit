@@ -1,0 +1,21 @@
+
+归档就是用某种格式把一个或多个对象保存到文件中
+
+NSKeyedArchiver:
+
++(NSData *)archivedDataWithRootObject:(id)rootObject
++(BOOL)archiveRootObject:(id)rootObject toFile:(NSString *)path
+
+NSKeyedUnarchiver:
+
++(nullable id)unarchiveObjectWithData:(NSData *)data
++(nullable id)unarchiveTopLevelObjectWithData:(NSData *)data error:(NSError **)error 
+
+自定类实现归档
+1.实现NSCopying
+2.encodeWithCoder:
+3.initWithCoder:
+
+使用NSData完成自定义归档
+
+归档实现深复制

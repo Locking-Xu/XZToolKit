@@ -61,6 +61,13 @@
 		E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */; };
 		E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */; };
 		E9543F211C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */; };
+		E960C8651C637297002BB94A /* 谓词NSPredicate.txt in Resources */ = {isa = PBXBuildFile; fileRef = E960C8641C637297002BB94A /* 谓词NSPredicate.txt */; };
+		E960C8671C6374AC002BB94A /* NSFileHandle.txt in Resources */ = {isa = PBXBuildFile; fileRef = E960C8661C6374AC002BB94A /* NSFileHandle.txt */; };
+		E960C8691C63792C002BB94A /* 归档.txt in Resources */ = {isa = PBXBuildFile; fileRef = E960C8681C63792C002BB94A /* 归档.txt */; };
+		E960C86B1C6379C1002BB94A /* UILabel.txt in Resources */ = {isa = PBXBuildFile; fileRef = E960C86A1C6379C1002BB94A /* UILabel.txt */; };
+		E960C86D1C637F1D002BB94A /* UITextField.txt in Resources */ = {isa = PBXBuildFile; fileRef = E960C86C1C637F1D002BB94A /* UITextField.txt */; };
+		E960C8701C637FCB002BB94A /* UICollectionViewLayout.txt in Resources */ = {isa = PBXBuildFile; fileRef = E960C86F1C637FCB002BB94A /* UICollectionViewLayout.txt */; };
+		E960C8721C6380EE002BB94A /* UIVisualEffectView.txt in Resources */ = {isa = PBXBuildFile; fileRef = E960C8711C6380EE002BB94A /* UIVisualEffectView.txt */; };
 		E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */ = {isa = PBXBuildFile; fileRef = E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */; };
 		E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */ = {isa = PBXBuildFile; fileRef = E96A9E571C60E7B50082AAA0 /* 枚举.txt */; };
 		E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */ = {isa = PBXBuildFile; fileRef = E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */; };
@@ -202,6 +209,13 @@
 		E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "initWithCoder和initWithFrame.txt"; sourceTree = "<group>"; };
 		E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单例继承.txt"; sourceTree = "<group>"; };
 		E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Documents、Library、tmp区别.txt"; sourceTree = "<group>"; };
+		E960C8641C637297002BB94A /* 谓词NSPredicate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "谓词NSPredicate.txt"; sourceTree = "<group>"; };
+		E960C8661C6374AC002BB94A /* NSFileHandle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSFileHandle.txt; sourceTree = "<group>"; };
+		E960C8681C63792C002BB94A /* 归档.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "归档.txt"; sourceTree = "<group>"; };
+		E960C86A1C6379C1002BB94A /* UILabel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UILabel.txt; sourceTree = "<group>"; };
+		E960C86C1C637F1D002BB94A /* UITextField.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UITextField.txt; sourceTree = "<group>"; };
+		E960C86F1C637FCB002BB94A /* UICollectionViewLayout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UICollectionViewLayout.txt; sourceTree = "<group>"; };
+		E960C8711C6380EE002BB94A /* UIVisualEffectView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIVisualEffectView.txt; sourceTree = "<group>"; };
 		E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "静态Cell.txt"; sourceTree = "<group>"; };
 		E96A9E571C60E7B50082AAA0 /* 枚举.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "枚举.txt"; sourceTree = "<group>"; };
 		E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "使用Size Class适应屏幕旋转.txt"; sourceTree = "<group>"; };
@@ -447,6 +461,7 @@
 		E93821901C5A053D004F7EC4 /* CollectionViewKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E960C86E1C637FBD002BB94A /* Source */,
 				E938219A1C5A0B1B004F7EC4 /* Cell */,
 				E9522C741C58C6D900A896FF /* Layout */,
 				E93821931C5A08D7004F7EC4 /* ViewController */,
@@ -503,6 +518,14 @@
 				E93821A51C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		E960C86E1C637FBD002BB94A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E960C86F1C637FCB002BB94A /* UICollectionViewLayout.txt */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 		E970066A1C55C8FC0071E0E3 /* DayCalendar */ = {
@@ -577,6 +600,12 @@
 		E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E960C8711C6380EE002BB94A /* UIVisualEffectView.txt */,
+				E960C86C1C637F1D002BB94A /* UITextField.txt */,
+				E960C86A1C6379C1002BB94A /* UILabel.txt */,
+				E960C8681C63792C002BB94A /* 归档.txt */,
+				E960C8661C6374AC002BB94A /* NSFileHandle.txt */,
+				E960C8641C637297002BB94A /* 谓词NSPredicate.txt */,
 				E9B1B26E1C622AE100B7AADB /* ==和isEqual方法.txt */,
 				E9543F011C5F45FD006D7BEF /* @synchronized.txt */,
 				E9543EFD1C5F3954006D7BEF /* BOOL类型.txt */,
@@ -1017,6 +1046,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9543F091C5F4FD4006D7BEF /* 类别和类扩展.txt in Resources */,
+				E960C8691C63792C002BB94A /* 归档.txt in Resources */,
+				E960C8651C637297002BB94A /* 谓词NSPredicate.txt in Resources */,
+				E960C8701C637FCB002BB94A /* UICollectionViewLayout.txt in Resources */,
 				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
 				E9036A141C62FBB800384199 /* PHImageManager.txt in Resources */,
 				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
@@ -1024,8 +1056,10 @@
 				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
 				E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */,
 				E9543EF81C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt in Resources */,
+				E960C86D1C637F1D002BB94A /* UITextField.txt in Resources */,
 				E908D0C91C61EFE400F95A8F /* ALAssetsLibrary.txt in Resources */,
 				E9B1B2731C622E4A00B7AADB /* 面向对象相关.txt in Resources */,
+				E960C8671C6374AC002BB94A /* NSFileHandle.txt in Resources */,
 				E9B1B2711C622DC900B7AADB /* 动态调用方法.txt in Resources */,
 				E9B1B26B1C62276200B7AADB /* 键值监听KVO.txt in Resources */,
 				E938218B1C59F167004F7EC4 /* 5.png in Resources */,
@@ -1034,12 +1068,14 @@
 				E9543F041C5F480D006D7BEF /* 代理和通知的区别.txt in Resources */,
 				E9543EFC1C5F3177006D7BEF /* new和alloc init.txt in Resources */,
 				E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */,
+				E960C86B1C6379C1002BB94A /* UILabel.txt in Resources */,
 				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
 				E9036A0A1C62F03800384199 /* PHAssetCollection.txt in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
 				E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */,
+				E960C8721C6380EE002BB94A /* UIVisualEffectView.txt in Resources */,
 				E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */,
 				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
 				E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */,

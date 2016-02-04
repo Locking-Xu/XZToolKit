@@ -1,0 +1,22 @@
+
+- (void)prepareLayout:开始布局时调用该方法执行准备工作
+
+- (NSArray*)layoutAttributesForElementsInRect:(CGRect)rect:返回指定NSRect区域内所有单元格的大小和位置等布局信息
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath:返回indexPath对应的单元格的大小和位置等布局信息
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath:返回指定分区的页眉、页脚控件的大小和位置等布局信息
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString*)elementKind atIndexPath:(NSIndexPath *)indexPath:返回指定分区的装饰控件的大小和位置等布局信息
+
+- (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath:单元格动态增加时候，自动调用
+
+- (UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *)itemIndexPath:单元格动态删除时候，自动调用
+
+- (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingSupplementaryElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)elementIndexPath:页眉页脚动态增加时候，自动调用
+
+- (UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingSupplementaryElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)elementIndexPath:页眉页脚动态删除时候，自动调用
+
+- (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath:装饰空间动态增加时候，自动调用
+
+- (UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath:装饰空间动态删除时候，自动调用

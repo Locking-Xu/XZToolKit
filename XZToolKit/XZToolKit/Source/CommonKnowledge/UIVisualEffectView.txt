@@ -1,0 +1,10 @@
+ 
+IOS8新增的模糊View
+
+style:
+
+UIBlurEffectsStyleLight:白色模糊效果
+
+UIBlurEffectsStyleExtraLight:极亮的白色模糊效果
+
+UIBlurEffectsStyleDark:暗色模糊效果
