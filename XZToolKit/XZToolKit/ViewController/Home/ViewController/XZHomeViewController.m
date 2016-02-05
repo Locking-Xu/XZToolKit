@@ -16,6 +16,8 @@
 #import "XZCoreAnimationViewController.h"
 #import "XZCAShapeLayerViewController.h"
 #import "XZEventsThroughViewController.h"
+#import "XZGuideViewController.h"
+#import "XZLovelyLoginViewController.h"
 
 #import "UINavigationController+Common.h"
 #import "XZAlbumHelper.h"
@@ -24,7 +26,7 @@
 
 #define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关",@"相册资源文件相关"]
 
-#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout",@"CoreAnimation",@"CAShapeLayer",@"事件穿透"]
+#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout",@"CoreAnimation",@"CAShapeLayer",@"事件穿透",@"应用引导页",@"可爱的登录页面"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -230,6 +232,24 @@
                 XZEventsThroughViewController *eventsThroughVc = [[XZEventsThroughViewController alloc] init];
                 eventsThroughVc.title = DemoList[indexPath.row];
                 [self.navigationController pushViewController:eventsThroughVc animated:YES];
+            }
+                break;
+            //应用引导页
+            case 10:
+            {
+                XZGuideViewController *guideViewVc = [[XZGuideViewController alloc] init];
+                
+                [self.navigationController pushViewController:guideViewVc animated:YES];
+            }
+                break;
+            //可爱的登录页面
+            case 11:
+            {
+                XZLovelyLoginViewController *lovelyLoginVc = [[XZLovelyLoginViewController alloc] init];
+                lovelyLoginVc.title = DemoList[indexPath.row];
+                
+                [self.navigationController pushViewController:lovelyLoginVc animated:YES];
+                
             }
                 break;
             default:

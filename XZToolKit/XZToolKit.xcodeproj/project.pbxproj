@@ -133,6 +133,22 @@
 		E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31DE1C64732700DCDFD0 /* NSData+AES256.m */; };
 		E9ED31E21C64732700DCDFD0 /* NSString+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31E01C64732700DCDFD0 /* NSString+AES256.m */; };
 		E9ED31E51C64747300DCDFD0 /* NSString+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31E41C64747300DCDFD0 /* NSString+Format.m */; };
+		E9ED31EB1C6478A200DCDFD0 /* XZGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31EA1C6478A200DCDFD0 /* XZGuideViewController.m */; };
+		E9ED31EE1C6478B800DCDFD0 /* XZGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31ED1C6478B800DCDFD0 /* XZGuideView.m */; };
+		E9ED31F11C64790C00DCDFD0 /* img_index_01bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31F01C64790C00DCDFD0 /* img_index_01bg.png */; };
+		E9ED31F31C64791200DCDFD0 /* img_index_01txt.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31F21C64791200DCDFD0 /* img_index_01txt.png */; };
+		E9ED31F51C64791800DCDFD0 /* img_index_02bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31F41C64791800DCDFD0 /* img_index_02bg.png */; };
+		E9ED31F71C64791E00DCDFD0 /* img_index_02txt.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31F61C64791E00DCDFD0 /* img_index_02txt.png */; };
+		E9ED31F91C64792400DCDFD0 /* img_index_03bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31F81C64792400DCDFD0 /* img_index_03bg.png */; };
+		E9ED31FB1C64792900DCDFD0 /* img_index_03txt.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31FA1C64792900DCDFD0 /* img_index_03txt.png */; };
+		E9ED32011C647B2100DCDFD0 /* XZLovelyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED32001C647B2100DCDFD0 /* XZLovelyLoginViewController.m */; };
+		E9ED32041C647B9200DCDFD0 /* XZRotateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED32031C647B9200DCDFD0 /* XZRotateButton.m */; };
+		E9ED32071C647CBB00DCDFD0 /* leftArm.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED32061C647CBB00DCDFD0 /* leftArm.png */; };
+		E9ED32091C647CC100DCDFD0 /* rightArm.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED32081C647CC100DCDFD0 /* rightArm.png */; };
+		E9ED320B1C647CCA00DCDFD0 /* fist.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED320A1C647CCA00DCDFD0 /* fist.png */; };
+		E9ED320D1C647CD300DCDFD0 /* animalHead.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED320C1C647CD300DCDFD0 /* animalHead.png */; };
+		E9ED320F1C647CDC00DCDFD0 /* loginPassword.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED320E1C647CDC00DCDFD0 /* loginPassword.png */; };
+		E9ED32111C647CE300DCDFD0 /* loginUser.png in Resources */ = {isa = PBXBuildFile; fileRef = E9ED32101C647CE300DCDFD0 /* loginUser.png */; };
 		E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */; };
 		E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */; };
 		E9F0E8591C61C85800268CE2 /* 类方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8581C61C85800268CE2 /* 类方法.txt */; };
@@ -334,6 +350,26 @@
 		E9ED31E01C64732700DCDFD0 /* NSString+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES256.m"; sourceTree = "<group>"; };
 		E9ED31E31C64747300DCDFD0 /* NSString+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Format.h"; sourceTree = "<group>"; };
 		E9ED31E41C64747300DCDFD0 /* NSString+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Format.m"; sourceTree = "<group>"; };
+		E9ED31E91C6478A200DCDFD0 /* XZGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGuideViewController.h; sourceTree = "<group>"; };
+		E9ED31EA1C6478A200DCDFD0 /* XZGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGuideViewController.m; sourceTree = "<group>"; };
+		E9ED31EC1C6478B800DCDFD0 /* XZGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGuideView.h; sourceTree = "<group>"; };
+		E9ED31ED1C6478B800DCDFD0 /* XZGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGuideView.m; sourceTree = "<group>"; };
+		E9ED31F01C64790C00DCDFD0 /* img_index_01bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_index_01bg.png; sourceTree = "<group>"; };
+		E9ED31F21C64791200DCDFD0 /* img_index_01txt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_index_01txt.png; sourceTree = "<group>"; };
+		E9ED31F41C64791800DCDFD0 /* img_index_02bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_index_02bg.png; sourceTree = "<group>"; };
+		E9ED31F61C64791E00DCDFD0 /* img_index_02txt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_index_02txt.png; sourceTree = "<group>"; };
+		E9ED31F81C64792400DCDFD0 /* img_index_03bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_index_03bg.png; sourceTree = "<group>"; };
+		E9ED31FA1C64792900DCDFD0 /* img_index_03txt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_index_03txt.png; sourceTree = "<group>"; };
+		E9ED31FF1C647B2100DCDFD0 /* XZLovelyLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLovelyLoginViewController.h; sourceTree = "<group>"; };
+		E9ED32001C647B2100DCDFD0 /* XZLovelyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLovelyLoginViewController.m; sourceTree = "<group>"; };
+		E9ED32021C647B9200DCDFD0 /* XZRotateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRotateButton.h; sourceTree = "<group>"; };
+		E9ED32031C647B9200DCDFD0 /* XZRotateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRotateButton.m; sourceTree = "<group>"; };
+		E9ED32061C647CBB00DCDFD0 /* leftArm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArm.png; sourceTree = "<group>"; };
+		E9ED32081C647CC100DCDFD0 /* rightArm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArm.png; sourceTree = "<group>"; };
+		E9ED320A1C647CCA00DCDFD0 /* fist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fist.png; sourceTree = "<group>"; };
+		E9ED320C1C647CD300DCDFD0 /* animalHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalHead.png; sourceTree = "<group>"; };
+		E9ED320E1C647CDC00DCDFD0 /* loginPassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginPassword.png; sourceTree = "<group>"; };
+		E9ED32101C647CE300DCDFD0 /* loginUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginUser.png; sourceTree = "<group>"; };
 		E9F0E8521C61A3A700268CE2 /* XZAlbumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAlbumHelper.h; sourceTree = "<group>"; };
 		E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumHelper.m; sourceTree = "<group>"; };
 		E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetRepresentation.txt; sourceTree = "<group>"; };
@@ -766,8 +802,10 @@
 				E9BC74241C60454B0033BF4D /* CommonListViewController */,
 				E9ED31C21C642E1000DCDFD0 /* CoreAnimation */,
 				E9ED31D41C646E5300DCDFD0 /* EventsThrough */,
+				E9ED31E61C64782C00DCDFD0 /* GuideView */,
 				E99E32481C4F1E350016D25D /* Home */,
 				E9E0C2161C576A650041193A /* ImageBrowser */,
+				E9ED31FC1C647ACE00DCDFD0 /* LovelyLogin */,
 				E938216E1C59E873004F7EC4 /* PhotoAlbum */,
 				E984B9B61C5E173D00C00BC7 /* PopView */,
 			);
@@ -1062,6 +1100,88 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E9ED31E61C64782C00DCDFD0 /* GuideView */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31EF1C6478F900DCDFD0 /* Source */,
+				E9ED31E81C64784700DCDFD0 /* View */,
+				E9ED31E71C64783800DCDFD0 /* ViewController */,
+			);
+			path = GuideView;
+			sourceTree = "<group>";
+		};
+		E9ED31E71C64783800DCDFD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31E91C6478A200DCDFD0 /* XZGuideViewController.h */,
+				E9ED31EA1C6478A200DCDFD0 /* XZGuideViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9ED31E81C64784700DCDFD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31EC1C6478B800DCDFD0 /* XZGuideView.h */,
+				E9ED31ED1C6478B800DCDFD0 /* XZGuideView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9ED31EF1C6478F900DCDFD0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31F01C64790C00DCDFD0 /* img_index_01bg.png */,
+				E9ED31F21C64791200DCDFD0 /* img_index_01txt.png */,
+				E9ED31F41C64791800DCDFD0 /* img_index_02bg.png */,
+				E9ED31F61C64791E00DCDFD0 /* img_index_02txt.png */,
+				E9ED31F81C64792400DCDFD0 /* img_index_03bg.png */,
+				E9ED31FA1C64792900DCDFD0 /* img_index_03txt.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E9ED31FC1C647ACE00DCDFD0 /* LovelyLogin */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED32051C647C9800DCDFD0 /* Source */,
+				E9ED31FE1C647AE000DCDFD0 /* View */,
+				E9ED31FD1C647AD900DCDFD0 /* ViewController */,
+			);
+			path = LovelyLogin;
+			sourceTree = "<group>";
+		};
+		E9ED31FD1C647AD900DCDFD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31FF1C647B2100DCDFD0 /* XZLovelyLoginViewController.h */,
+				E9ED32001C647B2100DCDFD0 /* XZLovelyLoginViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9ED31FE1C647AE000DCDFD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED32021C647B9200DCDFD0 /* XZRotateButton.h */,
+				E9ED32031C647B9200DCDFD0 /* XZRotateButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9ED32051C647C9800DCDFD0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED320C1C647CD300DCDFD0 /* animalHead.png */,
+				E9ED320A1C647CCA00DCDFD0 /* fist.png */,
+				E9ED32061C647CBB00DCDFD0 /* leftArm.png */,
+				E9ED320E1C647CDC00DCDFD0 /* loginPassword.png */,
+				E9ED32101C647CE300DCDFD0 /* loginUser.png */,
+				E9ED32081C647CC100DCDFD0 /* rightArm.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		E9F0E8551C61A88C00268CE2 /* AblumSourceKnowledge */ = {
 			isa = PBXGroup;
 			children = (
@@ -1168,8 +1288,10 @@
 				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
 				E9036A141C62FBB800384199 /* PHImageManager.txt in Resources */,
 				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
+				E9ED32071C647CBB00DCDFD0 /* leftArm.png in Resources */,
 				E9B1B2671C62259D00B7AADB /* 屏幕旋转.txt in Resources */,
 				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
+				E9ED31FB1C64792900DCDFD0 /* img_index_03txt.png in Resources */,
 				E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */,
 				E9543EF81C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt in Resources */,
 				E960C86D1C637F1D002BB94A /* UITextField.txt in Resources */,
@@ -1185,9 +1307,11 @@
 				E9543EFC1C5F3177006D7BEF /* new和alloc init.txt in Resources */,
 				E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */,
 				E960C86B1C6379C1002BB94A /* UILabel.txt in Resources */,
+				E9ED31F71C64791E00DCDFD0 /* img_index_02txt.png in Resources */,
 				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
 				E9036A0A1C62F03800384199 /* PHAssetCollection.txt in Resources */,
+				E9ED31F31C64791200DCDFD0 /* img_index_01txt.png in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
 				E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */,
@@ -1200,6 +1324,7 @@
 				E9B1B2651C621F6400B7AADB /* 形参个数可变方法.txt in Resources */,
 				E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
+				E9ED32091C647CC100DCDFD0 /* rightArm.png in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
 				E9ED31D31C6450A400DCDFD0 /* CAShapeLayer.txt in Resources */,
@@ -1214,16 +1339,21 @@
 				E9B1B2771C62330C00B7AADB /* NSSet.txt in Resources */,
 				E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */,
 				E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */,
+				E9ED31F51C64791800DCDFD0 /* img_index_02bg.png in Resources */,
+				E9ED31F11C64790C00DCDFD0 /* img_index_01bg.png in Resources */,
 				E9543EFE1C5F3954006D7BEF /* BOOL类型.txt in Resources */,
 				E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */,
 				E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */,
 				E93821AD1C5A1709004F7EC4 /* TableView索引.txt in Resources */,
 				E9036A101C62F46200384199 /* PhotosTypes.txt in Resources */,
+				E9ED320B1C647CCA00DCDFD0 /* fist.png in Resources */,
 				E938218C1C59F167004F7EC4 /* 4.png in Resources */,
 				E908D0C31C61D71200F95A8F /* ALAsset.txt in Resources */,
+				E9ED31F91C64792400DCDFD0 /* img_index_03bg.png in Resources */,
 				E9036A0E1C62F3DC00384199 /* PHAsset.txt in Resources */,
 				E938218F1C59F167004F7EC4 /* 2.png in Resources */,
 				E9E0C18E1C5705CE0041193A /* TableView下划线左右间距.txt in Resources */,
+				E9ED320F1C647CDC00DCDFD0 /* loginPassword.png in Resources */,
 				E9036A0C1C62F2F600384199 /* PHFetchResult.txt in Resources */,
 				E9036A121C62FA5500384199 /* PHImageRequestOptions.txt in Resources */,
 				E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */,
@@ -1231,10 +1361,12 @@
 				E9ED31C81C642FB900DCDFD0 /* XZCoreAnimationViewController.xib in Resources */,
 				E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */,
 				E9ED31CA1C6448D700DCDFD0 /* CoreAnimation.txt in Resources */,
+				E9ED32111C647CE300DCDFD0 /* loginUser.png in Resources */,
 				E938218E1C59F167004F7EC4 /* 1.png in Resources */,
 				E9036A291C633AC500384199 /* XZAlbumCell.xib in Resources */,
 				E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */,
 				E984B9C91C5E227700C00BC7 /* 内联函数.txt in Resources */,
+				E9ED320D1C647CD300DCDFD0 /* animalHead.png in Resources */,
 				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
 				E920DE4B1C50B7CB00F08A9C /* XZMonthCalendarViewController.xib in Resources */,
 			);
@@ -1271,6 +1403,7 @@
 				E9036A201C63020100384199 /* XZPhotoCell.m in Sources */,
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */,
+				E9ED32011C647B2100DCDFD0 /* XZLovelyLoginViewController.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
 				E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */,
 				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
@@ -1278,6 +1411,7 @@
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
+				E9ED31EB1C6478A200DCDFD0 /* XZGuideViewController.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
@@ -1292,6 +1426,8 @@
 				E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */,
 				E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
+				E9ED32041C647B9200DCDFD0 /* XZRotateButton.m in Sources */,
+				E9ED31EE1C6478B800DCDFD0 /* XZGuideView.m in Sources */,
 				E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */,
 				E9ED31CF1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
