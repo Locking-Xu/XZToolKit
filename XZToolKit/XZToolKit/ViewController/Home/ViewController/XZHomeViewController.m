@@ -13,6 +13,9 @@
 #import "XZCommonListViewController.h"
 #import "XZCollectionViewLayoutViewController.h"
 #import "XZAlbumListController.h"
+#import "XZCoreAnimationViewController.h"
+#import "XZCAShapeLayerViewController.h"
+#import "XZEventsThroughViewController.h"
 
 #import "UINavigationController+Common.h"
 #import "XZAlbumHelper.h"
@@ -21,7 +24,7 @@
 
 #define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关",@"相册资源文件相关"]
 
-#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout"]
+#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout",@"CoreAnimation",@"CAShapeLayer",@"事件穿透"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -196,18 +199,43 @@
                 [self.navigationController pushViewController:popViewVc animated:YES];
             }
                 break;
-            
+            //CollectionViewLayout
             case 6:
             {
                 XZCollectionViewLayoutViewController *collectionViewLayoutVc = [[XZCollectionViewLayoutViewController alloc] init];
                 collectionViewLayoutVc.title = DemoList[indexPath.row];
                 [self.navigationController pushViewController:collectionViewLayoutVc animated:YES];
             }
+                break;
+            //CoreAnimation
+            case 7:
+            {
+                XZCoreAnimationViewController *coreAnimationVc = [[XZCoreAnimationViewController alloc] initWithNibName:@"XZCoreAnimationViewController" bundle:[NSBundle mainBundle]];
+                coreAnimationVc.title = DemoList[indexPath.row];
+                [self.navigationController pushViewController:coreAnimationVc animated:YES];
+            }
+                break;
+            //CAShapeLayer
+            case 8:
+            {
+                XZCAShapeLayerViewController *caShapeLayerVc = [[XZCAShapeLayerViewController alloc] init];
+                caShapeLayerVc.title = DemoList[indexPath.row];
+                
+                [self.navigationController pushViewController:caShapeLayerVc animated:YES];
+            }
+                break;
+            //事件穿透
+            case 9:
+            {
+                XZEventsThroughViewController *eventsThroughVc = [[XZEventsThroughViewController alloc] init];
+                eventsThroughVc.title = DemoList[indexPath.row];
+                [self.navigationController pushViewController:eventsThroughVc animated:YES];
+            }
+                break;
             default:
                 break;
         }
-        
-        
+
     }
     //Knowledge
     else if (indexPath.section == 1){

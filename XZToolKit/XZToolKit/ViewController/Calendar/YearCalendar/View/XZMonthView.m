@@ -12,6 +12,7 @@
 #import "XZMonthCalendarViewController.h"
 #import "UINavigationController+Common.h"
 #import "NSDate+String.h"
+#import "NSString+Format.h"
 
 @implementation XZMonthView
 
@@ -67,7 +68,7 @@
 
     }else{
         
-        [vc.navigationController setBackItemTitle:XZIntToString(self.year) viewController:vc];
+        [vc.navigationController setBackItemTitle:[NSString stringFromInt:self.year] viewController:vc];
         [vc.navigationController pushViewController:monthCalendarVC animated:YES];
         
     }

@@ -11,6 +11,7 @@
 #import "XZCollectionLayoutStyleTwo.h"
 #import "XZCollectionLayoutStyleThree.h"
 #import "XZCollectionDemoCell.h"
+#import "NSString+Format.h"
 
 @interface XZCollectionDemoViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>{
     
@@ -117,7 +118,7 @@
     
     cell.backgroundColor = RandomColor;
     
-    cell.textLabel.text = XZIntToString(indexPath.row);
+    cell.textLabel.text = [NSString stringFromInt:indexPath.row];
     
     return cell;
     

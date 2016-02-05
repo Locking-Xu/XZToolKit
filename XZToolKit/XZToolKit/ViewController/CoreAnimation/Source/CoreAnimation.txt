@@ -1,0 +1,54 @@
+     
+CABasicAnimation:
+
+position -> 位移
+
+bounds -> 大小
+
+opacity -> 透明度
+
+backgroundColor -> 背景色
+
+transform -> 仿射变换
+
+transform.scale -> 缩放
+
+transform.scale.x -> x轴缩放
+
+transform.scale.y -> y轴缩放
+
+transform.scale.z -> z轴缩放
+
+transform.rotation -> 旋转
+
+transform.rotation.x -> 绕x轴旋转
+
+transform.rotation.y -> 绕y轴旋转
+
+transform.rotation.z -> 绕z轴旋转
+
+CATransitionAnimationType:
+
+kCATransitionFade
+
+kCATransitionMoveIn
+
+kCATransitionPush
+
+kCATransitionReveal
+
+@"cube"
+
+@"suckEffect"
+
+@"oglFlip"
+
+@"rippleEffect"
+
+@"pageCurl"
+
+@"pageUnCurl"
+
+@"cameraIrisHollowOpen"
+
+@"cameraIrisHollowClose"

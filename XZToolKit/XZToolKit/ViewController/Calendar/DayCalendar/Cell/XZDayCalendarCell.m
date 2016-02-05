@@ -8,6 +8,7 @@
 
 #import "XZDayCalendarCell.h"
 #import "NSDate+String.h"
+#import "NSString+Format.h"
 
 @implementation XZDayCalendarCell
 
@@ -32,7 +33,7 @@
         self.userInteractionEnabled = NO;
     }
     
-    self.gregorianLabel.text = XZIntToString(day);
+    self.gregorianLabel.text = [NSString stringFromInt:day];
     NSDateComponents *dateComponent= [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:date];
     
     [dateComponent setDay:day];

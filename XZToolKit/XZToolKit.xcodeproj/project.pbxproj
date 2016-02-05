@@ -123,6 +123,16 @@
 		E9E0C1931C570C400041193A /* XZCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C1911C570C400041193A /* XZCodeViewController.xib */; };
 		E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0C2191C576C4F0041193A /* XZImageBrowserViewController.m */; };
 		E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */; };
+		E9ED31C71C642FB900DCDFD0 /* XZCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31C51C642FB900DCDFD0 /* XZCoreAnimationViewController.m */; };
+		E9ED31C81C642FB900DCDFD0 /* XZCoreAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31C61C642FB900DCDFD0 /* XZCoreAnimationViewController.xib */; };
+		E9ED31CA1C6448D700DCDFD0 /* CoreAnimation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31C91C6448D700DCDFD0 /* CoreAnimation.txt */; };
+		E9ED31CF1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31CE1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m */; };
+		E9ED31D31C6450A400DCDFD0 /* CAShapeLayer.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31D21C6450A400DCDFD0 /* CAShapeLayer.txt */; };
+		E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31D81C646E9600DCDFD0 /* XZEventsThroughViewController.m */; };
+		E9ED31DC1C646EB700DCDFD0 /* XZEventsThroughView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31DB1C646EB700DCDFD0 /* XZEventsThroughView.m */; };
+		E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31DE1C64732700DCDFD0 /* NSData+AES256.m */; };
+		E9ED31E21C64732700DCDFD0 /* NSString+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31E01C64732700DCDFD0 /* NSString+AES256.m */; };
+		E9ED31E51C64747300DCDFD0 /* NSString+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31E41C64747300DCDFD0 /* NSString+Format.m */; };
 		E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */; };
 		E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */; };
 		E9F0E8591C61C85800268CE2 /* 类方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8581C61C85800268CE2 /* 类方法.txt */; };
@@ -307,6 +317,23 @@
 		E9E0C2181C576C4F0041193A /* XZImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageBrowserViewController.h; sourceTree = "<group>"; };
 		E9E0C2191C576C4F0041193A /* XZImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserViewController.m; sourceTree = "<group>"; };
 		E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserViewController.xib; sourceTree = "<group>"; };
+		E9ED31C41C642FB900DCDFD0 /* XZCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCoreAnimationViewController.h; sourceTree = "<group>"; };
+		E9ED31C51C642FB900DCDFD0 /* XZCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCoreAnimationViewController.m; sourceTree = "<group>"; };
+		E9ED31C61C642FB900DCDFD0 /* XZCoreAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCoreAnimationViewController.xib; sourceTree = "<group>"; };
+		E9ED31C91C6448D700DCDFD0 /* CoreAnimation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CoreAnimation.txt; sourceTree = "<group>"; };
+		E9ED31CD1C644F5300DCDFD0 /* XZCAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCAShapeLayerViewController.h; sourceTree = "<group>"; };
+		E9ED31CE1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCAShapeLayerViewController.m; sourceTree = "<group>"; };
+		E9ED31D21C6450A400DCDFD0 /* CAShapeLayer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CAShapeLayer.txt; sourceTree = "<group>"; };
+		E9ED31D71C646E9600DCDFD0 /* XZEventsThroughViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEventsThroughViewController.h; sourceTree = "<group>"; };
+		E9ED31D81C646E9600DCDFD0 /* XZEventsThroughViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEventsThroughViewController.m; sourceTree = "<group>"; };
+		E9ED31DA1C646EB700DCDFD0 /* XZEventsThroughView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEventsThroughView.h; sourceTree = "<group>"; };
+		E9ED31DB1C646EB700DCDFD0 /* XZEventsThroughView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEventsThroughView.m; sourceTree = "<group>"; };
+		E9ED31DD1C64732700DCDFD0 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		E9ED31DE1C64732700DCDFD0 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		E9ED31DF1C64732700DCDFD0 /* NSString+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES256.h"; sourceTree = "<group>"; };
+		E9ED31E01C64732700DCDFD0 /* NSString+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES256.m"; sourceTree = "<group>"; };
+		E9ED31E31C64747300DCDFD0 /* NSString+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Format.h"; sourceTree = "<group>"; };
+		E9ED31E41C64747300DCDFD0 /* NSString+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Format.m"; sourceTree = "<group>"; };
 		E9F0E8521C61A3A700268CE2 /* XZAlbumHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAlbumHelper.h; sourceTree = "<group>"; };
 		E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumHelper.m; sourceTree = "<group>"; };
 		E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetRepresentation.txt; sourceTree = "<group>"; };
@@ -461,9 +488,9 @@
 		E93821901C5A053D004F7EC4 /* CollectionViewKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				E960C86E1C637FBD002BB94A /* Source */,
 				E938219A1C5A0B1B004F7EC4 /* Cell */,
 				E9522C741C58C6D900A896FF /* Layout */,
+				E960C86E1C637FBD002BB94A /* Source */,
 				E93821931C5A08D7004F7EC4 /* ViewController */,
 			);
 			path = CollectionViewKnowledge;
@@ -525,7 +552,7 @@
 			children = (
 				E960C86F1C637FCB002BB94A /* UICollectionViewLayout.txt */,
 			);
-			name = Source;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E970066A1C55C8FC0071E0E3 /* DayCalendar */ = {
@@ -600,21 +627,19 @@
 		E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				E960C8711C6380EE002BB94A /* UIVisualEffectView.txt */,
-				E960C86C1C637F1D002BB94A /* UITextField.txt */,
-				E960C86A1C6379C1002BB94A /* UILabel.txt */,
-				E960C8681C63792C002BB94A /* 归档.txt */,
-				E960C8661C6374AC002BB94A /* NSFileHandle.txt */,
-				E960C8641C637297002BB94A /* 谓词NSPredicate.txt */,
 				E9B1B26E1C622AE100B7AADB /* ==和isEqual方法.txt */,
 				E9543F011C5F45FD006D7BEF /* @synchronized.txt */,
 				E9543EFD1C5F3954006D7BEF /* BOOL类型.txt */,
 				E9543EFF1C5F3FAA006D7BEF /* Block使用.txt */,
 				E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */,
 				E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */,
+				E960C8661C6374AC002BB94A /* NSFileHandle.txt */,
 				E9B1B2761C62330C00B7AADB /* NSSet.txt */,
 				E9543EF91C5F30B2006D7BEF /* OOP语言三大特征.txt */,
 				E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */,
+				E960C86A1C6379C1002BB94A /* UILabel.txt */,
+				E960C86C1C637F1D002BB94A /* UITextField.txt */,
+				E960C8711C6380EE002BB94A /* UIVisualEffectView.txt */,
 				E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */,
 				E9543EF51C5F0FC0006D7BEF /* copy的setter方法.txt */,
 				E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */,
@@ -628,11 +653,13 @@
 				E9543F1E1C5F5CE4006D7BEF /* 单例继承.txt */,
 				E9B1B2741C6230ED00B7AADB /* 对象复制.txt */,
 				E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */,
+				E960C8681C63792C002BB94A /* 归档.txt */,
 				E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */,
 				E96A9E571C60E7B50082AAA0 /* 枚举.txt */,
 				E9543EF71C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt */,
 				E9543F081C5F4FD4006D7BEF /* 类别和类扩展.txt */,
 				E9F0E8581C61C85800268CE2 /* 类方法.txt */,
+				E960C8641C637297002BB94A /* 谓词NSPredicate.txt */,
 				E9B1B26A1C62276200B7AADB /* 键值监听KVO.txt */,
 				E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */,
 				E96A9E551C60E76F0082AAA0 /* 静态Cell.txt */,
@@ -708,8 +735,14 @@
 		E99E32221C4F1D5A0016D25D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E9ED31DD1C64732700DCDFD0 /* NSData+AES256.h */,
+				E9ED31DE1C64732700DCDFD0 /* NSData+AES256.m */,
 				E99E32261C4F1E0B0016D25D /* NSDate+String.h */,
 				E99E32271C4F1E0B0016D25D /* NSDate+String.m */,
+				E9ED31DF1C64732700DCDFD0 /* NSString+AES256.h */,
+				E9ED31E01C64732700DCDFD0 /* NSString+AES256.m */,
+				E9ED31E31C64747300DCDFD0 /* NSString+Format.h */,
+				E9ED31E41C64747300DCDFD0 /* NSString+Format.m */,
 				E99E32281C4F1E0B0016D25D /* UIButton+FillColor.h */,
 				E99E32291C4F1E0B0016D25D /* UIButton+FillColor.m */,
 				E99E322A1C4F1E0B0016D25D /* UIColor+HexString.h */,
@@ -726,10 +759,13 @@
 			isa = PBXGroup;
 			children = (
 				E920DE311C50795800F08A9C /* AddressBook */,
+				E9ED31CB1C644F2600DCDFD0 /* CAShapeLayer */,
 				E99E32391C4F1E350016D25D /* Calendar */,
 				E93821911C5A05CF004F7EC4 /* CodeDetail */,
 				E93821901C5A053D004F7EC4 /* CollectionViewKnowledge */,
 				E9BC74241C60454B0033BF4D /* CommonListViewController */,
+				E9ED31C21C642E1000DCDFD0 /* CoreAnimation */,
+				E9ED31D41C646E5300DCDFD0 /* EventsThrough */,
 				E99E32481C4F1E350016D25D /* Home */,
 				E9E0C2161C576A650041193A /* ImageBrowser */,
 				E938216E1C59E873004F7EC4 /* PhotoAlbum */,
@@ -946,6 +982,86 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E9ED31C21C642E1000DCDFD0 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31D11C64509B00DCDFD0 /* Source */,
+				E9ED31C31C642E3900DCDFD0 /* ViewController */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		E9ED31C31C642E3900DCDFD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31C41C642FB900DCDFD0 /* XZCoreAnimationViewController.h */,
+				E9ED31C51C642FB900DCDFD0 /* XZCoreAnimationViewController.m */,
+				E9ED31C61C642FB900DCDFD0 /* XZCoreAnimationViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9ED31CB1C644F2600DCDFD0 /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31D01C64509100DCDFD0 /* Source */,
+				E9ED31CC1C644F3100DCDFD0 /* ViewController */,
+			);
+			path = CAShapeLayer;
+			sourceTree = "<group>";
+		};
+		E9ED31CC1C644F3100DCDFD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31CD1C644F5300DCDFD0 /* XZCAShapeLayerViewController.h */,
+				E9ED31CE1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9ED31D01C64509100DCDFD0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31D21C6450A400DCDFD0 /* CAShapeLayer.txt */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E9ED31D11C64509B00DCDFD0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31C91C6448D700DCDFD0 /* CoreAnimation.txt */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E9ED31D41C646E5300DCDFD0 /* EventsThrough */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31D61C646E6C00DCDFD0 /* View */,
+				E9ED31D51C646E6100DCDFD0 /* ViewController */,
+			);
+			path = EventsThrough;
+			sourceTree = "<group>";
+		};
+		E9ED31D51C646E6100DCDFD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31D71C646E9600DCDFD0 /* XZEventsThroughViewController.h */,
+				E9ED31D81C646E9600DCDFD0 /* XZEventsThroughViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9ED31D61C646E6C00DCDFD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31DA1C646EB700DCDFD0 /* XZEventsThroughView.h */,
+				E9ED31DB1C646EB700DCDFD0 /* XZEventsThroughView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E9F0E8551C61A88C00268CE2 /* AblumSourceKnowledge */ = {
 			isa = PBXGroup;
 			children = (
@@ -1086,6 +1202,7 @@
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
+				E9ED31D31C6450A400DCDFD0 /* CAShapeLayer.txt in Resources */,
 				E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */,
 				E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */,
 				E9036A211C63020100384199 /* XZPhotoCell.xib in Resources */,
@@ -1111,7 +1228,9 @@
 				E9036A121C62FA5500384199 /* PHImageRequestOptions.txt in Resources */,
 				E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */,
 				E9543F021C5F45FD006D7BEF /* @synchronized.txt in Resources */,
+				E9ED31C81C642FB900DCDFD0 /* XZCoreAnimationViewController.xib in Resources */,
 				E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */,
+				E9ED31CA1C6448D700DCDFD0 /* CoreAnimation.txt in Resources */,
 				E938218E1C59F167004F7EC4 /* 1.png in Resources */,
 				E9036A291C633AC500384199 /* XZAlbumCell.xib in Resources */,
 				E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */,
@@ -1135,6 +1254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9ED31C71C642FB900DCDFD0 /* XZCoreAnimationViewController.m in Sources */,
 				E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */,
 				E9318B651C51E9380039D357 /* XZTipView.m in Sources */,
 				E93821A91C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m in Sources */,
@@ -1143,14 +1263,17 @@
 				E984B9BC1C5E178100C00BC7 /* XZPopViewViewController.m in Sources */,
 				E93821A01C5A0B6F004F7EC4 /* XZCollectionLayoutStyleOne.m in Sources */,
 				E938219D1C5A0B3F004F7EC4 /* XZCollectionDemoCell.m in Sources */,
+				E9ED31DC1C646EB700DCDFD0 /* XZEventsThroughView.m in Sources */,
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,
 				E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
 				E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */,
 				E9036A201C63020100384199 /* XZPhotoCell.m in Sources */,
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
+				E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
 				E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */,
+				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
 				E93821A61C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m in Sources */,
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
@@ -1161,13 +1284,16 @@
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
 				E93821991C5A0B00004F7EC4 /* XZCollectionDemoViewController.m in Sources */,
 				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
+				E9ED31E21C64732700DCDFD0 /* NSString+AES256.m in Sources */,
 				E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */,
+				E9ED31E51C64747300DCDFD0 /* NSString+Format.m in Sources */,
 				E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
 				E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */,
 				E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
 				E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */,
+				E9ED31CF1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,

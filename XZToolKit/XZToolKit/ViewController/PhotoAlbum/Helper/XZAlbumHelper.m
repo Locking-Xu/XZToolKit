@@ -8,6 +8,7 @@
 
 #import "XZAlbumHelper.h"
 #import "XZUtils.h"
+#import "NSString+Format.h"
 
 //拍照
 
@@ -166,7 +167,7 @@
             NSNumber *type = [group valueForProperty:ALAssetsGroupPropertyType];
             NSString *name = [group valueForProperty:ALAssetsGroupPropertyName];
             NSString *objectID = [group valueForProperty:ALAssetsGroupPropertyPersistentID];
-            NSString *count = XZIntToString([group numberOfAssets]);
+            NSString *count = [NSString stringFromInt:[group numberOfAssets]];
             UIImage *posterImage = [UIImage imageWithCGImage:[group posterImage]];
             
             NSDictionary *dic = @{
@@ -218,7 +219,7 @@
         
         NSString *name = collection.localizedTitle;
         NSString *objectID = collection.localIdentifier;
-        NSString *type = XZIntToString(collection.assetCollectionType);
+        NSString *type = [NSString stringFromInt:collection.assetCollectionType];
         
         PHFetchResult *imageResult = [PHAsset fetchAssetsInAssetCollection:collection options:nil];
         
@@ -230,7 +231,7 @@
                               @"type":type,
                               @"name":name,
                               @"objectID":objectID,
-                              @"count":XZIntToString(count),
+                              @"count":[NSString stringFromInt:count],
                               @"asset":asset
                               };
         [array addObject:dic];

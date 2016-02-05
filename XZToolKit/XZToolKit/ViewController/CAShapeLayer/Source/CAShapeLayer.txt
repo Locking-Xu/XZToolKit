@@ -1,0 +1,11 @@
+     
+CALayer:在被初始化时是需要一个frame的值,整个frame值一般与给定view的bounds值一致,它本身是有形状的,而且是矩形
+
+CAShapeLayer:在初始化时也需要给一个frame值,但是它本身没有形状,它的形状来源于你给定的一个path,然后它去取CGPath的值,与CALayer有很大区别
+
+CAShapeLayer有几点很重要：
+1.它依附于一个给定的path.必须给path.即使path不完整也会自动首尾相接
+
+2.strokeStart以及strokeEnd代表着这个path中所占用的百分比
+
+3.CAShapeLayer动画仅仅限于沿着边缘的动画效果,它实现不了填充效果
