@@ -9,6 +9,9 @@
 #import "XZImageBrowserCell.h"
 #import "XZUtils.h"
 #import "UIView+Frame.h"
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
 
 @implementation XZImageBrowserCell{
     
@@ -25,8 +28,6 @@
     
     _scrollView.minimumZoomScale = 1.0f;
     _scrollView.maximumZoomScale = 2.0f;
-    
-    
     
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
@@ -52,16 +53,37 @@
     
 }
 
-- (void)setUpWithImageName:(NSString *)imageName{
+- (void)setUpWithImage:(id)imageObject{
     
     if (_scrollView.zoomScale != 1.0) {
         
         [_scrollView setZoomScale:1.0 animated:NO];
     }
     
-    UIImage *image = XZGetImageFromBundle(imageName, @"png");
+    if (DEVICE_VERSION >= 8.0) {
+        
+        PHAsset *asset = (PHAsset *)imageObject;
+        
+        [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:self.bounds.size contentMode:PHImageContentModeDefault options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                _imageView.image = result;
+                
+            });
+            
+        }];
+
+        
+    }else{
     
-    _imageView.image = image;
+        ALAsset *asset = (ALAsset *)imageObject;
+    
+        ALAssetRepresentation *representation = asset.defaultRepresentation;
+        _imageView.image =  [UIImage imageWithCGImage:representation.fullScreenImage] ;
+    
+    }
+
 }
 
 - (void)close{

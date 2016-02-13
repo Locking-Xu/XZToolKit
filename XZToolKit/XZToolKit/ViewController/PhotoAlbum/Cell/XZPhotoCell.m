@@ -9,6 +9,7 @@
 #import "XZPhotoCell.h"
 #import <Photos/Photos.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "UIView+Animation.h"
 
 @implementation XZPhotoCell{
     
@@ -51,6 +52,28 @@
         self.imageView.image = image;
         
     }
+}
+
+
+- (IBAction)selectBtn_Pressed:(UIButton *)sender {
+    
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+    
+        [sender setImage:[UIImage imageNamed:@"selected"] forState:UIControlStateNormal];
+        
+        
+    }else{
+       [sender setImage:[UIImage imageNamed:@"unSelected"] forState:UIControlStateNormal];
+    }
+    
+    NSMutableArray *values = [NSMutableArray array];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.2, 1.2, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.9, 0.9, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+    
+    [sender transformToValues:values duration:0.5];
 }
 
 @end

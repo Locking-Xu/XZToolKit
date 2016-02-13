@@ -1,0 +1,20 @@
+TabBar使用频率很高的一个组件,TabBar的TabBarItem有两个属性一个是image(未选中图片),另一个是selectedImage（选中时图片）
+
+有时设置了选种的图片,运行时的图片变成了蓝色的,但是实际上图片是红色的,看来系统的TabBar会对图片默认使用TintColor再进行渲染。
+
+解决方法：
+
+1.设置渲染色
+
+self.tabBarController.tabBar.tintColor = [UIColor blackColor];
+
+2.设置图片不进行渲染
+
+self.tabBarItem.selectedImage = [[UIImage  imageNamed:@"XX"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+ 
+
+TabBarItem上标题颜色也可以修改
+
+[self.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor redColor],NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+

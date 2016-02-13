@@ -1,0 +1,2 @@
+
+self.navigationController.navigationBar.tintColor = [UIColor whiteColor]

@@ -10,5 +10,5 @@
 
 @interface XZImageBrowserCell : UICollectionViewCell<UIScrollViewDelegate>
 
-- (void)setUpWithImageName:(NSString *)imageName;
+- (void)setUpWithImage:(id)imageObject;
 @end

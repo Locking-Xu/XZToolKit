@@ -153,7 +153,7 @@
 
 
 /**
- *  获取相册中的资源(在IOS7系统下)
+ *  获取相册(在IOS7系统下)
  */
 - (void)getGroupInIOS7Successful:(getGroupSuccessful)success fail:(getGroupFail)fail{
     
@@ -194,7 +194,7 @@
 }
 
 /**
- *  获取相册中的资源(在IOS8系统下)
+ *  获取相册(在IOS8系统下)
  */
 - (void)getGroupInIOS8Successful:(getGroupSuccessful)success fail:(getGroupFail)fail{
     
@@ -334,13 +334,6 @@
             success(array);
     }];
 }
-
-
-
-
-
-
-
 
 
 

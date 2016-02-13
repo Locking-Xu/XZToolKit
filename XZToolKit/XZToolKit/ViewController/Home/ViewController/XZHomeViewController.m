@@ -22,11 +22,12 @@
 #import "UINavigationController+Common.h"
 #import "XZAlbumHelper.h"
 #import "XZUtils.h"
+#import "XZBezierPathViewController.h"
 
 
-#define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关",@"相册资源文件相关"]
+#define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关",@"相册资源文件相关",@"UITabBarController相关"]
 
-#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout",@"CoreAnimation",@"CAShapeLayer",@"事件穿透",@"应用引导页",@"可爱的登录页面"]
+#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout",@"CoreAnimation",@"CAShapeLayer",@"事件穿透",@"应用引导页",@"可爱的登录页面",@"贝塞尔曲线"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -252,6 +253,15 @@
                 
             }
                 break;
+            //贝塞尔曲线
+            case 12:
+            {
+                XZBezierPathViewController *bezierPathVc = [[XZBezierPathViewController alloc] init];
+                bezierPathVc.title = DemoList[indexPath.row];
+                
+                [self.navigationController pushViewController:bezierPathVc animated:YES];
+            }
+                break;
             default:
                 break;
         }
@@ -266,7 +276,7 @@
             //@"知识杂记"
             case 0:
             {
-                titleList = @[@"内联函数",@"ViewController的生命周期",@"Objective-C中关键字",@"单例创建",@"copy的setter方法",@"深拷贝与浅拷贝",@"OOP语言三大特征",@"new和alloc init",@"BOOL类型",@"Block使用",@"@synchronized",@"代理和通知的区别",@"类别和类扩展",@"initWithCoder和initWithFrame",@"单例继承",@"Documents、Library、tmp区别",@"静态Cell",@"枚举",@"使用Size Class适应屏幕旋转",@"IOS的生命周期",@"类方法",@"形参个数可变方法",@"屏幕旋转",@"键值编码KVC",@"键值监听KVO",@"判断指针变量的实际类型",@"==和isEqual方法",@"动态调用方法",@"面向对象相关",@"对象复制",@"NSSet",@"谓词NSPredicate",@"NSFileHandle",@"归档",@"UILabel",@"UITextField",@"UIVisualEffectView"];
+                titleList = @[@"内联函数",@"ViewController的生命周期",@"Objective-C中关键字",@"单例创建",@"copy的setter方法",@"深拷贝与浅拷贝",@"OOP语言三大特征",@"new和alloc init",@"BOOL类型",@"Block使用",@"@synchronized",@"代理和通知的区别",@"类别和类扩展",@"initWithCoder和initWithFrame",@"单例继承",@"Documents、Library、tmp区别",@"静态Cell",@"枚举",@"使用Size Class适应屏幕旋转",@"IOS的生命周期",@"类方法",@"形参个数可变方法",@"屏幕旋转",@"键值编码KVC",@"键值监听KVO",@"判断指针变量的实际类型",@"==和isEqual方法",@"动态调用方法",@"面向对象相关",@"对象复制",@"NSSet",@"谓词NSPredicate",@"NSFileHandle",@"归档",@"UILabel",@"UITextField",@"UIVisualEffectView",@"pch文件",@"automaticallyAdjustsScrollViewInsets",@"EdgesForExtendedLayout"];
             }
                 break;
             //@"UITableView相关"
@@ -284,7 +294,7 @@
             //@"UINavigationController相关"
             case 3:
             {
-                titleList = @[];
+                titleList = @[@"设置返回键标题",@"UINavigationBar设置标题",@"设置返回键和返回键标题颜色",@"隐藏或显示返回键",@"自定义UINavigationBar按钮",@"UINavigationBar设置背景色",@"UINavigationBar设置背景图"];
             }
                 break;
             //相册资源文件相关
@@ -293,6 +303,12 @@
                 titleList = @[@"ALAssetRepresentation",@"ALAsset",@"ALAssetsGroup",@"ALAssetsFilter",@"ALAssetsLibrary",@"PHFetchOptions",@"PHAssetCollection",@"PHFetchResult",@"PHAsset",@"PhotosTypes",@"PHImageRequestOptions",@"PHImageManager"];
             }
                 
+                break;
+            //UITabBarController相关
+            case 5:
+            {
+                titleList = @[@"UITabBarItem的selectedImage"];
+            }
                 break;
             default:
                 break;

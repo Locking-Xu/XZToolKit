@@ -33,8 +33,7 @@
     _closeBtn.layer.borderWidth = 1.0f;
     _closeBtn.layer.cornerRadius = 5.0f;
     
-    _pageLabel.text = [NSString stringWithFormat:@"1/%ld",(long)self.imageNameArray.count];
-    _titleLabel.text = self.imageNameArray[0];
+    _pageLabel.text = [NSString stringWithFormat:@"1/%ld",(long)self.imageArray.count];
     
     [self setUpCollectionView];
     
@@ -81,14 +80,14 @@
 #pragma mark - UICollectionView_DataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
-    return self.imageNameArray.count;
+    return self.imageArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     XZImageBrowserCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageBorwserCell" forIndexPath:indexPath];
     
-    [cell setUpWithImageName:self.imageNameArray[indexPath.row]];
+    [cell setUpWithImage:self.imageArray[indexPath.row]];
     
     return cell;
 }
@@ -100,8 +99,8 @@
     
     NSInteger page = offset.x/UISCREEN_WIDTH;
 
-    _pageLabel.text = [NSString stringWithFormat:@"%ld/%ld",(long)page+1,(long)self.imageNameArray.count];
-    _titleLabel.text = self.imageNameArray[page];
+    _pageLabel.text = [NSString stringWithFormat:@"%ld/%ld",(long)page+1,(long)self.imageArray.count];
+
 }
 
 @end

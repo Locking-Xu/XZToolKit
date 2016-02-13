@@ -1,0 +1,5 @@
+
+self.navigationItem.title = @"Test"
+
+设置字体和颜色
+self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor yellowColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:50],NSFontAttributeName, nil];

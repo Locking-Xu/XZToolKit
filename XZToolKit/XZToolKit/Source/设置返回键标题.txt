@@ -1,0 +1,9 @@
+
+在push进来的上一级界面中设置：
+
+UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init]；
+
+backItem.title = @"";（不要标题就设置空字符串，其他标题直接写字符串就好了）
+
+self.navigationItem.backBarButtonItem = backItem;
+

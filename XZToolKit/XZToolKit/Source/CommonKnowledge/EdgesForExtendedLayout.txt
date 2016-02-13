@@ -1,0 +1,7 @@
+
+在IOS7之后viewController有一个新的属性叫做edgesForExtendedLayout,这个属性指定viewController
+
+的view边缘延伸的方向,默认情况下是UIRectEdgeAll，所以view是向四周延伸的,这是属性是针对于
+
+viewController上的self.view的
+

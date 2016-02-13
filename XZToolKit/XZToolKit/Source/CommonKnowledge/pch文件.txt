@@ -1,0 +1,14 @@
+
+Xcode6以后下添加pch文件步骤：
+
+　　1.添加新文件选择pch文件
+
+   2.给pch文件命名
+
+   3.点击创建后可以在左侧的文件列表看见自己的pch文件
+
+   4.在build setting中设置将prefix Header的debug和release 都设置刚才创建的pch的路径    
+	e.g. $(SRCROOT)/当前工程的名字/pch文件名.pch
+	     $(SRCROOT)代表当前工程文件的路径
+
+   5.重新编译下工程，就可以使用了

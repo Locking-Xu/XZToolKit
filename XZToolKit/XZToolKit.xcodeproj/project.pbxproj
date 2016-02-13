@@ -31,6 +31,7 @@
 		E920DE4B1C50B7CB00F08A9C /* XZMonthCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E920DE491C50B7CB00F08A9C /* XZMonthCalendarViewController.xib */; };
 		E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE4E1C50BE5C00F08A9C /* XZMonthCalendarCell.m */; };
 		E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE571C50CD6D00F08A9C /* XZDayView.m */; };
+		E92411711C6EE55B0009A8EA /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = E92411701C6EE55B0009A8EA /* UIView+Animation.m */; };
 		E9318B651C51E9380039D357 /* XZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9318B641C51E9380039D357 /* XZTipView.m */; };
 		E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821711C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m */; };
 		E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93821721C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib */; };
@@ -115,6 +116,19 @@
 		E9B1B2731C622E4A00B7AADB /* 面向对象相关.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2721C622E4A00B7AADB /* 面向对象相关.txt */; };
 		E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2741C6230ED00B7AADB /* 对象复制.txt */; };
 		E9B1B2771C62330C00B7AADB /* NSSet.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2761C62330C00B7AADB /* NSSet.txt */; };
+		E9B9BD5D1C66E12D00C45040 /* pch文件.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD5C1C66E12D00C45040 /* pch文件.txt */; };
+		E9B9BD5F1C66E24100C45040 /* automaticallyAdjustsScrollViewInsets.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD5E1C66E24100C45040 /* automaticallyAdjustsScrollViewInsets.txt */; };
+		E9B9BD611C66E2DF00C45040 /* EdgesForExtendedLayout.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD601C66E2DF00C45040 /* EdgesForExtendedLayout.txt */; };
+		E9B9BD641C66E46C00C45040 /* UITabBarItem的selectedImage.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD631C66E46C00C45040 /* UITabBarItem的selectedImage.txt */; };
+		E9B9BD991C66E7AD00C45040 /* UINavigationBar设置标题.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD921C66E7AD00C45040 /* UINavigationBar设置标题.txt */; };
+		E9B9BD9A1C66E7AD00C45040 /* 设置返回键标题.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD931C66E7AD00C45040 /* 设置返回键标题.txt */; };
+		E9B9BD9B1C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD941C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt */; };
+		E9B9BD9C1C66E7AD00C45040 /* 隐藏或显示返回键.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD951C66E7AD00C45040 /* 隐藏或显示返回键.txt */; };
+		E9B9BD9D1C66E7AD00C45040 /* 自定义UINavigationBar按钮.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD961C66E7AD00C45040 /* 自定义UINavigationBar按钮.txt */; };
+		E9B9BD9E1C66E7AD00C45040 /* UINavigationBar设置背景色.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD971C66E7AD00C45040 /* UINavigationBar设置背景色.txt */; };
+		E9B9BD9F1C66E7AD00C45040 /* UINavigationBar设置背景图.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B9BD981C66E7AD00C45040 /* UINavigationBar设置背景图.txt */; };
+		E9B9BDA51C66E97200C45040 /* XZBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B9BDA41C66E97200C45040 /* XZBezierPathViewController.m */; };
+		E9B9BDA91C66E9B500C45040 /* XZBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B9BDA81C66E9B500C45040 /* XZBezierPathView.m */; };
 		E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC74271C6045900033BF4D /* XZCommonListViewController.m */; };
 		E9BC742A1C6045900033BF4D /* XZCommonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */; };
 		E9BC74301C6056320033BF4D /* XZCollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC742F1C6056320033BF4D /* XZCollectionViewLayoutViewController.m */; };
@@ -198,6 +212,8 @@
 		E920DE4E1C50BE5C00F08A9C /* XZMonthCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMonthCalendarCell.m; sourceTree = "<group>"; };
 		E920DE561C50CD6D00F08A9C /* XZDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDayView.h; sourceTree = "<group>"; };
 		E920DE571C50CD6D00F08A9C /* XZDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDayView.m; sourceTree = "<group>"; };
+		E924116F1C6EE55B0009A8EA /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		E92411701C6EE55B0009A8EA /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		E9318B631C51E9380039D357 /* XZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTipView.h; sourceTree = "<group>"; };
 		E9318B641C51E9380039D357 /* XZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTipView.m; sourceTree = "<group>"; };
 		E93821701C59E8B3004F7EC4 /* XZPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPhotoAlbumViewController.h; sourceTree = "<group>"; };
@@ -321,6 +337,21 @@
 		E9B1B2721C622E4A00B7AADB /* 面向对象相关.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "面向对象相关.txt"; sourceTree = "<group>"; };
 		E9B1B2741C6230ED00B7AADB /* 对象复制.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "对象复制.txt"; sourceTree = "<group>"; };
 		E9B1B2761C62330C00B7AADB /* NSSet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSSet.txt; sourceTree = "<group>"; };
+		E9B9BD5C1C66E12D00C45040 /* pch文件.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pch文件.txt"; sourceTree = "<group>"; };
+		E9B9BD5E1C66E24100C45040 /* automaticallyAdjustsScrollViewInsets.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = automaticallyAdjustsScrollViewInsets.txt; sourceTree = "<group>"; };
+		E9B9BD601C66E2DF00C45040 /* EdgesForExtendedLayout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EdgesForExtendedLayout.txt; sourceTree = "<group>"; };
+		E9B9BD631C66E46C00C45040 /* UITabBarItem的selectedImage.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UITabBarItem的selectedImage.txt"; sourceTree = "<group>"; };
+		E9B9BD921C66E7AD00C45040 /* UINavigationBar设置标题.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UINavigationBar设置标题.txt"; sourceTree = "<group>"; };
+		E9B9BD931C66E7AD00C45040 /* 设置返回键标题.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "设置返回键标题.txt"; sourceTree = "<group>"; };
+		E9B9BD941C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "设置返回键和返回键标题颜色.txt"; sourceTree = "<group>"; };
+		E9B9BD951C66E7AD00C45040 /* 隐藏或显示返回键.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "隐藏或显示返回键.txt"; sourceTree = "<group>"; };
+		E9B9BD961C66E7AD00C45040 /* 自定义UINavigationBar按钮.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "自定义UINavigationBar按钮.txt"; sourceTree = "<group>"; };
+		E9B9BD971C66E7AD00C45040 /* UINavigationBar设置背景色.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UINavigationBar设置背景色.txt"; sourceTree = "<group>"; };
+		E9B9BD981C66E7AD00C45040 /* UINavigationBar设置背景图.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UINavigationBar设置背景图.txt"; sourceTree = "<group>"; };
+		E9B9BDA31C66E97200C45040 /* XZBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZBezierPathViewController.h; sourceTree = "<group>"; };
+		E9B9BDA41C66E97200C45040 /* XZBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBezierPathViewController.m; sourceTree = "<group>"; };
+		E9B9BDA71C66E9B500C45040 /* XZBezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZBezierPathView.h; sourceTree = "<group>"; };
+		E9B9BDA81C66E9B500C45040 /* XZBezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBezierPathView.m; sourceTree = "<group>"; };
 		E9BC74261C6045900033BF4D /* XZCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCommonListViewController.h; sourceTree = "<group>"; };
 		E9BC74271C6045900033BF4D /* XZCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCommonListViewController.m; sourceTree = "<group>"; };
 		E9BC74281C6045900033BF4D /* XZCommonListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCommonListViewController.xib; sourceTree = "<group>"; };
@@ -668,6 +699,7 @@
 				E9543EFD1C5F3954006D7BEF /* BOOL类型.txt */,
 				E9543EFF1C5F3FAA006D7BEF /* Block使用.txt */,
 				E9543F201C5F5DAB006D7BEF /* Documents、Library、tmp区别.txt */,
+				E9B9BD601C66E2DF00C45040 /* EdgesForExtendedLayout.txt */,
 				E96A9E5B1C60E7E20082AAA0 /* IOS的生命周期.txt */,
 				E960C8661C6374AC002BB94A /* NSFileHandle.txt */,
 				E9B1B2761C62330C00B7AADB /* NSSet.txt */,
@@ -677,9 +709,11 @@
 				E960C86C1C637F1D002BB94A /* UITextField.txt */,
 				E960C8711C6380EE002BB94A /* UIVisualEffectView.txt */,
 				E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */,
+				E9B9BD5E1C66E24100C45040 /* automaticallyAdjustsScrollViewInsets.txt */,
 				E9543EF51C5F0FC0006D7BEF /* copy的setter方法.txt */,
 				E9543F131C5F56B5006D7BEF /* initWithCoder和initWithFrame.txt */,
 				E9543EFB1C5F3177006D7BEF /* new和alloc init.txt */,
+				E9B9BD5C1C66E12D00C45040 /* pch文件.txt */,
 				E9543F031C5F480D006D7BEF /* 代理和通知的区别.txt */,
 				E96A9E591C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt */,
 				E984B9C81C5E227700C00BC7 /* 内联函数.txt */,
@@ -787,6 +821,8 @@
 				E99E322D1C4F1E0B0016D25D /* UINavigationController+Common.m */,
 				E99E322E1C4F1E0B0016D25D /* UIView+Frame.h */,
 				E99E322F1C4F1E0B0016D25D /* UIView+Frame.m */,
+				E924116F1C6EE55B0009A8EA /* UIView+Animation.h */,
+				E92411701C6EE55B0009A8EA /* UIView+Animation.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -794,6 +830,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9B9BDA01C66E93000C45040 /* BezierPath */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E9ED31CB1C644F2600DCDFD0 /* CAShapeLayer */,
 				E99E32391C4F1E350016D25D /* Calendar */,
@@ -946,11 +983,61 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9BC741C1C6042AB0033BF4D /* NavigationControllerKnowledge */ = {
+		E9B9BD621C66E41200C45040 /* TabBarControllerKnowledge */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9BD631C66E46C00C45040 /* UITabBarItem的selectedImage.txt */,
+			);
+			path = TabBarControllerKnowledge;
+			sourceTree = "<group>";
+		};
+		E9B9BD911C66E78800C45040 /* NavigationControllerKnowledge */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9BD921C66E7AD00C45040 /* UINavigationBar设置标题.txt */,
+				E9B9BD931C66E7AD00C45040 /* 设置返回键标题.txt */,
+				E9B9BD941C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt */,
+				E9B9BD951C66E7AD00C45040 /* 隐藏或显示返回键.txt */,
+				E9B9BD961C66E7AD00C45040 /* 自定义UINavigationBar按钮.txt */,
+				E9B9BD971C66E7AD00C45040 /* UINavigationBar设置背景色.txt */,
+				E9B9BD981C66E7AD00C45040 /* UINavigationBar设置背景图.txt */,
+			);
+			name = NavigationControllerKnowledge;
+			sourceTree = "<group>";
+		};
+		E9B9BDA01C66E93000C45040 /* BezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9BDA61C66E99A00C45040 /* View */,
+				E9B9BDA21C66E95500C45040 /* ViewController */,
+				E9B9BDA11C66E94E00C45040 /* Source */,
+			);
+			name = BezierPath;
+			sourceTree = "<group>";
+		};
+		E9B9BDA11C66E94E00C45040 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = NavigationControllerKnowledge;
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E9B9BDA21C66E95500C45040 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9BDA31C66E97200C45040 /* XZBezierPathViewController.h */,
+				E9B9BDA41C66E97200C45040 /* XZBezierPathViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9B9BDA61C66E99A00C45040 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9BDA71C66E9B500C45040 /* XZBezierPathView.h */,
+				E9B9BDA81C66E9B500C45040 /* XZBezierPathView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		E9BC74241C60454B0033BF4D /* CommonListViewController */ = {
@@ -974,9 +1061,10 @@
 		E9BC74311C6056E80033BF4D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E9B9BD911C66E78800C45040 /* NavigationControllerKnowledge */,
 				E9F0E8551C61A88C00268CE2 /* AblumSourceKnowledge */,
 				E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */,
-				E9BC741C1C6042AB0033BF4D /* NavigationControllerKnowledge */,
+				E9B9BD621C66E41200C45040 /* TabBarControllerKnowledge */,
 				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 			);
 			path = Source;
@@ -1282,17 +1370,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9543F091C5F4FD4006D7BEF /* 类别和类扩展.txt in Resources */,
+				E9B9BD5F1C66E24100C45040 /* automaticallyAdjustsScrollViewInsets.txt in Resources */,
 				E960C8691C63792C002BB94A /* 归档.txt in Resources */,
 				E960C8651C637297002BB94A /* 谓词NSPredicate.txt in Resources */,
 				E960C8701C637FCB002BB94A /* UICollectionViewLayout.txt in Resources */,
 				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
 				E9036A141C62FBB800384199 /* PHImageManager.txt in Resources */,
+				E9B9BD9C1C66E7AD00C45040 /* 隐藏或显示返回键.txt in Resources */,
 				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
 				E9ED32071C647CBB00DCDFD0 /* leftArm.png in Resources */,
+				E9B9BD9D1C66E7AD00C45040 /* 自定义UINavigationBar按钮.txt in Resources */,
 				E9B1B2671C62259D00B7AADB /* 屏幕旋转.txt in Resources */,
 				E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */,
 				E9ED31FB1C64792900DCDFD0 /* img_index_03txt.png in Resources */,
+				E9B9BD611C66E2DF00C45040 /* EdgesForExtendedLayout.txt in Resources */,
 				E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */,
+				E9B9BD9E1C66E7AD00C45040 /* UINavigationBar设置背景色.txt in Resources */,
 				E9543EF81C5F20E3006D7BEF /* 深拷贝与浅拷贝.txt in Resources */,
 				E960C86D1C637F1D002BB94A /* UITextField.txt in Resources */,
 				E908D0C91C61EFE400F95A8F /* ALAssetsLibrary.txt in Resources */,
@@ -1309,6 +1402,7 @@
 				E960C86B1C6379C1002BB94A /* UILabel.txt in Resources */,
 				E9ED31F71C64791E00DCDFD0 /* img_index_02txt.png in Resources */,
 				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
+				E9B9BD9A1C66E7AD00C45040 /* 设置返回键标题.txt in Resources */,
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
 				E9036A0A1C62F03800384199 /* PHAssetCollection.txt in Resources */,
 				E9ED31F31C64791200DCDFD0 /* img_index_01txt.png in Resources */,
@@ -1316,6 +1410,7 @@
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
 				E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */,
 				E960C8721C6380EE002BB94A /* UIVisualEffectView.txt in Resources */,
+				E9B9BD991C66E7AD00C45040 /* UINavigationBar设置标题.txt in Resources */,
 				E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */,
 				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
 				E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */,
@@ -1324,6 +1419,7 @@
 				E9B1B2651C621F6400B7AADB /* 形参个数可变方法.txt in Resources */,
 				E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
+				E9B9BD9F1C66E7AD00C45040 /* UINavigationBar设置背景图.txt in Resources */,
 				E9ED32091C647CC100DCDFD0 /* rightArm.png in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
@@ -1339,6 +1435,7 @@
 				E9B1B2771C62330C00B7AADB /* NSSet.txt in Resources */,
 				E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */,
 				E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */,
+				E9B9BD5D1C66E12D00C45040 /* pch文件.txt in Resources */,
 				E9ED31F51C64791800DCDFD0 /* img_index_02bg.png in Resources */,
 				E9ED31F11C64790C00DCDFD0 /* img_index_01bg.png in Resources */,
 				E9543EFE1C5F3954006D7BEF /* BOOL类型.txt in Resources */,
@@ -1359,6 +1456,7 @@
 				E99E32091C4F1B2E0016D25D /* Assets.xcassets in Resources */,
 				E9543F021C5F45FD006D7BEF /* @synchronized.txt in Resources */,
 				E9ED31C81C642FB900DCDFD0 /* XZCoreAnimationViewController.xib in Resources */,
+				E9B9BD641C66E46C00C45040 /* UITabBarItem的selectedImage.txt in Resources */,
 				E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */,
 				E9ED31CA1C6448D700DCDFD0 /* CoreAnimation.txt in Resources */,
 				E9ED32111C647CE300DCDFD0 /* loginUser.png in Resources */,
@@ -1369,6 +1467,7 @@
 				E9ED320D1C647CD300DCDFD0 /* animalHead.png in Resources */,
 				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
 				E920DE4B1C50B7CB00F08A9C /* XZMonthCalendarViewController.xib in Resources */,
+				E9B9BD9B1C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1399,12 +1498,14 @@
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,
 				E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
+				E9B9BDA51C66E97200C45040 /* XZBezierPathViewController.m in Sources */,
 				E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */,
 				E9036A201C63020100384199 /* XZPhotoCell.m in Sources */,
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */,
 				E9ED32011C647B2100DCDFD0 /* XZLovelyLoginViewController.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
+				E9B9BDA91C66E9B500C45040 /* XZBezierPathView.m in Sources */,
 				E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */,
 				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
 				E93821A61C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m in Sources */,
@@ -1434,6 +1535,7 @@
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
 				E9036A241C63027600384199 /* XZAlbumListController.m in Sources */,
+				E92411711C6EE55B0009A8EA /* UIView+Animation.m in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
@@ -1551,6 +1653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XZToolKit/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = XZToolKit/Info.plist;
@@ -1562,6 +1665,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XZToolKit/ViewController/XZToolKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1571,6 +1676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XZToolKit/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = XZToolKit/Info.plist;
@@ -1582,6 +1688,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XZToolKit/ViewController/XZToolKit-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

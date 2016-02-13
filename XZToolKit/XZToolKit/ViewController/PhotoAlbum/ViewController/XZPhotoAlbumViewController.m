@@ -84,12 +84,12 @@
 #pragma mark - UICollectionView_Delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-//    XZImageBrowserViewController *imageBrowserVc = [[XZImageBrowserViewController alloc] initWithNibName:@"XZImageBrowserViewController" bundle:[NSBundle mainBundle]];
-//    
-//    imageBrowserVc.imageNameArray = _imageNameArray;
-//    imageBrowserVc.indexPath = indexPath;
-//    
-//    [self presentViewController:imageBrowserVc animated:YES completion:nil];
+    XZImageBrowserViewController *imageBrowserVc = [[XZImageBrowserViewController alloc] initWithNibName:@"XZImageBrowserViewController" bundle:[NSBundle mainBundle]];
+    
+    imageBrowserVc.imageArray = _dataArray;
+    imageBrowserVc.indexPath = indexPath;
+    
+    [self presentViewController:imageBrowserVc animated:YES completion:nil];
 }
 
 @end

@@ -1,0 +1,6 @@
+
+其实在viewController中有一个属性叫做automaticallyAdjustsScrollViewInsets,这个属性官方的解释简
+
+单的说就是ViewController会根据status Bar、NavigationBar、tabBar的高度对ScrollView的内容的为做
+
+出相应的调整,这个属性是IOS7.0以后的才有的
