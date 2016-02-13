@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>内联函数</string>
+	<string>ViewController的生命周期</string>
+	<string>Objective-C中关键字</string>
+	<string>单例创建</string>
+	<string>copy的setter方法</string>
+	<string>深拷贝与浅拷贝</string>
+	<string>OOP语言三大特征</string>
+	<string>new和alloc init</string>
+	<string>BOOL类型</string>
+	<string>Block使用</string>
+	<string>@synchronized</string>
+	<string>代理和通知的区别</string>
+	<string>类别和类扩展</string>
+	<string>initWithCoder和initWithFrame</string>
+	<string>单例继承</string>
+	<string>Documents、Library、tmp区别</string>
+	<string>静态Cell</string>
+	<string>枚举</string>
+	<string>使用Size Class适应屏幕旋转</string>
+	<string>IOS的生命周期</string>
+	<string>类方法</string>
+	<string>形参个数可变方法</string>
+	<string>屏幕旋转</string>
+	<string>键值编码KVC</string>
+	<string>键值监听KVO</string>
+	<string>判断指针变量的实际类型</string>
+	<string>==和isEqual方法</string>
+	<string>动态调用方法</string>
+	<string>面向对象相关</string>
+	<string>对象复制</string>
+	<string>NSSet</string>
+	<string>谓词NSPredicate</string>
+	<string>NSFileHandle</string>
+	<string>归档</string>
+	<string>UILabel</string>
+	<string>UITextField</string>
+	<string>UIVisualEffectView</string>
+	<string>pch文件</string>
+	<string>automaticallyAdjustsScrollViewInsets</string>
+	<string>EdgesForExtendedLayout</string>
+</array>
+</plist>

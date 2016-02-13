@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>设置返回键标题</string>
+	<string>UINavigationBar设置标题</string>
+	<string>设置返回键和返回键标题颜色</string>
+	<string>隐藏或显示返回键</string>
+	<string>自定义UINavigationBar按钮</string>
+	<string>UINavigationBar设置背景色</string>
+	<string>UINavigationBar设置背景图</string>
+</array>
+</plist>

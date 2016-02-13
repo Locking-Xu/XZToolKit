@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>日历</string>
+	<string>通讯录</string>
+	<string>轮播图</string>
+	<string>TabBar</string>
+	<string>相册</string>
+	<string>PopView</string>
+	<string>UICollectionViewLayout</string>
+	<string>CoreAnimation</string>
+	<string>CAShapeLayer</string>
+	<string>事件穿透</string>
+	<string>应用引导页</string>
+	<string>可爱的登录页面</string>
+	<string>贝塞尔曲线</string>
+	<string>AVFoundation</string>
+</array>
+</plist>

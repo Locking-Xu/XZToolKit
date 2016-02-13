@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>知识杂记</string>
+	<string>UITableView相关</string>
+	<string>UICollectionView相关</string>
+	<string>UINavigationController相关</string>
+	<string>相册资源文件相关</string>
+	<string>UITabBarController相关</string>
+</array>
+</plist>

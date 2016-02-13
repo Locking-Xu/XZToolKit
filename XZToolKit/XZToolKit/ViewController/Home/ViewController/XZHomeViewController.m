@@ -23,17 +23,17 @@
 #import "XZAlbumHelper.h"
 #import "XZUtils.h"
 #import "XZBezierPathViewController.h"
+#import "XZAVFoundationViewController.h"
 
-
-#define KnowledgeList @[@"知识杂记",@"UITableView相关",@"UICollectionView相关",@"UINavigationController相关",@"相册资源文件相关",@"UITabBarController相关"]
-
-#define DemoList @[@"日历",@"通讯录",@"轮播图",@"TabBar",@"相册",@"PopView",@"UICollectionViewLayout",@"CoreAnimation",@"CAShapeLayer",@"事件穿透",@"应用引导页",@"可爱的登录页面",@"贝塞尔曲线"]
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
     
     __weak IBOutlet UITableView *_tableView;
     
+    NSArray *_demoList;
+    
+    NSArray *_knowledgeList;
     
 }
 
@@ -52,6 +52,14 @@
     _tableView.tableFooterView = [UIView new];
     
     _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    
+    
+    NSString *demoPath = [[NSBundle mainBundle] pathForResource:@"DemoList" ofType:@"plist"];
+    
+    _demoList = [NSArray arrayWithContentsOfFile:demoPath];
+    
+    NSString *knowledgePath = [[NSBundle mainBundle] pathForResource:@"KnowledgeList" ofType:@"plist"];
+    _knowledgeList = [NSArray arrayWithContentsOfFile:knowledgePath];
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -72,10 +80,10 @@
 
     if (section == 0) {
         
-        return DemoList.count;
+        return _demoList.count;
     }else if (section == 1){
         
-        return KnowledgeList.count;
+        return _knowledgeList.count;
     }
     
     return 0;
@@ -118,11 +126,11 @@
     
     if (indexPath.section == 0) {
         
-        cell.textLabel.text = DemoList[indexPath.row];
+        cell.textLabel.text = _demoList[indexPath.row];
         
     }else if (indexPath.section == 1){
     
-        cell.textLabel.text = KnowledgeList[indexPath.row];
+        cell.textLabel.text = _knowledgeList[indexPath.row];
     }
     
     return cell;
@@ -152,7 +160,7 @@
             {
                 XZAddressBookViewController *addressBookVc = [[XZAddressBookViewController alloc] init];
                 
-                addressBookVc.title = DemoList[indexPath.row];
+                addressBookVc.title = _demoList[indexPath.row];
                 
                 [self.navigationController pushViewController:addressBookVc animated:YES];
             }
@@ -179,7 +187,7 @@
                     
                     XZAlbumListController *photoAlbumVc = [[XZAlbumListController alloc] init];
                     
-                    photoAlbumVc.title = DemoList[indexPath.row];
+                    photoAlbumVc.title = _demoList[indexPath.row];
                     
                     [weakSelf.navigationController pushViewController:photoAlbumVc animated:YES];
                     
@@ -198,7 +206,7 @@
                 
                 XZPopViewViewController *popViewVc = [[XZPopViewViewController alloc] init];
     
-                popViewVc.title = DemoList[indexPath.row];
+                popViewVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:popViewVc animated:YES];
             }
                 break;
@@ -206,7 +214,7 @@
             case 6:
             {
                 XZCollectionViewLayoutViewController *collectionViewLayoutVc = [[XZCollectionViewLayoutViewController alloc] init];
-                collectionViewLayoutVc.title = DemoList[indexPath.row];
+                collectionViewLayoutVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:collectionViewLayoutVc animated:YES];
             }
                 break;
@@ -214,7 +222,7 @@
             case 7:
             {
                 XZCoreAnimationViewController *coreAnimationVc = [[XZCoreAnimationViewController alloc] initWithNibName:@"XZCoreAnimationViewController" bundle:[NSBundle mainBundle]];
-                coreAnimationVc.title = DemoList[indexPath.row];
+                coreAnimationVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:coreAnimationVc animated:YES];
             }
                 break;
@@ -222,7 +230,7 @@
             case 8:
             {
                 XZCAShapeLayerViewController *caShapeLayerVc = [[XZCAShapeLayerViewController alloc] init];
-                caShapeLayerVc.title = DemoList[indexPath.row];
+                caShapeLayerVc.title = _demoList[indexPath.row];
                 
                 [self.navigationController pushViewController:caShapeLayerVc animated:YES];
             }
@@ -231,7 +239,7 @@
             case 9:
             {
                 XZEventsThroughViewController *eventsThroughVc = [[XZEventsThroughViewController alloc] init];
-                eventsThroughVc.title = DemoList[indexPath.row];
+                eventsThroughVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:eventsThroughVc animated:YES];
             }
                 break;
@@ -247,7 +255,7 @@
             case 11:
             {
                 XZLovelyLoginViewController *lovelyLoginVc = [[XZLovelyLoginViewController alloc] init];
-                lovelyLoginVc.title = DemoList[indexPath.row];
+                lovelyLoginVc.title = _demoList[indexPath.row];
                 
                 [self.navigationController pushViewController:lovelyLoginVc animated:YES];
                 
@@ -257,11 +265,17 @@
             case 12:
             {
                 XZBezierPathViewController *bezierPathVc = [[XZBezierPathViewController alloc] init];
-                bezierPathVc.title = DemoList[indexPath.row];
+                bezierPathVc.title = _demoList[indexPath.row];
                 
                 [self.navigationController pushViewController:bezierPathVc animated:YES];
             }
                 break;
+            case 13:
+            {
+                XZAVFoundationViewController *avFoundationVc = [[XZAVFoundationViewController alloc] init];
+                avFoundationVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:avFoundationVc animated:YES];
+            }
             default:
                 break;
         }
@@ -270,45 +284,32 @@
     //Knowledge
     else if (indexPath.section == 1){
         
-        NSArray *titleList;
+        NSString *path;
         
         switch (indexPath.row) {
             //@"知识杂记"
             case 0:
-            {
-                titleList = @[@"内联函数",@"ViewController的生命周期",@"Objective-C中关键字",@"单例创建",@"copy的setter方法",@"深拷贝与浅拷贝",@"OOP语言三大特征",@"new和alloc init",@"BOOL类型",@"Block使用",@"@synchronized",@"代理和通知的区别",@"类别和类扩展",@"initWithCoder和initWithFrame",@"单例继承",@"Documents、Library、tmp区别",@"静态Cell",@"枚举",@"使用Size Class适应屏幕旋转",@"IOS的生命周期",@"类方法",@"形参个数可变方法",@"屏幕旋转",@"键值编码KVC",@"键值监听KVO",@"判断指针变量的实际类型",@"==和isEqual方法",@"动态调用方法",@"面向对象相关",@"对象复制",@"NSSet",@"谓词NSPredicate",@"NSFileHandle",@"归档",@"UILabel",@"UITextField",@"UIVisualEffectView",@"pch文件",@"automaticallyAdjustsScrollViewInsets",@"EdgesForExtendedLayout"];
-            }
+                path = [[NSBundle mainBundle] pathForResource:@"CommonKnowledgeList" ofType:@"plist"];
                 break;
             //@"UITableView相关"
             case 1:
-            {
-                titleList = @[@"TableView下划线左右间距",@"TableView不显示多余Cell",@"TableView索引"];
-            }
+                path = [[NSBundle mainBundle] pathForResource:@"TableViewList" ofType:@"plist"];
                 break;
             //@"UICollectionView相关"
             case 2:
-            {
-                titleList = @[];
-            }
+                path = nil;
                 break;
             //@"UINavigationController相关"
             case 3:
-            {
-                titleList = @[@"设置返回键标题",@"UINavigationBar设置标题",@"设置返回键和返回键标题颜色",@"隐藏或显示返回键",@"自定义UINavigationBar按钮",@"UINavigationBar设置背景色",@"UINavigationBar设置背景图"];
-            }
+                path = [[NSBundle mainBundle] pathForResource:@"NavigationControllerList" ofType:@"plist"];
                 break;
             //相册资源文件相关
             case 4:
-            {
-                titleList = @[@"ALAssetRepresentation",@"ALAsset",@"ALAssetsGroup",@"ALAssetsFilter",@"ALAssetsLibrary",@"PHFetchOptions",@"PHAssetCollection",@"PHFetchResult",@"PHAsset",@"PhotosTypes",@"PHImageRequestOptions",@"PHImageManager"];
-            }
-                
+                path = [[NSBundle mainBundle] pathForResource:@"AlbumList" ofType:@"plist"];
                 break;
             //UITabBarController相关
             case 5:
-            {
-                titleList = @[@"UITabBarItem的selectedImage"];
-            }
+                path = [[NSBundle mainBundle] pathForResource:@"TabBarControllerList" ofType:@"plist"];
                 break;
             default:
                 break;
@@ -317,8 +318,8 @@
         
         XZCommonListViewController *commonListVc = [[XZCommonListViewController alloc] initWithNibName:@"XZCommonListViewController" bundle:[NSBundle mainBundle]];
         
-        commonListVc.title = KnowledgeList[indexPath.row];
-        commonListVc.titleList = titleList;
+        commonListVc.title = _knowledgeList[indexPath.row];
+        commonListVc.titleList = [NSArray arrayWithContentsOfFile:path];
         
         [self.navigationController pushViewController:commonListVc animated:YES];
     }

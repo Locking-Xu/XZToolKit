@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>TableView下划线左右间距</string>
+	<string>TableView不显示多余Cell</string>
+	<string>TableView索引</string>
+</array>
+</plist>

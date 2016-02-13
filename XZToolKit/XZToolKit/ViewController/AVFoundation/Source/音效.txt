@@ -1,0 +1,10 @@
+
+音效是指一些短音频的播放,比如手机铃声,通常作为点缀音频,这类音频不需要进行进度、循环等控制
+
+使用AudioToolbox.framework,其本质是将短音频注册到系统声音服务(System Sound Service),System Sound Service是一种简单、底层的声音播放服务,但是本身也存在一些限制:
+1.音频播放时间不能超过30s
+2.数据必须是PCM或者IMA4格式
+3.音频文件打包成caf、air、wav中的一种
+
+
+

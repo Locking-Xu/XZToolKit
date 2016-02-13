@@ -32,6 +32,17 @@
 		E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE4E1C50BE5C00F08A9C /* XZMonthCalendarCell.m */; };
 		E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE571C50CD6D00F08A9C /* XZDayView.m */; };
 		E92411711C6EE55B0009A8EA /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = E92411701C6EE55B0009A8EA /* UIView+Animation.m */; };
+		E92411761C6F47390009A8EA /* DemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92411751C6F47390009A8EA /* DemoList.plist */; };
+		E92411781C6F49050009A8EA /* KnowledgeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92411771C6F49050009A8EA /* KnowledgeList.plist */; };
+		E924117A1C6F4AA60009A8EA /* CommonKnowledgeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92411791C6F4AA60009A8EA /* CommonKnowledgeList.plist */; };
+		E924117C1C6F4D630009A8EA /* TableViewList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924117B1C6F4D630009A8EA /* TableViewList.plist */; };
+		E924117E1C6F4E990009A8EA /* NavigationControllerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924117D1C6F4E990009A8EA /* NavigationControllerList.plist */; };
+		E92411801C6F4F420009A8EA /* AlbumList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E924117F1C6F4F420009A8EA /* AlbumList.plist */; };
+		E92411821C6F4FD20009A8EA /* TabBarControllerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92411811C6F4FD20009A8EA /* TabBarControllerList.plist */; };
+		E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92411881C6F5C200009A8EA /* XZAVFoundationViewController.m */; };
+		E924118C1C6F678E0009A8EA /* 音效.txt in Resources */ = {isa = PBXBuildFile; fileRef = E924118B1C6F678E0009A8EA /* 音效.txt */; };
+		E92411901C6F67E40009A8EA /* XZAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E924118E1C6F67E40009A8EA /* XZAudioViewController.m */; };
+		E92411911C6F67E40009A8EA /* XZAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E924118F1C6F67E40009A8EA /* XZAudioViewController.xib */; };
 		E9318B651C51E9380039D357 /* XZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9318B641C51E9380039D357 /* XZTipView.m */; };
 		E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821711C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m */; };
 		E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93821721C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib */; };
@@ -214,6 +225,19 @@
 		E920DE571C50CD6D00F08A9C /* XZDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDayView.m; sourceTree = "<group>"; };
 		E924116F1C6EE55B0009A8EA /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		E92411701C6EE55B0009A8EA /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		E92411751C6F47390009A8EA /* DemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoList.plist; sourceTree = "<group>"; };
+		E92411771C6F49050009A8EA /* KnowledgeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KnowledgeList.plist; sourceTree = "<group>"; };
+		E92411791C6F4AA60009A8EA /* CommonKnowledgeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CommonKnowledgeList.plist; sourceTree = "<group>"; };
+		E924117B1C6F4D630009A8EA /* TableViewList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TableViewList.plist; sourceTree = "<group>"; };
+		E924117D1C6F4E990009A8EA /* NavigationControllerList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerList.plist; sourceTree = "<group>"; };
+		E924117F1C6F4F420009A8EA /* AlbumList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AlbumList.plist; sourceTree = "<group>"; };
+		E92411811C6F4FD20009A8EA /* TabBarControllerList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarControllerList.plist; sourceTree = "<group>"; };
+		E92411871C6F5C200009A8EA /* XZAVFoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAVFoundationViewController.h; sourceTree = "<group>"; };
+		E92411881C6F5C200009A8EA /* XZAVFoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAVFoundationViewController.m; sourceTree = "<group>"; };
+		E924118B1C6F678E0009A8EA /* 音效.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "音效.txt"; sourceTree = "<group>"; };
+		E924118D1C6F67E40009A8EA /* XZAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAudioViewController.h; sourceTree = "<group>"; };
+		E924118E1C6F67E40009A8EA /* XZAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAudioViewController.m; sourceTree = "<group>"; };
+		E924118F1C6F67E40009A8EA /* XZAudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZAudioViewController.xib; sourceTree = "<group>"; };
 		E9318B631C51E9380039D357 /* XZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTipView.h; sourceTree = "<group>"; };
 		E9318B641C51E9380039D357 /* XZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTipView.m; sourceTree = "<group>"; };
 		E93821701C59E8B3004F7EC4 /* XZPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPhotoAlbumViewController.h; sourceTree = "<group>"; };
@@ -502,6 +526,49 @@
 				E9318B641C51E9380039D357 /* XZTipView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E92411721C6F39A00009A8EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E924117F1C6F4F420009A8EA /* AlbumList.plist */,
+				E92411791C6F4AA60009A8EA /* CommonKnowledgeList.plist */,
+				E92411751C6F47390009A8EA /* DemoList.plist */,
+				E92411771C6F49050009A8EA /* KnowledgeList.plist */,
+				E924117D1C6F4E990009A8EA /* NavigationControllerList.plist */,
+				E92411811C6F4FD20009A8EA /* TabBarControllerList.plist */,
+				E924117B1C6F4D630009A8EA /* TableViewList.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E92411831C6F5B870009A8EA /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				E924118A1C6F5F9F0009A8EA /* Source */,
+				E92411841C6F5B970009A8EA /* ViewController */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		E92411841C6F5B970009A8EA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E92411871C6F5C200009A8EA /* XZAVFoundationViewController.h */,
+				E92411881C6F5C200009A8EA /* XZAVFoundationViewController.m */,
+				E924118D1C6F67E40009A8EA /* XZAudioViewController.h */,
+				E924118E1C6F67E40009A8EA /* XZAudioViewController.m */,
+				E924118F1C6F67E40009A8EA /* XZAudioViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E924118A1C6F5F9F0009A8EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E924118B1C6F678E0009A8EA /* 音效.txt */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E938216E1C59E873004F7EC4 /* PhotoAlbum */ = {
@@ -819,10 +886,10 @@
 				E99E322B1C4F1E0B0016D25D /* UIColor+HexString.m */,
 				E99E322C1C4F1E0B0016D25D /* UINavigationController+Common.h */,
 				E99E322D1C4F1E0B0016D25D /* UINavigationController+Common.m */,
-				E99E322E1C4F1E0B0016D25D /* UIView+Frame.h */,
-				E99E322F1C4F1E0B0016D25D /* UIView+Frame.m */,
 				E924116F1C6EE55B0009A8EA /* UIView+Animation.h */,
 				E92411701C6EE55B0009A8EA /* UIView+Animation.m */,
+				E99E322E1C4F1E0B0016D25D /* UIView+Frame.h */,
+				E99E322F1C4F1E0B0016D25D /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -830,8 +897,9 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E9B9BDA01C66E93000C45040 /* BezierPath */,
+				E92411831C6F5B870009A8EA /* AVFoundation */,
 				E920DE311C50795800F08A9C /* AddressBook */,
+				E9B9BDA01C66E93000C45040 /* BezierPath */,
 				E9ED31CB1C644F2600DCDFD0 /* CAShapeLayer */,
 				E99E32391C4F1E350016D25D /* Calendar */,
 				E93821911C5A05CF004F7EC4 /* CodeDetail */,
@@ -911,6 +979,7 @@
 		E99E32481C4F1E350016D25D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E92411721C6F39A00009A8EA /* Source */,
 				E99E32491C4F1E350016D25D /* ViewController */,
 			);
 			path = Home;
@@ -995,31 +1064,31 @@
 			isa = PBXGroup;
 			children = (
 				E9B9BD921C66E7AD00C45040 /* UINavigationBar设置标题.txt */,
-				E9B9BD931C66E7AD00C45040 /* 设置返回键标题.txt */,
-				E9B9BD941C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt */,
-				E9B9BD951C66E7AD00C45040 /* 隐藏或显示返回键.txt */,
-				E9B9BD961C66E7AD00C45040 /* 自定义UINavigationBar按钮.txt */,
-				E9B9BD971C66E7AD00C45040 /* UINavigationBar设置背景色.txt */,
 				E9B9BD981C66E7AD00C45040 /* UINavigationBar设置背景图.txt */,
+				E9B9BD971C66E7AD00C45040 /* UINavigationBar设置背景色.txt */,
+				E9B9BD961C66E7AD00C45040 /* 自定义UINavigationBar按钮.txt */,
+				E9B9BD941C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt */,
+				E9B9BD931C66E7AD00C45040 /* 设置返回键标题.txt */,
+				E9B9BD951C66E7AD00C45040 /* 隐藏或显示返回键.txt */,
 			);
-			name = NavigationControllerKnowledge;
+			path = NavigationControllerKnowledge;
 			sourceTree = "<group>";
 		};
 		E9B9BDA01C66E93000C45040 /* BezierPath */ = {
 			isa = PBXGroup;
 			children = (
+				E9B9BDA11C66E94E00C45040 /* Source */,
 				E9B9BDA61C66E99A00C45040 /* View */,
 				E9B9BDA21C66E95500C45040 /* ViewController */,
-				E9B9BDA11C66E94E00C45040 /* Source */,
 			);
-			name = BezierPath;
+			path = BezierPath;
 			sourceTree = "<group>";
 		};
 		E9B9BDA11C66E94E00C45040 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Source;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E9B9BDA21C66E95500C45040 /* ViewController */ = {
@@ -1028,7 +1097,7 @@
 				E9B9BDA31C66E97200C45040 /* XZBezierPathViewController.h */,
 				E9B9BDA41C66E97200C45040 /* XZBezierPathViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E9B9BDA61C66E99A00C45040 /* View */ = {
@@ -1037,7 +1106,7 @@
 				E9B9BDA71C66E9B500C45040 /* XZBezierPathView.h */,
 				E9B9BDA81C66E9B500C45040 /* XZBezierPathView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9BC74241C60454B0033BF4D /* CommonListViewController */ = {
@@ -1061,9 +1130,9 @@
 		E9BC74311C6056E80033BF4D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E9B9BD911C66E78800C45040 /* NavigationControllerKnowledge */,
 				E9F0E8551C61A88C00268CE2 /* AblumSourceKnowledge */,
 				E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */,
+				E9B9BD911C66E78800C45040 /* NavigationControllerKnowledge */,
 				E9B9BD621C66E41200C45040 /* TabBarControllerKnowledge */,
 				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 			);
@@ -1401,6 +1470,8 @@
 				E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */,
 				E960C86B1C6379C1002BB94A /* UILabel.txt in Resources */,
 				E9ED31F71C64791E00DCDFD0 /* img_index_02txt.png in Resources */,
+				E92411821C6F4FD20009A8EA /* TabBarControllerList.plist in Resources */,
+				E924117E1C6F4E990009A8EA /* NavigationControllerList.plist in Resources */,
 				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
 				E9B9BD9A1C66E7AD00C45040 /* 设置返回键标题.txt in Resources */,
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
@@ -1410,7 +1481,10 @@
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
 				E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */,
 				E960C8721C6380EE002BB94A /* UIVisualEffectView.txt in Resources */,
+				E92411761C6F47390009A8EA /* DemoList.plist in Resources */,
+				E924117A1C6F4AA60009A8EA /* CommonKnowledgeList.plist in Resources */,
 				E9B9BD991C66E7AD00C45040 /* UINavigationBar设置标题.txt in Resources */,
+				E924117C1C6F4D630009A8EA /* TableViewList.plist in Resources */,
 				E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */,
 				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
 				E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */,
@@ -1422,6 +1496,7 @@
 				E9B9BD9F1C66E7AD00C45040 /* UINavigationBar设置背景图.txt in Resources */,
 				E9ED32091C647CC100DCDFD0 /* rightArm.png in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
+				E924118C1C6F678E0009A8EA /* 音效.txt in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
 				E9ED31D31C6450A400DCDFD0 /* CAShapeLayer.txt in Resources */,
 				E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */,
@@ -1436,6 +1511,8 @@
 				E970067B1C5614000071E0E3 /* XZTimeRecordCell.xib in Resources */,
 				E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */,
 				E9B9BD5D1C66E12D00C45040 /* pch文件.txt in Resources */,
+				E92411781C6F49050009A8EA /* KnowledgeList.plist in Resources */,
+				E92411801C6F4F420009A8EA /* AlbumList.plist in Resources */,
 				E9ED31F51C64791800DCDFD0 /* img_index_02bg.png in Resources */,
 				E9ED31F11C64790C00DCDFD0 /* img_index_01bg.png in Resources */,
 				E9543EFE1C5F3954006D7BEF /* BOOL类型.txt in Resources */,
@@ -1458,6 +1535,7 @@
 				E9ED31C81C642FB900DCDFD0 /* XZCoreAnimationViewController.xib in Resources */,
 				E9B9BD641C66E46C00C45040 /* UITabBarItem的selectedImage.txt in Resources */,
 				E9543F141C5F56B6006D7BEF /* initWithCoder和initWithFrame.txt in Resources */,
+				E92411911C6F67E40009A8EA /* XZAudioViewController.xib in Resources */,
 				E9ED31CA1C6448D700DCDFD0 /* CoreAnimation.txt in Resources */,
 				E9ED32111C647CE300DCDFD0 /* loginUser.png in Resources */,
 				E938218E1C59F167004F7EC4 /* 1.png in Resources */,
@@ -1495,6 +1573,7 @@
 				E93821A01C5A0B6F004F7EC4 /* XZCollectionLayoutStyleOne.m in Sources */,
 				E938219D1C5A0B3F004F7EC4 /* XZCollectionDemoCell.m in Sources */,
 				E9ED31DC1C646EB700DCDFD0 /* XZEventsThroughView.m in Sources */,
+				E92411901C6F67E40009A8EA /* XZAudioViewController.m in Sources */,
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,
 				E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
@@ -1509,6 +1588,7 @@
 				E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */,
 				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
 				E93821A61C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m in Sources */,
+				E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */,
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
