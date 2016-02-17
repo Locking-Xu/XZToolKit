@@ -44,6 +44,8 @@
         _mediaPicker.allowsPickingMultipleItems = YES;
         _mediaPicker.prompt = @"音乐库";
         _mediaPicker.delegate = self;
+        
+        
     }
     return _mediaPicker;
 }
