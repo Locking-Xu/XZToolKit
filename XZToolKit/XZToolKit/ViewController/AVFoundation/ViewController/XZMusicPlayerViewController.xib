@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZMusicPlayerViewController">
+            <connections>
+                <outlet property="_playBtn" destination="lEQ-DT-YgY" id="wC7-gL-tLO"/>
+                <outlet property="_progressView" destination="nAT-N6-4U8" id="Nuy-xx-iSC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-DT-YgY">
+                    <rect key="frame" x="100" y="335" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Qf0-8A-6cL"/>
+                        <constraint firstAttribute="height" constant="30" id="y1d-eA-EX6"/>
+                    </constraints>
+                    <state key="normal" title="播放">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playBtn_Pressed:" destination="-1" eventType="touchUpInside" id="Pxa-az-1Pf"/>
+                    </connections>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nAT-N6-4U8">
+                    <rect key="frame" x="35" y="283" width="250" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="G2E-ec-Hwd"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nAT-N6-4U8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="70C-Ou-10x"/>
+                <constraint firstItem="lEQ-DT-YgY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Etk-ck-W1X"/>
+                <constraint firstItem="lEQ-DT-YgY" firstAttribute="top" secondItem="nAT-N6-4U8" secondAttribute="bottom" constant="50" id="QsA-eK-cnN"/>
+                <constraint firstItem="nAT-N6-4U8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="obF-MJ-4cb"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

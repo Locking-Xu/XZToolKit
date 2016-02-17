@@ -9,11 +9,12 @@
 #import "XZAVFoundationViewController.h"
 #import "UINavigationController+Common.h"
 #import "XZCodeViewController.h"
-#import "XZAudioViewController.h"
+#import "XZSoundEffectViewController.h"
+#import "XZMusicPlayerViewController.h"
+#import "XZMusicLibraryViewController.h"
 
 
-#define DemoList @[@"音频Demo"]
-#define KnowledgeList @[@"音效",@"相机"]
+#define TitleList @[@"音效",@"音乐",@"音乐库"]
 
 @interface XZAVFoundationViewController ()
 
@@ -33,19 +34,9 @@
 }
 
 #pragma mark - TableView_DataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-
-    return 2;
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-
-    return section == 0 ? @"Knowledge" : @"Demo";
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return section == 0 ? KnowledgeList.count : DemoList.count;
+    return TitleList.count;
 }
 
 
@@ -60,7 +51,7 @@
         cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = indexPath.section == 0 ? KnowledgeList[indexPath.row] : DemoList[indexPath.row];
+    cell.textLabel.text = TitleList[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -72,28 +63,29 @@
 
     [self.navigationController setBackItemTitle:@"" viewController:self];
     
-    if (indexPath.section == 0) {
-        
-        XZCodeViewController *codeVc = [[XZCodeViewController alloc] init];
-        codeVc.knowledgeTitle = KnowledgeList[indexPath.row];
-        [self.navigationController pushViewController:codeVc animated:YES];
-        return;
-    }
-    else if (indexPath.section == 1){
-    
-        switch (indexPath.row) {
-            case 0:
-            {
-                XZAudioViewController *audioVc = [[XZAudioViewController alloc] initWithNibName:@"XZAudioViewController" bundle:[NSBundle mainBundle]];
-                audioVc.title = DemoList[indexPath.row];
-                [self.navigationController pushViewController:audioVc animated:YES];
-            }
-                break;
-                
-            default:
-                break;
+    switch (indexPath.row) {
+        case 0:
+        {
+            XZSoundEffectViewController *soundEffectVc = [[XZSoundEffectViewController alloc] initWithNibName:@"XZSoundEffectViewController" bundle:[NSBundle mainBundle]];
+            soundEffectVc.title = TitleList[indexPath.row];
+            [self.navigationController pushViewController:soundEffectVc animated:YES];
         }
+            break;
+        case 1:
+        {
+            XZMusicPlayerViewController *musicPlayerVc = [[XZMusicPlayerViewController alloc] initWithNibName:@"XZMusicPlayerViewController" bundle:[NSBundle mainBundle]];
+            musicPlayerVc.title = TitleList[indexPath.row];
+            [self.navigationController pushViewController:musicPlayerVc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            XZMusicLibraryViewController *musicLibraryVc = [[XZMusicLibraryViewController alloc] initWithNibName:@"XZMusicLibraryViewController" bundle:[NSBundle mainBundle]];
+            [self.navigationController pushViewController:musicLibraryVc animated:YES];
+        }
+            break;
+        default:
+            break;
     }
-    
 }
 @end

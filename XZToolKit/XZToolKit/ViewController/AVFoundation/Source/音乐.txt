@@ -1,0 +1,6 @@
+
+播放较大的音频或者对音频有精准的控制则需要使用AVAudioPlyaerd
+
+音频会话：
+1.设置后台运行模式:在plist文件中添加Required background modes,并设置item0 ＝ App plays audio or streams audio/video using Airplay
+2.设置AVAudioSession

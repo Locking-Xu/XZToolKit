@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZMusicLibraryViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1x-s4-5wf">
+                    <rect key="frame" x="60" y="30" width="200" height="59.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="9ZR-Ex-2pF"/>
+                    </constraints>
+                    <state key="normal" title="进入音乐库">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="musicLibraryBtn_Pressed:" destination="-1" eventType="touchUpInside" id="Zqi-uT-6zV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUB-au-MM7">
+                    <rect key="frame" x="60" y="120" width="200" height="59.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="播放">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playBtn_Pressed:" destination="-1" eventType="touchUpInside" id="BYV-sf-62k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY3-Ha-lD3">
+                    <rect key="frame" x="60" y="209.5" width="200" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="暂停">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pauseBtn_Pressed:" destination="-1" eventType="touchUpInside" id="cqm-pc-DXT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3j-aQ-rjH">
+                    <rect key="frame" x="60" y="299.5" width="200" height="59.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="停止">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="stopBtn_Pressed:" destination="-1" eventType="touchUpInside" id="7a0-Vp-hCX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-ZP-IN4">
+                    <rect key="frame" x="60" y="389" width="200" height="59.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="上一首">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="previousBtn_Pressed:" destination="-1" eventType="touchUpInside" id="r0A-qa-TLa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-wi-o6s">
+                    <rect key="frame" x="60" y="478.5" width="200" height="59.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="下一首">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextBtn_Pressed:" destination="-1" eventType="touchUpInside" id="6zh-B3-FkO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rY3-Ha-lD3" firstAttribute="width" secondItem="G1x-s4-5wf" secondAttribute="width" id="2Qa-Wg-hWA"/>
+                <constraint firstItem="k3j-aQ-rjH" firstAttribute="width" secondItem="G1x-s4-5wf" secondAttribute="width" id="3Od-P1-Wgs"/>
+                <constraint firstItem="xUB-au-MM7" firstAttribute="top" secondItem="G1x-s4-5wf" secondAttribute="bottom" constant="30" id="5Fp-PS-tbu"/>
+                <constraint firstItem="G1x-s4-5wf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5aQ-bC-9DL"/>
+                <constraint firstItem="rY3-Ha-lD3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9dO-eX-tJl"/>
+                <constraint firstItem="k3j-aQ-rjH" firstAttribute="height" secondItem="G1x-s4-5wf" secondAttribute="height" id="AJf-Pb-sSP"/>
+                <constraint firstItem="k3j-aQ-rjH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CSr-lg-G0e"/>
+                <constraint firstItem="rY3-Ha-lD3" firstAttribute="top" secondItem="xUB-au-MM7" secondAttribute="bottom" constant="30" id="DZ2-iQ-Bqv"/>
+                <constraint firstItem="gd8-wi-o6s" firstAttribute="height" secondItem="G1x-s4-5wf" secondAttribute="height" id="HE7-wA-kbF"/>
+                <constraint firstItem="NtM-ZP-IN4" firstAttribute="top" secondItem="k3j-aQ-rjH" secondAttribute="bottom" constant="30" id="Ijy-Ce-3Uc"/>
+                <constraint firstItem="G1x-s4-5wf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Nb5-8a-Q7Y"/>
+                <constraint firstItem="xUB-au-MM7" firstAttribute="height" secondItem="G1x-s4-5wf" secondAttribute="height" id="TAh-fE-zEb"/>
+                <constraint firstItem="k3j-aQ-rjH" firstAttribute="top" secondItem="rY3-Ha-lD3" secondAttribute="bottom" constant="30" id="c9c-Nq-t5y"/>
+                <constraint firstItem="NtM-ZP-IN4" firstAttribute="width" secondItem="G1x-s4-5wf" secondAttribute="width" id="cJF-RZ-Jtx"/>
+                <constraint firstItem="NtM-ZP-IN4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cL4-fA-LI8"/>
+                <constraint firstItem="rY3-Ha-lD3" firstAttribute="height" secondItem="G1x-s4-5wf" secondAttribute="height" id="iK9-a0-nDM"/>
+                <constraint firstAttribute="bottom" secondItem="gd8-wi-o6s" secondAttribute="bottom" constant="30" id="jgs-kG-IGM"/>
+                <constraint firstItem="xUB-au-MM7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jnn-fq-B3g"/>
+                <constraint firstItem="gd8-wi-o6s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ovV-Dx-sbo"/>
+                <constraint firstItem="xUB-au-MM7" firstAttribute="width" secondItem="G1x-s4-5wf" secondAttribute="width" id="s4n-hD-2hd"/>
+                <constraint firstItem="NtM-ZP-IN4" firstAttribute="height" secondItem="G1x-s4-5wf" secondAttribute="height" id="u6J-kO-LkB"/>
+                <constraint firstItem="gd8-wi-o6s" firstAttribute="width" secondItem="G1x-s4-5wf" secondAttribute="width" id="yxu-9b-exi"/>
+                <constraint firstItem="gd8-wi-o6s" firstAttribute="top" secondItem="NtM-ZP-IN4" secondAttribute="bottom" constant="30" id="zVd-kH-aet"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="296" y="252"/>
+        </view>
+    </objects>
+</document>
