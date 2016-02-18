@@ -20,6 +20,8 @@
 		E9036A241C63027600384199 /* XZAlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9036A231C63027600384199 /* XZAlbumListController.m */; };
 		E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9036A261C633AC500384199 /* XZAlbumCell.m */; };
 		E9036A291C633AC500384199 /* XZAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9036A271C633AC500384199 /* XZAlbumCell.xib */; };
+		E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */; };
+		E907A47A1C75AD4F00BFA698 /* XZRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */; };
 		E908D0C31C61D71200F95A8F /* ALAsset.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C21C61D71200F95A8F /* ALAsset.txt */; };
 		E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */; };
 		E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */; };
@@ -215,6 +217,9 @@
 		E9036A251C633AC500384199 /* XZAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAlbumCell.h; sourceTree = "<group>"; };
 		E9036A261C633AC500384199 /* XZAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumCell.m; sourceTree = "<group>"; };
 		E9036A271C633AC500384199 /* XZAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZAlbumCell.xib; sourceTree = "<group>"; };
+		E907A4761C75AD4F00BFA698 /* XZRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecorderViewController.h; sourceTree = "<group>"; };
+		E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecorderViewController.m; sourceTree = "<group>"; };
+		E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecorderViewController.xib; sourceTree = "<group>"; };
 		E908D0C21C61D71200F95A8F /* ALAsset.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAsset.txt; sourceTree = "<group>"; };
 		E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsGroup.txt; sourceTree = "<group>"; };
 		E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsFilter.txt; sourceTree = "<group>"; };
@@ -601,6 +606,9 @@
 				E9E6C3391C74AAEA00B9E2B8 /* XZMusicLibraryViewController.h */,
 				E9E6C33A1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m */,
 				E9E6C33B1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib */,
+				E907A4761C75AD4F00BFA698 /* XZRecorderViewController.h */,
+				E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */,
+				E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1525,6 +1533,7 @@
 				E924117E1C6F4E990009A8EA /* NavigationControllerList.plist in Resources */,
 				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
 				E9B9BD9A1C66E7AD00C45040 /* 设置返回键标题.txt in Resources */,
+				E907A47A1C75AD4F00BFA698 /* XZRecorderViewController.xib in Resources */,
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
 				E9036A0A1C62F03800384199 /* PHAssetCollection.txt in Resources */,
 				E9ED31F31C64791200DCDFD0 /* img_index_01txt.png in Resources */,
@@ -1676,6 +1685,7 @@
 				E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */,
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
+				E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
 				E9ED31EB1C6478A200DCDFD0 /* XZGuideViewController.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
