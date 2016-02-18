@@ -13,9 +13,10 @@
 #import "XZMusicPlayerViewController.h"
 #import "XZMusicLibraryViewController.h"
 #import "XZRecorderViewController.h"
+#import "XZMovieViewController.h"
 
 
-#define TitleList @[@"音效",@"音乐",@"音乐库",@"录音"]
+#define TitleList @[@"音效",@"音乐",@"音乐库",@"录音",@"视频"]
 
 @interface XZAVFoundationViewController ()
 
@@ -91,6 +92,13 @@
             XZRecorderViewController *recorderVc = [[XZRecorderViewController alloc] initWithNibName:@"XZRecorderViewController" bundle:[NSBundle mainBundle]];
             recorderVc.title = TitleList[indexPath.row];
             [self.navigationController pushViewController:recorderVc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            XZMovieViewController *movieVc = [[XZMovieViewController alloc] init];
+            movieVc.title = TitleList[indexPath.row];
+            [self.navigationController pushViewController:movieVc animated:YES];
         }
             break;
         default:

@@ -22,6 +22,9 @@
 		E9036A291C633AC500384199 /* XZAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9036A271C633AC500384199 /* XZAlbumCell.xib */; };
 		E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */; };
 		E907A47A1C75AD4F00BFA698 /* XZRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */; };
+		E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */; };
+		E907A4811C75C24800BFA698 /* will.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4801C75C24800BFA698 /* will.mp4 */; };
+		E907A4821C75C24800BFA698 /* will.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4801C75C24800BFA698 /* will.mp4 */; };
 		E908D0C31C61D71200F95A8F /* ALAsset.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C21C61D71200F95A8F /* ALAsset.txt */; };
 		E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */; };
 		E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */; };
@@ -220,6 +223,9 @@
 		E907A4761C75AD4F00BFA698 /* XZRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecorderViewController.h; sourceTree = "<group>"; };
 		E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecorderViewController.m; sourceTree = "<group>"; };
 		E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecorderViewController.xib; sourceTree = "<group>"; };
+		E907A47B1C75BEF600BFA698 /* XZMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMovieViewController.h; sourceTree = "<group>"; };
+		E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMovieViewController.m; sourceTree = "<group>"; };
+		E907A4801C75C24800BFA698 /* will.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = will.mp4; sourceTree = "<group>"; };
 		E908D0C21C61D71200F95A8F /* ALAsset.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAsset.txt; sourceTree = "<group>"; };
 		E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsGroup.txt; sourceTree = "<group>"; };
 		E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsFilter.txt; sourceTree = "<group>"; };
@@ -609,6 +615,8 @@
 				E907A4761C75AD4F00BFA698 /* XZRecorderViewController.h */,
 				E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */,
 				E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */,
+				E907A47B1C75BEF600BFA698 /* XZMovieViewController.h */,
+				E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -618,6 +626,7 @@
 			children = (
 				E924118B1C6F678E0009A8EA /* 音效.txt */,
 				E9D7E14D1C704830000D0583 /* 音乐.txt */,
+				E907A4801C75C24800BFA698 /* will.mp4 */,
 				E9D7E14F1C704841000D0583 /* 遇见.mp3 */,
 			);
 			path = Source;
@@ -1561,6 +1570,7 @@
 				E9ED31D31C6450A400DCDFD0 /* CAShapeLayer.txt in Resources */,
 				E9E6C33D1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib in Resources */,
 				E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */,
+				E907A4811C75C24800BFA698 /* will.mp4 in Resources */,
 				E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */,
 				E9036A211C63020100384199 /* XZPhotoCell.xib in Resources */,
 				E938218D1C59F167004F7EC4 /* 3.png in Resources */,
@@ -1614,6 +1624,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E907A4821C75C24800BFA698 /* will.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1696,6 +1707,7 @@
 				E9D7E14B1C704539000D0583 /* XZMusicPlayerViewController.m in Sources */,
 				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
 				E9E6C33C1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m in Sources */,
+				E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */,
 				E9ED31E21C64732700DCDFD0 /* NSString+AES256.m in Sources */,
 				E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */,
 				E9ED31E51C64747300DCDFD0 /* NSString+Format.m in Sources */,
