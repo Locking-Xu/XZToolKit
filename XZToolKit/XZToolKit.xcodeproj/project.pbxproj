@@ -23,8 +23,12 @@
 		E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */; };
 		E907A47A1C75AD4F00BFA698 /* XZRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */; };
 		E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */; };
-		E907A4811C75C24800BFA698 /* will.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4801C75C24800BFA698 /* will.mp4 */; };
-		E907A4821C75C24800BFA698 /* will.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4801C75C24800BFA698 /* will.mp4 */; };
+		E907A4841C75CB6700BFA698 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4831C75CB6700BFA698 /* 2.mp4 */; };
+		E907A4851C75CB6700BFA698 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4831C75CB6700BFA698 /* 2.mp4 */; };
+		E907A4871C75CB8400BFA698 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4861C75CB8400BFA698 /* 1.mp4 */; };
+		E907A4881C75CB8400BFA698 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E907A4861C75CB8400BFA698 /* 1.mp4 */; };
+		E907A48B1C75CC0E00BFA698 /* XZAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A48A1C75CC0E00BFA698 /* XZAVPlayerViewController.m */; };
+		E907A48C1C75CC0E00BFA698 /* XZAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A48A1C75CC0E00BFA698 /* XZAVPlayerViewController.m */; };
 		E908D0C31C61D71200F95A8F /* ALAsset.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C21C61D71200F95A8F /* ALAsset.txt */; };
 		E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */; };
 		E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */; };
@@ -225,7 +229,10 @@
 		E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecorderViewController.xib; sourceTree = "<group>"; };
 		E907A47B1C75BEF600BFA698 /* XZMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMovieViewController.h; sourceTree = "<group>"; };
 		E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMovieViewController.m; sourceTree = "<group>"; };
-		E907A4801C75C24800BFA698 /* will.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = will.mp4; sourceTree = "<group>"; };
+		E907A4831C75CB6700BFA698 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+		E907A4861C75CB8400BFA698 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		E907A4891C75CC0E00BFA698 /* XZAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAVPlayerViewController.h; sourceTree = "<group>"; };
+		E907A48A1C75CC0E00BFA698 /* XZAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAVPlayerViewController.m; sourceTree = "<group>"; };
 		E908D0C21C61D71200F95A8F /* ALAsset.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAsset.txt; sourceTree = "<group>"; };
 		E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsGroup.txt; sourceTree = "<group>"; };
 		E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsFilter.txt; sourceTree = "<group>"; };
@@ -617,6 +624,8 @@
 				E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */,
 				E907A47B1C75BEF600BFA698 /* XZMovieViewController.h */,
 				E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */,
+				E907A4891C75CC0E00BFA698 /* XZAVPlayerViewController.h */,
+				E907A48A1C75CC0E00BFA698 /* XZAVPlayerViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -626,7 +635,8 @@
 			children = (
 				E924118B1C6F678E0009A8EA /* 音效.txt */,
 				E9D7E14D1C704830000D0583 /* 音乐.txt */,
-				E907A4801C75C24800BFA698 /* will.mp4 */,
+				E907A4861C75CB8400BFA698 /* 1.mp4 */,
+				E907A4831C75CB6700BFA698 /* 2.mp4 */,
 				E9D7E14F1C704841000D0583 /* 遇见.mp3 */,
 			);
 			path = Source;
@@ -1510,6 +1520,7 @@
 				E960C8701C637FCB002BB94A /* UICollectionViewLayout.txt in Resources */,
 				E9D7E14E1C704830000D0583 /* 音乐.txt in Resources */,
 				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
+				E907A4871C75CB8400BFA698 /* 1.mp4 in Resources */,
 				E9036A141C62FBB800384199 /* PHImageManager.txt in Resources */,
 				E9B9BD9C1C66E7AD00C45040 /* 隐藏或显示返回键.txt in Resources */,
 				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
@@ -1563,6 +1574,7 @@
 				E9543F001C5F3FAA006D7BEF /* Block使用.txt in Resources */,
 				E97006761C55CBF60071E0E3 /* XZDayCalendarCell.xib in Resources */,
 				E9B9BD9F1C66E7AD00C45040 /* UINavigationBar设置背景图.txt in Resources */,
+				E907A4841C75CB6700BFA698 /* 2.mp4 in Resources */,
 				E9ED32091C647CC100DCDFD0 /* rightArm.png in Resources */,
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E924118C1C6F678E0009A8EA /* 音效.txt in Resources */,
@@ -1570,7 +1582,6 @@
 				E9ED31D31C6450A400DCDFD0 /* CAShapeLayer.txt in Resources */,
 				E9E6C33D1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib in Resources */,
 				E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */,
-				E907A4811C75C24800BFA698 /* will.mp4 in Resources */,
 				E96A9E581C60E7B50082AAA0 /* 枚举.txt in Resources */,
 				E9036A211C63020100384199 /* XZPhotoCell.xib in Resources */,
 				E938218D1C59F167004F7EC4 /* 3.png in Resources */,
@@ -1624,7 +1635,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E907A4821C75C24800BFA698 /* will.mp4 in Resources */,
+				E907A4851C75CB6700BFA698 /* 2.mp4 in Resources */,
+				E907A4881C75CB8400BFA698 /* 1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1686,6 +1698,7 @@
 				E9036A201C63020100384199 /* XZPhotoCell.m in Sources */,
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */,
+				E907A48B1C75CC0E00BFA698 /* XZAVPlayerViewController.m in Sources */,
 				E9ED32011C647B2100DCDFD0 /* XZLovelyLoginViewController.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
 				E9D7E1461C703F5B000D0583 /* XZSoundEffectViewController.m in Sources */,
@@ -1740,6 +1753,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E907A48C1C75CC0E00BFA698 /* XZAVPlayerViewController.m in Sources */,
 				E99E32171C4F1B2E0016D25D /* XZToolKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
