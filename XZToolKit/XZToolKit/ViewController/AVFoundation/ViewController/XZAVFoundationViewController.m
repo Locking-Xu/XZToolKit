@@ -15,9 +15,10 @@
 #import "XZRecorderViewController.h"
 #import "XZMovieViewController.h"
 #import "XZAVPlayerViewController.h"
+#import "XZImagePickerViewController.h"
 
 
-#define TitleList @[@"音效",@"音乐",@"音乐库",@"录音",@"视频",@"AVPlayer"]
+#define TitleList @[@"音效",@"音乐",@"音乐库",@"录音",@"视频",@"AVPlayer",@"ImagePicker"]
 
 @interface XZAVFoundationViewController ()
 
@@ -109,6 +110,12 @@
             [self.navigationController pushViewController:avPlayerVc animated:YES];
         }
             break;
+        case 6:
+        {
+            XZImagePickerViewController *imagePickerVc = [[XZImagePickerViewController alloc] init];
+            imagePickerVc.title = TitleList[indexPath.row];
+            [self.navigationController pushViewController:imagePickerVc animated:YES];
+        }
         default:
             break;
     }

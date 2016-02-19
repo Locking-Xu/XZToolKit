@@ -193,6 +193,7 @@
 		E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */; };
 		E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */; };
 		E9F0E8591C61C85800268CE2 /* 类方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8581C61C85800268CE2 /* 类方法.txt */; };
+		E9F705FA1C76BF1600708F5C /* XZImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -465,6 +466,8 @@
 		E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumHelper.m; sourceTree = "<group>"; };
 		E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetRepresentation.txt; sourceTree = "<group>"; };
 		E9F0E8581C61C85800268CE2 /* 类方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "类方法.txt"; sourceTree = "<group>"; };
+		E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImagePickerViewController.h; sourceTree = "<group>"; };
+		E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImagePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -626,6 +629,8 @@
 				E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */,
 				E907A4891C75CC0E00BFA698 /* XZAVPlayerViewController.h */,
 				E907A48A1C75CC0E00BFA698 /* XZAVPlayerViewController.m */,
+				E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */,
+				E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1482,6 +1487,7 @@
 				TargetAttributes = {
 					E99E31F81C4F1B2E0016D25D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = UEAT33E9HC;
 					};
 					E99E32111C4F1B2E0016D25D = {
 						CreatedOnToolsVersion = 7.2;
@@ -1716,6 +1722,7 @@
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
+				E9F705FA1C76BF1600708F5C /* XZImagePickerViewController.m in Sources */,
 				E93821991C5A0B00004F7EC4 /* XZCollectionDemoViewController.m in Sources */,
 				E9D7E14B1C704539000D0583 /* XZMusicPlayerViewController.m in Sources */,
 				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
@@ -1859,6 +1866,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 章 徐 (Z3843KV7ZM)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XZToolKit/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = XZToolKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1867,8 +1875,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ycode.decathlon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e353765e-8d99-445f-ada3-f1261ca07a8c";
 				SWIFT_OBJC_BRIDGING_HEADER = "XZToolKit/ViewController/XZToolKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1883,6 +1892,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 章 徐 (Z3843KV7ZM)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XZToolKit/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = XZToolKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1891,8 +1901,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ycode.decathlon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e353765e-8d99-445f-ada3-f1261ca07a8c";
 				SWIFT_OBJC_BRIDGING_HEADER = "XZToolKit/ViewController/XZToolKit-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1902,10 +1913,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 章 徐 (Z3843KV7ZM)";
 				INFOPLIST_FILE = XZToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e353765e-8d99-445f-ada3-f1261ca07a8c";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZToolKit.app/XZToolKit";
 			};
 			name = Debug;
@@ -1914,10 +1927,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 章 徐 (Z3843KV7ZM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 章 徐 (Z3843KV7ZM)";
 				INFOPLIST_FILE = XZToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xuzhang.XZToolKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e353765e-8d99-445f-ada3-f1261ca07a8c";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZToolKit.app/XZToolKit";
 			};
 			name = Release;
