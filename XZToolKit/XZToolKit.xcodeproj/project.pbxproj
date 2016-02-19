@@ -194,6 +194,11 @@
 		E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */; };
 		E9F0E8591C61C85800268CE2 /* 类方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8581C61C85800268CE2 /* 类方法.txt */; };
 		E9F705FA1C76BF1600708F5C /* XZImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */; };
+		E9F706071C76F8C900708F5C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F706061C76F8C900708F5C /* AudioToolbox.framework */; };
+		E9F706091C76F9CB00708F5C /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = E9F706081C76F9CB00708F5C /* videoRing.caf */; };
+		E9F7060A1C76F9CB00708F5C /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = E9F706081C76F9CB00708F5C /* videoRing.caf */; };
+		E9F706411C76FC8800708F5C /* XZCustomPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F706401C76FC8800708F5C /* XZCustomPhotoViewController.m */; };
+		E9F706421C76FC8800708F5C /* XZCustomPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F706401C76FC8800708F5C /* XZCustomPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -468,6 +473,10 @@
 		E9F0E8581C61C85800268CE2 /* 类方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "类方法.txt"; sourceTree = "<group>"; };
 		E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImagePickerViewController.h; sourceTree = "<group>"; };
 		E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImagePickerViewController.m; sourceTree = "<group>"; };
+		E9F706061C76F8C900708F5C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E9F706081C76F9CB00708F5C /* videoRing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoRing.caf; sourceTree = "<group>"; };
+		E9F7063F1C76FC8800708F5C /* XZCustomPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCustomPhotoViewController.h; sourceTree = "<group>"; };
+		E9F706401C76FC8800708F5C /* XZCustomPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCustomPhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +484,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F706071C76F8C900708F5C /* AudioToolbox.framework in Frameworks */,
 				C4CB048699163C97365D981A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +502,7 @@
 		29818B60DE273D6789EB72CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9F706061C76F8C900708F5C /* AudioToolbox.framework */,
 				07037392AC2BF034102BF65B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -631,6 +642,8 @@
 				E907A48A1C75CC0E00BFA698 /* XZAVPlayerViewController.m */,
 				E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */,
 				E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */,
+				E9F7063F1C76FC8800708F5C /* XZCustomPhotoViewController.h */,
+				E9F706401C76FC8800708F5C /* XZCustomPhotoViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -643,6 +656,7 @@
 				E907A4861C75CB8400BFA698 /* 1.mp4 */,
 				E907A4831C75CB6700BFA698 /* 2.mp4 */,
 				E9D7E14F1C704841000D0583 /* 遇见.mp3 */,
+				E9F706081C76F9CB00708F5C /* videoRing.caf */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -904,8 +918,8 @@
 		E99E31FB1C4F1B2E0016D25D /* XZToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				E99E32211C4F1D4E0016D25D /* AppDelegate */,
 				E99E32221C4F1D5A0016D25D /* Category */,
+				E99E32211C4F1D4E0016D25D /* AppDelegate */,
 				E9A4D0621C590D3B003B8855 /* Frameworks */,
 				E99E325C1C4F7E200016D25D /* General */,
 				E99E32681C4F835A0016D25D /* Helper */,
@@ -1631,6 +1645,7 @@
 				E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */,
 				E984B9C91C5E227700C00BC7 /* 内联函数.txt in Resources */,
 				E9ED320D1C647CD300DCDFD0 /* animalHead.png in Resources */,
+				E9F706091C76F9CB00708F5C /* videoRing.caf in Resources */,
 				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
 				E920DE4B1C50B7CB00F08A9C /* XZMonthCalendarViewController.xib in Resources */,
 				E9B9BD9B1C66E7AD00C45040 /* 设置返回键和返回键标题颜色.txt in Resources */,
@@ -1641,6 +1656,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F7060A1C76F9CB00708F5C /* videoRing.caf in Resources */,
 				E907A4851C75CB6700BFA698 /* 2.mp4 in Resources */,
 				E907A4881C75CB8400BFA698 /* 1.mp4 in Resources */,
 			);
@@ -1728,6 +1744,7 @@
 				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
 				E9E6C33C1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m in Sources */,
 				E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */,
+				E9F706411C76FC8800708F5C /* XZCustomPhotoViewController.m in Sources */,
 				E9ED31E21C64732700DCDFD0 /* NSString+AES256.m in Sources */,
 				E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */,
 				E9ED31E51C64747300DCDFD0 /* NSString+Format.m in Sources */,
@@ -1762,6 +1779,7 @@
 			files = (
 				E907A48C1C75CC0E00BFA698 /* XZAVPlayerViewController.m in Sources */,
 				E99E32171C4F1B2E0016D25D /* XZToolKitTests.m in Sources */,
+				E9F706421C76FC8800708F5C /* XZCustomPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

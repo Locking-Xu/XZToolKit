@@ -9,7 +9,8 @@
 #import "XZSoundEffectViewController.h"
 #import "UINavigationController+Common.h"
 #import "XZCodeViewController.h"
-#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+
 
 @interface XZSoundEffectViewController ()
 
@@ -52,7 +53,7 @@ void soundCompleteCallback(SystemSoundID soundID,void * clientData){
 - (IBAction)playBtn_Pressed:(id)sender {
     
     //获取资源URL
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"" ofType:@""];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"videoRing" ofType:@"caf"];
     NSURL *url = [NSURL fileURLWithPath:path];
     
     //获得系统声音的ID
