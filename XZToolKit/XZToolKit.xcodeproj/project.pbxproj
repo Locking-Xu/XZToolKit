@@ -34,11 +34,11 @@
 		E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */; };
 		E908D0C91C61EFE400F95A8F /* ALAssetsLibrary.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */; };
 		E9124C311C7ADD6400F733B0 /* XZCustomVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */; };
-		E9124C361C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C351C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m */; };
 		E9124C3C1C7B04C200F733B0 /* XZBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C3B1C7B04C200F733B0 /* XZBaseModel.m */; };
 		E9124C3F1C7B052F00F733B0 /* XZBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C3E1C7B052F00F733B0 /* XZBaseCell.m */; };
 		E9124C421C7B054E00F733B0 /* XZTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C411C7B054E00F733B0 /* XZTableViewDataSource.m */; };
 		E9124C481C7B0B4F00F733B0 /* XZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C471C7B0B4F00F733B0 /* XZTestCell.m */; };
+		E9124C4B1C7B0E3900F733B0 /* XZStripTableViewDataSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C4A1C7B0E3900F733B0 /* XZStripTableViewDataSourceViewController.m */; };
 		E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */; };
 		E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE341C5079C800F08A9C /* XZAddressBookViewController.m */; };
 		E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE3D1C5098BB00F08A9C /* XZAddressBookCell.m */; };
@@ -251,8 +251,6 @@
 		E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsLibrary.txt; sourceTree = "<group>"; };
 		E9124C2F1C7ADD6400F733B0 /* XZCustomVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCustomVideoViewController.h; sourceTree = "<group>"; };
 		E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCustomVideoViewController.m; sourceTree = "<group>"; };
-		E9124C341C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZStripTableViewDelegateViewController.h; sourceTree = "<group>"; };
-		E9124C351C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZStripTableViewDelegateViewController.m; sourceTree = "<group>"; };
 		E9124C3A1C7B04C200F733B0 /* XZBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZBaseModel.h; sourceTree = "<group>"; };
 		E9124C3B1C7B04C200F733B0 /* XZBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBaseModel.m; sourceTree = "<group>"; };
 		E9124C3D1C7B052F00F733B0 /* XZBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZBaseCell.h; sourceTree = "<group>"; };
@@ -261,6 +259,8 @@
 		E9124C411C7B054E00F733B0 /* XZTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTableViewDataSource.m; sourceTree = "<group>"; };
 		E9124C461C7B0B4F00F733B0 /* XZTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTestCell.h; sourceTree = "<group>"; };
 		E9124C471C7B0B4F00F733B0 /* XZTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTestCell.m; sourceTree = "<group>"; };
+		E9124C491C7B0E3900F733B0 /* XZStripTableViewDataSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZStripTableViewDataSourceViewController.h; sourceTree = "<group>"; };
+		E9124C4A1C7B0E3900F733B0 /* XZStripTableViewDataSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZStripTableViewDataSourceViewController.m; sourceTree = "<group>"; };
 		E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookHelper.h; sourceTree = "<group>"; };
 		E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookHelper.m; sourceTree = "<group>"; };
 		E920DE331C5079C800F08A9C /* XZAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookViewController.h; sourceTree = "<group>"; };
@@ -535,24 +535,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E9124C321C7AFE8500F733B0 /* StripTableViewDelegate */ = {
+		E9124C321C7AFE8500F733B0 /* StripTableViewDataSource */ = {
 			isa = PBXGroup;
 			children = (
 				E9124C391C7B046E00F733B0 /* Cell */,
-				E9124C381C7B046900F733B0 /* Model */,
 				E9124C371C7B044C00F733B0 /* Helper */,
+				E9124C381C7B046900F733B0 /* Model */,
 				E9124C331C7AFED300F733B0 /* ViewController */,
 			);
-			name = StripTableViewDelegate;
+			path = StripTableViewDataSource;
 			sourceTree = "<group>";
 		};
 		E9124C331C7AFED300F733B0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E9124C341C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.h */,
-				E9124C351C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m */,
+				E9124C491C7B0E3900F733B0 /* XZStripTableViewDataSourceViewController.h */,
+				E9124C4A1C7B0E3900F733B0 /* XZStripTableViewDataSourceViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E9124C371C7B044C00F733B0 /* Helper */ = {
@@ -561,7 +561,7 @@
 				E9124C401C7B054E00F733B0 /* XZTableViewDataSource.h */,
 				E9124C411C7B054E00F733B0 /* XZTableViewDataSource.m */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		E9124C381C7B046900F733B0 /* Model */ = {
@@ -570,7 +570,7 @@
 				E9124C3A1C7B04C200F733B0 /* XZBaseModel.h */,
 				E9124C3B1C7B04C200F733B0 /* XZBaseModel.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E9124C391C7B046E00F733B0 /* Cell */ = {
@@ -581,7 +581,7 @@
 				E9124C461C7B0B4F00F733B0 /* XZTestCell.h */,
 				E9124C471C7B0B4F00F733B0 /* XZTestCell.m */,
 			);
-			name = Cell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E920DE311C50795800F08A9C /* AddressBook */ = {
@@ -691,28 +691,28 @@
 			children = (
 				E92411871C6F5C200009A8EA /* XZAVFoundationViewController.h */,
 				E92411881C6F5C200009A8EA /* XZAVFoundationViewController.m */,
-				E9D7E1431C703F5B000D0583 /* XZSoundEffectViewController.h */,
-				E9D7E1441C703F5B000D0583 /* XZSoundEffectViewController.m */,
-				E9D7E1451C703F5B000D0583 /* XZSoundEffectViewController.xib */,
-				E9D7E1481C704539000D0583 /* XZMusicPlayerViewController.h */,
-				E9D7E1491C704539000D0583 /* XZMusicPlayerViewController.m */,
-				E9D7E14A1C704539000D0583 /* XZMusicPlayerViewController.xib */,
-				E9E6C3391C74AAEA00B9E2B8 /* XZMusicLibraryViewController.h */,
-				E9E6C33A1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m */,
-				E9E6C33B1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib */,
-				E907A4761C75AD4F00BFA698 /* XZRecorderViewController.h */,
-				E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */,
-				E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */,
-				E907A47B1C75BEF600BFA698 /* XZMovieViewController.h */,
-				E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */,
 				E907A4891C75CC0E00BFA698 /* XZAVPlayerViewController.h */,
 				E907A48A1C75CC0E00BFA698 /* XZAVPlayerViewController.m */,
-				E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */,
-				E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */,
 				E9F7063F1C76FC8800708F5C /* XZCustomPhotoViewController.h */,
 				E9F706401C76FC8800708F5C /* XZCustomPhotoViewController.m */,
 				E9124C2F1C7ADD6400F733B0 /* XZCustomVideoViewController.h */,
 				E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */,
+				E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */,
+				E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */,
+				E907A47B1C75BEF600BFA698 /* XZMovieViewController.h */,
+				E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */,
+				E9E6C3391C74AAEA00B9E2B8 /* XZMusicLibraryViewController.h */,
+				E9E6C33A1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m */,
+				E9E6C33B1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib */,
+				E9D7E1481C704539000D0583 /* XZMusicPlayerViewController.h */,
+				E9D7E1491C704539000D0583 /* XZMusicPlayerViewController.m */,
+				E9D7E14A1C704539000D0583 /* XZMusicPlayerViewController.xib */,
+				E907A4761C75AD4F00BFA698 /* XZRecorderViewController.h */,
+				E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */,
+				E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */,
+				E9D7E1431C703F5B000D0583 /* XZSoundEffectViewController.h */,
+				E9D7E1441C703F5B000D0583 /* XZSoundEffectViewController.m */,
+				E9D7E1451C703F5B000D0583 /* XZSoundEffectViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -720,12 +720,12 @@
 		E924118A1C6F5F9F0009A8EA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E924118B1C6F678E0009A8EA /* 音效.txt */,
-				E9D7E14D1C704830000D0583 /* 音乐.txt */,
 				E907A4861C75CB8400BFA698 /* 1.mp4 */,
 				E907A4831C75CB6700BFA698 /* 2.mp4 */,
-				E9D7E14F1C704841000D0583 /* 遇见.mp3 */,
 				E9F706081C76F9CB00708F5C /* videoRing.caf */,
+				E9D7E14F1C704841000D0583 /* 遇见.mp3 */,
+				E9D7E14D1C704830000D0583 /* 音乐.txt */,
+				E924118B1C6F678E0009A8EA /* 音效.txt */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -967,11 +967,11 @@
 		E99E31F01C4F1B2E0016D25D = {
 			isa = PBXGroup;
 			children = (
+				29818B60DE273D6789EB72CB /* Frameworks */,
+				8214AF4E144607654CFDBBB9 /* Pods */,
 				E99E31FA1C4F1B2E0016D25D /* Products */,
 				E99E31FB1C4F1B2E0016D25D /* XZToolKit */,
 				E99E32151C4F1B2E0016D25D /* XZToolKitTests */,
-				8214AF4E144607654CFDBBB9 /* Pods */,
-				29818B60DE273D6789EB72CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -987,8 +987,8 @@
 		E99E31FB1C4F1B2E0016D25D /* XZToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				E99E32221C4F1D5A0016D25D /* Category */,
 				E99E32211C4F1D4E0016D25D /* AppDelegate */,
+				E99E32221C4F1D5A0016D25D /* Category */,
 				E9A4D0621C590D3B003B8855 /* Frameworks */,
 				E99E325C1C4F7E200016D25D /* General */,
 				E99E32681C4F835A0016D25D /* Helper */,
@@ -1058,7 +1058,6 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E9124C321C7AFE8500F733B0 /* StripTableViewDelegate */,
 				E92411831C6F5B870009A8EA /* AVFoundation */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E9B9BDA01C66E93000C45040 /* BezierPath */,
@@ -1075,6 +1074,7 @@
 				E9ED31FC1C647ACE00DCDFD0 /* LovelyLogin */,
 				E938216E1C59E873004F7EC4 /* PhotoAlbum */,
 				E984B9B61C5E173D00C00BC7 /* PopView */,
+				E9124C321C7AFE8500F733B0 /* StripTableViewDataSource */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1772,6 +1772,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9124C4B1C7B0E3900F733B0 /* XZStripTableViewDataSourceViewController.m in Sources */,
 				E9ED31C71C642FB900DCDFD0 /* XZCoreAnimationViewController.m in Sources */,
 				E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */,
 				E9318B651C51E9380039D357 /* XZTipView.m in Sources */,
@@ -1800,7 +1801,6 @@
 				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
 				E93821A61C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m in Sources */,
 				E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */,
-				E9124C361C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m in Sources */,
 				E9124C481C7B0B4F00F733B0 /* XZTestCell.m in Sources */,
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,

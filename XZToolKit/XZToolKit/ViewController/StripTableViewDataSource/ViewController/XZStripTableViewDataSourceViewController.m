@@ -1,29 +1,30 @@
 //
-//  XZStripTableViewDelegateViewController.m
+//  XZStripTableViewDataSourceViewController.m
 //  XZToolKit
 //
 //  Created by 徐章 on 16/2/22.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZStripTableViewDelegateViewController.h"
+#import "XZStripTableViewDataSourceViewController.h"
 #import <Masonry/Masonry.h>
 #import "XZBaseModel.h"
 #import "NSString+Format.h"
 #import "XZTableViewDataSource.h"
 #import "XZTestCell.h"
 
-@interface XZStripTableViewDelegateViewController ()
+@interface XZStripTableViewDataSourceViewController ()
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) XZTableViewDataSource *tableViewDataSource;
+
 @end
 
-@implementation XZStripTableViewDelegateViewController
+@implementation XZStripTableViewDataSourceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.tableView.backgroundColor = [UIColor redColor];
     
     NSMutableArray *array = [NSMutableArray array];
     for (NSInteger i=0; i<20; i++) {
@@ -34,7 +35,7 @@
     }
     
     TableViewCellConfigureBlock tableViewCellConfigure = ^(XZBaseModel *model,XZBaseCell *cell){
-    
+        
         XZTestCell *testCell = (XZTestCell *)cell;
         [testCell setUpCellWith:model];
     };
@@ -43,8 +44,6 @@
     self.tableViewDataSource = [[XZTableViewDataSource alloc] initWithItems:array cellClass:[XZTestCell class] configCellBlock:tableViewCellConfigure];
     
     self.tableView.dataSource = self.tableViewDataSource;
-    
-    
     // Do any additional setup after loading the view.
 }
 
@@ -62,10 +61,11 @@
         [self.view addSubview:_tableView];
         
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-           
+            
             make.edges.equalTo(weakSelf.view);
         }];
     }
     return _tableView;
 }
+
 @end

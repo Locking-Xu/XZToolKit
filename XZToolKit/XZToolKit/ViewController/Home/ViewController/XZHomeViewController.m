@@ -24,7 +24,7 @@
 #import "XZUtils.h"
 #import "XZBezierPathViewController.h"
 #import "XZAVFoundationViewController.h"
-#import "XZStripTableViewDelegateViewController.h"
+#import "XZStripTableViewDataSourceViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -281,7 +281,7 @@
             //TableView代理剥离
             case 14:
             {
-                XZStripTableViewDelegateViewController *stripTableViewDelegateVc = [[XZStripTableViewDelegateViewController alloc] init];
+                XZStripTableViewDataSourceViewController *stripTableViewDelegateVc = [[XZStripTableViewDataSourceViewController alloc] init];
                 stripTableViewDelegateVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:stripTableViewDelegateVc animated:YES];
             }
