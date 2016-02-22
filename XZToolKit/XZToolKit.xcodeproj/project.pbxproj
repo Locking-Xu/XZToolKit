@@ -33,6 +33,7 @@
 		E908D0C51C61E00900F95A8F /* ALAssetsGroup.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */; };
 		E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */; };
 		E908D0C91C61EFE400F95A8F /* ALAssetsLibrary.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */; };
+		E9124C311C7ADD6400F733B0 /* XZCustomVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */; };
 		E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */; };
 		E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE341C5079C800F08A9C /* XZAddressBookViewController.m */; };
 		E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE3D1C5098BB00F08A9C /* XZAddressBookCell.m */; };
@@ -243,6 +244,8 @@
 		E908D0C41C61E00900F95A8F /* ALAssetsGroup.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsGroup.txt; sourceTree = "<group>"; };
 		E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsFilter.txt; sourceTree = "<group>"; };
 		E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsLibrary.txt; sourceTree = "<group>"; };
+		E9124C2F1C7ADD6400F733B0 /* XZCustomVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCustomVideoViewController.h; sourceTree = "<group>"; };
+		E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCustomVideoViewController.m; sourceTree = "<group>"; };
 		E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookHelper.h; sourceTree = "<group>"; };
 		E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookHelper.m; sourceTree = "<group>"; };
 		E920DE331C5079C800F08A9C /* XZAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookViewController.h; sourceTree = "<group>"; };
@@ -644,6 +647,8 @@
 				E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */,
 				E9F7063F1C76FC8800708F5C /* XZCustomPhotoViewController.h */,
 				E9F706401C76FC8800708F5C /* XZCustomPhotoViewController.m */,
+				E9124C2F1C7ADD6400F733B0 /* XZCustomVideoViewController.h */,
+				E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1721,6 +1726,7 @@
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */,
 				E907A48B1C75CC0E00BFA698 /* XZAVPlayerViewController.m in Sources */,
+				E9124C311C7ADD6400F733B0 /* XZCustomVideoViewController.m in Sources */,
 				E9ED32011C647B2100DCDFD0 /* XZLovelyLoginViewController.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
 				E9D7E1461C703F5B000D0583 /* XZSoundEffectViewController.m in Sources */,

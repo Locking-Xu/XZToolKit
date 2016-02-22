@@ -32,6 +32,8 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
 @property (nonatomic, strong) UIView *containerView;
 /** 拍照按钮*/
 @property (nonatomic, strong) UIButton *takeBtn;
+/** 聚焦光标*/
+@property (nonatomic, strong) UIImageView *focusCursor;
 
 @end
 
@@ -46,6 +48,8 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
     [self.flashOffBtn setTitle:@"关" forState:UIControlStateNormal];
     [self.toggleBtn setTitle:@"切换" forState:UIControlStateNormal];
     [self.takeBtn setTitle:@"拍照" forState:UIControlStateNormal];
+    
+    self.focusCursor.alpha = 0.0;
     
     self.containerView.backgroundColor = [UIColor whiteColor];
     
@@ -90,6 +94,10 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
     if ([self.captureSession canAddOutput:self.captureStillImageOutput]) {
         [self.captureSession addOutput:self.captureStillImageOutput];
     }
+    
+    [self addNotificationToCaptureDevice:captureDevice];
+    [self setFlashButtonStatus];
+    [self addGesturerecognizer];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -103,7 +111,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
     self.captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     
     self.captureVideoPreviewLayer.frame = self.containerView.layer.bounds;
-    [self.containerView.layer addSublayer:self.captureVideoPreviewLayer];
+    [self.containerView.layer insertSublayer:self.captureVideoPreviewLayer below:self.focusCursor.layer];
     [self.captureSession startRunning];
 }
 
@@ -111,6 +119,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
     
     [super viewDidDisappear:animated];
     [self.captureSession stopRunning];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -139,6 +148,11 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
     return nil;
 }
 
+/**
+ *  改变设备属性的统一操作方法
+ *
+ *  @param propertyChange 属性改变操作
+ */
 - (void)changeDeviceProperty:(ProPertyChangeBlock)propertyChange{
 
     AVCaptureDevice *captureDevice = self.captureDeviceInput.device;
@@ -152,6 +166,218 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
     }
 }
 
+/**
+ *  设置闪光灯按钮装坛
+ */
+- (void)setFlashButtonStatus{
+    
+    AVCaptureDevice *captureDevice = [self.captureDeviceInput device];
+    AVCaptureFlashMode flashMode = captureDevice.flashMode;
+    if ([captureDevice isFlashAvailable]) {
+        
+        self.flashAutoBtn.hidden = NO;
+        self.flashOffBtn.hidden = NO;
+        self.flashOnBtn.hidden = NO;
+        self.flashAutoBtn.enabled = YES;
+        self.flashOffBtn.enabled = YES;
+        self.flashOnBtn.enabled = YES;
+        self.flashAutoBtn.backgroundColor = [UIColor grayColor];
+        self.flashOffBtn.backgroundColor = [UIColor grayColor];
+        self.flashOnBtn.backgroundColor = [UIColor grayColor];
+        
+        switch (flashMode) {
+            case AVCaptureFlashModeAuto:
+                self.flashAutoBtn.enabled = NO;
+                self.flashAutoBtn.backgroundColor = [UIColor greenColor];
+                break;
+            case AVCaptureFlashModeOff:
+                self.flashOffBtn.enabled = NO;
+                self.flashOffBtn.backgroundColor = [UIColor greenColor];
+                break;
+            case AVCaptureFlashModeOn:
+                self.flashOnBtn.enabled = NO;
+                self.flashOnBtn.backgroundColor = [UIColor greenColor];
+                break;
+            default:
+                break;
+        }
+        
+    }else{
+        
+        self.flashAutoBtn.hidden = YES;
+        self.flashOffBtn.hidden = YES;
+        self.flashOnBtn.hidden = YES;
+    }
+}
+
+/**
+ *  设置闪光灯模式
+ *
+ *  @param mode 模式
+ */
+- (void)setFlashMode:(AVCaptureFlashMode)mode{
+    
+    [self changeDeviceProperty:^(AVCaptureDevice *captureDevice) {
+        if ([captureDevice isFlashModeSupported:mode]) {
+            [captureDevice setFlashMode:mode];
+        }
+    }];
+}
+
+/**
+ *  设置聚焦点
+ *
+ *  @param focusMode    聚焦模式
+ *  @param exposureMode 曝光模式
+ *  @param point        聚焦点
+ */
+- (void)focusWithMode:(AVCaptureFocusMode)focusMode exposureMode:(AVCaptureExposureMode)exposureMode atPoint:(CGPoint)point{
+
+    [self changeDeviceProperty:^(AVCaptureDevice *captureDevice) {
+       
+        if ([captureDevice isFocusModeSupported:focusMode]) {
+            [captureDevice setFocusMode:focusMode];
+        }
+        if ([captureDevice isFocusPointOfInterestSupported]) {
+            [captureDevice setFocusPointOfInterest:point];
+        }
+        if ([captureDevice isExposureModeSupported:exposureMode]) {
+            [captureDevice setExposureMode:exposureMode];
+        }
+        if ([captureDevice isExposurePointOfInterestSupported]) {
+            [captureDevice setExposurePointOfInterest:point];
+        }
+    }];
+}
+
+/**
+ *  照片保存成功,方法名必须是这个格式
+ *
+ *  @param image       照片
+ *  @param error       错误信息
+ *  @param contextInfo 上下文
+ */
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
+    
+    NSLog(@"保存完成");
+}
+
+#pragma mark - UIButton_Actions
+- (void)flashAutoBtn_Pressed:(UIButton *)sender{
+    
+    [self setFlashMode:AVCaptureFlashModeAuto];
+    [self setFlashButtonStatus];
+}
+- (void)flashOffBtn_Pressed:(UIButton *)sender{
+    
+    [self setFlashMode:AVCaptureFlashModeOff];
+    [self setFlashButtonStatus];
+}
+- (void)flashOnBtn_Pressed:(UIButton *)sender{
+    
+    [self setFlashMode:AVCaptureFlashModeOn];
+    [self setFlashButtonStatus];
+}
+
+- (void)toggleBtn_Pressed:(UIButton *)sender{
+
+    AVCaptureDevice *captureDevice = [self.captureDeviceInput device];
+    AVCaptureDevicePosition currentPosition = [captureDevice position];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    AVCaptureDevice *toChangeDevice;
+    AVCaptureDevicePosition toChangePosition = AVCaptureDevicePositionFront;
+    if (currentPosition == AVCaptureDevicePositionUnspecified || currentPosition == AVCaptureDevicePositionFront) {
+        toChangePosition = AVCaptureDevicePositionBack;
+    }
+    
+    //获取最新的设备
+    toChangeDevice = [self getCameraDeviceWithPosition:toChangePosition];
+    [self addNotificationToCaptureDevice:toChangeDevice];
+    
+    //获得调整后的设备输入对象
+    AVCaptureDeviceInput *toChangeDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:toChangeDevice error:nil];
+    //改变会话的配置前一定要先开启配置，配置完成后提交配置改变
+    [self.captureSession beginConfiguration];
+    //移除原来的输入对象
+    [self.captureSession removeInput:self.captureDeviceInput];
+    //添加新的输入对象
+    if ([self.captureSession canAddInput:toChangeDeviceInput]) {
+        [self.captureSession addInput:toChangeDeviceInput];
+        self.captureDeviceInput = toChangeDeviceInput;
+    }
+    
+    //提交会话配置
+    [self.captureSession commitConfiguration];
+    [self setFlashButtonStatus];
+    
+}
+
+- (void)takeBtn_Pressed:(UIButton *)sender{
+    
+    //根据设备输出获得连接
+    AVCaptureConnection *captureConnect = [self.captureStillImageOutput connectionWithMediaType:AVMediaTypeVideo];
+    //根据连接取得设备输出的数据
+    [self.captureStillImageOutput captureStillImageAsynchronouslyFromConnection:captureConnect completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+       
+        if (imageDataSampleBuffer) {
+            
+            NSData *data = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+            UIImage *image = [UIImage imageWithData:data];
+            UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+        }
+    }];
+}
+
+#pragma mark - UIGestureRecognizer
+- (void)addGesturerecognizer{
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapScreen:)];
+    [self.containerView addGestureRecognizer:tapGesture];
+}
+
+- (void)tapScreen:(UITapGestureRecognizer *)tapGesture{
+    
+    CGPoint point = [tapGesture locationInView:self.containerView];
+    //将UI坐标转化成摄像头坐标
+    CGPoint cameraPoint = [self.captureVideoPreviewLayer captureDevicePointOfInterestForPoint:point];
+    
+    //设置聚焦光标的位置
+    self.focusCursor.center = point;
+    self.focusCursor.transform = CGAffineTransformMakeScale(1.5, 1.5);
+    self.focusCursor.alpha = 1.0;
+    [UIView animateWithDuration:1.0 animations:^{
+        self.focusCursor.transform = CGAffineTransformIdentity;
+    } completion:^(BOOL finished){
+    
+        self.focusCursor.alpha = 0.0;
+    }];
+    [self focusWithMode:AVCaptureFocusModeAutoFocus exposureMode:AVCaptureExposureModeAutoExpose atPoint:cameraPoint];
+}
+
+
+#pragma mark - Notification
+/**
+ *  给输出设备添加通知
+ *
+ *  @param captureDevice 输出设备
+ */
+- (void)addNotificationToCaptureDevice:(AVCaptureDevice *)captureDevice{
+
+    //添加区域改变通知必须先设置设备允许捕获
+    [self changeDeviceProperty:^(AVCaptureDevice *captureDevice) {
+        captureDevice.subjectAreaChangeMonitoringEnabled = YES;
+    }];
+    //捕获区域发生改变
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(areaChange:) name:AVCaptureDeviceSubjectAreaDidChangeNotification object:captureDevice];
+}
+
+
+- (void)areaChange:(NSNotification *)notification{
+
+    NSLog(@"设备区域发生改变");
+}
+
 #pragma mark - Setter & Getter
 - (UIButton *)flashAutoBtn{
     WS(weakSelf);
@@ -162,6 +388,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
             UIButton *button = [[UIButton alloc] init];
             [self.view addSubview:button];
             button.backgroundColor = [UIColor grayColor];
+            [button addTarget:self action:@selector(flashAutoBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
                
                 make.top.equalTo(weakSelf.view);
@@ -185,7 +412,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
             UIButton *button = [[UIButton alloc] init];
             
             button.backgroundColor = [UIColor grayColor];
-            
+            [button addTarget:self action:@selector(flashOnBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
             [self.view addSubview:button];
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
                
@@ -210,6 +437,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
             UIButton *button = [[UIButton alloc] init];
             
             button.backgroundColor = [UIColor grayColor];
+            [button addTarget:self action:@selector(flashOffBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
             [self.view addSubview:button];
             
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -234,6 +462,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
             
             UIButton *button = [[UIButton alloc] init];
             button.backgroundColor = [UIColor grayColor];
+            [button addTarget:self action:@selector(toggleBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
             [self.view addSubview:button];
             
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -259,6 +488,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
             
             UIButton *button = [[UIButton alloc] init];
             button.backgroundColor = [UIColor redColor];
+            [button addTarget:self action:@selector(takeBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
             [self.view addSubview:button];
             
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -294,5 +524,25 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
         });
     }
     return _containerView;
+}
+
+- (UIImageView *)focusCursor{
+    WS(weakSelf);
+    if (!_focusCursor) {
+        _focusCursor = ({
+            
+            UIImageView *imageView = [[UIImageView alloc] init];
+            [self.containerView addSubview:imageView];
+            imageView.image = [UIImage imageNamed:@"cameraFocus"];
+            [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+               
+                make.center.equalTo(weakSelf.containerView);
+                make.height.mas_equalTo(@50);
+                make.width.mas_equalTo(@50);
+            }];
+            imageView;
+        });
+    }
+    return _focusCursor;
 }
 @end

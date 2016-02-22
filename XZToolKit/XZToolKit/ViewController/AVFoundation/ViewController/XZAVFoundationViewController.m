@@ -17,9 +17,10 @@
 #import "XZAVPlayerViewController.h"
 #import "XZImagePickerViewController.h"
 #import "XZCustomPhotoViewController.h"
+#import "XZCustomVideoViewController.h"
 
 
-#define TitleList @[@"音效",@"音乐",@"音乐库",@"录音",@"视频",@"AVPlayer",@"ImagePicker",@"自定义拍照"]
+#define TitleList @[@"音效",@"音乐",@"音乐库",@"录音",@"视频",@"AVPlayer",@"ImagePicker",@"自定义拍照",@"自定义录视频"]
 
 @interface XZAVFoundationViewController ()
 
@@ -123,6 +124,13 @@
             XZCustomPhotoViewController *customPhotoVc = [[XZCustomPhotoViewController alloc] init];
             customPhotoVc.title = TitleList[indexPath.row];
             [self.navigationController pushViewController:customPhotoVc animated:YES];
+        }
+            break;
+        case 8:
+        {
+            XZCustomVideoViewController *customVideoVc = [[XZCustomVideoViewController alloc] init];
+            customVideoVc.title = TitleList[indexPath.row];
+            [self.navigationController pushViewController:customVideoVc animated:YES];
         }
             break;
         default:
