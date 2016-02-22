@@ -16,5 +16,6 @@
 	<string>可爱的登录页面</string>
 	<string>贝塞尔曲线</string>
 	<string>AVFoundation</string>
+	<string>TableView代理剥离</string>
 </array>
 </plist>

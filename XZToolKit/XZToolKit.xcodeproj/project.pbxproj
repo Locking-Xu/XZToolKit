@@ -34,6 +34,11 @@
 		E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C61C61E1CD00F95A8F /* ALAssetsFilter.txt */; };
 		E908D0C91C61EFE400F95A8F /* ALAssetsLibrary.txt in Resources */ = {isa = PBXBuildFile; fileRef = E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */; };
 		E9124C311C7ADD6400F733B0 /* XZCustomVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */; };
+		E9124C361C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C351C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m */; };
+		E9124C3C1C7B04C200F733B0 /* XZBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C3B1C7B04C200F733B0 /* XZBaseModel.m */; };
+		E9124C3F1C7B052F00F733B0 /* XZBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C3E1C7B052F00F733B0 /* XZBaseCell.m */; };
+		E9124C421C7B054E00F733B0 /* XZTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C411C7B054E00F733B0 /* XZTableViewDataSource.m */; };
+		E9124C481C7B0B4F00F733B0 /* XZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9124C471C7B0B4F00F733B0 /* XZTestCell.m */; };
 		E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */; };
 		E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE341C5079C800F08A9C /* XZAddressBookViewController.m */; };
 		E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E920DE3D1C5098BB00F08A9C /* XZAddressBookCell.m */; };
@@ -246,6 +251,16 @@
 		E908D0C81C61EFE400F95A8F /* ALAssetsLibrary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetsLibrary.txt; sourceTree = "<group>"; };
 		E9124C2F1C7ADD6400F733B0 /* XZCustomVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCustomVideoViewController.h; sourceTree = "<group>"; };
 		E9124C301C7ADD6400F733B0 /* XZCustomVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCustomVideoViewController.m; sourceTree = "<group>"; };
+		E9124C341C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZStripTableViewDelegateViewController.h; sourceTree = "<group>"; };
+		E9124C351C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZStripTableViewDelegateViewController.m; sourceTree = "<group>"; };
+		E9124C3A1C7B04C200F733B0 /* XZBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZBaseModel.h; sourceTree = "<group>"; };
+		E9124C3B1C7B04C200F733B0 /* XZBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBaseModel.m; sourceTree = "<group>"; };
+		E9124C3D1C7B052F00F733B0 /* XZBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZBaseCell.h; sourceTree = "<group>"; };
+		E9124C3E1C7B052F00F733B0 /* XZBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBaseCell.m; sourceTree = "<group>"; };
+		E9124C401C7B054E00F733B0 /* XZTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTableViewDataSource.h; sourceTree = "<group>"; };
+		E9124C411C7B054E00F733B0 /* XZTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTableViewDataSource.m; sourceTree = "<group>"; };
+		E9124C461C7B0B4F00F733B0 /* XZTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTestCell.h; sourceTree = "<group>"; };
+		E9124C471C7B0B4F00F733B0 /* XZTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTestCell.m; sourceTree = "<group>"; };
 		E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookHelper.h; sourceTree = "<group>"; };
 		E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookHelper.m; sourceTree = "<group>"; };
 		E920DE331C5079C800F08A9C /* XZAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookViewController.h; sourceTree = "<group>"; };
@@ -518,6 +533,55 @@
 				8A04685ED1D4E127CE824B26 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9124C321C7AFE8500F733B0 /* StripTableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E9124C391C7B046E00F733B0 /* Cell */,
+				E9124C381C7B046900F733B0 /* Model */,
+				E9124C371C7B044C00F733B0 /* Helper */,
+				E9124C331C7AFED300F733B0 /* ViewController */,
+			);
+			name = StripTableViewDelegate;
+			sourceTree = "<group>";
+		};
+		E9124C331C7AFED300F733B0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9124C341C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.h */,
+				E9124C351C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9124C371C7B044C00F733B0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E9124C401C7B054E00F733B0 /* XZTableViewDataSource.h */,
+				E9124C411C7B054E00F733B0 /* XZTableViewDataSource.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		E9124C381C7B046900F733B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9124C3A1C7B04C200F733B0 /* XZBaseModel.h */,
+				E9124C3B1C7B04C200F733B0 /* XZBaseModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E9124C391C7B046E00F733B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9124C3D1C7B052F00F733B0 /* XZBaseCell.h */,
+				E9124C3E1C7B052F00F733B0 /* XZBaseCell.m */,
+				E9124C461C7B0B4F00F733B0 /* XZTestCell.h */,
+				E9124C471C7B0B4F00F733B0 /* XZTestCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		E920DE311C50795800F08A9C /* AddressBook */ = {
@@ -994,6 +1058,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9124C321C7AFE8500F733B0 /* StripTableViewDelegate */,
 				E92411831C6F5B870009A8EA /* AVFoundation */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E9B9BDA01C66E93000C45040 /* BezierPath */,
@@ -1735,11 +1800,14 @@
 				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
 				E93821A61C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m in Sources */,
 				E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */,
+				E9124C361C7AFF0E00F733B0 /* XZStripTableViewDelegateViewController.m in Sources */,
+				E9124C481C7B0B4F00F733B0 /* XZTestCell.m in Sources */,
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
 				E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
 				E9ED31EB1C6478A200DCDFD0 /* XZGuideViewController.m in Sources */,
+				E9124C3C1C7B04C200F733B0 /* XZBaseModel.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
@@ -1763,6 +1831,7 @@
 				E9ED31EE1C6478B800DCDFD0 /* XZGuideView.m in Sources */,
 				E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */,
 				E9ED31CF1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m in Sources */,
+				E9124C421C7B054E00F733B0 /* XZTableViewDataSource.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
@@ -1773,6 +1842,7 @@
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
+				E9124C3F1C7B052F00F733B0 /* XZBaseCell.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
 				E99E324D1C4F1E350016D25D /* XZCalendarCell.m in Sources */,
 				E9BC74301C6056320033BF4D /* XZCollectionViewLayoutViewController.m in Sources */,

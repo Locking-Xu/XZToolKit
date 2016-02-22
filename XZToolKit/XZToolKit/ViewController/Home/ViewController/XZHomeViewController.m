@@ -24,7 +24,7 @@
 #import "XZUtils.h"
 #import "XZBezierPathViewController.h"
 #import "XZAVFoundationViewController.h"
-
+#import "XZStripTableViewDelegateViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -270,12 +270,22 @@
                 [self.navigationController pushViewController:bezierPathVc animated:YES];
             }
                 break;
+            //AVFundation
             case 13:
             {
                 XZAVFoundationViewController *avFoundationVc = [[XZAVFoundationViewController alloc] init];
                 avFoundationVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:avFoundationVc animated:YES];
             }
+                break;
+            //TableView代理剥离
+            case 14:
+            {
+                XZStripTableViewDelegateViewController *stripTableViewDelegateVc = [[XZStripTableViewDelegateViewController alloc] init];
+                stripTableViewDelegateVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:stripTableViewDelegateVc animated:YES];
+            }
+                break;
             default:
                 break;
         }
