@@ -1,28 +1,28 @@
 //
-//  XZStripTableViewDataSourceViewController.m
+//  XZStripTableViewProtocolViewController.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/2/22.
+//  Created by 徐章 on 16/2/23.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZStripTableViewDataSourceViewController.h"
+#import "XZStripTableViewProtocolViewController.h"
 #import <Masonry/Masonry.h>
 #import "XZBaseModel.h"
 #import "NSString+Format.h"
 #import "XZTableViewDataSource.h"
+#import "XZTableViewDelegate.h"
 #import "XZTestCell.h"
 
-@interface XZStripTableViewDataSourceViewController ()
+@interface XZStripTableViewProtocolViewController ()
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) XZTableViewDataSource *tableViewDataSource;
-
+@property (nonatomic, strong) XZTableViewDelegate *tableViewDelegate;
 @end
 
-@implementation XZStripTableViewDataSourceViewController
+@implementation XZStripTableViewProtocolViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -34,16 +34,24 @@
         [array addObject:model];
     }
     
-    TableViewCellConfigureBlock tableViewCellConfigure = ^(XZBaseModel *model,XZBaseCell *cell){
+    TableViewCellConfigureBlock tableViewCellConfigure = ^(XZBaseModel *model,UITableViewCell *cell){
         
         XZTestCell *testCell = (XZTestCell *)cell;
         [testCell setUpCellWith:model];
     };
     
+    TableViewSelectCellBlock tableViewCellSelect = ^(XZBaseModel *model,UITableViewCell *cell){
+        
+        NSLog(@"%@",model.title);
+    };
+    
     //配置tableView数据源
     self.tableViewDataSource = [[XZTableViewDataSource alloc] initWithItems:array cellClass:[XZTestCell class] configCellBlock:tableViewCellConfigure];
+    //配置tableView的代理
+    self.tableViewDelegate = [[XZTableViewDelegate alloc] initWithItems:array cellClass:[XZTestCell class] selectCellBlock:tableViewCellSelect];
     
     self.tableView.dataSource = self.tableViewDataSource;
+    self.tableView.delegate = self.tableViewDelegate;
     // Do any additional setup after loading the view.
 }
 

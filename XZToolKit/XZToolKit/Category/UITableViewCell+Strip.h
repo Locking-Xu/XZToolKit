@@ -1,5 +1,5 @@
 //
-//  XZBaseCell.h
+//  UITableViewCell+Strip.h
 //  XZToolKit
 //
 //  Created by 徐章 on 16/2/22.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZBaseCell : UITableViewCell
-
+@interface UITableViewCell (Strip)
 /**
  *  使用alloc创建cell
  *

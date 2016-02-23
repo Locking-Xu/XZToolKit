@@ -6,11 +6,9 @@
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZBaseCell.h"
+#import <UIKit/UIKit.h>
 #import "XZBaseModel.h"
 
-@interface XZTestCell : XZBaseCell
-
+@interface XZTestCell : UITableViewCell
 - (void)setUpCellWith:(XZBaseModel *)model;
-
 @end

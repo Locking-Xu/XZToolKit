@@ -11,7 +11,7 @@
 
 @class XZBaseCell,XZBaseModel;
 
-typedef void(^TableViewCellConfigureBlock)(XZBaseModel *model,XZBaseCell *cell);
+typedef void(^TableViewCellConfigureBlock)(XZBaseModel *model,UITableViewCell *cell);
 
 @interface XZTableViewDataSource : NSObject<UITableViewDataSource>
 
@@ -22,7 +22,7 @@ typedef void(^TableViewCellConfigureBlock)(XZBaseModel *model,XZBaseCell *cell);
  *  @param cellClass       cell类
  *  @param configCellblock 设置cell回调
  *
- *  @return <#return value description#>
+ *  @return self
  */
 - (instancetype)initWithItems:(NSArray *)items cellClass:(Class)cellClass configCellBlock:(TableViewCellConfigureBlock)configCellblock;
 

@@ -24,7 +24,8 @@
 #import "XZUtils.h"
 #import "XZBezierPathViewController.h"
 #import "XZAVFoundationViewController.h"
-#import "XZStripTableViewDataSourceViewController.h"
+#import "XZStripTableViewProtocolViewController.h"
+#import "XZQuartz2DViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -281,9 +282,16 @@
             //TableView代理剥离
             case 14:
             {
-                XZStripTableViewDataSourceViewController *stripTableViewDelegateVc = [[XZStripTableViewDataSourceViewController alloc] init];
-                stripTableViewDelegateVc.title = _demoList[indexPath.row];
-                [self.navigationController pushViewController:stripTableViewDelegateVc animated:YES];
+                XZStripTableViewProtocolViewController *stripTableViewProtocolVc = [[XZStripTableViewProtocolViewController alloc] init];
+                stripTableViewProtocolVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:stripTableViewProtocolVc animated:YES];
+            }
+                break;
+            case 15:
+            {
+                XZQuartz2DViewController *quartz2DVc = [[XZQuartz2DViewController alloc] init];
+                quartz2DVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:quartz2DVc animated:YES];
             }
                 break;
             default:

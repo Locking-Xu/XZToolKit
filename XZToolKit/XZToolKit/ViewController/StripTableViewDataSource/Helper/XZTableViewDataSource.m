@@ -7,7 +7,8 @@
 //
 
 #import "XZTableViewDataSource.h"
-#import "XZBaseCell.h"
+#import "UITableViewCell+Strip.h"
+
 @interface XZTableViewDataSource(){
 
     TableViewCellConfigureBlock _configureCellBlock;
@@ -39,7 +40,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    XZBaseCell *cell = [[_cellClass class] cellAllocWithTableView:tableView style:UITableViewCellStyleDefault];
+    UITableViewCell *cell = [[_cellClass class] cellAllocWithTableView:tableView style:UITableViewCellStyleDefault];
     id item = _itemArray[indexPath.row];
     _configureCellBlock(item,cell);
     return cell;

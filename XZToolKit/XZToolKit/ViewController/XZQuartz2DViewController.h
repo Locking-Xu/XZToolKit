@@ -1,5 +1,5 @@
 //
-//  XZStripTableViewDataSourceViewController.h
+//  XZQuartz2DViewController.h
 //  XZToolKit
 //
 //  Created by 徐章 on 16/2/22.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZStripTableViewDataSourceViewController : UIViewController
+@interface XZQuartz2DViewController : UIViewController
 
 @end
