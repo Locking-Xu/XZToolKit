@@ -26,6 +26,7 @@
 #import "XZAVFoundationViewController.h"
 #import "XZStripTableViewProtocolViewController.h"
 #import "XZQuartz2DViewController.h"
+#import "XZGifPlayerViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -287,11 +288,20 @@
                 [self.navigationController pushViewController:stripTableViewProtocolVc animated:YES];
             }
                 break;
+            //Quartz2D
             case 15:
             {
                 XZQuartz2DViewController *quartz2DVc = [[XZQuartz2DViewController alloc] init];
                 quartz2DVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:quartz2DVc animated:YES];
+            }
+                break;
+            //GIF
+            case 16:
+            {
+                XZGifPlayerViewController *gifPlayerVc = [[XZGifPlayerViewController alloc] init];
+                gifPlayerVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:gifPlayerVc animated:YES];
             }
                 break;
             default:

@@ -18,5 +18,6 @@
 	<string>AVFoundation</string>
 	<string>TableView协议剥离</string>
 	<string>Quartz2D</string>
+	<string>GIF</string>
 </array>
 </plist>

@@ -7,7 +7,6 @@
 //
 
 #import "XZQuartz2DViewController.h"
-#import "XZQuartz2DView.h"
 #import <Masonry/Masonry.h>
 #import "XZTableViewDataSource.h"
 

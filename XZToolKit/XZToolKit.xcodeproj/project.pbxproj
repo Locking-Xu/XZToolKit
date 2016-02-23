@@ -12,6 +12,10 @@
 		E9028A8E1C7BF5EE000F5693 /* XZStripTableViewProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9028A8D1C7BF5EE000F5693 /* XZStripTableViewProtocolViewController.m */; };
 		E9028A911C7BF99E000F5693 /* XZQuartz2DBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9028A901C7BF99E000F5693 /* XZQuartz2DBasicViewController.m */; };
 		E9028A941C7BFA65000F5693 /* XZQuartz2DBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9028A931C7BFA65000F5693 /* XZQuartz2DBasicView.m */; };
+		E9028A991C7BFDAE000F5693 /* XZGifPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9028A981C7BFDAE000F5693 /* XZGifPlayerViewController.m */; };
+		E9028A9C1C7BFE35000F5693 /* birdFly.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9028A9B1C7BFE35000F5693 /* birdFly.gif */; };
+		E9028AA21C7C0B81000F5693 /* XZGifPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9028AA11C7C0B81000F5693 /* XZGifPlayerView.m */; };
+		E9028AA51C7C3C3B000F5693 /* XZGenerateGifHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9028AA41C7C3C3B000F5693 /* XZGenerateGifHelper.m */; };
 		E9036A081C62E93900384199 /* PHFetchOptions.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A071C62E93900384199 /* PHFetchOptions.txt */; };
 		E9036A0A1C62F03800384199 /* PHAssetCollection.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A091C62F03800384199 /* PHAssetCollection.txt */; };
 		E9036A0C1C62F2F600384199 /* PHFetchResult.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9036A0B1C62F2F600384199 /* PHFetchResult.txt */; };
@@ -233,6 +237,13 @@
 		E9028A901C7BF99E000F5693 /* XZQuartz2DBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DBasicViewController.m; sourceTree = "<group>"; };
 		E9028A921C7BFA65000F5693 /* XZQuartz2DBasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DBasicView.h; sourceTree = "<group>"; };
 		E9028A931C7BFA65000F5693 /* XZQuartz2DBasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DBasicView.m; sourceTree = "<group>"; };
+		E9028A971C7BFDAE000F5693 /* XZGifPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGifPlayerViewController.h; sourceTree = "<group>"; };
+		E9028A981C7BFDAE000F5693 /* XZGifPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGifPlayerViewController.m; sourceTree = "<group>"; };
+		E9028A9B1C7BFE35000F5693 /* birdFly.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = birdFly.gif; sourceTree = "<group>"; };
+		E9028AA01C7C0B81000F5693 /* XZGifPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGifPlayerView.h; sourceTree = "<group>"; };
+		E9028AA11C7C0B81000F5693 /* XZGifPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGifPlayerView.m; sourceTree = "<group>"; };
+		E9028AA31C7C3C3B000F5693 /* XZGenerateGifHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGenerateGifHelper.h; sourceTree = "<group>"; };
+		E9028AA41C7C3C3B000F5693 /* XZGenerateGifHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGenerateGifHelper.m; sourceTree = "<group>"; };
 		E9036A071C62E93900384199 /* PHFetchOptions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHFetchOptions.txt; sourceTree = "<group>"; };
 		E9036A091C62F03800384199 /* PHAssetCollection.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHAssetCollection.txt; sourceTree = "<group>"; };
 		E9036A0B1C62F2F600384199 /* PHFetchResult.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PHFetchResult.txt; sourceTree = "<group>"; };
@@ -545,6 +556,52 @@
 				8A04685ED1D4E127CE824B26 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9028A951C7BFD35000F5693 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				E9028AA61C7C3C40000F5693 /* Helper */,
+				E9028A9F1C7C0B5D000F5693 /* View */,
+				E9028A9A1C7BFE04000F5693 /* Source */,
+				E9028A961C7BFD41000F5693 /* ViewController */,
+			);
+			name = GIF;
+			sourceTree = "<group>";
+		};
+		E9028A961C7BFD41000F5693 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9028A971C7BFDAE000F5693 /* XZGifPlayerViewController.h */,
+				E9028A981C7BFDAE000F5693 /* XZGifPlayerViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9028A9A1C7BFE04000F5693 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9028A9B1C7BFE35000F5693 /* birdFly.gif */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E9028A9F1C7C0B5D000F5693 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9028AA01C7C0B81000F5693 /* XZGifPlayerView.h */,
+				E9028AA11C7C0B81000F5693 /* XZGifPlayerView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E9028AA61C7C3C40000F5693 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E9028AA31C7C3C3B000F5693 /* XZGenerateGifHelper.h */,
+				E9028AA41C7C3C3B000F5693 /* XZGenerateGifHelper.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		E9124C321C7AFE8500F733B0 /* StripTableViewDataSource */ = {
@@ -1072,6 +1129,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9028A951C7BFD35000F5693 /* GIF */,
 				E9D461ED1C7B32270011C6F4 /* Quartz2D */,
 				E92411831C6F5B870009A8EA /* AVFoundation */,
 				E920DE311C50795800F08A9C /* AddressBook */,
@@ -1699,6 +1757,7 @@
 				E924117A1C6F4AA60009A8EA /* CommonKnowledgeList.plist in Resources */,
 				E9B9BD991C66E7AD00C45040 /* UINavigationBar设置标题.txt in Resources */,
 				E924117C1C6F4D630009A8EA /* TableViewList.plist in Resources */,
+				E9028A9C1C7BFE35000F5693 /* birdFly.gif in Resources */,
 				E9543EF61C5F0FC0006D7BEF /* copy的setter方法.txt in Resources */,
 				E9543EFA1C5F30B2006D7BEF /* OOP语言三大特征.txt in Resources */,
 				E96A9E5A1C60E7CC0082AAA0 /* 使用Size Class适应屏幕旋转.txt in Resources */,
@@ -1868,6 +1927,7 @@
 				E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */,
 				E9D461FB1C7B40620011C6F4 /* XZTestCell.m in Sources */,
 				E9ED31E51C64747300DCDFD0 /* NSString+Format.m in Sources */,
+				E9028A991C7BFDAE000F5693 /* XZGifPlayerViewController.m in Sources */,
 				E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */,
 				E9028A8E1C7BF5EE000F5693 /* XZStripTableViewProtocolViewController.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
@@ -1875,6 +1935,7 @@
 				E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
 				E9D461F81C7B3F8D0011C6F4 /* UITableViewCell+Strip.m in Sources */,
+				E9028AA21C7C0B81000F5693 /* XZGifPlayerView.m in Sources */,
 				E9ED32041C647B9200DCDFD0 /* XZRotateButton.m in Sources */,
 				E9ED31EE1C6478B800DCDFD0 /* XZGuideView.m in Sources */,
 				E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */,
@@ -1891,6 +1952,7 @@
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
+				E9028AA51C7C3C3B000F5693 /* XZGenerateGifHelper.m in Sources */,
 				E99E324D1C4F1E350016D25D /* XZCalendarCell.m in Sources */,
 				E9D461F11C7B32620011C6F4 /* XZQuartz2DViewController.m in Sources */,
 				E9BC74301C6056320033BF4D /* XZCollectionViewLayoutViewController.m in Sources */,
