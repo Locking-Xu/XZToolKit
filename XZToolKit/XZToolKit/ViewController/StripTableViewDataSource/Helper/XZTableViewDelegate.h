@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @class XZBaseModel;
-typedef void(^TableViewSelectCellBlock)(XZBaseModel *model,UITableViewCell *cell);
+typedef void(^TableViewSelectCellBlock)(XZBaseModel *model,UITableViewCell *cell,NSIndexPath *indexPath);
 
 @interface XZTableViewDelegate : NSObject<UITableViewDelegate>
 

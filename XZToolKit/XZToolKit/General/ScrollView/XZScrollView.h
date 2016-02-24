@@ -11,9 +11,9 @@
 
 @class XZScrollView;
 
-@protocol YCScrollViewDelegate <NSObject>
+@protocol XZScrollViewDelegate <NSObject>
 
-- (void)YCScrollView:(XZScrollView *)scrollView didSelectAtIndex:(NSUInteger) index;
+- (void)XZScrollView:(XZScrollView *)scrollView didSelectAtIndex:(NSUInteger) index;
 
 @end
 
@@ -27,6 +27,6 @@
 @property (nonatomic, strong) XZPageControl *pageControl;
 @property (nonatomic, assign) BOOL autoScroll;
 
-@property (nonatomic, weak) id<YCScrollViewDelegate> delegate;
+@property (nonatomic, weak) id<XZScrollViewDelegate> delegate;
 
 @end

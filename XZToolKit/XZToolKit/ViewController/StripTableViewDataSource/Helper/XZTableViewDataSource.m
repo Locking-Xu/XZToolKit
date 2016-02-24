@@ -42,7 +42,7 @@
     
     UITableViewCell *cell = [[_cellClass class] cellAllocWithTableView:tableView style:UITableViewCellStyleDefault];
     id item = _itemArray[indexPath.row];
-    _configureCellBlock(item,cell);
+    _configureCellBlock(item,cell,indexPath);
     return cell;
 }
 

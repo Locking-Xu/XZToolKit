@@ -31,7 +31,7 @@
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     id model = _itemArray[indexPath.row];
-    _selectCellBlock(model,cell);
+    _selectCellBlock(model,cell,indexPath);
 }
 
 @end

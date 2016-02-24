@@ -80,6 +80,7 @@
         CGImageDestinationSetProperties(destination, (__bridge CFDictionaryRef)loopCountDic);
         CGImageDestinationFinalize(destination);
         
+        
         return url;
     }
     

@@ -14,6 +14,7 @@
 #import "XZTableViewDelegate.h"
 #import "XZQuartz2DBasicViewController.h"
 #import "UINavigationController+Common.h"
+#import "XZQuartz2DLineDashViewController.h"
 
 @interface XZQuartz2DViewController ()
 
@@ -85,7 +86,7 @@
 - (TableViewCellConfigureBlock)tableViewCellConfigureBlock{
 
     if (!_tableViewCellConfigureBlock) {
-        _tableViewCellConfigureBlock = ^(XZBaseModel *model,UITableViewCell *cell){
+        _tableViewCellConfigureBlock = ^(XZBaseModel *model,UITableViewCell *cell,NSIndexPath *indexPath){
     
             UITableViewCell *testCell = (UITableViewCell *)cell;
             testCell.textLabel.text = model.title;
@@ -99,12 +100,28 @@
 - (TableViewSelectCellBlock)tableViewCellSelectBlock{
     WS(weakSelf);
     if (!_tableViewCellSelectBlock) {
-        _tableViewCellSelectBlock = ^(XZBaseModel *model,UITableViewCell *cell){
-            
-            XZQuartz2DBasicViewController *quartz2DBasicVc = [[XZQuartz2DBasicViewController alloc] init];
-            quartz2DBasicVc.title = @"绘制几何图形";
+        _tableViewCellSelectBlock = ^(XZBaseModel *model,UITableViewCell *cell,NSIndexPath *indexPath){
             [weakSelf.navigationController setBackItemTitle:@"" viewController:weakSelf];
-            [weakSelf.navigationController pushViewController:quartz2DBasicVc animated:YES];
+            switch (indexPath.row) {
+                case 0:
+                {
+                    XZQuartz2DBasicViewController *quartz2DBasicVc = [[XZQuartz2DBasicViewController alloc] init];
+                    quartz2DBasicVc.title = @"绘制几何图形";
+                    [weakSelf.navigationController pushViewController:quartz2DBasicVc animated:YES];
+                }
+                    break;
+                case 1:
+                {
+                    XZQuartz2DLineDashViewController *quartz2DLineDash = [[XZQuartz2DLineDashViewController alloc] init];
+                    quartz2DLineDash.title = @"点线模式";
+                    [weakSelf.navigationController pushViewController:quartz2DLineDash animated:YES];
+                    
+                }
+                    break;
+                default:
+                    break;
+            }
+
         };
     }
     return _tableViewCellSelectBlock;

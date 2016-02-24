@@ -11,7 +11,7 @@
 
 @class XZBaseCell,XZBaseModel;
 
-typedef void(^TableViewCellConfigureBlock)(XZBaseModel *model,UITableViewCell *cell);
+typedef void(^TableViewCellConfigureBlock)(XZBaseModel *model,UITableViewCell *cell,NSIndexPath *indexPath);
 
 @interface XZTableViewDataSource : NSObject<UITableViewDataSource>
 

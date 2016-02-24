@@ -51,7 +51,7 @@
  */
 - (void)initScrollView{
     
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_WIDTH * 7/16)];
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.height)];
     _scrollView.pagingEnabled = YES;
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.showsHorizontalScrollIndicator = NO;
@@ -59,38 +59,35 @@
     
     [self addSubview:_scrollView];
     
-    _scrollView.contentSize = CGSizeMake(UISCREEN_WIDTH * (self.imageUrlArr.count+2), _scrollView.height);
-    _scrollView.contentOffset = CGPointMake(UISCREEN_WIDTH, 0);
+    _scrollView.contentSize = CGSizeMake(self.width * (self.imageUrlArr.count+2), _scrollView.height);
+    _scrollView.contentOffset = CGPointMake(self.width, 0);
     
     for (int i=0; i<self.imageUrlArr.count ; i++) {
         
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(UISCREEN_WIDTH * (i+1), 0, UISCREEN_WIDTH, _scrollView.height)];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.width * (i+1), 0, self.width, _scrollView.height)];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.layer.masksToBounds = YES;
         
-#warning Set image Here
-        imageView.backgroundColor = [UIColor redColor];
+        imageView.image = [UIImage imageNamed:self.imageUrlArr[i]];
 
         [_scrollView addSubview:imageView];
     }
     
     //无限循环--最后一张图
-    UIImageView *lastImageView = [[UIImageView alloc] initWithFrame:CGRectMake(UISCREEN_WIDTH * (self.imageUrlArr.count + 1), 0, UISCREEN_WIDTH, _scrollView.height)];
-    lastImageView.contentMode = UIViewContentModeScaleAspectFill;
+    UIImageView *lastImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.width * (self.imageUrlArr.count + 1), 0, self.width, _scrollView.height)];
+    lastImageView.contentMode = UIViewContentModeScaleAspectFit;
     lastImageView.layer.masksToBounds = YES;
 
-#warning Set image Here
-    lastImageView.backgroundColor = [UIColor greenColor];
+    lastImageView.image = [UIImage imageNamed:self.imageUrlArr.firstObject];
     
     [_scrollView addSubview:lastImageView];
     
     //无限循环--最前一张图
-    UIImageView *firstImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, _scrollView.height)];
-    firstImageView.contentMode = UIViewContentModeScaleAspectFill;
+    UIImageView *firstImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.width, _scrollView.height)];
+    firstImageView.contentMode = UIViewContentModeScaleAspectFit;
     firstImageView.layer.masksToBounds = YES;
-    
-#warning Set image Here
-    firstImageView.backgroundColor = [UIColor greenColor];
+
+    firstImageView.image = [UIImage imageNamed:self.imageUrlArr.lastObject];
     
     [_scrollView addSubview:firstImageView];
     
@@ -104,7 +101,7 @@
  */
 - (void)initPageController{
     
-    self.pageControl = [[XZPageControl alloc] initWithFrame:CGRectMake(0, _scrollView.height - 20, UISCREEN_WIDTH, 20)];
+    self.pageControl = [[XZPageControl alloc] initWithFrame:CGRectMake(0, _scrollView.height - 20, self.width, 20)];
     self.pageControl.numberOfPages = self.imageUrlArr.count;
     self.pageControl.currentPage = 0;
     
@@ -119,9 +116,9 @@
 
 - (void)didTapOnImageView{
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(YCScrollView:didSelectAtIndex:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(XZScrollView:didSelectAtIndex:)]) {
         
-        [self.delegate YCScrollView:self didSelectAtIndex:_pageControl.currentPage];
+        [self.delegate XZScrollView:self didSelectAtIndex:_pageControl.currentPage];
     }
 }
 
@@ -142,23 +139,23 @@
     NSInteger index = self.pageControl.currentPage;
     index++;
     //无缝切换
-    [_scrollView scrollRectToVisible:CGRectMake(UISCREEN_WIDTH* (index + 1), 0, UISCREEN_WIDTH, _scrollView.height) animated:YES];
+    [_scrollView scrollRectToVisible:CGRectMake(self.width* (index + 1), 0, self.width, _scrollView.height) animated:YES];
 }
 
 #pragma mark UIScrollView_Delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    CGFloat index = scrollView.contentOffset.x/UISCREEN_WIDTH;
+    CGFloat index = scrollView.contentOffset.x/self.width;
     
     
     if (index == self.imageUrlArr.count + 1) {
         
-        _scrollView.contentOffset = CGPointMake(UISCREEN_WIDTH,0);
+        _scrollView.contentOffset = CGPointMake(self.width,0);
         _pageControl.currentPage = 0;
         return;
     }else if (index == 0){
         
-        _scrollView.contentOffset = CGPointMake(UISCREEN_WIDTH * self.imageUrlArr.count, 0);
+        _scrollView.contentOffset = CGPointMake(self.width * self.imageUrlArr.count, 0);
         
         _pageControl.currentPage = self.imageUrlArr.count - 1;
         

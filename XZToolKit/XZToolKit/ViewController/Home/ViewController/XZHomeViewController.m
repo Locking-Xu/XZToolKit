@@ -27,6 +27,7 @@
 #import "XZStripTableViewProtocolViewController.h"
 #import "XZQuartz2DViewController.h"
 #import "XZGifPlayerViewController.h"
+#import "XZShuffFigureViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -170,7 +171,9 @@
             //轮播图
             case 2:
             {
-                
+                XZShuffFigureViewController *shuffFigureVc = [[XZShuffFigureViewController alloc] init];
+                shuffFigureVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:shuffFigureVc animated:YES];
             }
                 break;
             //TabBar

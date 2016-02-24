@@ -34,13 +34,13 @@
         [array addObject:model];
     }
     
-    TableViewCellConfigureBlock tableViewCellConfigure = ^(XZBaseModel *model,UITableViewCell *cell){
+    TableViewCellConfigureBlock tableViewCellConfigure = ^(XZBaseModel *model,UITableViewCell *cell,NSIndexPath *indexPath){
         
         XZTestCell *testCell = (XZTestCell *)cell;
         [testCell setUpCellWith:model];
     };
     
-    TableViewSelectCellBlock tableViewCellSelect = ^(XZBaseModel *model,UITableViewCell *cell){
+    TableViewSelectCellBlock tableViewCellSelect = ^(XZBaseModel *model,UITableViewCell *cell,NSIndexPath *indexPath){
         
         NSLog(@"%@",model.title);
     };

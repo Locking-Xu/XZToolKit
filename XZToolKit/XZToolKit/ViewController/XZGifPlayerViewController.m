@@ -22,10 +22,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"birdFly" ofType:@"gif"];
-//    //方法一
-//    NSData *data = [NSData dataWithContentsOfFile:path];
-//    [self.webView loadData:data MIMEType:@"image/gif" textEncodingName:@"" baseURL:[NSURL new]];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"birdFly" ofType:@"gif"];
+    //方法一
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    [self.webView loadData:data MIMEType:@"image/gif" textEncodingName:@"" baseURL:[NSURL new]];
     
     
     //方法二
@@ -36,13 +36,13 @@
 //    [view startAnimation];
     
     //从视屏中生成GIF
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"mp4"];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    XZGenerateGifHelper *generateGifHelper = [[XZGenerateGifHelper alloc] init];
-    [generateGifHelper generateGifFromUrl:url loopCount:0 FPS:30 completeBlock:^(NSURL *url) {
-       
-        XZObjectLog(url);
-    }];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"mp4"];
+//    NSURL *url = [NSURL fileURLWithPath:path];
+//    XZGenerateGifHelper *generateGifHelper = [[XZGenerateGifHelper alloc] init];
+//    [generateGifHelper generateGifFromUrl:url loopCount:0 FPS:30 completeBlock:^(NSURL *url) {
+//       
+//        XZObjectLog(url);
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {
