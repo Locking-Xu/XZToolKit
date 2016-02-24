@@ -1,36 +1,26 @@
 //
-//  XZTabBarController.m
+//  XZStandardTabBarController.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/1/20.
+//  Created by 徐章 on 16/2/24.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZTabBarController.h"
+#import "XZStandardTabBarController.h"
 
-@interface XZTabBarController ()
+@interface XZStandardTabBarController ()
 
 @end
 
-@implementation XZTabBarController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+@implementation XZStandardTabBarController
 
 + (instancetype)shareInstance{
     
-    static XZTabBarController *tabbarVc = nil;
+    static XZStandardTabBarController *tabbarVc = nil;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         
-        tabbarVc = [[XZTabBarController alloc] init];
+        tabbarVc = [[XZStandardTabBarController alloc] init];
         
     });
     

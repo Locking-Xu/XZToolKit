@@ -28,6 +28,7 @@
 #import "XZQuartz2DViewController.h"
 #import "XZGifPlayerViewController.h"
 #import "XZShuffFigureViewController.h"
+#import "XZTabBarTestViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -179,7 +180,9 @@
             //TabBar
             case 3:
             {
-                
+                XZTabBarTestViewController *tabbarTestVc = [[XZTabBarTestViewController alloc] init];
+                tabbarTestVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:tabbarTestVc animated:YES];
             }
                 break;
             //相册

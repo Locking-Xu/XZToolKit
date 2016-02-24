@@ -1,14 +1,14 @@
 //
-//  XZTabBarController.h
+//  XZStandardTabBarController.h
 //  XZToolKit
 //
-//  Created by 徐章 on 16/1/20.
+//  Created by 徐章 on 16/2/24.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface XZTabBarController : UITabBarController
+@interface XZStandardTabBarController : UITabBarController
 /** TabBar的BarItem数组*/
 @property (nonatomic, strong) NSArray *items;
 /** TabBar的BarItem的高亮颜色*/
