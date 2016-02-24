@@ -52,6 +52,7 @@ static NSInteger patternCount = sizeof(patterns)/sizeof(patterns[0]);
     self.phaseLab.text = @"Phase";
     self.valueLab.text = @"0";
     self.slider.value = 0.5;
+    self.valueLab.text = [NSString stringWithFormat:@"%.2f",self.slider.value];
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     // Do any additional setup after loading the view.
@@ -62,11 +63,17 @@ static NSInteger patternCount = sizeof(patterns)/sizeof(patterns[0]);
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dashPhase:(UISlider *)sender{
+    self.valueLab.text = [NSString stringWithFormat:@"%.2f",self.slider.value];
+    self.dashView.dashPase = sender.value;
+}
+
 #pragma mark - Setter && Getter
 - (XZQuartz2DDashView *)dashView{
     if (!_dashView) {
         
         _dashView = [[XZQuartz2DDashView alloc] init];
+        [_dashView setDashPattern:patterns[0].pattern count:patterns[0].count];
         [self.view addSubview:_dashView];
         [_dashView mas_makeConstraints:^(MASConstraintMaker *make) {
            
@@ -122,6 +129,7 @@ static NSInteger patternCount = sizeof(patterns)/sizeof(patterns[0]);
         _slider = [[UISlider alloc] init];
         _slider.minimumValue = 0.0f;
         _slider.maximumValue = 20.0f;
+        [_slider addTarget:self action:@selector(dashPhase:) forControlEvents:UIControlEventValueChanged];
         [self.view addSubview:_slider];
         [_slider mas_makeConstraints:^(MASConstraintMaker *make) {
            
@@ -173,4 +181,8 @@ static NSInteger patternCount = sizeof(patterns)/sizeof(patterns[0]);
     return title;
 }
 #pragma mark - UIPickerView_Delegate
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+
+    [self.dashView setDashPattern:patterns[row].pattern count:patterns[row].count];
+}
 @end

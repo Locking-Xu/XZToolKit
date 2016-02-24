@@ -331,11 +331,11 @@
 		E93821701C59E8B3004F7EC4 /* XZPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPhotoAlbumViewController.h; sourceTree = "<group>"; };
 		E93821711C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPhotoAlbumViewController.m; sourceTree = "<group>"; };
 		E93821721C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZPhotoAlbumViewController.xib; sourceTree = "<group>"; };
-		E93821861C59F167004F7EC4 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = ../ViewController/PhotoAlbum/Source/5.png; sourceTree = "<group>"; };
-		E93821871C59F167004F7EC4 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../ViewController/PhotoAlbum/Source/4.png; sourceTree = "<group>"; };
-		E93821881C59F167004F7EC4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../ViewController/PhotoAlbum/Source/3.png; sourceTree = "<group>"; };
-		E93821891C59F167004F7EC4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../ViewController/PhotoAlbum/Source/1.png; sourceTree = "<group>"; };
-		E938218A1C59F167004F7EC4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../ViewController/PhotoAlbum/Source/2.png; sourceTree = "<group>"; };
+		E93821861C59F167004F7EC4 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		E93821871C59F167004F7EC4 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		E93821881C59F167004F7EC4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E93821891C59F167004F7EC4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E938218A1C59F167004F7EC4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		E93821971C5A0B00004F7EC4 /* XZCollectionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionDemoViewController.h; sourceTree = "<group>"; };
 		E93821981C5A0B00004F7EC4 /* XZCollectionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionDemoViewController.m; sourceTree = "<group>"; };
 		E938219B1C5A0B3F004F7EC4 /* XZCollectionDemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionDemoCell.h; sourceTree = "<group>"; };
@@ -433,10 +433,10 @@
 		E99E32541C4F1EE70016D25D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E99E32591C4F6B3D0016D25D /* XZUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZUtils.h; sourceTree = "<group>"; };
 		E99E325A1C4F6B3D0016D25D /* XZUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZUtils.m; sourceTree = "<group>"; };
-		E99E32621C4F81790016D25D /* XZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZScrollView.h; path = ../General/ScrollView/XZScrollView.h; sourceTree = "<group>"; };
-		E99E32631C4F81790016D25D /* XZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZScrollView.m; path = ../General/ScrollView/XZScrollView.m; sourceTree = "<group>"; };
-		E99E32651C4F81BE0016D25D /* XZPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZPageControl.h; path = ../General/ScrollView/XZPageControl.h; sourceTree = "<group>"; };
-		E99E32661C4F81BE0016D25D /* XZPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZPageControl.m; path = ../General/ScrollView/XZPageControl.m; sourceTree = "<group>"; };
+		E99E32621C4F81790016D25D /* XZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZScrollView.h; sourceTree = "<group>"; };
+		E99E32631C4F81790016D25D /* XZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZScrollView.m; sourceTree = "<group>"; };
+		E99E32651C4F81BE0016D25D /* XZPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPageControl.h; sourceTree = "<group>"; };
+		E99E32661C4F81BE0016D25D /* XZPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPageControl.m; sourceTree = "<group>"; };
 		E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTelephoneHelper.h; sourceTree = "<group>"; };
 		E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTelephoneHelper.m; sourceTree = "<group>"; };
 		E9A4D05A1C59000C003B8855 /* XZImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageBrowserCell.h; sourceTree = "<group>"; };
@@ -592,11 +592,11 @@
 			isa = PBXGroup;
 			children = (
 				E9028AA61C7C3C40000F5693 /* Helper */,
-				E9028A9F1C7C0B5D000F5693 /* View */,
 				E9028A9A1C7BFE04000F5693 /* Source */,
+				E9028A9F1C7C0B5D000F5693 /* View */,
 				E9028A961C7BFD41000F5693 /* ViewController */,
 			);
-			name = GIF;
+			path = GIF;
 			sourceTree = "<group>";
 		};
 		E9028A961C7BFD41000F5693 /* ViewController */ = {
@@ -605,7 +605,7 @@
 				E9028A971C7BFDAE000F5693 /* XZGifPlayerViewController.h */,
 				E9028A981C7BFDAE000F5693 /* XZGifPlayerViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E9028A9A1C7BFE04000F5693 /* Source */ = {
@@ -613,7 +613,7 @@
 			children = (
 				E9028A9B1C7BFE35000F5693 /* birdFly.gif */,
 			);
-			name = Source;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E9028A9F1C7C0B5D000F5693 /* View */ = {
@@ -622,7 +622,7 @@
 				E9028AA01C7C0B81000F5693 /* XZGifPlayerView.h */,
 				E9028AA11C7C0B81000F5693 /* XZGifPlayerView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9028AA61C7C3C40000F5693 /* Helper */ = {
@@ -631,7 +631,7 @@
 				E9028AA31C7C3C3B000F5693 /* XZGenerateGifHelper.h */,
 				E9028AA41C7C3C3B000F5693 /* XZGenerateGifHelper.m */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		E9124C321C7AFE8500F733B0 /* StripTableViewDataSource */ = {
@@ -689,18 +689,18 @@
 				E919941E1C7D713C00C5EBE1 /* XZStandardTabBarController.h */,
 				E919941F1C7D713C00C5EBE1 /* XZStandardTabBarController.m */,
 			);
-			name = StandardTabBar;
+			path = StandardTabBar;
 			sourceTree = "<group>";
 		};
 		E91994221C7D7C7100C5EBE1 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				E91994261C7D7E9000C5EBE1 /* XZTabBar.h */,
-				E91994271C7D7E9000C5EBE1 /* XZTabBar.m */,
 				E919942C1C7D87E000C5EBE1 /* XZCustomTabBarController.h */,
 				E919942D1C7D87E000C5EBE1 /* XZCustomTabBarController.m */,
+				E91994261C7D7E9000C5EBE1 /* XZTabBar.h */,
+				E91994271C7D7E9000C5EBE1 /* XZTabBar.m */,
 			);
-			name = CustomTabBar;
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 		E920DE311C50795800F08A9C /* AddressBook */ = {
@@ -960,7 +960,7 @@
 				E965595D1C7D44B90078245D /* View */,
 				E965595C1C7D44AC0078245D /* ViewController */,
 			);
-			name = ShuffFigure;
+			path = ShuffFigure;
 			sourceTree = "<group>";
 		};
 		E965595C1C7D44AC0078245D /* ViewController */ = {
@@ -969,7 +969,7 @@
 				E965595F1C7D46150078245D /* XZShuffFigureViewController.h */,
 				E96559601C7D46150078245D /* XZShuffFigureViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E965595D1C7D44B90078245D /* View */ = {
@@ -980,7 +980,7 @@
 				E99E32621C4F81790016D25D /* XZScrollView.h */,
 				E99E32631C4F81790016D25D /* XZScrollView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E965595E1C7D45AE0078245D /* Pictures */ = {
@@ -992,7 +992,7 @@
 				E93821871C59F167004F7EC4 /* 4.png */,
 				E93821861C59F167004F7EC4 /* 5.png */,
 			);
-			name = Pictures;
+			path = Pictures;
 			sourceTree = "<group>";
 		};
 		E96559621C7D50470078245D /* ViewController */ = {
@@ -1002,12 +1002,12 @@
 				E919941C1C7D562B00C5EBE1 /* XZTabBarTestViewController.m */,
 				E96559631C7D51400078245D /* XZTestOneViewController.h */,
 				E96559641C7D51400078245D /* XZTestOneViewController.m */,
-				E96559661C7D514E0078245D /* XZTestTwoViewController.h */,
-				E96559671C7D514E0078245D /* XZTestTwoViewController.m */,
 				E91994181C7D55CD00C5EBE1 /* XZTestThreeViewController.h */,
 				E91994191C7D55CD00C5EBE1 /* XZTestThreeViewController.m */,
+				E96559661C7D514E0078245D /* XZTestTwoViewController.h */,
+				E96559671C7D514E0078245D /* XZTestTwoViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E970066A1C55C8FC0071E0E3 /* DayCalendar */ = {
@@ -1207,16 +1207,16 @@
 				E99E32291C4F1E0B0016D25D /* UIButton+FillColor.m */,
 				E99E322A1C4F1E0B0016D25D /* UIColor+HexString.h */,
 				E99E322B1C4F1E0B0016D25D /* UIColor+HexString.m */,
+				E91994291C7D85B700C5EBE1 /* UIImage+Color.h */,
+				E919942A1C7D85B700C5EBE1 /* UIImage+Color.m */,
 				E99E322C1C4F1E0B0016D25D /* UINavigationController+Common.h */,
 				E99E322D1C4F1E0B0016D25D /* UINavigationController+Common.m */,
+				E9D461F61C7B3F8D0011C6F4 /* UITableViewCell+Strip.h */,
+				E9D461F71C7B3F8D0011C6F4 /* UITableViewCell+Strip.m */,
 				E924116F1C6EE55B0009A8EA /* UIView+Animation.h */,
 				E92411701C6EE55B0009A8EA /* UIView+Animation.m */,
 				E99E322E1C4F1E0B0016D25D /* UIView+Frame.h */,
 				E99E322F1C4F1E0B0016D25D /* UIView+Frame.m */,
-				E9D461F61C7B3F8D0011C6F4 /* UITableViewCell+Strip.h */,
-				E9D461F71C7B3F8D0011C6F4 /* UITableViewCell+Strip.m */,
-				E91994291C7D85B700C5EBE1 /* UIImage+Color.h */,
-				E919942A1C7D85B700C5EBE1 /* UIImage+Color.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1224,10 +1224,6 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E99E325E1C4F7F3F0016D25D /* TabBarController */,
-				E965595B1C7D441F0078245D /* ShuffFigure */,
-				E9028A951C7BFD35000F5693 /* GIF */,
-				E9D461ED1C7B32270011C6F4 /* Quartz2D */,
 				E92411831C6F5B870009A8EA /* AVFoundation */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E9B9BDA01C66E93000C45040 /* BezierPath */,
@@ -1238,13 +1234,17 @@
 				E9BC74241C60454B0033BF4D /* CommonListViewController */,
 				E9ED31C21C642E1000DCDFD0 /* CoreAnimation */,
 				E9ED31D41C646E5300DCDFD0 /* EventsThrough */,
+				E9028A951C7BFD35000F5693 /* GIF */,
 				E9ED31E61C64782C00DCDFD0 /* GuideView */,
 				E99E32481C4F1E350016D25D /* Home */,
 				E9E0C2161C576A650041193A /* ImageBrowser */,
 				E9ED31FC1C647ACE00DCDFD0 /* LovelyLogin */,
 				E938216E1C59E873004F7EC4 /* PhotoAlbum */,
 				E984B9B61C5E173D00C00BC7 /* PopView */,
+				E9D461ED1C7B32270011C6F4 /* Quartz2D */,
+				E965595B1C7D441F0078245D /* ShuffFigure */,
 				E9124C321C7AFE8500F733B0 /* StripTableViewDataSource */,
+				E99E325E1C4F7F3F0016D25D /* TabBarController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1350,8 +1350,7 @@
 				E91994211C7D7C6200C5EBE1 /* StandardTabBar */,
 				E96559621C7D50470078245D /* ViewController */,
 			);
-			name = TabBarController;
-			path = ../General/TabBarController;
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		E99E32681C4F835A0016D25D /* Helper */ = {
@@ -1451,10 +1450,10 @@
 		E9BC74311C6056E80033BF4D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E965595E1C7D45AE0078245D /* Pictures */,
 				E9F0E8551C61A88C00268CE2 /* AblumSourceKnowledge */,
 				E984B9C01C5E1D9D00C00BC7 /* CommonKnowledge */,
 				E9B9BD911C66E78800C45040 /* NavigationControllerKnowledge */,
+				E965595E1C7D45AE0078245D /* Pictures */,
 				E9B9BD621C66E41200C45040 /* TabBarControllerKnowledge */,
 				E970067C1C561D340071E0E3 /* TableViewKnowledge */,
 			);
@@ -1476,20 +1475,20 @@
 				E9D461F21C7B33920011C6F4 /* View */,
 				E9D461EE1C7B32450011C6F4 /* ViewController */,
 			);
-			name = Quartz2D;
+			path = Quartz2D;
 			sourceTree = "<group>";
 		};
 		E9D461EE1C7B32450011C6F4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E9D461EF1C7B32620011C6F4 /* XZQuartz2DViewController.h */,
-				E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */,
 				E9028A8F1C7BF99E000F5693 /* XZQuartz2DBasicViewController.h */,
 				E9028A901C7BF99E000F5693 /* XZQuartz2DBasicViewController.m */,
 				E9C8B41D1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.h */,
 				E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */,
+				E9D461EF1C7B32620011C6F4 /* XZQuartz2DViewController.h */,
+				E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E9D461F21C7B33920011C6F4 /* View */ = {
@@ -1500,7 +1499,7 @@
 				E9C8B4201C7C8754003690A4 /* XZQuartz2DDashView.h */,
 				E9C8B4211C7C8754003690A4 /* XZQuartz2DDashView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9E0C2161C576A650041193A /* ImageBrowser */ = {
