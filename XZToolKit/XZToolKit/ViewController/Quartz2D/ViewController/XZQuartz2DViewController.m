@@ -15,6 +15,7 @@
 #import "XZQuartz2DBasicViewController.h"
 #import "UINavigationController+Common.h"
 #import "XZQuartz2DLineDashViewController.h"
+#import "XZQuartz2DTextViewController.h"
 
 @interface XZQuartz2DViewController ()
 
@@ -35,7 +36,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *titleArray = @[@"绘制几何图形",@"点线模式"];
+    NSArray *titleArray = @[@"绘制几何图形",@"点线模式",@"绘制文本"];
     NSMutableArray *array = [NSMutableArray array];
     for (NSString *title in titleArray) {
         
@@ -116,6 +117,13 @@
                     quartz2DLineDash.title = @"点线模式";
                     [weakSelf.navigationController pushViewController:quartz2DLineDash animated:YES];
                     
+                }
+                    break;
+                case 2:
+                {
+                    XZQuartz2DTextViewController *quartz2DTextVc = [[XZQuartz2DTextViewController alloc] init];
+                    quartz2DTextVc.title = @"绘制文本";
+                    [weakSelf.navigationController pushViewController:quartz2DTextVc animated:YES];
                 }
                     break;
                 default:

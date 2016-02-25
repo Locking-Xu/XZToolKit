@@ -175,6 +175,8 @@
 		E9D461F11C7B32620011C6F4 /* XZQuartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */; };
 		E9D461F81C7B3F8D0011C6F4 /* UITableViewCell+Strip.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D461F71C7B3F8D0011C6F4 /* UITableViewCell+Strip.m */; };
 		E9D461FB1C7B40620011C6F4 /* XZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D461FA1C7B40620011C6F4 /* XZTestCell.m */; };
+		E9D5F7CC1C7DDB9E00E8593B /* XZQuartz2DTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D5F7CB1C7DDB9E00E8593B /* XZQuartz2DTextViewController.m */; };
+		E9D5F7CF1C7DDBB800E8593B /* XZQuartz2DTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D5F7CE1C7DDBB800E8593B /* XZQuartz2DTextView.m */; };
 		E9D7E1461C703F5B000D0583 /* XZSoundEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D7E1441C703F5B000D0583 /* XZSoundEffectViewController.m */; };
 		E9D7E1471C703F5B000D0583 /* XZSoundEffectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D7E1451C703F5B000D0583 /* XZSoundEffectViewController.xib */; };
 		E9D7E14B1C704539000D0583 /* XZMusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D7E1491C704539000D0583 /* XZMusicPlayerViewController.m */; };
@@ -483,6 +485,10 @@
 		E9D461F71C7B3F8D0011C6F4 /* UITableViewCell+Strip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Strip.m"; sourceTree = "<group>"; };
 		E9D461F91C7B40620011C6F4 /* XZTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTestCell.h; sourceTree = "<group>"; };
 		E9D461FA1C7B40620011C6F4 /* XZTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTestCell.m; sourceTree = "<group>"; };
+		E9D5F7CA1C7DDB9E00E8593B /* XZQuartz2DTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DTextViewController.h; sourceTree = "<group>"; };
+		E9D5F7CB1C7DDB9E00E8593B /* XZQuartz2DTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DTextViewController.m; sourceTree = "<group>"; };
+		E9D5F7CD1C7DDBB800E8593B /* XZQuartz2DTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DTextView.h; sourceTree = "<group>"; };
+		E9D5F7CE1C7DDBB800E8593B /* XZQuartz2DTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DTextView.m; sourceTree = "<group>"; };
 		E9D7E1431C703F5B000D0583 /* XZSoundEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSoundEffectViewController.h; sourceTree = "<group>"; };
 		E9D7E1441C703F5B000D0583 /* XZSoundEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSoundEffectViewController.m; sourceTree = "<group>"; };
 		E9D7E1451C703F5B000D0583 /* XZSoundEffectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZSoundEffectViewController.xib; sourceTree = "<group>"; };
@@ -1485,6 +1491,8 @@
 				E9028A901C7BF99E000F5693 /* XZQuartz2DBasicViewController.m */,
 				E9C8B41D1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.h */,
 				E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */,
+				E9D5F7CA1C7DDB9E00E8593B /* XZQuartz2DTextViewController.h */,
+				E9D5F7CB1C7DDB9E00E8593B /* XZQuartz2DTextViewController.m */,
 				E9D461EF1C7B32620011C6F4 /* XZQuartz2DViewController.h */,
 				E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */,
 			);
@@ -1498,6 +1506,8 @@
 				E9028A931C7BFA65000F5693 /* XZQuartz2DBasicView.m */,
 				E9C8B4201C7C8754003690A4 /* XZQuartz2DDashView.h */,
 				E9C8B4211C7C8754003690A4 /* XZQuartz2DDashView.m */,
+				E9D5F7CD1C7DDBB800E8593B /* XZQuartz2DTextView.h */,
+				E9D5F7CE1C7DDBB800E8593B /* XZQuartz2DTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2025,6 +2035,7 @@
 				E919942E1C7D87E000C5EBE1 /* XZCustomTabBarController.m in Sources */,
 				E919941A1C7D55CD00C5EBE1 /* XZTestThreeViewController.m in Sources */,
 				E920DE2D1C50764400F08A9C /* XZAddressBookHelper.m in Sources */,
+				E9D5F7CC1C7DDB9E00E8593B /* XZQuartz2DTextViewController.m in Sources */,
 				E9028A8E1C7BF5EE000F5693 /* XZStripTableViewProtocolViewController.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
 				E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */,
@@ -2051,6 +2062,7 @@
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
+				E9D5F7CF1C7DDBB800E8593B /* XZQuartz2DTextView.m in Sources */,
 				E91994201C7D713C00C5EBE1 /* XZStandardTabBarController.m in Sources */,
 				E9028AA51C7C3C3B000F5693 /* XZGenerateGifHelper.m in Sources */,
 				E99E324D1C4F1E350016D25D /* XZCalendarCell.m in Sources */,
