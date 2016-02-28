@@ -243,6 +243,11 @@
 		E9FD545D1C8292720035639F /* XZLabelFlowOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD545C1C8292720035639F /* XZLabelFlowOneViewController.m */; };
 		E9FD54611C8295B30035639F /* XZLabelFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD545F1C8295B30035639F /* XZLabelFlowCell.m */; };
 		E9FD54621C8295B30035639F /* XZLabelFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FD54601C8295B30035639F /* XZLabelFlowCell.xib */; };
+		E9FD54671C82B4910035639F /* XZLabelFlowTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD54651C82B4910035639F /* XZLabelFlowTwoViewController.m */; };
+		E9FD54681C82B4910035639F /* XZLabelFlowTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FD54661C82B4910035639F /* XZLabelFlowTwoViewController.xib */; };
+		E9FD546C1C82D6AE0035639F /* XZLabelFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD546B1C82D6AE0035639F /* XZLabelFlowView.m */; };
+		E9FD54701C82DEA50035639F /* XZLabelFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */; };
+		E9FD54731C82E82A0035639F /* XZLabelFlowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -602,6 +607,15 @@
 		E9FD545E1C8295B30035639F /* XZLabelFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowCell.h; sourceTree = "<group>"; };
 		E9FD545F1C8295B30035639F /* XZLabelFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowCell.m; sourceTree = "<group>"; };
 		E9FD54601C8295B30035639F /* XZLabelFlowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZLabelFlowCell.xib; sourceTree = "<group>"; };
+		E9FD54641C82B4910035639F /* XZLabelFlowTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoViewController.h; sourceTree = "<group>"; };
+		E9FD54651C82B4910035639F /* XZLabelFlowTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoViewController.m; sourceTree = "<group>"; };
+		E9FD54661C82B4910035639F /* XZLabelFlowTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZLabelFlowTwoViewController.xib; sourceTree = "<group>"; };
+		E9FD546A1C82D6AE0035639F /* XZLabelFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowView.h; sourceTree = "<group>"; };
+		E9FD546B1C82D6AE0035639F /* XZLabelFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowView.m; sourceTree = "<group>"; };
+		E9FD546E1C82DEA50035639F /* XZLabelFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowLayout.h; sourceTree = "<group>"; };
+		E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowLayout.m; sourceTree = "<group>"; };
+		E9FD54711C82E82A0035639F /* XZLabelFlowConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowConfig.h; sourceTree = "<group>"; };
+		E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1902,6 +1916,9 @@
 		E9FD54591C8292260035639F /* Style2 */ = {
 			isa = PBXGroup;
 			children = (
+				E9FD546D1C82DE720035639F /* Helper */,
+				E9FD54691C82D68C0035639F /* View */,
+				E9FD54631C82B4630035639F /* ViewController */,
 			);
 			name = Style2;
 			sourceTree = "<group>";
@@ -1911,6 +1928,36 @@
 			children = (
 			);
 			name = Style3;
+			sourceTree = "<group>";
+		};
+		E9FD54631C82B4630035639F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD54641C82B4910035639F /* XZLabelFlowTwoViewController.h */,
+				E9FD54651C82B4910035639F /* XZLabelFlowTwoViewController.m */,
+				E9FD54661C82B4910035639F /* XZLabelFlowTwoViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9FD54691C82D68C0035639F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD546A1C82D6AE0035639F /* XZLabelFlowView.h */,
+				E9FD546B1C82D6AE0035639F /* XZLabelFlowView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E9FD546D1C82DE720035639F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD546E1C82DEA50035639F /* XZLabelFlowLayout.h */,
+				E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */,
+				E9FD54711C82E82A0035639F /* XZLabelFlowConfig.h */,
+				E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2040,6 +2087,7 @@
 				E924117E1C6F4E990009A8EA /* NavigationControllerList.plist in Resources */,
 				E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */,
 				E9B9BD9A1C66E7AD00C45040 /* 设置返回键标题.txt in Resources */,
+				E9FD54681C82B4910035639F /* XZLabelFlowTwoViewController.xib in Resources */,
 				E907A47A1C75AD4F00BFA698 /* XZRecorderViewController.xib in Resources */,
 				E9543F1F1C5F5CE4006D7BEF /* 单例继承.txt in Resources */,
 				E9774D461C7FE1EC00F4A0A9 /* RunLoop.txt in Resources */,
@@ -2193,6 +2241,7 @@
 				E9B9BDA51C66E97200C45040 /* XZBezierPathViewController.m in Sources */,
 				E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */,
 				E9774D4D1C7FE42100F4A0A9 /* XZMultiThreadViewController.m in Sources */,
+				E9FD546C1C82D6AE0035639F /* XZLabelFlowView.m in Sources */,
 				E9036A201C63020100384199 /* XZPhotoCell.m in Sources */,
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E9FD545D1C8292720035639F /* XZLabelFlowOneViewController.m in Sources */,
@@ -2220,6 +2269,7 @@
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
+				E9FD54671C82B4910035639F /* XZLabelFlowTwoViewController.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
 				E9F705FA1C76BF1600708F5C /* XZImagePickerViewController.m in Sources */,
 				E93821991C5A0B00004F7EC4 /* XZCollectionDemoViewController.m in Sources */,
@@ -2227,6 +2277,7 @@
 				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
 				E9FD54611C8295B30035639F /* XZLabelFlowCell.m in Sources */,
 				E9E6C33C1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m in Sources */,
+				E9FD54731C82E82A0035639F /* XZLabelFlowConfig.m in Sources */,
 				E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */,
 				E9028A911C7BF99E000F5693 /* XZQuartz2DBasicViewController.m in Sources */,
 				E9F706411C76FC8800708F5C /* XZCustomPhotoViewController.m in Sources */,
@@ -2268,6 +2319,7 @@
 				E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
+				E9FD54701C82DEA50035639F /* XZLabelFlowLayout.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
 				E97344C01C8051D0005E453D /* XZBlogWebViewController.m in Sources */,

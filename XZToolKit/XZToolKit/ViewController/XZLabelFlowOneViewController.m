@@ -76,11 +76,11 @@
 
     XZLabelFlowCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([XZLabelFlowCell class]) forIndexPath:indexPath];
     cell.backgroundColor = [UIColor clearColor];
-    cell.titleLab.backgroundColor = [UIColor redColor];
     cell.titleLab.text = ContentArray[indexPath.row];
     return cell;
 }
 #pragma mark - UICollectionView_Delegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
-
+}
 @end

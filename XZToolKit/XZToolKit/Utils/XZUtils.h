@@ -24,6 +24,18 @@
 + (CGSize)stringAdaptive:(NSString *)content width:(CGFloat)width lineSpace:(CGFloat)lineSpace font:(CGFloat)font mode:(NSLineBreakMode)lineBrekMode;
 
 /**
+ *  自适应label的size
+ *
+ *  @param label     自适应的label
+ *  @param width     给定一个高度
+ *  @param lineSpace 行间距，没有填0
+ *  @param font      字体大小
+ *
+ *  @return size
+ */
++ (CGSize)stringAdaptive:(NSString *)content height:(CGFloat)height lineSpace:(CGFloat)lineSpace font:(CGFloat)font mode:(NSLineBreakMode)lineBrekMode;
+
+/**
  *  获得当前的ViewController
  *
  *  @return UIViewController

@@ -48,6 +48,36 @@
     return size;
 }
 
++ (CGSize)stringAdaptive:(NSString *)content height:(CGFloat)height lineSpace:(CGFloat)lineSpace font:(CGFloat)font mode:(NSLineBreakMode)lineBrekMode{
+
+    NSMutableParagraphStyle *paragraphStyle = ({
+        
+        NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];;
+        
+        [style setLineBreakMode:lineBrekMode];
+        
+        if (lineSpace != 0) {
+            
+            style = [[NSMutableParagraphStyle alloc] init];
+            [style setLineSpacing:lineSpace];//调整行间距
+        }
+        
+        style;
+        
+    });
+    
+    CGSize size = [content boundingRectWithSize:CGSizeMake(MAXFLOAT, height)
+                                        options:NSStringDrawingUsesLineFragmentOrigin
+                                     attributes:@{
+                                                  NSFontAttributeName:[UIFont systemFontOfSize:font],
+                                                  NSParagraphStyleAttributeName:paragraphStyle
+                                                  }
+                                        context:nil].size;
+    
+    return size;
+
+}
+
 /**
  *  获得当前的ViewController
  *
