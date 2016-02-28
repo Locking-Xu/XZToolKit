@@ -16,6 +16,8 @@
 #import "UINavigationController+Common.h"
 #import "XZQuartz2DLineDashViewController.h"
 #import "XZQuartz2DTextViewController.h"
+#import "XZQuartz2DShadowViewController.h"
+#import "XZQuartz2DPathViewController.h"
 
 @interface XZQuartz2DViewController ()
 
@@ -36,7 +38,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *titleArray = @[@"绘制几何图形",@"点线模式",@"绘制文本"];
+    NSArray *titleArray = @[@"绘制几何图形",@"点线模式",@"绘制文本",@"绘制阴影",@"绘制路径"];
     NSMutableArray *array = [NSMutableArray array];
     for (NSString *title in titleArray) {
         
@@ -124,6 +126,20 @@
                     XZQuartz2DTextViewController *quartz2DTextVc = [[XZQuartz2DTextViewController alloc] init];
                     quartz2DTextVc.title = @"绘制文本";
                     [weakSelf.navigationController pushViewController:quartz2DTextVc animated:YES];
+                }
+                    break;
+                case 3:
+                {
+                    XZQuartz2DShadowViewController *quartz2DShadowVc = [[XZQuartz2DShadowViewController alloc] init];
+                    quartz2DShadowVc.title = @"绘制阴影";
+                    [weakSelf.navigationController pushViewController:quartz2DShadowVc animated:YES];
+                }
+                    break;
+                case 4:
+                {
+                    XZQuartz2DPathViewController *quartz2DPathVc = [[XZQuartz2DPathViewController alloc] init];
+                    quartz2DPathVc.title = @"绘制路径";
+                    [weakSelf.navigationController pushViewController:quartz2DPathVc animated:YES];
                 }
                     break;
                 default:

@@ -29,6 +29,8 @@
 #import "XZGifPlayerViewController.h"
 #import "XZShuffFigureViewController.h"
 #import "XZTabBarTestViewController.h"
+#import "XZMultiThreadViewController.h"
+#import "XZLabelFlowLlistViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -203,9 +205,6 @@
                     
                     [XZUtils showAlertView:message];
                 }];
-                
-                
-                
             }
                 break;
             //popView
@@ -308,6 +307,22 @@
                 XZGifPlayerViewController *gifPlayerVc = [[XZGifPlayerViewController alloc] init];
                 gifPlayerVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:gifPlayerVc animated:YES];
+            }
+                break;
+            //多线程
+            case 17:
+            {
+                XZMultiThreadViewController *multiThreadVc = [[XZMultiThreadViewController alloc] initWithNibName:@"XZMultiThreadViewController" bundle:[NSBundle mainBundle]];
+                multiThreadVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:multiThreadVc animated:YES];
+            }
+                break;
+            //标签流
+            case 18:
+            {
+                XZLabelFlowLlistViewController *labelFlowListVc = [[XZLabelFlowLlistViewController alloc] init];
+                labelFlowListVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:labelFlowListVc animated:YES];
             }
                 break;
             default:

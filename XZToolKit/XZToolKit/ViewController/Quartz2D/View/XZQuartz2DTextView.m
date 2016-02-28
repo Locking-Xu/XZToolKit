@@ -55,6 +55,7 @@
     
     //定义一个垂直镜像的变换矩阵
     CGAffineTransform yRevert = CGAffineTransformMake(1, 0, 0, -1, 0, 0);
+//    CGAffineTransform yRevert = CGAffineTransformIdentity;
     CGAffineTransform scale = CGAffineTransformScale(yRevert, self.scale, self.scale);
     CGAffineTransform rotate = CGAffineTransformRotate(scale, M_PI * self.rotate/180);
     
@@ -62,7 +63,7 @@
 
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     CGContextSelectFont(context, "Courier New", 40, kCGEncodingMacRoman);
-    CGContextShowTextAtPoint(context, 50, 300, "苏州", 2);
+    CGContextShowTextAtPoint(context, 50, 300, "suzhou", 6);
 }
 
 - (void)setScale:(CGFloat)scale{

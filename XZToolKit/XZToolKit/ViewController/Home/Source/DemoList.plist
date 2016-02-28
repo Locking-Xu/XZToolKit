@@ -19,5 +19,7 @@
 	<string>TableView协议剥离</string>
 	<string>Quartz2D</string>
 	<string>GIF</string>
+	<string>多线程</string>
+	<string>标签流</string>
 </array>
 </plist>

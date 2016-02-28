@@ -1,0 +1,13 @@
+
+原型的线程就是通过run loop不停的循环实现的
+
+UIApplicationMain()函数，会为main Thread设置一个NSRunLoop对象
+
+Run Loop不是线程安全的
+
+CFRunLoopRef是线程安全的
+
+Run Loop就是一个事件处理循环,用来不停的监听和处理输入事件并将其分配到对应的目标上就行处理
+
+Run Loop能够在有任务的时候唤醒线程,没有任务的时候线程休眠
+

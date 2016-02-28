@@ -42,5 +42,7 @@
 	<string>pch文件</string>
 	<string>automaticallyAdjustsScrollViewInsets</string>
 	<string>EdgesForExtendedLayout</string>
+	<string>RunTime</string>
+	<string>RunLoop</string>
 </array>
 </plist>
