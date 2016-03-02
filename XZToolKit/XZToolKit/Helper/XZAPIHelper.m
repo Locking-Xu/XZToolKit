@@ -134,19 +134,24 @@ NSString *const YCUploadURL  = @"<#上传URL#>";
     }];
 }
 
-- (void)downloadWith:(NSString *)url{
+- (void)downloadWith:(NSString *)url callback:(void (^)(id, NSString *))completion{
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     
     NSURLSessionDownloadTask *downloadTask = [_manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
         
-        XZObjectLog(downloadProgress);
         
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        
         NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
         return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
-    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        NSLog(@"File downloaded to: %@", filePath);
+        
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath,
+    NSError * _Nullable error) {
+        
+        completion(nil,filePath.absoluteString);
+        
+        
     }];
     [downloadTask resume];
 }

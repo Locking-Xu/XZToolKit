@@ -16,15 +16,22 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (0.6.4)
   - MBProgressHUD (0.9.2)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
 
 DEPENDENCIES:
   - AFNetworking
   - Masonry
   - MBProgressHUD
+  - NJKWebViewProgress
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
 
 COCOAPODS: 0.37.2

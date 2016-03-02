@@ -439,7 +439,7 @@
 		E99E31FF1C4F1B2E0016D25D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E99E32001C4F1B2E0016D25D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E99E32081C4F1B2E0016D25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E99E320D1C4F1B2E0016D25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99E320D1C4F1B2E0016D25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E99E32121C4F1B2E0016D25D /* XZToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99E32161C4F1B2E0016D25D /* XZToolKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZToolKitTests.m; sourceTree = "<group>"; };
 		E99E32181C4F1B2E0016D25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1288,7 +1288,6 @@
 				E99E32581C4F6B2A0016D25D /* Utils */,
 				E99E32241C4F1D6B0016D25D /* ViewController */,
 				E99E32081C4F1B2E0016D25D /* Assets.xcassets */,
-				E99E320D1C4F1B2E0016D25D /* Info.plist */,
 			);
 			path = XZToolKit;
 			sourceTree = "<group>";
@@ -1296,6 +1295,7 @@
 		E99E31FC1C4F1B2E0016D25D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E99E320D1C4F1B2E0016D25D /* Info.plist */,
 				E99E32541C4F1EE70016D25D /* PrefixHeader.pch */,
 				E99E31FD1C4F1B2E0016D25D /* main.m */,
 			);

@@ -46,5 +46,5 @@
  *
  *  @param url 下载地址
  */
-- (void)downloadWith:(NSString *)url;
+- (void)downloadWith:(NSString *)url callback:(void(^)(id response, NSString *filePath))completion;
 @end
