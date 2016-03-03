@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class XZBaseCell,XZBaseModel;
+@class XZBaseModel;
 
 typedef void(^TableViewCellConfigureBlock)(XZBaseModel *model,UITableViewCell *cell,NSIndexPath *indexPath);
 

@@ -31,6 +31,7 @@
 #import "XZTabBarTestViewController.h"
 #import "XZMultiThreadViewController.h"
 #import "XZLabelFlowLlistViewController.h"
+#import "XZClipScreenViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -323,6 +324,14 @@
                 XZLabelFlowLlistViewController *labelFlowListVc = [[XZLabelFlowLlistViewController alloc] init];
                 labelFlowListVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:labelFlowListVc animated:YES];
+            }
+                break;
+            //截图
+            case 19:
+            {
+                XZClipScreenViewController *clipScreenVc = [[XZClipScreenViewController alloc] initWithNibName:NSStringFromClass([XZClipScreenViewController class]) bundle:[NSBundle mainBundle]];
+                clipScreenVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:clipScreenVc animated:YES];
             }
                 break;
             default:

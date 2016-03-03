@@ -186,6 +186,9 @@
 		E9C0D3DF1C7F2DF60003528C /* XZQuartz2DPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0D3DE1C7F2DF60003528C /* XZQuartz2DPathView.m */; };
 		E9C8B41F1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */; };
 		E9C8B4221C7C8754003690A4 /* XZQuartz2DDashView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8B4211C7C8754003690A4 /* XZQuartz2DDashView.m */; };
+		E9D261AD1C8854730083D23F /* UIView+Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D261AC1C8854730083D23F /* UIView+Clip.m */; };
+		E9D261B31C8856690083D23F /* XZClipScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D261B11C8856690083D23F /* XZClipScreenViewController.m */; };
+		E9D261B41C8856690083D23F /* XZClipScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D261B21C8856690083D23F /* XZClipScreenViewController.xib */; };
 		E9D461F11C7B32620011C6F4 /* XZQuartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */; };
 		E9D461F81C7B3F8D0011C6F4 /* UITableViewCell+Strip.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D461F71C7B3F8D0011C6F4 /* UITableViewCell+Strip.m */; };
 		E9D461FB1C7B40620011C6F4 /* XZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D461FA1C7B40620011C6F4 /* XZTestCell.m */; };
@@ -525,6 +528,11 @@
 		E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DLineDashViewController.m; sourceTree = "<group>"; };
 		E9C8B4201C7C8754003690A4 /* XZQuartz2DDashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DDashView.h; sourceTree = "<group>"; };
 		E9C8B4211C7C8754003690A4 /* XZQuartz2DDashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DDashView.m; sourceTree = "<group>"; };
+		E9D261AB1C8854730083D23F /* UIView+Clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Clip.h"; sourceTree = "<group>"; };
+		E9D261AC1C8854730083D23F /* UIView+Clip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Clip.m"; sourceTree = "<group>"; };
+		E9D261B01C8856690083D23F /* XZClipScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZClipScreenViewController.h; sourceTree = "<group>"; };
+		E9D261B11C8856690083D23F /* XZClipScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZClipScreenViewController.m; sourceTree = "<group>"; };
+		E9D261B21C8856690083D23F /* XZClipScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZClipScreenViewController.xib; sourceTree = "<group>"; };
 		E9D461EF1C7B32620011C6F4 /* XZQuartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DViewController.h; sourceTree = "<group>"; };
 		E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DViewController.m; sourceTree = "<group>"; };
 		E9D461F61C7B3F8D0011C6F4 /* UITableViewCell+Strip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Strip.h"; sourceTree = "<group>"; };
@@ -1323,28 +1331,14 @@
 		E99E32221C4F1D5A0016D25D /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E9ED31DD1C64732700DCDFD0 /* NSData+AES256.h */,
-				E9ED31DE1C64732700DCDFD0 /* NSData+AES256.m */,
-				E99E32261C4F1E0B0016D25D /* NSDate+String.h */,
-				E99E32271C4F1E0B0016D25D /* NSDate+String.m */,
-				E9ED31DF1C64732700DCDFD0 /* NSString+AES256.h */,
-				E9ED31E01C64732700DCDFD0 /* NSString+AES256.m */,
-				E9ED31E31C64747300DCDFD0 /* NSString+Format.h */,
-				E9ED31E41C64747300DCDFD0 /* NSString+Format.m */,
-				E99E32281C4F1E0B0016D25D /* UIButton+FillColor.h */,
-				E99E32291C4F1E0B0016D25D /* UIButton+FillColor.m */,
-				E99E322A1C4F1E0B0016D25D /* UIColor+HexString.h */,
-				E99E322B1C4F1E0B0016D25D /* UIColor+HexString.m */,
-				E91994291C7D85B700C5EBE1 /* UIImage+Color.h */,
-				E919942A1C7D85B700C5EBE1 /* UIImage+Color.m */,
-				E99E322C1C4F1E0B0016D25D /* UINavigationController+Common.h */,
-				E99E322D1C4F1E0B0016D25D /* UINavigationController+Common.m */,
-				E9D461F61C7B3F8D0011C6F4 /* UITableViewCell+Strip.h */,
-				E9D461F71C7B3F8D0011C6F4 /* UITableViewCell+Strip.m */,
-				E924116F1C6EE55B0009A8EA /* UIView+Animation.h */,
-				E92411701C6EE55B0009A8EA /* UIView+Animation.m */,
-				E99E322E1C4F1E0B0016D25D /* UIView+Frame.h */,
-				E99E322F1C4F1E0B0016D25D /* UIView+Frame.m */,
+				E9D261AA1C8854070083D23F /* UINavigationController */,
+				E9D261A91C8853FC0083D23F /* UIView */,
+				E9D261A81C8853F10083D23F /* UITableview */,
+				E9D261A71C8853E40083D23F /* UIImage */,
+				E9D261A61C8853D90083D23F /* UIColor */,
+				E9D261A51C8853C80083D23F /* UIButton */,
+				E9D261A41C8853BB0083D23F /* NSString */,
+				E9D261A31C8853AE0083D23F /* NSData */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1352,6 +1346,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9D261AE1C8856450083D23F /* ClipScreen */,
 				E9FD54481C828ACE0035639F /* LabelFlow */,
 				E9774D4F1C7FFB5F00F4A0A9 /* Blog */,
 				E9774D481C7FE3D700F4A0A9 /* MultiThread */,
@@ -1600,6 +1595,104 @@
 				E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		E9D261A31C8853AE0083D23F /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31DD1C64732700DCDFD0 /* NSData+AES256.h */,
+				E9ED31DE1C64732700DCDFD0 /* NSData+AES256.m */,
+				E99E32261C4F1E0B0016D25D /* NSDate+String.h */,
+				E99E32271C4F1E0B0016D25D /* NSDate+String.m */,
+			);
+			name = NSData;
+			sourceTree = "<group>";
+		};
+		E9D261A41C8853BB0083D23F /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED31DF1C64732700DCDFD0 /* NSString+AES256.h */,
+				E9ED31E01C64732700DCDFD0 /* NSString+AES256.m */,
+				E9ED31E31C64747300DCDFD0 /* NSString+Format.h */,
+				E9ED31E41C64747300DCDFD0 /* NSString+Format.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		E9D261A51C8853C80083D23F /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				E99E32281C4F1E0B0016D25D /* UIButton+FillColor.h */,
+				E99E32291C4F1E0B0016D25D /* UIButton+FillColor.m */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
+		E9D261A61C8853D90083D23F /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				E99E322A1C4F1E0B0016D25D /* UIColor+HexString.h */,
+				E99E322B1C4F1E0B0016D25D /* UIColor+HexString.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		E9D261A71C8853E40083D23F /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				E91994291C7D85B700C5EBE1 /* UIImage+Color.h */,
+				E919942A1C7D85B700C5EBE1 /* UIImage+Color.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		E9D261A81C8853F10083D23F /* UITableview */ = {
+			isa = PBXGroup;
+			children = (
+				E9D461F61C7B3F8D0011C6F4 /* UITableViewCell+Strip.h */,
+				E9D461F71C7B3F8D0011C6F4 /* UITableViewCell+Strip.m */,
+			);
+			name = UITableview;
+			sourceTree = "<group>";
+		};
+		E9D261A91C8853FC0083D23F /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E924116F1C6EE55B0009A8EA /* UIView+Animation.h */,
+				E92411701C6EE55B0009A8EA /* UIView+Animation.m */,
+				E99E322E1C4F1E0B0016D25D /* UIView+Frame.h */,
+				E99E322F1C4F1E0B0016D25D /* UIView+Frame.m */,
+				E9D261AB1C8854730083D23F /* UIView+Clip.h */,
+				E9D261AC1C8854730083D23F /* UIView+Clip.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		E9D261AA1C8854070083D23F /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				E99E322C1C4F1E0B0016D25D /* UINavigationController+Common.h */,
+				E99E322D1C4F1E0B0016D25D /* UINavigationController+Common.m */,
+			);
+			name = UINavigationController;
+			sourceTree = "<group>";
+		};
+		E9D261AE1C8856450083D23F /* ClipScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E9D261AF1C88564F0083D23F /* ViewController */,
+			);
+			name = ClipScreen;
+			sourceTree = "<group>";
+		};
+		E9D261AF1C88564F0083D23F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9D261B01C8856690083D23F /* XZClipScreenViewController.h */,
+				E9D261B11C8856690083D23F /* XZClipScreenViewController.m */,
+				E9D261B21C8856690083D23F /* XZClipScreenViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		E9D461ED1C7B32270011C6F4 /* Quartz2D */ = {
@@ -2163,6 +2256,7 @@
 				E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */,
 				E984B9C91C5E227700C00BC7 /* 内联函数.txt in Resources */,
 				E9ED320D1C647CD300DCDFD0 /* animalHead.png in Resources */,
+				E9D261B41C8856690083D23F /* XZClipScreenViewController.xib in Resources */,
 				E9F706091C76F9CB00708F5C /* videoRing.caf in Resources */,
 				E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */,
 				E920DE4B1C50B7CB00F08A9C /* XZMonthCalendarViewController.xib in Resources */,
@@ -2224,6 +2318,7 @@
 				E9C0D3D91C7F298B0003528C /* XZQuartz2DShadowView.m in Sources */,
 				E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */,
 				E9318B651C51E9380039D357 /* XZTipView.m in Sources */,
+				E9D261AD1C8854730083D23F /* UIView+Clip.m in Sources */,
 				E93821A91C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m in Sources */,
 				E9774D581C7FFC5200F4A0A9 /* XZBlogCell.m in Sources */,
 				E99E324E1C4F1E350016D25D /* XZGlyphsHelper.m in Sources */,
@@ -2264,6 +2359,7 @@
 				E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
 				E9ED31EB1C6478A200DCDFD0 /* XZGuideViewController.m in Sources */,
+				E9D261B31C8856690083D23F /* XZClipScreenViewController.m in Sources */,
 				E9124C3C1C7B04C200F733B0 /* XZBaseModel.m in Sources */,
 				E9C8B4221C7C8754003690A4 /* XZQuartz2DDashView.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
