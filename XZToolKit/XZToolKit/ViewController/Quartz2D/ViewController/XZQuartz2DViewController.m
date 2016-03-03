@@ -18,6 +18,7 @@
 #import "XZQuartz2DTextViewController.h"
 #import "XZQuartz2DShadowViewController.h"
 #import "XZQuartz2DPathViewController.h"
+#import "XZQuartz2DPolygonViewController.h"
 
 @interface XZQuartz2DViewController ()
 
@@ -38,7 +39,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *titleArray = @[@"绘制几何图形",@"点线模式",@"绘制文本",@"绘制阴影",@"绘制路径"];
+    NSArray *titleArray = @[@"绘制几何图形",@"点线模式",@"绘制文本",@"绘制阴影",@"绘制路径",@"绘制多边形"];
     NSMutableArray *array = [NSMutableArray array];
     for (NSString *title in titleArray) {
         
@@ -140,6 +141,13 @@
                     XZQuartz2DPathViewController *quartz2DPathVc = [[XZQuartz2DPathViewController alloc] init];
                     quartz2DPathVc.title = @"绘制路径";
                     [weakSelf.navigationController pushViewController:quartz2DPathVc animated:YES];
+                }
+                    break;
+                case 5:
+                {
+                    XZQuartz2DPolygonViewController *quartz2DPolygonVc = [[XZQuartz2DPolygonViewController alloc] init];
+                    quartz2DPolygonVc.title = @"绘制多边形";
+                    [weakSelf.navigationController pushViewController:quartz2DPolygonVc animated:YES];
                 }
                     break;
                 default:

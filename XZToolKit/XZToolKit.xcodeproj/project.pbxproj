@@ -154,6 +154,8 @@
 		E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */; };
 		E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */; };
 		E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05F1C59058F003B8855 /* libReveal.dylib */; };
+		E9AF80F11C887B4C00962FD0 /* XZQuartz2DPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AF80F01C887B4C00962FD0 /* XZQuartz2DPolygonView.m */; };
+		E9AF80F41C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AF80F31C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m */; };
 		E9B1B2651C621F6400B7AADB /* 形参个数可变方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */; };
 		E9B1B2671C62259D00B7AADB /* 屏幕旋转.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */; };
 		E9B1B2691C62275B00B7AADB /* 键值编码KVC.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */; };
@@ -251,6 +253,8 @@
 		E9FD546C1C82D6AE0035639F /* XZLabelFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD546B1C82D6AE0035639F /* XZLabelFlowView.m */; };
 		E9FD54701C82DEA50035639F /* XZLabelFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */; };
 		E9FD54731C82E82A0035639F /* XZLabelFlowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */; };
+		E9FF2EFC1C8861B8004B7CBE /* XZNumberLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF2EFB1C8861B8004B7CBE /* XZNumberLockViewController.m */; };
+		E9FF2EFF1C8861D5004B7CBE /* XZNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF2EFE1C8861D5004B7CBE /* XZNumberButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -328,8 +332,8 @@
 		E919942A1C7D85B700C5EBE1 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		E919942C1C7D87E000C5EBE1 /* XZCustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCustomTabBarController.h; sourceTree = "<group>"; };
 		E919942D1C7D87E000C5EBE1 /* XZCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCustomTabBarController.m; sourceTree = "<group>"; };
-		E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookHelper.h; sourceTree = "<group>"; };
-		E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookHelper.m; sourceTree = "<group>"; };
+		E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZAddressBookHelper.h; path = ../../Helper/XZAddressBookHelper.h; sourceTree = "<group>"; };
+		E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZAddressBookHelper.m; path = ../../Helper/XZAddressBookHelper.m; sourceTree = "<group>"; };
 		E920DE331C5079C800F08A9C /* XZAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookViewController.h; sourceTree = "<group>"; };
 		E920DE341C5079C800F08A9C /* XZAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAddressBookViewController.m; sourceTree = "<group>"; };
 		E920DE3C1C5098BB00F08A9C /* XZAddressBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAddressBookCell.h; sourceTree = "<group>"; };
@@ -480,12 +484,16 @@
 		E99E32631C4F81790016D25D /* XZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZScrollView.m; sourceTree = "<group>"; };
 		E99E32651C4F81BE0016D25D /* XZPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPageControl.h; sourceTree = "<group>"; };
 		E99E32661C4F81BE0016D25D /* XZPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZPageControl.m; sourceTree = "<group>"; };
-		E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTelephoneHelper.h; sourceTree = "<group>"; };
-		E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTelephoneHelper.m; sourceTree = "<group>"; };
+		E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZTelephoneHelper.h; path = ../../Helper/XZTelephoneHelper.h; sourceTree = "<group>"; };
+		E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZTelephoneHelper.m; path = ../../Helper/XZTelephoneHelper.m; sourceTree = "<group>"; };
 		E9A4D05A1C59000C003B8855 /* XZImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageBrowserCell.h; sourceTree = "<group>"; };
 		E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserCell.m; sourceTree = "<group>"; };
 		E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserCell.xib; sourceTree = "<group>"; };
 		E9A4D05F1C59058F003B8855 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
+		E9AF80EF1C887B4C00962FD0 /* XZQuartz2DPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DPolygonView.h; sourceTree = "<group>"; };
+		E9AF80F01C887B4C00962FD0 /* XZQuartz2DPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DPolygonView.m; sourceTree = "<group>"; };
+		E9AF80F21C887B8A00962FD0 /* XZQuartz2DPolygonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DPolygonViewController.h; sourceTree = "<group>"; };
+		E9AF80F31C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DPolygonViewController.m; sourceTree = "<group>"; };
 		E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "形参个数可变方法.txt"; sourceTree = "<group>"; };
 		E9B1B2661C62259D00B7AADB /* 屏幕旋转.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "屏幕旋转.txt"; sourceTree = "<group>"; };
 		E9B1B2681C62275B00B7AADB /* 键值编码KVC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "键值编码KVC.txt"; sourceTree = "<group>"; };
@@ -624,6 +632,10 @@
 		E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowLayout.m; sourceTree = "<group>"; };
 		E9FD54711C82E82A0035639F /* XZLabelFlowConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowConfig.h; sourceTree = "<group>"; };
 		E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowConfig.m; sourceTree = "<group>"; };
+		E9FF2EFA1C8861B8004B7CBE /* XZNumberLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNumberLockViewController.h; sourceTree = "<group>"; };
+		E9FF2EFB1C8861B8004B7CBE /* XZNumberLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNumberLockViewController.m; sourceTree = "<group>"; };
+		E9FF2EFD1C8861D5004B7CBE /* XZNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNumberButton.h; sourceTree = "<group>"; };
+		E9FF2EFE1C8861D5004B7CBE /* XZNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNumberButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -782,6 +794,7 @@
 		E920DE311C50795800F08A9C /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
+				E9FF2EF61C8860C4004B7CBE /* Helper */,
 				E920DE361C50987300F08A9C /* Cell */,
 				E920DE321C50798400F08A9C /* Controller */,
 			);
@@ -1346,6 +1359,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9FF2EF71C886190004B7CBE /* NumberLock */,
 				E9D261AE1C8856450083D23F /* ClipScreen */,
 				E9FD54481C828ACE0035639F /* LabelFlow */,
 				E9774D4F1C7FFB5F00F4A0A9 /* Blog */,
@@ -1482,10 +1496,6 @@
 		E99E32681C4F835A0016D25D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */,
-				E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */,
-				E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */,
-				E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */,
 				E97344C11C8056C8005E453D /* XZAPIHelper.h */,
 				E97344C21C8056C8005E453D /* XZAPIHelper.m */,
 			);
@@ -1717,6 +1727,8 @@
 				E9C0D3D41C7F29620003528C /* XZQuartz2DShadowViewController.m */,
 				E9C0D3DA1C7F2DDB0003528C /* XZQuartz2DPathViewController.h */,
 				E9C0D3DB1C7F2DDB0003528C /* XZQuartz2DPathViewController.m */,
+				E9AF80F21C887B8A00962FD0 /* XZQuartz2DPolygonViewController.h */,
+				E9AF80F31C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m */,
 				E9D461EF1C7B32620011C6F4 /* XZQuartz2DViewController.h */,
 				E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */,
 			);
@@ -1736,6 +1748,8 @@
 				E9C0D3D81C7F298B0003528C /* XZQuartz2DShadowView.m */,
 				E9C0D3DD1C7F2DF60003528C /* XZQuartz2DPathView.h */,
 				E9C0D3DE1C7F2DF60003528C /* XZQuartz2DPathView.m */,
+				E9AF80EF1C887B4C00962FD0 /* XZQuartz2DPolygonView.h */,
+				E9AF80F01C887B4C00962FD0 /* XZQuartz2DPolygonView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2053,6 +2067,44 @@
 			name = Helper;
 			sourceTree = "<group>";
 		};
+		E9FF2EF61C8860C4004B7CBE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E99E32691C4F83CB0016D25D /* XZTelephoneHelper.h */,
+				E99E326A1C4F83CB0016D25D /* XZTelephoneHelper.m */,
+				E920DE2B1C50764400F08A9C /* XZAddressBookHelper.h */,
+				E920DE2C1C50764400F08A9C /* XZAddressBookHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		E9FF2EF71C886190004B7CBE /* NumberLock */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF2EF91C8861A5004B7CBE /* View */,
+				E9FF2EF81C88619E004B7CBE /* ViewController */,
+			);
+			name = NumberLock;
+			sourceTree = "<group>";
+		};
+		E9FF2EF81C88619E004B7CBE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF2EFA1C8861B8004B7CBE /* XZNumberLockViewController.h */,
+				E9FF2EFB1C8861B8004B7CBE /* XZNumberLockViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9FF2EF91C8861A5004B7CBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9FF2EFD1C8861D5004B7CBE /* XZNumberButton.h */,
+				E9FF2EFE1C8861D5004B7CBE /* XZNumberButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2354,6 +2406,7 @@
 				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
 				E93821A61C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m in Sources */,
 				E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */,
+				E9AF80F11C887B4C00962FD0 /* XZQuartz2DPolygonView.m in Sources */,
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
 				E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */,
@@ -2364,6 +2417,7 @@
 				E9C8B4221C7C8754003690A4 /* XZQuartz2DDashView.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
+				E9FF2EFF1C8861D5004B7CBE /* XZNumberButton.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E9FD54671C82B4910035639F /* XZLabelFlowTwoViewController.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
@@ -2404,9 +2458,11 @@
 				E9ED31EE1C6478B800DCDFD0 /* XZGuideView.m in Sources */,
 				E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */,
 				E9ED31CF1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m in Sources */,
+				E9FF2EFC1C8861B8004B7CBE /* XZNumberLockViewController.m in Sources */,
 				E9124C421C7B054E00F733B0 /* XZTableViewDataSource.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
+				E9AF80F41C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m in Sources */,
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
 				E9036A241C63027600384199 /* XZAlbumListController.m in Sources */,
 				E92411711C6EE55B0009A8EA /* UIView+Animation.m in Sources */,
