@@ -19,6 +19,8 @@
 #import "XZQuartz2DShadowViewController.h"
 #import "XZQuartz2DPathViewController.h"
 #import "XZQuartz2DPolygonViewController.h"
+#import "XZQuartz2DDrawImageViewController.h"
+#import "XZQuartz2DDrawBoardViewController.h"
 
 @interface XZQuartz2DViewController ()
 
@@ -39,7 +41,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *titleArray = @[@"绘制几何图形",@"点线模式",@"绘制文本",@"绘制阴影",@"绘制路径",@"绘制多边形"];
+    NSArray *titleArray = @[@"绘制几何图形",@"点线模式",@"绘制文本",@"绘制阴影",@"绘制路径",@"绘制多边形",@"绘制图片",@"绘图板"];
     NSMutableArray *array = [NSMutableArray array];
     for (NSString *title in titleArray) {
         
@@ -148,6 +150,20 @@
                     XZQuartz2DPolygonViewController *quartz2DPolygonVc = [[XZQuartz2DPolygonViewController alloc] init];
                     quartz2DPolygonVc.title = @"绘制多边形";
                     [weakSelf.navigationController pushViewController:quartz2DPolygonVc animated:YES];
+                }
+                    break;
+                case 6:
+                {
+                    XZQuartz2DDrawImageViewController *quartz2DDrawImageVc = [[XZQuartz2DDrawImageViewController alloc] init];
+                    quartz2DDrawImageVc.title = @"绘制图片";
+                    [weakSelf.navigationController pushViewController:quartz2DDrawImageVc animated:YES];
+                }
+                    break;
+                case 7:
+                {
+                    XZQuartz2DDrawBoardViewController *quartz2DDrawBoardVc = [[XZQuartz2DDrawBoardViewController alloc] initWithNibName:NSStringFromClass([XZQuartz2DDrawBoardViewController class]) bundle:[NSBundle mainBundle]];
+                    quartz2DDrawBoardVc.title = @"绘图板";
+                    [weakSelf.navigationController pushViewController:quartz2DDrawBoardVc animated:YES];
                 }
                     break;
                 default:

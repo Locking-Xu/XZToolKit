@@ -209,6 +209,10 @@
 		E9E0C21C1C576C4F0041193A /* XZImageBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E0C21A1C576C4F0041193A /* XZImageBrowserViewController.xib */; };
 		E9E6C33C1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E6C33A1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m */; };
 		E9E6C33D1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E6C33B1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib */; };
+		E9EBE6511C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EBE6501C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.m */; };
+		E9EBE6561C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EBE6541C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m */; };
+		E9EBE6571C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EBE6551C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib */; };
+		E9EBE65B1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EBE65A1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m */; };
 		E9ED31C71C642FB900DCDFD0 /* XZCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31C51C642FB900DCDFD0 /* XZCoreAnimationViewController.m */; };
 		E9ED31C81C642FB900DCDFD0 /* XZCoreAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31C61C642FB900DCDFD0 /* XZCoreAnimationViewController.xib */; };
 		E9ED31CA1C6448D700DCDFD0 /* CoreAnimation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31C91C6448D700DCDFD0 /* CoreAnimation.txt */; };
@@ -569,6 +573,13 @@
 		E9E6C3391C74AAEA00B9E2B8 /* XZMusicLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMusicLibraryViewController.h; sourceTree = "<group>"; };
 		E9E6C33A1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMusicLibraryViewController.m; sourceTree = "<group>"; };
 		E9E6C33B1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMusicLibraryViewController.xib; sourceTree = "<group>"; };
+		E9EBE64F1C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DDrawImageViewController.h; sourceTree = "<group>"; };
+		E9EBE6501C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DDrawImageViewController.m; sourceTree = "<group>"; };
+		E9EBE6531C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DDrawBoardViewController.h; sourceTree = "<group>"; };
+		E9EBE6541C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DDrawBoardViewController.m; sourceTree = "<group>"; };
+		E9EBE6551C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZQuartz2DDrawBoardViewController.xib; sourceTree = "<group>"; };
+		E9EBE6591C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DDrawBoardView.h; sourceTree = "<group>"; };
+		E9EBE65A1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DDrawBoardView.m; sourceTree = "<group>"; };
 		E9ED31C41C642FB900DCDFD0 /* XZCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCoreAnimationViewController.h; sourceTree = "<group>"; };
 		E9ED31C51C642FB900DCDFD0 /* XZCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCoreAnimationViewController.m; sourceTree = "<group>"; };
 		E9ED31C61C642FB900DCDFD0 /* XZCoreAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCoreAnimationViewController.xib; sourceTree = "<group>"; };
@@ -1717,20 +1728,16 @@
 		E9D461EE1C7B32450011C6F4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E9028A8F1C7BF99E000F5693 /* XZQuartz2DBasicViewController.h */,
-				E9028A901C7BF99E000F5693 /* XZQuartz2DBasicViewController.m */,
-				E9C8B41D1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.h */,
-				E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */,
-				E9D5F7CA1C7DDB9E00E8593B /* XZQuartz2DTextViewController.h */,
-				E9D5F7CB1C7DDB9E00E8593B /* XZQuartz2DTextViewController.m */,
-				E9C0D3D31C7F29620003528C /* XZQuartz2DShadowViewController.h */,
-				E9C0D3D41C7F29620003528C /* XZQuartz2DShadowViewController.m */,
-				E9C0D3DA1C7F2DDB0003528C /* XZQuartz2DPathViewController.h */,
-				E9C0D3DB1C7F2DDB0003528C /* XZQuartz2DPathViewController.m */,
-				E9AF80F21C887B8A00962FD0 /* XZQuartz2DPolygonViewController.h */,
-				E9AF80F31C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m */,
 				E9D461EF1C7B32620011C6F4 /* XZQuartz2DViewController.h */,
 				E9D461F01C7B32620011C6F4 /* XZQuartz2DViewController.m */,
+				E9EBE6521C8AC0F900104F5A /* DrawBoard */,
+				E9EBE6491C8AB87000104F5A /* DrawImage */,
+				E9EBE6481C8AB81000104F5A /* Basic */,
+				E9EBE6471C8AB80800104F5A /* Dash */,
+				E9EBE6461C8AB80200104F5A /* Text */,
+				E9EBE6451C8AB7FC00104F5A /* Shadow */,
+				E9EBE6441C8AB7F600104F5A /* Path */,
+				E9EBE6421C8AB7A600104F5A /* Polygon */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1738,18 +1745,13 @@
 		E9D461F21C7B33920011C6F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9028A921C7BFA65000F5693 /* XZQuartz2DBasicView.h */,
-				E9028A931C7BFA65000F5693 /* XZQuartz2DBasicView.m */,
-				E9C8B4201C7C8754003690A4 /* XZQuartz2DDashView.h */,
-				E9C8B4211C7C8754003690A4 /* XZQuartz2DDashView.m */,
-				E9D5F7CD1C7DDBB800E8593B /* XZQuartz2DTextView.h */,
-				E9D5F7CE1C7DDBB800E8593B /* XZQuartz2DTextView.m */,
-				E9C0D3D71C7F298B0003528C /* XZQuartz2DShadowView.h */,
-				E9C0D3D81C7F298B0003528C /* XZQuartz2DShadowView.m */,
-				E9C0D3DD1C7F2DF60003528C /* XZQuartz2DPathView.h */,
-				E9C0D3DE1C7F2DF60003528C /* XZQuartz2DPathView.m */,
-				E9AF80EF1C887B4C00962FD0 /* XZQuartz2DPolygonView.h */,
-				E9AF80F01C887B4C00962FD0 /* XZQuartz2DPolygonView.m */,
+				E9EBE6581C8AC4B300104F5A /* DrawBoard */,
+				E9EBE6411C8AB77300104F5A /* Polygon */,
+				E9EBE6401C8AB76C00104F5A /* Path */,
+				E9EBE63F1C8AB76100104F5A /* Shadow */,
+				E9EBE63E1C8AB75600104F5A /* Text */,
+				E9EBE63D1C8AB6FF00104F5A /* Dash */,
+				E9EBE63C1C8AB6D700104F5A /* Basic */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1781,6 +1783,142 @@
 				E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		E9EBE63C1C8AB6D700104F5A /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				E9028A921C7BFA65000F5693 /* XZQuartz2DBasicView.h */,
+				E9028A931C7BFA65000F5693 /* XZQuartz2DBasicView.m */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		E9EBE63D1C8AB6FF00104F5A /* Dash */ = {
+			isa = PBXGroup;
+			children = (
+				E9C8B4201C7C8754003690A4 /* XZQuartz2DDashView.h */,
+				E9C8B4211C7C8754003690A4 /* XZQuartz2DDashView.m */,
+			);
+			name = Dash;
+			sourceTree = "<group>";
+		};
+		E9EBE63E1C8AB75600104F5A /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				E9D5F7CD1C7DDBB800E8593B /* XZQuartz2DTextView.h */,
+				E9D5F7CE1C7DDBB800E8593B /* XZQuartz2DTextView.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		E9EBE63F1C8AB76100104F5A /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0D3D71C7F298B0003528C /* XZQuartz2DShadowView.h */,
+				E9C0D3D81C7F298B0003528C /* XZQuartz2DShadowView.m */,
+			);
+			name = Shadow;
+			sourceTree = "<group>";
+		};
+		E9EBE6401C8AB76C00104F5A /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0D3DD1C7F2DF60003528C /* XZQuartz2DPathView.h */,
+				E9C0D3DE1C7F2DF60003528C /* XZQuartz2DPathView.m */,
+			);
+			name = Path;
+			sourceTree = "<group>";
+		};
+		E9EBE6411C8AB77300104F5A /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				E9AF80EF1C887B4C00962FD0 /* XZQuartz2DPolygonView.h */,
+				E9AF80F01C887B4C00962FD0 /* XZQuartz2DPolygonView.m */,
+			);
+			name = Polygon;
+			sourceTree = "<group>";
+		};
+		E9EBE6421C8AB7A600104F5A /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				E9AF80F21C887B8A00962FD0 /* XZQuartz2DPolygonViewController.h */,
+				E9AF80F31C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m */,
+			);
+			name = Polygon;
+			sourceTree = "<group>";
+		};
+		E9EBE6441C8AB7F600104F5A /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0D3DA1C7F2DDB0003528C /* XZQuartz2DPathViewController.h */,
+				E9C0D3DB1C7F2DDB0003528C /* XZQuartz2DPathViewController.m */,
+			);
+			name = Path;
+			sourceTree = "<group>";
+		};
+		E9EBE6451C8AB7FC00104F5A /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0D3D31C7F29620003528C /* XZQuartz2DShadowViewController.h */,
+				E9C0D3D41C7F29620003528C /* XZQuartz2DShadowViewController.m */,
+			);
+			name = Shadow;
+			sourceTree = "<group>";
+		};
+		E9EBE6461C8AB80200104F5A /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				E9D5F7CA1C7DDB9E00E8593B /* XZQuartz2DTextViewController.h */,
+				E9D5F7CB1C7DDB9E00E8593B /* XZQuartz2DTextViewController.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		E9EBE6471C8AB80800104F5A /* Dash */ = {
+			isa = PBXGroup;
+			children = (
+				E9C8B41D1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.h */,
+				E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */,
+			);
+			name = Dash;
+			sourceTree = "<group>";
+		};
+		E9EBE6481C8AB81000104F5A /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				E9028A8F1C7BF99E000F5693 /* XZQuartz2DBasicViewController.h */,
+				E9028A901C7BF99E000F5693 /* XZQuartz2DBasicViewController.m */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		E9EBE6491C8AB87000104F5A /* DrawImage */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBE64F1C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.h */,
+				E9EBE6501C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.m */,
+			);
+			name = DrawImage;
+			sourceTree = "<group>";
+		};
+		E9EBE6521C8AC0F900104F5A /* DrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBE6531C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.h */,
+				E9EBE6541C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m */,
+				E9EBE6551C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib */,
+			);
+			name = DrawBoard;
+			sourceTree = "<group>";
+		};
+		E9EBE6581C8AC4B300104F5A /* DrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBE6591C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.h */,
+				E9EBE65A1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m */,
+			);
+			name = DrawBoard;
 			sourceTree = "<group>";
 		};
 		E9ED31C21C642E1000DCDFD0 /* CoreAnimation */ = {
@@ -2198,6 +2336,7 @@
 				E9D7E14E1C704830000D0583 /* 音乐.txt in Resources */,
 				E96A9E561C60E76F0082AAA0 /* 静态Cell.txt in Resources */,
 				E907A4871C75CB8400BFA698 /* 1.mp4 in Resources */,
+				E9EBE6571C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib in Resources */,
 				E9036A141C62FBB800384199 /* PHImageManager.txt in Resources */,
 				E9B9BD9C1C66E7AD00C45040 /* 隐藏或显示返回键.txt in Resources */,
 				E96A9E5C1C60E7E20082AAA0 /* IOS的生命周期.txt in Resources */,
@@ -2415,6 +2554,7 @@
 				E9D261B31C8856690083D23F /* XZClipScreenViewController.m in Sources */,
 				E9124C3C1C7B04C200F733B0 /* XZBaseModel.m in Sources */,
 				E9C8B4221C7C8754003690A4 /* XZQuartz2DDashView.m in Sources */,
+				E9EBE6511C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E9FF2EFF1C8861D5004B7CBE /* XZNumberButton.m in Sources */,
@@ -2431,6 +2571,7 @@
 				E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */,
 				E9028A911C7BF99E000F5693 /* XZQuartz2DBasicViewController.m in Sources */,
 				E9F706411C76FC8800708F5C /* XZCustomPhotoViewController.m in Sources */,
+				E9EBE65B1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m in Sources */,
 				E919942B1C7D85B700C5EBE1 /* UIImage+Color.m in Sources */,
 				E9ED31E21C64732700DCDFD0 /* NSString+AES256.m in Sources */,
 				E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */,
@@ -2462,6 +2603,7 @@
 				E9124C421C7B054E00F733B0 /* XZTableViewDataSource.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
+				E9EBE6561C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m in Sources */,
 				E9AF80F41C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m in Sources */,
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
 				E9036A241C63027600384199 /* XZAlbumListController.m in Sources */,

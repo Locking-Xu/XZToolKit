@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZQuartz2DDrawBoardViewController">
+            <connections>
+                <outlet property="colorSegment" destination="da4-Q4-ctd" id="SZC-er-vOg"/>
+                <outlet property="drawView" destination="Qcs-sy-jFO" id="sT9-em-tik"/>
+                <outlet property="kindSegment" destination="weU-cg-al4" id="9nO-C4-4bS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="da4-Q4-ctd">
+                    <rect key="frame" x="10" y="20" width="300" height="29"/>
+                    <segments>
+                        <segment title="红"/>
+                        <segment title="绿"/>
+                        <segment title="蓝"/>
+                        <segment title="黄"/>
+                        <segment title="紫"/>
+                        <segment title="青"/>
+                        <segment title="黑"/>
+                    </segments>
+                </segmentedControl>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="weU-cg-al4">
+                    <rect key="frame" x="10" y="520" width="300" height="29"/>
+                    <segments>
+                        <segment title="直线"/>
+                        <segment title="矩形"/>
+                        <segment title="椭圆"/>
+                        <segment title="圆角矩形"/>
+                        <segment title="铅笔"/>
+                    </segments>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-sy-jFO" customClass="XZQuartz2DDrawBoardView">
+                    <rect key="frame" x="10" y="58" width="300" height="452"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qcs-sy-jFO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="03e-ic-raq"/>
+                <constraint firstItem="weU-cg-al4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="4pC-JW-meK"/>
+                <constraint firstAttribute="trailing" secondItem="da4-Q4-ctd" secondAttribute="trailing" constant="10" id="53k-hx-peK"/>
+                <constraint firstItem="Qcs-sy-jFO" firstAttribute="top" secondItem="da4-Q4-ctd" secondAttribute="bottom" constant="10" id="FRx-lg-HG8"/>
+                <constraint firstItem="weU-cg-al4" firstAttribute="top" secondItem="Qcs-sy-jFO" secondAttribute="bottom" constant="10" id="SIw-YN-TFA"/>
+                <constraint firstItem="da4-Q4-ctd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="T3n-We-xAH"/>
+                <constraint firstItem="da4-Q4-ctd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="bkl-v0-4mr"/>
+                <constraint firstAttribute="bottom" secondItem="weU-cg-al4" secondAttribute="bottom" constant="20" id="cju-VB-eou"/>
+                <constraint firstAttribute="trailing" secondItem="weU-cg-al4" secondAttribute="trailing" constant="10" id="lsJ-F7-Rtg"/>
+                <constraint firstAttribute="trailing" secondItem="Qcs-sy-jFO" secondAttribute="trailing" constant="10" id="yOU-yO-WY4"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

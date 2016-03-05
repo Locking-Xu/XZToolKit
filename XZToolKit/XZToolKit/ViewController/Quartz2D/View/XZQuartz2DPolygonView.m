@@ -20,6 +20,7 @@
     CGContextAddStar(context, 5, 150, 120, 30);
     CGContextAddStar(context, 7, 150, 180, 30);
     CGContextAddStar(context, 9, 150, 240, 30);
+    CGContextAddFlower(context, 6, 200, 200, 20, 30);
     CGContextStrokePath(context);
     
 }
@@ -65,5 +66,32 @@ void CGContextAddStar(CGContextRef context,NSInteger n,CGFloat dx,CGFloat dy,NSI
         CGFloat y = cos(i*dig);
         CGContextAddLineToPoint(context, x*size +dx, y*size + dy);
     }
+}
+
+/**
+ *  绘制花瓣
+ *
+ *  @param context 上下文
+ *  @param n       n花瓣
+ *  @param dx      中心位置x
+ *  @param dy      中心位置y
+ *  @param size    大小
+ *  @param lenght  长度
+ */
+void CGContextAddFlower(CGContextRef context,NSInteger n,CGFloat dx,CGFloat dy,NSInteger size,NSInteger length){
+
+    CGContextMoveToPoint(context, dx, dy+size);
+    CGFloat dig = 2*M_PI/n;
+    for (int i = 0; i<=n; i++) {
+        //计算控制点
+        CGFloat ctr1x = sin((i-0.5) * dig) *length + dx;
+        CGFloat ctr1y = cos((i-0.5) * dig) *length + dx;
+        //结束点
+        CGFloat x = sin(i*dig) * size + dx;
+        CGFloat y = cos(i*dig) * size + dy;
+        
+        CGContextAddQuadCurveToPoint(context, ctr1x, ctr1y, x, y);
+    }
+    
 }
 @end
