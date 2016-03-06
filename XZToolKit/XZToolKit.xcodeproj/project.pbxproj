@@ -213,6 +213,8 @@
 		E9EBE6561C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EBE6541C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m */; };
 		E9EBE6571C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EBE6551C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib */; };
 		E9EBE65B1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EBE65A1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m */; };
+		E9EBE6601C8ADD4500104F5A /* XZImageCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EBE65F1C8ADD4500104F5A /* XZImageCategoryViewController.m */; };
+		E9EBE6631C8ADD6C00104F5A /* UIImage+Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EBE6621C8ADD6C00104F5A /* UIImage+Bitmap.m */; };
 		E9ED31C71C642FB900DCDFD0 /* XZCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED31C51C642FB900DCDFD0 /* XZCoreAnimationViewController.m */; };
 		E9ED31C81C642FB900DCDFD0 /* XZCoreAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31C61C642FB900DCDFD0 /* XZCoreAnimationViewController.xib */; };
 		E9ED31CA1C6448D700DCDFD0 /* CoreAnimation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9ED31C91C6448D700DCDFD0 /* CoreAnimation.txt */; };
@@ -242,6 +244,7 @@
 		E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */; };
 		E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */; };
 		E9F0E8591C61C85800268CE2 /* 类方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9F0E8581C61C85800268CE2 /* 类方法.txt */; };
+		E9F660551C8BF54C00023486 /* UIImage+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F660541C8BF54C00023486 /* UIImage+File.m */; };
 		E9F705FA1C76BF1600708F5C /* XZImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */; };
 		E9F706071C76F8C900708F5C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F706061C76F8C900708F5C /* AudioToolbox.framework */; };
 		E9F706091C76F9CB00708F5C /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = E9F706081C76F9CB00708F5C /* videoRing.caf */; };
@@ -580,6 +583,10 @@
 		E9EBE6551C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZQuartz2DDrawBoardViewController.xib; sourceTree = "<group>"; };
 		E9EBE6591C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DDrawBoardView.h; sourceTree = "<group>"; };
 		E9EBE65A1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DDrawBoardView.m; sourceTree = "<group>"; };
+		E9EBE65E1C8ADD4500104F5A /* XZImageCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImageCategoryViewController.h; sourceTree = "<group>"; };
+		E9EBE65F1C8ADD4500104F5A /* XZImageCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageCategoryViewController.m; sourceTree = "<group>"; };
+		E9EBE6611C8ADD6C00104F5A /* UIImage+Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bitmap.h"; sourceTree = "<group>"; };
+		E9EBE6621C8ADD6C00104F5A /* UIImage+Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bitmap.m"; sourceTree = "<group>"; };
 		E9ED31C41C642FB900DCDFD0 /* XZCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCoreAnimationViewController.h; sourceTree = "<group>"; };
 		E9ED31C51C642FB900DCDFD0 /* XZCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCoreAnimationViewController.m; sourceTree = "<group>"; };
 		E9ED31C61C642FB900DCDFD0 /* XZCoreAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCoreAnimationViewController.xib; sourceTree = "<group>"; };
@@ -621,6 +628,8 @@
 		E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumHelper.m; sourceTree = "<group>"; };
 		E9F0E8561C61A8A400268CE2 /* ALAssetRepresentation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALAssetRepresentation.txt; sourceTree = "<group>"; };
 		E9F0E8581C61C85800268CE2 /* 类方法.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "类方法.txt"; sourceTree = "<group>"; };
+		E9F660531C8BF54C00023486 /* UIImage+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+File.h"; sourceTree = "<group>"; };
+		E9F660541C8BF54C00023486 /* UIImage+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+File.m"; sourceTree = "<group>"; };
 		E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImagePickerViewController.h; sourceTree = "<group>"; };
 		E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImagePickerViewController.m; sourceTree = "<group>"; };
 		E9F706061C76F8C900708F5C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -1370,6 +1379,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9EBE65C1C8ADCEF00104F5A /* ImageCategory */,
 				E9FF2EF71C886190004B7CBE /* NumberLock */,
 				E9D261AE1C8856450083D23F /* ClipScreen */,
 				E9FD54481C828ACE0035639F /* LabelFlow */,
@@ -1663,6 +1673,10 @@
 			children = (
 				E91994291C7D85B700C5EBE1 /* UIImage+Color.h */,
 				E919942A1C7D85B700C5EBE1 /* UIImage+Color.m */,
+				E9EBE6611C8ADD6C00104F5A /* UIImage+Bitmap.h */,
+				E9EBE6621C8ADD6C00104F5A /* UIImage+Bitmap.m */,
+				E9F660531C8BF54C00023486 /* UIImage+File.h */,
+				E9F660541C8BF54C00023486 /* UIImage+File.m */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";
@@ -1919,6 +1933,23 @@
 				E9EBE65A1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m */,
 			);
 			name = DrawBoard;
+			sourceTree = "<group>";
+		};
+		E9EBE65C1C8ADCEF00104F5A /* ImageCategory */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBE65D1C8ADD2300104F5A /* ViewController */,
+			);
+			name = ImageCategory;
+			sourceTree = "<group>";
+		};
+		E9EBE65D1C8ADD2300104F5A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBE65E1C8ADD4500104F5A /* XZImageCategoryViewController.h */,
+				E9EBE65F1C8ADD4500104F5A /* XZImageCategoryViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		E9ED31C21C642E1000DCDFD0 /* CoreAnimation */ = {
@@ -2517,10 +2548,12 @@
 				E97344C31C8056C8005E453D /* XZAPIHelper.m in Sources */,
 				E984B9BC1C5E178100C00BC7 /* XZPopViewViewController.m in Sources */,
 				E9028A941C7BFA65000F5693 /* XZQuartz2DBasicView.m in Sources */,
+				E9EBE6601C8ADD4500104F5A /* XZImageCategoryViewController.m in Sources */,
 				E93821A01C5A0B6F004F7EC4 /* XZCollectionLayoutStyleOne.m in Sources */,
 				E938219D1C5A0B3F004F7EC4 /* XZCollectionDemoCell.m in Sources */,
 				E9ED31DC1C646EB700DCDFD0 /* XZEventsThroughView.m in Sources */,
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,
+				E9F660551C8BF54C00023486 /* UIImage+File.m in Sources */,
 				E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
 				E91994281C7D7E9000C5EBE1 /* XZTabBar.m in Sources */,
@@ -2556,6 +2589,7 @@
 				E9C8B4221C7C8754003690A4 /* XZQuartz2DDashView.m in Sources */,
 				E9EBE6511C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
+				E9EBE6631C8ADD6C00104F5A /* UIImage+Bitmap.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E9FF2EFF1C8861D5004B7CBE /* XZNumberButton.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,

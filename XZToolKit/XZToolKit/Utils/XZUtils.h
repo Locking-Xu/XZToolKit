@@ -147,13 +147,6 @@
 #pragma mark - About File
 
 #pragma mark - About UIImage
-/**
- *  将图片按一定的比例缩放
- *
- *  @param proportion 缩放的比例
- *
- *  @return 新的图片
- */
-+ (UIImage *)scaleImage:(UIImage *)image toProportion:(CGFloat)proportion;
+
 
 @end

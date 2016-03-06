@@ -32,6 +32,7 @@
 #import "XZMultiThreadViewController.h"
 #import "XZLabelFlowLlistViewController.h"
 #import "XZClipScreenViewController.h"
+#import "XZImageCategoryViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -332,6 +333,14 @@
                 XZClipScreenViewController *clipScreenVc = [[XZClipScreenViewController alloc] initWithNibName:NSStringFromClass([XZClipScreenViewController class]) bundle:[NSBundle mainBundle]];
                 clipScreenVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:clipScreenVc animated:YES];
+            }
+                break;
+            //UIImage的扩展
+            case 20:
+            {
+                XZImageCategoryViewController *imageCategoryVc = [[XZImageCategoryViewController alloc] init];
+                imageCategoryVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:imageCategoryVc animated:YES];
             }
                 break;
             default:

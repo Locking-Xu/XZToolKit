@@ -22,5 +22,6 @@
 	<string>多线程</string>
 	<string>标签流</string>
 	<string>截图</string>
+	<string>UIImage扩展</string>
 </array>
 </plist>
