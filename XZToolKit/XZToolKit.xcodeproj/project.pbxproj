@@ -86,6 +86,7 @@
 		E93821A91C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821A81C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m */; };
 		E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */ = {isa = PBXBuildFile; fileRef = E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */; };
 		E93821AD1C5A1709004F7EC4 /* TableView索引.txt in Resources */ = {isa = PBXBuildFile; fileRef = E93821AC1C5A1709004F7EC4 /* TableView索引.txt */; };
+		E94B04411C8EFFF700E6857B /* XZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B04401C8EFFF700E6857B /* XZGradientView.m */; };
 		E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */; };
 		E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */; };
 		E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF31C5F0C73006D7BEF /* 单例创建.txt */; };
@@ -405,6 +406,8 @@
 		E93821A81C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionLayoutStyleThree.m; sourceTree = "<group>"; };
 		E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView不显示多余Cell.txt"; sourceTree = "<group>"; };
 		E93821AC1C5A1709004F7EC4 /* TableView索引.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView索引.txt"; sourceTree = "<group>"; };
+		E94B043F1C8EFFF700E6857B /* XZGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGradientView.h; sourceTree = "<group>"; };
+		E94B04401C8EFFF700E6857B /* XZGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGradientView.m; sourceTree = "<group>"; };
 		E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ViewController的生命周期.txt"; sourceTree = "<group>"; };
 		E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objective-C中关键字.txt"; sourceTree = "<group>"; };
 		E9543EF31C5F0C73006D7BEF /* 单例创建.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单例创建.txt"; sourceTree = "<group>"; };
@@ -2254,6 +2257,8 @@
 				E936AECD1C8DAEEE001BB6ED /* XZMatrixTransformView.m */,
 				E9F6605F1C8C3FDC00023486 /* XZSnowView.h */,
 				E9F660601C8C3FDC00023486 /* XZSnowView.m */,
+				E94B043F1C8EFFF700E6857B /* XZGradientView.h */,
+				E94B04401C8EFFF700E6857B /* XZGradientView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2767,6 +2772,7 @@
 				E9ED32041C647B9200DCDFD0 /* XZRotateButton.m in Sources */,
 				E9ED31EE1C6478B800DCDFD0 /* XZGuideView.m in Sources */,
 				E9F0E8541C61A3A700268CE2 /* XZAlbumHelper.m in Sources */,
+				E94B04411C8EFFF700E6857B /* XZGradientView.m in Sources */,
 				E9DF7B281C8E70D800C418AD /* XZCircle.m in Sources */,
 				E9ED31CF1C644F5300DCDFD0 /* XZCAShapeLayerViewController.m in Sources */,
 				E9FF2EFC1C8861B8004B7CBE /* XZNumberLockViewController.m in Sources */,

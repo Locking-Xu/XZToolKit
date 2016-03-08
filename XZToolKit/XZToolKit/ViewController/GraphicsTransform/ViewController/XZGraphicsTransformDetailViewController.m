@@ -11,6 +11,7 @@
 #import "XZSnowView.h"
 #import "XZMatrixTransformView.h"
 #import "XZBlendModeView.h"
+#import "XZGradientView.h"
 
 @interface XZGraphicsTransformDetailViewController ()
 
@@ -44,6 +45,11 @@
         XZBlendModeView *blendView = [[XZBlendModeView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_HEIGHT)];
         blendView.backgroundColor = [UIColor whiteColor];
         self.view = blendView;
+    }else if ([self.title isEqualToString:@"渐变模式"]){
+    
+        XZGradientView *gradientView = [[XZGradientView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_HEIGHT)];
+        gradientView.backgroundColor = [UIColor whiteColor];
+        self.view = gradientView;
     }
     
     // Do any additional setup after loading the view.

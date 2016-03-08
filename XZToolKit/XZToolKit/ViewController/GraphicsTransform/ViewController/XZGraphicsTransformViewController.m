@@ -27,7 +27,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _titleArray = @[@"坐标变换",@"坐标变换与路径",@"矩阵变换",@"叠加模式"];
+    _titleArray = @[@"坐标变换",@"坐标变换与路径",@"矩阵变换",@"叠加模式",@"渐变模式"];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_HEIGHT)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
