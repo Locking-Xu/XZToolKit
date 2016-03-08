@@ -55,6 +55,7 @@
     }
     cell.textLabel.text = _titleArray[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
