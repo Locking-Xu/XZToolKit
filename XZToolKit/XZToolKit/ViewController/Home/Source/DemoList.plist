@@ -23,5 +23,7 @@
 	<string>标签流</string>
 	<string>截图</string>
 	<string>UIImage扩展</string>
+	<string>图形变换</string>
+	<string>手势密码</string>
 </array>
 </plist>

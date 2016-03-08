@@ -33,6 +33,8 @@
 #import "XZLabelFlowLlistViewController.h"
 #import "XZClipScreenViewController.h"
 #import "XZImageCategoryViewController.h"
+#import "XZGraphicsTransformViewController.h"
+#import "XZGesturesPasswordViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -341,6 +343,22 @@
                 XZImageCategoryViewController *imageCategoryVc = [[XZImageCategoryViewController alloc] init];
                 imageCategoryVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:imageCategoryVc animated:YES];
+            }
+                break;
+            //图形变换
+            case 21:
+            {
+                XZGraphicsTransformViewController *graphicsTransformVc = [[XZGraphicsTransformViewController alloc] init];
+                graphicsTransformVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:graphicsTransformVc animated:YES];
+            }
+                break;
+            //手势密码
+            case 22:
+            {
+                XZGesturesPasswordViewController *gesturesPasswordVc = [[XZGesturesPasswordViewController alloc] init];
+                gesturesPasswordVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:gesturesPasswordVc animated:YES];
             }
                 break;
             default:
