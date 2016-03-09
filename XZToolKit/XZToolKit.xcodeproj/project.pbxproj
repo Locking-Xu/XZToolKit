@@ -75,6 +75,8 @@
 		E932F8931C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8921C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m */; };
 		E932F8961C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8951C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m */; };
 		E932F8991C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */; };
+		E932F8D21C8FFFCA00ABE7E2 /* XZNumberButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8D11C8FFFCA00ABE7E2 /* XZNumberButtonConfig.m */; };
+		E932F8D41C90048A00ABE7E2 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E932F8D31C90048A00ABE7E2 /* testViewController.swift */; };
 		E936AEC81C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E936AEC71C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m */; };
 		E936AECE1C8DAEEE001BB6ED /* XZMatrixTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = E936AECD1C8DAEEE001BB6ED /* XZMatrixTransformView.m */; };
 		E936AED11C8DB4F3001BB6ED /* XZBlendModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E936AED01C8DB4F3001BB6ED /* XZBlendModeView.m */; };
@@ -395,6 +397,9 @@
 		E932F8951C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoLayout.m; sourceTree = "<group>"; };
 		E932F8971C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeConfig.h; sourceTree = SOURCE_ROOT; };
 		E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeConfig.m; sourceTree = SOURCE_ROOT; };
+		E932F8D01C8FFFCA00ABE7E2 /* XZNumberButtonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNumberButtonConfig.h; sourceTree = "<group>"; };
+		E932F8D11C8FFFCA00ABE7E2 /* XZNumberButtonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNumberButtonConfig.m; sourceTree = "<group>"; };
+		E932F8D31C90048A00ABE7E2 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		E936AEC61C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGraphicsTransformDetailViewController.h; sourceTree = "<group>"; };
 		E936AEC71C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGraphicsTransformDetailViewController.m; sourceTree = "<group>"; };
 		E936AECC1C8DAEEE001BB6ED /* XZMatrixTransformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMatrixTransformView.h; sourceTree = "<group>"; };
@@ -1030,6 +1035,15 @@
 			children = (
 				E932F8971C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.h */,
 				E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		E932F8CF1C8FFEDD00ABE7E2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E932F8D01C8FFFCA00ABE7E2 /* XZNumberButtonConfig.h */,
+				E932F8D11C8FFFCA00ABE7E2 /* XZNumberButtonConfig.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -2419,8 +2433,10 @@
 		E9FF2EF71C886190004B7CBE /* NumberLock */ = {
 			isa = PBXGroup;
 			children = (
+				E932F8CF1C8FFEDD00ABE7E2 /* Helper */,
 				E9FF2EF91C8861A5004B7CBE /* View */,
 				E9FF2EF81C88619E004B7CBE /* ViewController */,
+				E932F8D31C90048A00ABE7E2 /* testViewController.swift */,
 			);
 			path = NumberLock;
 			sourceTree = "<group>";
@@ -2769,6 +2785,7 @@
 				E9C8B4221C7C8754003690A4 /* XZQuartz2DDashView.m in Sources */,
 				E9EBE6511C8ABB3200104F5A /* XZQuartz2DDrawImageViewController.m in Sources */,
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
+				E932F8D21C8FFFCA00ABE7E2 /* XZNumberButtonConfig.m in Sources */,
 				E9EBE6631C8ADD6C00104F5A /* UIImage+Bitmap.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
 				E9FF2EFF1C8861D5004B7CBE /* XZNumberButton.m in Sources */,
@@ -2827,6 +2844,7 @@
 				E9036A241C63027600384199 /* XZAlbumListController.m in Sources */,
 				E92411711C6EE55B0009A8EA /* UIView+Animation.m in Sources */,
 				E932F8881C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m in Sources */,
+				E932F8D41C90048A00ABE7E2 /* testViewController.swift in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E9C0D3DC1C7F2DDB0003528C /* XZQuartz2DPathViewController.m in Sources */,
 				E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */,

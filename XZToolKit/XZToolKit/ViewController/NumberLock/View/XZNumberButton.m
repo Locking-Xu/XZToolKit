@@ -10,14 +10,13 @@
 
 @implementation XZNumberButton
 
-- (XZNumberButton *)initWithFram:(CGRect)frame title:(NSString *)title subTitle:(NSString *)subTitle{
-    
+- (XZNumberButton *)initWithFram:(CGRect)frame config:(XZNumberButtonConfig *)config{
+
     self = [super initWithFrame:frame];
     if (self) {
         
-        
-        
-        
+        self.layer.borderColor = config.itemBorderColor.CGColor;
+        self.layer.borderWidth = config.itemBorderWidth;
     }
     return self;
 }

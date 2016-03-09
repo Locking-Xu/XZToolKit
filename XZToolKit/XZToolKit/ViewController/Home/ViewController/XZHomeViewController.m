@@ -35,6 +35,7 @@
 #import "XZImageCategoryViewController.h"
 #import "XZGraphicsTransformViewController.h"
 #import "XZGesturesPasswordViewController.h"
+#import "XZNumberLockViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -359,6 +360,15 @@
                 XZGesturesPasswordViewController *gesturesPasswordVc = [[XZGesturesPasswordViewController alloc] init];
                 gesturesPasswordVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:gesturesPasswordVc animated:YES];
+            }
+                break;
+            //数字密码
+            case 23:
+            {
+//                XZNumberLockViewController *numberLockVc = [[XZNumberLockViewController alloc] init];
+//                numberLockVc.title = _demoList[indexPath.row];
+//                [self.navigationController pushViewController:numberLockVc animated:YES];
+                  
             }
                 break;
             default:

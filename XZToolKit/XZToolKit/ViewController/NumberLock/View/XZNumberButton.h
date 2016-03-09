@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XZNumberButtonConfig.h"
 
 @interface XZNumberButton : UIButton
-- (XZNumberButton *)initWithFram:(CGRect)frame title:(NSString *)title subTitle:(NSString *)subTitle;
+- (XZNumberButton *)initWithFram:(CGRect)frame config:(XZNumberButtonConfig *)config;
 @end
