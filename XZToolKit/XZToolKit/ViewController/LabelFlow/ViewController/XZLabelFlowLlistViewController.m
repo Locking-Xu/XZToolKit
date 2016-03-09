@@ -10,6 +10,7 @@
 #import "XZLabelFlowOneViewController.h"
 #import "UINavigationController+Common.h"
 #import "XZLabelFlowTwoViewController.h"
+#import "XZLabelFlowThreeViewController.h"
 
 
 @interface XZLabelFlowLlistViewController (){
@@ -68,6 +69,13 @@
             XZLabelFlowTwoViewController *labelFlowTwoVc = [[XZLabelFlowTwoViewController alloc] initWithNibName:@"XZLabelFlowTwoViewController" bundle:[NSBundle mainBundle]];
             labelFlowTwoVc.title = _titleArray[indexPath.row];
             [self.navigationController pushViewController:labelFlowTwoVc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            XZLabelFlowThreeViewController *labelFlowThreeVc = [[XZLabelFlowThreeViewController alloc] init];
+            labelFlowThreeVc.title = _titleArray[indexPath.row];
+            [self.navigationController pushViewController:labelFlowThreeVc animated:YES];
         }
             break;
         default:

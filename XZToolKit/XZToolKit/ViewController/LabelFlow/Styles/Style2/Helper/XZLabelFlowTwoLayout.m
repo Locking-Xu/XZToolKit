@@ -1,23 +1,23 @@
 //
-//  XZLabelFlowLayout.m
+//  XZLabelFlowTwoLayout.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/2/28.
+//  Created by 徐章 on 16/3/9.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZLabelFlowLayout.h"
+#import "XZLabelFlowTwoLayout.h"
 #import "XZUtils.h"
-#import "XZLabelFlowConfig.h"
+#import "XZLabelFlowTwoConfig.h"
 
 typedef struct currentOrigin{
-
+    
     CGFloat lineX;
     NSInteger lineNumber;
 }currentOrigin;
 
-@implementation XZLabelFlowLayout{
-
+@implementation XZLabelFlowTwoLayout{
+    
     UIEdgeInsets _contentInsets;
     CGFloat _textMargin;
     CGFloat _itemSpace;
@@ -28,8 +28,8 @@ typedef struct currentOrigin{
 }
 
 - (void)prepareLayout{
-
-    XZLabelFlowConfig *config = [XZLabelFlowConfig shareInstance];
+    
+    XZLabelFlowTwoConfig *config = [XZLabelFlowTwoConfig shareInstance];
     _contentInsets = config.contentInsets;
     _textMargin = config.textMargin;
     _itemSpace = config.itemSpace;
@@ -78,14 +78,15 @@ typedef struct currentOrigin{
                 _orgin.lineX = _contentInsets.left;
             }
         }else{
-        
+            
             [self.delegate layoutFinishWithLineNumber:_orgin.lineNumber+1];
         }
     }
-        
-        
+    
+    
     
     return array;
 }
+
 
 @end

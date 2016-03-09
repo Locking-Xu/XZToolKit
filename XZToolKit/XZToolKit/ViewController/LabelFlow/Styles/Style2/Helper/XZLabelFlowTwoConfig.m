@@ -1,28 +1,27 @@
 //
-//  XZLabelFlowConfig.m
+//  XZLabelFlowTwoConfig.m
 //  XZToolKit
 //
-//  Created by 徐章 on 16/2/28.
+//  Created by 徐章 on 16/3/9.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
-#import "XZLabelFlowConfig.h"
+#import "XZLabelFlowTwoConfig.h"
 
-@implementation XZLabelFlowConfig
-
-+ (XZLabelFlowConfig *)shareInstance{
-
-    static XZLabelFlowConfig *labelFlowConfig =nil;
+@implementation XZLabelFlowTwoConfig
++ (XZLabelFlowTwoConfig *)shareInstance{
+    
+    static XZLabelFlowTwoConfig *labelFlowConfig =nil;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-       
-        labelFlowConfig =[[XZLabelFlowConfig alloc] init];
+        
+        labelFlowConfig =[[XZLabelFlowTwoConfig alloc] init];
     });
     return labelFlowConfig;
 }
 
 - (id)init{
-
+    
     self = [super init];
     if (self) {
         

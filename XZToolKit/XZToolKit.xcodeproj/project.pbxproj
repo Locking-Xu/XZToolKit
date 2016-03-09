@@ -69,6 +69,12 @@
 		E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92411881C6F5C200009A8EA /* XZAVFoundationViewController.m */; };
 		E924118C1C6F678E0009A8EA /* 音效.txt in Resources */ = {isa = PBXBuildFile; fileRef = E924118B1C6F678E0009A8EA /* 音效.txt */; };
 		E9318B651C51E9380039D357 /* XZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9318B641C51E9380039D357 /* XZTipView.m */; };
+		E932F8881C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8871C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m */; };
+		E932F88C1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F88B1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m */; };
+		E932F88F1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F88E1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.m */; };
+		E932F8931C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8921C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m */; };
+		E932F8961C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8951C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m */; };
+		E932F8991C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */; };
 		E936AEC81C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E936AEC71C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m */; };
 		E936AECE1C8DAEEE001BB6ED /* XZMatrixTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = E936AECD1C8DAEEE001BB6ED /* XZMatrixTransformView.m */; };
 		E936AED11C8DB4F3001BB6ED /* XZBlendModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E936AED01C8DB4F3001BB6ED /* XZBlendModeView.m */; };
@@ -270,9 +276,6 @@
 		E9FD54621C8295B30035639F /* XZLabelFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FD54601C8295B30035639F /* XZLabelFlowCell.xib */; };
 		E9FD54671C82B4910035639F /* XZLabelFlowTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD54651C82B4910035639F /* XZLabelFlowTwoViewController.m */; };
 		E9FD54681C82B4910035639F /* XZLabelFlowTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FD54661C82B4910035639F /* XZLabelFlowTwoViewController.xib */; };
-		E9FD546C1C82D6AE0035639F /* XZLabelFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD546B1C82D6AE0035639F /* XZLabelFlowView.m */; };
-		E9FD54701C82DEA50035639F /* XZLabelFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */; };
-		E9FD54731C82E82A0035639F /* XZLabelFlowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */; };
 		E9FF2EFC1C8861B8004B7CBE /* XZNumberLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF2EFB1C8861B8004B7CBE /* XZNumberLockViewController.m */; };
 		E9FF2EFF1C8861D5004B7CBE /* XZNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF2EFE1C8861D5004B7CBE /* XZNumberButton.m */; };
 /* End PBXBuildFile section */
@@ -380,6 +383,18 @@
 		E924118B1C6F678E0009A8EA /* 音效.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "音效.txt"; sourceTree = "<group>"; };
 		E9318B631C51E9380039D357 /* XZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTipView.h; sourceTree = "<group>"; };
 		E9318B641C51E9380039D357 /* XZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTipView.m; sourceTree = "<group>"; };
+		E932F8861C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeViewController.h; sourceTree = SOURCE_ROOT; };
+		E932F8871C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeViewController.m; sourceTree = SOURCE_ROOT; };
+		E932F88A1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeView.h; sourceTree = SOURCE_ROOT; };
+		E932F88B1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeView.m; sourceTree = SOURCE_ROOT; };
+		E932F88D1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoView.h; sourceTree = "<group>"; };
+		E932F88E1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoView.m; sourceTree = "<group>"; };
+		E932F8911C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoConfig.h; sourceTree = "<group>"; };
+		E932F8921C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoConfig.m; sourceTree = "<group>"; };
+		E932F8941C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoLayout.h; sourceTree = "<group>"; };
+		E932F8951C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoLayout.m; sourceTree = "<group>"; };
+		E932F8971C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeConfig.h; sourceTree = SOURCE_ROOT; };
+		E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeConfig.m; sourceTree = SOURCE_ROOT; };
 		E936AEC61C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGraphicsTransformDetailViewController.h; sourceTree = "<group>"; };
 		E936AEC71C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGraphicsTransformDetailViewController.m; sourceTree = "<group>"; };
 		E936AECC1C8DAEEE001BB6ED /* XZMatrixTransformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMatrixTransformView.h; sourceTree = "<group>"; };
@@ -686,12 +701,6 @@
 		E9FD54641C82B4910035639F /* XZLabelFlowTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoViewController.h; sourceTree = "<group>"; };
 		E9FD54651C82B4910035639F /* XZLabelFlowTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoViewController.m; sourceTree = "<group>"; };
 		E9FD54661C82B4910035639F /* XZLabelFlowTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZLabelFlowTwoViewController.xib; sourceTree = "<group>"; };
-		E9FD546A1C82D6AE0035639F /* XZLabelFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowView.h; sourceTree = "<group>"; };
-		E9FD546B1C82D6AE0035639F /* XZLabelFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowView.m; sourceTree = "<group>"; };
-		E9FD546E1C82DEA50035639F /* XZLabelFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowLayout.h; sourceTree = "<group>"; };
-		E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowLayout.m; sourceTree = "<group>"; };
-		E9FD54711C82E82A0035639F /* XZLabelFlowConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowConfig.h; sourceTree = "<group>"; };
-		E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowConfig.m; sourceTree = "<group>"; };
 		E9FF2EFA1C8861B8004B7CBE /* XZNumberLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNumberLockViewController.h; sourceTree = "<group>"; };
 		E9FF2EFB1C8861B8004B7CBE /* XZNumberLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNumberLockViewController.m; sourceTree = "<group>"; };
 		E9FF2EFD1C8861D5004B7CBE /* XZNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNumberButton.h; sourceTree = "<group>"; };
@@ -996,6 +1005,33 @@
 				E924118B1C6F678E0009A8EA /* 音效.txt */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		E932F8851C8FBE0B00ABE7E2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E932F8861C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.h */,
+				E932F8871C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E932F8891C8FBEF400ABE7E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E932F88A1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.h */,
+				E932F88B1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E932F8901C8FC0A000ABE7E2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E932F8971C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.h */,
+				E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		E938216E1C59E873004F7EC4 /* PhotoAlbum */ = {
@@ -2332,6 +2368,9 @@
 		E9FD545A1C82922F0035639F /* Style3 */ = {
 			isa = PBXGroup;
 			children = (
+				E932F8901C8FC0A000ABE7E2 /* Helper */,
+				E932F8891C8FBEF400ABE7E2 /* View */,
+				E932F8851C8FBE0B00ABE7E2 /* ViewController */,
 			);
 			path = Style3;
 			sourceTree = "<group>";
@@ -2349,8 +2388,8 @@
 		E9FD54691C82D68C0035639F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9FD546A1C82D6AE0035639F /* XZLabelFlowView.h */,
-				E9FD546B1C82D6AE0035639F /* XZLabelFlowView.m */,
+				E932F88D1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.h */,
+				E932F88E1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2358,10 +2397,10 @@
 		E9FD546D1C82DE720035639F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E9FD54711C82E82A0035639F /* XZLabelFlowConfig.h */,
-				E9FD54721C82E82A0035639F /* XZLabelFlowConfig.m */,
-				E9FD546E1C82DEA50035639F /* XZLabelFlowLayout.h */,
-				E9FD546F1C82DEA50035639F /* XZLabelFlowLayout.m */,
+				E932F8911C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.h */,
+				E932F8921C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m */,
+				E932F8941C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.h */,
+				E932F8951C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -2670,6 +2709,7 @@
 				E9ED31C71C642FB900DCDFD0 /* XZCoreAnimationViewController.m in Sources */,
 				E9C0D3D91C7F298B0003528C /* XZQuartz2DShadowView.m in Sources */,
 				E936AEC81C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m in Sources */,
+				E932F8991C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m in Sources */,
 				E9E0C21B1C576C4F0041193A /* XZImageBrowserViewController.m in Sources */,
 				E9F660611C8C3FDC00023486 /* XZSnowView.m in Sources */,
 				E9318B651C51E9380039D357 /* XZTipView.m in Sources */,
@@ -2689,12 +2729,12 @@
 				E99E324F1C4F1E350016D25D /* XZImageHelper.m in Sources */,
 				E9F660551C8BF54C00023486 /* UIImage+File.m in Sources */,
 				E93821731C59E8B3004F7EC4 /* XZPhotoAlbumViewController.m in Sources */,
+				E932F8961C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
 				E91994281C7D7E9000C5EBE1 /* XZTabBar.m in Sources */,
 				E9B9BDA51C66E97200C45040 /* XZBezierPathViewController.m in Sources */,
 				E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */,
 				E9774D4D1C7FE42100F4A0A9 /* XZMultiThreadViewController.m in Sources */,
-				E9FD546C1C82D6AE0035639F /* XZLabelFlowView.m in Sources */,
 				E9036A201C63020100384199 /* XZPhotoCell.m in Sources */,
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E9FD545D1C8292720035639F /* XZLabelFlowOneViewController.m in Sources */,
@@ -2703,7 +2743,9 @@
 				E907A48B1C75CC0E00BFA698 /* XZAVPlayerViewController.m in Sources */,
 				E9124C311C7ADD6400F733B0 /* XZCustomVideoViewController.m in Sources */,
 				E9774D531C7FFC1300F4A0A9 /* XZBlogListViewController.m in Sources */,
+				E932F88F1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.m in Sources */,
 				E9ED32011C647B2100DCDFD0 /* XZLovelyLoginViewController.m in Sources */,
+				E932F88C1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m in Sources */,
 				E9DF7B2B1C8E76AA00C418AD /* XZCircleLockView.m in Sources */,
 				E9F6605E1C8C047E00023486 /* XZGraphicsTransformView.m in Sources */,
 				E99E32321C4F1E0B0016D25D /* UIColor+HexString.m in Sources */,
@@ -2711,6 +2753,7 @@
 				E9D7E1461C703F5B000D0583 /* XZSoundEffectViewController.m in Sources */,
 				E9B9BDA91C66E9B500C45040 /* XZBezierPathView.m in Sources */,
 				E96559651C7D51400078245D /* XZTestOneViewController.m in Sources */,
+				E932F8931C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m in Sources */,
 				E920DE4F1C50BE5C00F08A9C /* XZMonthCalendarCell.m in Sources */,
 				E9ED31D91C646E9600DCDFD0 /* XZEventsThroughViewController.m in Sources */,
 				E93821A61C5A0F40004F7EC4 /* XZCollectionLayoutStyleTwo.m in Sources */,
@@ -2738,7 +2781,6 @@
 				E984B9BF1C5E18FF00C00BC7 /* XZPopView.m in Sources */,
 				E9FD54611C8295B30035639F /* XZLabelFlowCell.m in Sources */,
 				E9E6C33C1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.m in Sources */,
-				E9FD54731C82E82A0035639F /* XZLabelFlowConfig.m in Sources */,
 				E936AECE1C8DAEEE001BB6ED /* XZMatrixTransformView.m in Sources */,
 				E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */,
 				E9028A911C7BF99E000F5693 /* XZQuartz2DBasicViewController.m in Sources */,
@@ -2784,12 +2826,12 @@
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
 				E9036A241C63027600384199 /* XZAlbumListController.m in Sources */,
 				E92411711C6EE55B0009A8EA /* UIView+Animation.m in Sources */,
+				E932F8881C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m in Sources */,
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E9C0D3DC1C7F2DDB0003528C /* XZQuartz2DPathViewController.m in Sources */,
 				E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
-				E9FD54701C82DEA50035639F /* XZLabelFlowLayout.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
 				E97344C01C8051D0005E453D /* XZBlogWebViewController.m in Sources */,

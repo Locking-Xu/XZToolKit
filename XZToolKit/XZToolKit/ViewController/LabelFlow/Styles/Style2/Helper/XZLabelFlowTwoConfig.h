@@ -1,15 +1,15 @@
 //
-//  XZLabelFlowConfig.h
+//  XZLabelFlowTwoConfig.h
 //  XZToolKit
 //
-//  Created by 徐章 on 16/2/28.
+//  Created by 徐章 on 16/3/9.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface XZLabelFlowConfig : NSObject
-+ (XZLabelFlowConfig *)shareInstance;
+@interface XZLabelFlowTwoConfig : NSObject
++ (XZLabelFlowTwoConfig *)shareInstance;
 
 @property (nonatomic, assign) UIEdgeInsets contentInsets;
 @property (nonatomic, assign) CGFloat textMargin;

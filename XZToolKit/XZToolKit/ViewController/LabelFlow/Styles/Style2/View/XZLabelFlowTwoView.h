@@ -1,17 +1,14 @@
 //
-//  XZLabelFlowView.h
+//  XZLabelFlowTwoView.h
 //  XZToolKit
 //
-//  Created by 徐章 on 16/2/28.
+//  Created by 徐章 on 16/3/9.
 //  Copyright © 2016年 xuzhang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
 typedef void(^selectBlock)(NSUInteger index,NSString *title);
-
-@interface XZLabelFlowView : UIView
-
+@interface XZLabelFlowTwoView : UIView
 @property (nonatomic, strong) UICollectionView *collectionView;
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray<NSString *> *)titles selectBlock:(selectBlock)selectBlock;

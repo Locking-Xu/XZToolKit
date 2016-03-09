@@ -7,11 +7,11 @@
 //
 
 #import "XZLabelFlowTwoViewController.h"
-#import "XZLabelFlowView.h"
+#import "XZLabelFlowTwoView.h"
 
 @interface XZLabelFlowTwoViewController (){
 
-    XZLabelFlowView *_labelFlowView;
+    XZLabelFlowTwoView *_labelFlowView;
 }
 
 @end
@@ -21,7 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _labelFlowView = [[XZLabelFlowView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, 1) titles:@[@"中国",@"泰兴市",@"江苏省黄桥中学",@"济川实验初中",@"溪桥镇中心小学",@"徐章"] selectBlock:^(NSUInteger index, NSString *title) {
+    _labelFlowView = [[XZLabelFlowTwoView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, 1)
+                                                     titles:@[@"中国",@"泰兴市",@"江苏省黄桥中学",@"济川实验初中",@"溪桥镇中心小学",@"徐章"]
+                                                selectBlock:^(NSUInteger index, NSString *title) {
         
     }];
     

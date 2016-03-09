@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, GradientType){
             startRadius = r/8.0f;
             endRadius = r/2.0f;
             CGContextDrawRadialGradient(context, _gradient, start, startRadius, end, endRadius, [self drawingOptions]);
-            
+            break;
         default:
             break;
     }
