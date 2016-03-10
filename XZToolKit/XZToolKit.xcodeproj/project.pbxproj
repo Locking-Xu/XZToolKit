@@ -388,18 +388,18 @@
 		E924118B1C6F678E0009A8EA /* 音效.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "音效.txt"; sourceTree = "<group>"; };
 		E9318B631C51E9380039D357 /* XZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTipView.h; sourceTree = "<group>"; };
 		E9318B641C51E9380039D357 /* XZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTipView.m; sourceTree = "<group>"; };
-		E932F8861C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeViewController.h; sourceTree = SOURCE_ROOT; };
-		E932F8871C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeViewController.m; sourceTree = SOURCE_ROOT; };
-		E932F88A1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeView.h; sourceTree = SOURCE_ROOT; };
-		E932F88B1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeView.m; sourceTree = SOURCE_ROOT; };
+		E932F8861C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeViewController.h; sourceTree = "<group>"; };
+		E932F8871C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeViewController.m; sourceTree = "<group>"; };
+		E932F88A1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeView.h; sourceTree = "<group>"; };
+		E932F88B1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeView.m; sourceTree = "<group>"; };
 		E932F88D1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoView.h; sourceTree = "<group>"; };
 		E932F88E1C8FBF6D00ABE7E2 /* XZLabelFlowTwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoView.m; sourceTree = "<group>"; };
 		E932F8911C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoConfig.h; sourceTree = "<group>"; };
 		E932F8921C8FC0CC00ABE7E2 /* XZLabelFlowTwoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoConfig.m; sourceTree = "<group>"; };
 		E932F8941C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowTwoLayout.h; sourceTree = "<group>"; };
 		E932F8951C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowTwoLayout.m; sourceTree = "<group>"; };
-		E932F8971C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeConfig.h; sourceTree = SOURCE_ROOT; };
-		E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeConfig.m; sourceTree = SOURCE_ROOT; };
+		E932F8971C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeConfig.h; sourceTree = "<group>"; };
+		E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLabelFlowThreeConfig.m; sourceTree = "<group>"; };
 		E936AEC61C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGraphicsTransformDetailViewController.h; sourceTree = "<group>"; };
 		E936AEC71C8DAC2A001BB6ED /* XZGraphicsTransformDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGraphicsTransformDetailViewController.m; sourceTree = "<group>"; };
 		E936AECC1C8DAEEE001BB6ED /* XZMatrixTransformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMatrixTransformView.h; sourceTree = "<group>"; };
@@ -1028,7 +1028,7 @@
 				E932F8861C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.h */,
 				E932F8871C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E932F8891C8FBEF400ABE7E2 /* View */ = {
@@ -1037,7 +1037,7 @@
 				E932F88A1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.h */,
 				E932F88B1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E932F8901C8FC0A000ABE7E2 /* Helper */ = {
@@ -1046,7 +1046,7 @@
 				E932F8971C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.h */,
 				E932F8981C8FC2BD00ABE7E2 /* XZLabelFlowThreeConfig.m */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		E932F8CF1C8FFEDD00ABE7E2 /* Helper */ = {
@@ -1055,7 +1055,7 @@
 				E9F918E31C902069006F1246 /* XZNumberCircleConfig.h */,
 				E9F918E41C902069006F1246 /* XZNumberCircleConfig.m */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		E937F1DC1C914D80001E383D /* GPUImage */ = {
@@ -1063,18 +1063,18 @@
 			children = (
 				E937F1DD1C914D86001E383D /* ViewController */,
 			);
-			name = GPUImage;
+			path = GPUImage;
 			sourceTree = "<group>";
 		};
 		E937F1DD1C914D86001E383D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E937F1DE1C914DDA001E383D /* XZGPUImageViewController.h */,
-				E937F1DF1C914DDA001E383D /* XZGPUImageViewController.m */,
 				E937F1E11C914F92001E383D /* XZGPUImagePhotoViewController.h */,
 				E937F1E21C914F92001E383D /* XZGPUImagePhotoViewController.m */,
+				E937F1DE1C914DDA001E383D /* XZGPUImageViewController.h */,
+				E937F1DF1C914DDA001E383D /* XZGPUImageViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		E938216E1C59E873004F7EC4 /* PhotoAlbum */ = {
@@ -1498,7 +1498,6 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E937F1DC1C914D80001E383D /* GPUImage */,
 				E92411831C6F5B870009A8EA /* AVFoundation */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E9B9BDA01C66E93000C45040 /* BezierPath */,
@@ -1512,6 +1511,7 @@
 				E9ED31C21C642E1000DCDFD0 /* CoreAnimation */,
 				E9ED31D41C646E5300DCDFD0 /* EventsThrough */,
 				E9028A951C7BFD35000F5693 /* GIF */,
+				E937F1DC1C914D80001E383D /* GPUImage */,
 				E9DF7B131C8E5DC900C418AD /* GesturesPassword */,
 				E9F660561C8C041100023486 /* GraphicsTransform */,
 				E9ED31E61C64782C00DCDFD0 /* GuideView */,
@@ -2331,14 +2331,14 @@
 			children = (
 				E936AECF1C8DB4F3001BB6ED /* XZBlendModeView.h */,
 				E936AED01C8DB4F3001BB6ED /* XZBlendModeView.m */,
+				E94B043F1C8EFFF700E6857B /* XZGradientView.h */,
+				E94B04401C8EFFF700E6857B /* XZGradientView.m */,
 				E9F6605C1C8C047E00023486 /* XZGraphicsTransformView.h */,
 				E9F6605D1C8C047E00023486 /* XZGraphicsTransformView.m */,
 				E936AECC1C8DAEEE001BB6ED /* XZMatrixTransformView.h */,
 				E936AECD1C8DAEEE001BB6ED /* XZMatrixTransformView.m */,
 				E9F6605F1C8C3FDC00023486 /* XZSnowView.h */,
 				E9F660601C8C3FDC00023486 /* XZSnowView.m */,
-				E94B043F1C8EFFF700E6857B /* XZGradientView.h */,
-				E94B04401C8EFFF700E6857B /* XZGradientView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2482,12 +2482,12 @@
 		E9FF2EF91C8861A5004B7CBE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9F918DA1C900C99006F1246 /* XZNumberLockView.h */,
-				E9F918DB1C900C99006F1246 /* XZNumberLockView.m */,
-				E9F918DD1C900E2D006F1246 /* XZNumberInfoView.h */,
-				E9F918DE1C900E2D006F1246 /* XZNumberInfoView.m */,
 				E9F918E01C901178006F1246 /* XZNumberCircle.h */,
 				E9F918E11C901178006F1246 /* XZNumberCircle.m */,
+				E9F918DD1C900E2D006F1246 /* XZNumberInfoView.h */,
+				E9F918DE1C900E2D006F1246 /* XZNumberInfoView.m */,
+				E9F918DA1C900C99006F1246 /* XZNumberLockView.h */,
+				E9F918DB1C900C99006F1246 /* XZNumberLockView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
