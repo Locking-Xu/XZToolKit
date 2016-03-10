@@ -36,6 +36,7 @@
 #import "XZGraphicsTransformViewController.h"
 #import "XZGesturesPasswordViewController.h"
 #import "XZNumberLockViewController.h"
+#import "XZGPUImageViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -365,10 +366,18 @@
             //数字密码
             case 23:
             {
-//                XZNumberLockViewController *numberLockVc = [[XZNumberLockViewController alloc] init];
-//                numberLockVc.title = _demoList[indexPath.row];
-//                [self.navigationController pushViewController:numberLockVc animated:YES];
-                  
+                XZNumberLockViewController *numberLockVc = [[XZNumberLockViewController alloc] init];
+                numberLockVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:numberLockVc animated:YES];
+                
+            }
+                break;
+            //GPUImage
+            case 24:
+            {
+                XZGPUImageViewController *gpuImageVc = [[XZGPUImageViewController alloc] init];
+                gpuImageVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:gpuImageVc animated:YES];
             }
                 break;
             default:

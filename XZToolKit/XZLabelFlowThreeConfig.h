@@ -37,9 +37,6 @@ typedef NS_ENUM(NSInteger,LineType){
 @property (nonatomic, strong) UIColor *itemBorderColor;
 /** 标签的背景色*/
 @property (nonatomic, strong) UIColor *itemBackgroundColor;
-
-
-
 /** 行间距*/
 @property (nonatomic, assign) CGFloat lineSpace;
 

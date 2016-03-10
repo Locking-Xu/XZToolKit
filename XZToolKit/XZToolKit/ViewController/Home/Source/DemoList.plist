@@ -26,5 +26,6 @@
 	<string>图形变换</string>
 	<string>手势密码</string>
 	<string>数字密码</string>
+	<string>GPUImage</string>
 </array>
 </plist>

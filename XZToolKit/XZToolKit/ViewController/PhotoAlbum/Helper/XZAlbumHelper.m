@@ -10,18 +10,6 @@
 #import "XZUtils.h"
 #import "NSString+Format.h"
 
-//拍照
-
-//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-//        AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-//        if (authStatus == AVAuthorizationStatusDenied) {//AVAuthorizationStatusDenied
-//            RCSUIAlertView* alertView=[[RCSUIAlertView alloc] initWithTitle:NSInternational(@"General_AccessFailed") message:NSInternational(@"general_camerapemission") callBack:Nil cancelButtonTitle:NSInternational(@"General_Ok") otherButtonTitles:Nil];
-//            [alertView show];
-//            [alertView release];
-//            return;
-//        }
-//    }
-
 
 @interface XZAlbumHelper ()
 
@@ -53,7 +41,7 @@
 
 #pragma mark - About Authorization
 /**
- *  获取献策权限
+ *  获取相册权限
  *
  *  @return YES:获得权限 NO:未获得权限
  */
@@ -122,7 +110,6 @@
         fail(@"相册没有授权");
         
     }else if (status == ALAuthorizationStatusNotDetermined){
-        
         fail(@"请去设置中心授权");
         
     }else if (status == ALAuthorizationStatusAuthorized){

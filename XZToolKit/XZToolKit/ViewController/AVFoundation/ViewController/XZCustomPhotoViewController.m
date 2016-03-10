@@ -511,6 +511,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
         
         _containerView = ({
             UIView *view = [[UIView alloc] init];
+            
             [self.view addSubview:view];
             
             [view mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -522,6 +523,7 @@ typedef void(^ProPertyChangeBlock)(AVCaptureDevice *captureDevice);
             }];
             view;
         });
+        
     }
     return _containerView;
 }
