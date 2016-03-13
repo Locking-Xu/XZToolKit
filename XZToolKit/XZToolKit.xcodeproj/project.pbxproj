@@ -68,6 +68,9 @@
 		E92411821C6F4FD20009A8EA /* TabBarControllerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92411811C6F4FD20009A8EA /* TabBarControllerList.plist */; };
 		E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92411881C6F5C200009A8EA /* XZAVFoundationViewController.m */; };
 		E924118C1C6F678E0009A8EA /* 音效.txt in Resources */ = {isa = PBXBuildFile; fileRef = E924118B1C6F678E0009A8EA /* 音效.txt */; };
+		E92428731C9425A7002F59DA /* NavigationBar背景透明.txt in Resources */ = {isa = PBXBuildFile; fileRef = E92428711C9425A7002F59DA /* NavigationBar背景透明.txt */; };
+		E92428741C9425A7002F59DA /* NavigationBar隐藏底部黑线.txt in Resources */ = {isa = PBXBuildFile; fileRef = E92428721C9425A7002F59DA /* NavigationBar隐藏底部黑线.txt */; };
+		E92428831C943D12002F59DA /* XZTableViewHeadTensileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92428821C943D12002F59DA /* XZTableViewHeadTensileViewController.m */; };
 		E9318B651C51E9380039D357 /* XZTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9318B641C51E9380039D357 /* XZTipView.m */; };
 		E932F8881C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F8871C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.m */; };
 		E932F88C1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E932F88B1C8FBF3700ABE7E2 /* XZLabelFlowThreeView.m */; };
@@ -94,6 +97,8 @@
 		E93821A91C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m in Sources */ = {isa = PBXBuildFile; fileRef = E93821A81C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m */; };
 		E93821AB1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt in Resources */ = {isa = PBXBuildFile; fileRef = E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */; };
 		E93821AD1C5A1709004F7EC4 /* TableView索引.txt in Resources */ = {isa = PBXBuildFile; fileRef = E93821AC1C5A1709004F7EC4 /* TableView索引.txt */; };
+		E938683E1C9267580045C6E2 /* XZGPUImageVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E938683D1C9267580045C6E2 /* XZGPUImageVideoViewController.m */; };
+		E93FD8051C95114400E3DE8E /* XZNavigationBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E93FD8041C95114400E3DE8E /* XZNavigationBackButton.m */; };
 		E94B04411C8EFFF700E6857B /* XZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B04401C8EFFF700E6857B /* XZGradientView.m */; };
 		E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */; };
 		E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */; };
@@ -386,6 +391,10 @@
 		E92411871C6F5C200009A8EA /* XZAVFoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAVFoundationViewController.h; sourceTree = "<group>"; };
 		E92411881C6F5C200009A8EA /* XZAVFoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAVFoundationViewController.m; sourceTree = "<group>"; };
 		E924118B1C6F678E0009A8EA /* 音效.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "音效.txt"; sourceTree = "<group>"; };
+		E92428711C9425A7002F59DA /* NavigationBar背景透明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NavigationBar背景透明.txt"; sourceTree = "<group>"; };
+		E92428721C9425A7002F59DA /* NavigationBar隐藏底部黑线.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NavigationBar隐藏底部黑线.txt"; sourceTree = "<group>"; };
+		E92428811C943D12002F59DA /* XZTableViewHeadTensileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTableViewHeadTensileViewController.h; sourceTree = "<group>"; };
+		E92428821C943D12002F59DA /* XZTableViewHeadTensileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTableViewHeadTensileViewController.m; sourceTree = "<group>"; };
 		E9318B631C51E9380039D357 /* XZTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTipView.h; sourceTree = "<group>"; };
 		E9318B641C51E9380039D357 /* XZTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTipView.m; sourceTree = "<group>"; };
 		E932F8861C8FBE5D00ABE7E2 /* XZLabelFlowThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLabelFlowThreeViewController.h; sourceTree = "<group>"; };
@@ -430,6 +439,10 @@
 		E93821A81C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionLayoutStyleThree.m; sourceTree = "<group>"; };
 		E93821AA1C5A15C1004F7EC4 /* TableView不显示多余Cell.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView不显示多余Cell.txt"; sourceTree = "<group>"; };
 		E93821AC1C5A1709004F7EC4 /* TableView索引.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TableView索引.txt"; sourceTree = "<group>"; };
+		E938683C1C9267580045C6E2 /* XZGPUImageVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageVideoViewController.h; sourceTree = "<group>"; };
+		E938683D1C9267580045C6E2 /* XZGPUImageVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageVideoViewController.m; sourceTree = "<group>"; };
+		E93FD8031C95114400E3DE8E /* XZNavigationBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNavigationBackButton.h; sourceTree = "<group>"; };
+		E93FD8041C95114400E3DE8E /* XZNavigationBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNavigationBackButton.m; sourceTree = "<group>"; };
 		E94B043F1C8EFFF700E6857B /* XZGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGradientView.h; sourceTree = "<group>"; };
 		E94B04401C8EFFF700E6857B /* XZGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGradientView.m; sourceTree = "<group>"; };
 		E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ViewController的生命周期.txt"; sourceTree = "<group>"; };
@@ -1022,6 +1035,24 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		E92428751C94297E002F59DA /* TableViewHeadTensile */ = {
+			isa = PBXGroup;
+			children = (
+				E93FD8021C95111800E3DE8E /* View */,
+				E92428761C9429A3002F59DA /* ViewController */,
+			);
+			name = TableViewHeadTensile;
+			sourceTree = "<group>";
+		};
+		E92428761C9429A3002F59DA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E92428811C943D12002F59DA /* XZTableViewHeadTensileViewController.h */,
+				E92428821C943D12002F59DA /* XZTableViewHeadTensileViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		E932F8851C8FBE0B00ABE7E2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1071,6 +1102,8 @@
 			children = (
 				E937F1E11C914F92001E383D /* XZGPUImagePhotoViewController.h */,
 				E937F1E21C914F92001E383D /* XZGPUImagePhotoViewController.m */,
+				E938683C1C9267580045C6E2 /* XZGPUImageVideoViewController.h */,
+				E938683D1C9267580045C6E2 /* XZGPUImageVideoViewController.m */,
 				E937F1DE1C914DDA001E383D /* XZGPUImageViewController.h */,
 				E937F1DF1C914DDA001E383D /* XZGPUImageViewController.m */,
 			);
@@ -1159,6 +1192,15 @@
 				E938219C1C5A0B3F004F7EC4 /* XZCollectionDemoCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		E93FD8021C95111800E3DE8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E93FD8031C95114400E3DE8E /* XZNavigationBackButton.h */,
+				E93FD8041C95114400E3DE8E /* XZNavigationBackButton.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		E9522C741C58C6D900A896FF /* Layout */ = {
@@ -1498,6 +1540,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E92428751C94297E002F59DA /* TableViewHeadTensile */,
 				E92411831C6F5B870009A8EA /* AVFoundation */,
 				E920DE311C50795800F08A9C /* AddressBook */,
 				E9B9BDA01C66E93000C45040 /* BezierPath */,
@@ -1664,6 +1707,8 @@
 		E9B9BD911C66E78800C45040 /* NavigationControllerKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E92428711C9425A7002F59DA /* NavigationBar背景透明.txt */,
+				E92428721C9425A7002F59DA /* NavigationBar隐藏底部黑线.txt */,
 				E9B9BD921C66E7AD00C45040 /* UINavigationBar设置标题.txt */,
 				E9B9BD981C66E7AD00C45040 /* UINavigationBar设置背景图.txt */,
 				E9B9BD971C66E7AD00C45040 /* UINavigationBar设置背景色.txt */,
@@ -2629,6 +2674,7 @@
 				E9ED31F31C64791200DCDFD0 /* img_index_01txt.png in Resources */,
 				E99E32531C4F1E350016D25D /* XZHomeViewController.xib in Resources */,
 				E93821741C59E8B3004F7EC4 /* XZPhotoAlbumViewController.xib in Resources */,
+				E92428741C9425A7002F59DA /* NavigationBar隐藏底部黑线.txt in Resources */,
 				E9B1B26D1C62289A00B7AADB /* 判断指针变量的实际类型.txt in Resources */,
 				E960C8721C6380EE002BB94A /* UIVisualEffectView.txt in Resources */,
 				E92411761C6F47390009A8EA /* DemoList.plist in Resources */,
@@ -2673,6 +2719,7 @@
 				E9F0E8571C61A8A400268CE2 /* ALAssetRepresentation.txt in Resources */,
 				E908D0C71C61E1CD00F95A8F /* ALAssetsFilter.txt in Resources */,
 				E93821AD1C5A1709004F7EC4 /* TableView索引.txt in Resources */,
+				E92428731C9425A7002F59DA /* NavigationBar背景透明.txt in Resources */,
 				E9036A101C62F46200384199 /* PhotosTypes.txt in Resources */,
 				E9ED320B1C647CCA00DCDFD0 /* fist.png in Resources */,
 				E938218C1C59F167004F7EC4 /* 4.png in Resources */,
@@ -2765,6 +2812,7 @@
 				E9D261AD1C8854730083D23F /* UIView+Clip.m in Sources */,
 				E93821A91C5A0FF8004F7EC4 /* XZCollectionLayoutStyleThree.m in Sources */,
 				E9774D581C7FFC5200F4A0A9 /* XZBlogCell.m in Sources */,
+				E92428831C943D12002F59DA /* XZTableViewHeadTensileViewController.m in Sources */,
 				E99E324E1C4F1E350016D25D /* XZGlyphsHelper.m in Sources */,
 				E9C0D3DF1C7F2DF60003528C /* XZQuartz2DPathView.m in Sources */,
 				E97344C31C8056C8005E453D /* XZAPIHelper.m in Sources */,
@@ -2811,6 +2859,7 @@
 				E92411891C6F5C200009A8EA /* XZAVFoundationViewController.m in Sources */,
 				E9AF80F11C887B4C00962FD0 /* XZQuartz2DPolygonView.m in Sources */,
 				E99E32641C4F81790016D25D /* XZScrollView.m in Sources */,
+				E938683E1C9267580045C6E2 /* XZGPUImageVideoViewController.m in Sources */,
 				E99E326B1C4F83CB0016D25D /* XZTelephoneHelper.m in Sources */,
 				E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */,
 				E99E32521C4F1E350016D25D /* XZHomeViewController.m in Sources */,
@@ -2895,6 +2944,7 @@
 				E9028AA51C7C3C3B000F5693 /* XZGenerateGifHelper.m in Sources */,
 				E99E324D1C4F1E350016D25D /* XZCalendarCell.m in Sources */,
 				E9D461F11C7B32620011C6F4 /* XZQuartz2DViewController.m in Sources */,
+				E93FD8051C95114400E3DE8E /* XZNavigationBackButton.m in Sources */,
 				E9BC74301C6056320033BF4D /* XZCollectionViewLayoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -37,6 +37,8 @@
 #import "XZGesturesPasswordViewController.h"
 #import "XZNumberLockViewController.h"
 #import "XZGPUImageViewController.h"
+#import "XZTableViewHeadTensileViewController.h"
+#import "UIImage+Color.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -378,6 +380,17 @@
                 XZGPUImageViewController *gpuImageVc = [[XZGPUImageViewController alloc] init];
                 gpuImageVc.title = _demoList[indexPath.row];
                 [self.navigationController pushViewController:gpuImageVc animated:YES];
+            }
+                break;
+            //TableView头部拉伸
+            case 25:
+            {
+                XZTableViewHeadTensileViewController *tableViewHeadTensileVc = [[XZTableViewHeadTensileViewController alloc] init];
+                tableViewHeadTensileVc.title = _demoList[indexPath.row];
+                
+                
+                [self.navigationController pushViewController:tableViewHeadTensileVc animated:YES];
+                [self.navigationController setNavigationBarHidden:YES animated:YES];
             }
                 break;
             default:

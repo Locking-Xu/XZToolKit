@@ -58,6 +58,23 @@
         
         CGFloat width = size.width + 2*_config.itemTextSpace;
         
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(last_X, 0, width, _config.itemHeigth)];
+        button.tag = index;
+        [button addTarget:self action:@selector(tagBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
+        button.backgroundColor = _config.itemBackgroundColor;
+        [button setTitle:title forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont systemFontOfSize:_config.itemTextFont];
+        [button setTitleColor:_config.itemTextColor forState:UIControlStateNormal];
+        if (_config.itemRadius > 0.0f) {
+            button.layer.cornerRadius = _config.itemRadius;
+            button.layer.masksToBounds = YES;
+        }
+        if (_config.itemBorderWidth > 0.0f) {
+            button.layer.borderColor = _config.itemBorderColor.CGColor;
+            button.layer.borderWidth = _config.itemBorderWidth;
+        }
+        [self addSubview:button];
+
         
         last_X += width + _config.itemSpace;
     }

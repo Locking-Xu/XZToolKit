@@ -21,8 +21,8 @@
     
     NSParameterAssert(color != nil);
     
-    CGRect rect = CGRectMake(0, 0, 320, 44);
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGRect rect = CGRectMake(0, 0, 1, 1);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, [UIScreen mainScreen].scale);
     [color setFill];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

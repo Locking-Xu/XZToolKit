@@ -1,0 +1,6 @@
+
+准备一张透明的图片
+
+[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"1"] forBarMetrics:UIBarMetricsDefault];
+
+self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;

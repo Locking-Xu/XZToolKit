@@ -1,2 +1,4 @@
 
-[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"1"] forBarMetrics:UIBarMetricsDefault]
+在需要隐藏返回键的界面设置：
+
+self.navigationItem.hidesBackButton = NO;

@@ -9,6 +9,7 @@
 #import "XZGPUImageViewController.h"
 #import "UINavigationController+Common.h"
 #import "XZGPUImagePhotoViewController.h"
+#import "XZGPUImageVideoViewController.h"
 
 @interface XZGPUImageViewController (){
 
@@ -63,6 +64,11 @@
         }
             break;
         case 1:
+        {
+            XZGPUImageVideoViewController *gpuImageVideoVc = [[XZGPUImageVideoViewController alloc] init];
+            gpuImageVideoVc.title = _titleArray[indexPath.row];
+            [self.navigationController pushViewController:gpuImageVideoVc animated:YES];
+        }
             break;
         default:
             break;
