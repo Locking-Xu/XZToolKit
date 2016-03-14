@@ -39,6 +39,7 @@
 #import "XZGPUImageViewController.h"
 #import "XZTableViewHeadTensileViewController.h"
 #import "UIImage+Color.h"
+#import "XZMutableAttributeStringViewController.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -391,6 +392,14 @@
                 
                 [self.navigationController pushViewController:tableViewHeadTensileVc animated:YES];
                 [self.navigationController setNavigationBarHidden:YES animated:YES];
+            }
+                break;
+            //富文本
+            case 26:
+            {
+                XZMutableAttributeStringViewController *mutableAttributeString = [[XZMutableAttributeStringViewController alloc] init];
+                mutableAttributeString.title = @"富文本";
+                [self.navigationController pushViewController:mutableAttributeString animated:YES];
             }
                 break;
             default:

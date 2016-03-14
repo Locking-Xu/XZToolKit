@@ -46,7 +46,7 @@
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, 200.0f)];
     self.imageView.image = [UIImage imageNamed:@"2"];
     
-    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, 200.0f)];
+    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, 300.0f)];
     
     [self.tableView.tableHeaderView addSubview:self.imageView];
     [self.view insertSubview:self.tableView belowSubview:self.headView];
