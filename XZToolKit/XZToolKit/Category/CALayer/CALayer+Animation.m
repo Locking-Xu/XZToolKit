@@ -39,4 +39,24 @@
     animation.removedOnCompletion = YES;
     [self addAnimation:animation forKey:@"shake"];
 }
+/**
+ *  位移
+ *
+ *  @param value1    其实位置
+ *  @param value2    终点为之
+ *  @param direction 持续时间
+ */
+- (void)positionFrom:(CGFloat)value1 to:(CGFloat)value2 direction:(CGFloat)direction{
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position.x"];
+    animation.fromValue = [NSNumber numberWithFloat:value1];
+    animation.toValue = [NSNumber numberWithFloat:value2];
+    animation.duration = direction;
+    animation.delegate = self;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.timingFunction =[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    [self addAnimation:animation forKey:@"position"];
+}
+
 @end

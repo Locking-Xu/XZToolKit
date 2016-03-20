@@ -10,6 +10,9 @@
 #import "UINavigationController+Common.h"
 #import "XZGPUImagePhotoViewController.h"
 #import "XZGPUImageVideoViewController.h"
+#import "XZGPUImageImageViewController.h"
+#import "XZGPUImageFilterOverlayViewController.h"
+#import "XZGPUImageMovieViewController.h"
 
 @interface XZGPUImageViewController (){
 
@@ -24,7 +27,7 @@
     [self.navigationController setBackItemTitle:@"" viewController:self];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    _titleArray = @[@"滤镜拍照",@"滤镜摄像"];
+    _titleArray = @[@"滤镜拍照",@"滤镜摄像",@"图片渲染",@"滤镜叠加",@"视屏渲染"];
     self.tableView.tableFooterView = [UIView new];
     
 }
@@ -68,6 +71,27 @@
             XZGPUImageVideoViewController *gpuImageVideoVc = [[XZGPUImageVideoViewController alloc] init];
             gpuImageVideoVc.title = _titleArray[indexPath.row];
             [self.navigationController pushViewController:gpuImageVideoVc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            XZGPUImageImageViewController *gpuImageImageVc = [[XZGPUImageImageViewController alloc] init];
+            gpuImageImageVc.title = _titleArray[indexPath.row];
+            [self.navigationController pushViewController:gpuImageImageVc animated:YES];
+        }
+            break;
+        case 3:
+        {
+            XZGPUImageFilterOverlayViewController *gpuImageFilterOverlayVc = [[XZGPUImageFilterOverlayViewController alloc] init];
+            gpuImageFilterOverlayVc.title = _titleArray[indexPath.row];
+            [self.navigationController pushViewController:gpuImageFilterOverlayVc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            XZGPUImageMovieViewController *gpuImageMoviewVc = [[XZGPUImageMovieViewController alloc] init];
+            gpuImageMoviewVc.title = _titleArray[indexPath.row];
+            [self.navigationController pushViewController:gpuImageMoviewVc animated:YES];
         }
             break;
         default:

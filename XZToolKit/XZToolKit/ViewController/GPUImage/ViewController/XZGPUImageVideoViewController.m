@@ -13,8 +13,8 @@
 @interface XZGPUImageVideoViewController ()
 /** 拍摄按钮*/
 @property (nonatomic, strong) UIButton *takeBtn;
-@property (nonatomic, strong) UIButton *finishBtn;
-@property (nonatomic, strong) UIButton *cancelBtn;
+/** 暂停按钮*/
+@property (nonatomic, strong) UIButton *pauseBtn;
 
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) GPUImageOutput<GPUImageInput> *filter;
@@ -30,6 +30,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.takeBtn.backgroundColor = [UIColor blueColor];
+    self.pauseBtn.backgroundColor = [UIColor redColor];
     self.slider.value = 0.0f;
     [self.videoCamera startCameraCapture];
     // Do any additional setup after loading the view.
@@ -70,16 +71,35 @@
         
         _takeBtn = [[UIButton alloc] init];
         [_takeBtn setTitle:@"拍摄" forState:UIControlStateNormal];
+        [_takeBtn addTarget:self action:@selector(takeBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_takeBtn];
         [_takeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
            
             make.left.equalTo(weakself.view);
-            make.right.equalTo(weakself.view);
+            make.width.equalTo(weakself.view).multipliedBy(0.5);
             make.height.mas_equalTo(@30);
             make.bottom.equalTo(weakself.view);
         }];
     }
     return _takeBtn;
+}
+
+- (UIButton *)pauseBtn{
+    WS(weakself);
+    if (!_pauseBtn) {
+        _pauseBtn = [[UIButton alloc] init];
+        [_pauseBtn addTarget:self action:@selector(pauseBtn_Pressed:) forControlEvents:UIControlEventTouchUpInside];
+        [_pauseBtn setTitle:@"暂停" forState:UIControlStateNormal];
+        [self.view addSubview:_pauseBtn];
+        [_pauseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.top.equalTo(weakself.takeBtn);
+            make.bottom.equalTo(weakself.takeBtn);
+            make.left.equalTo(weakself.takeBtn.mas_right);
+            make.right.equalTo(weakself.view);
+        }];
+    }
+    return _pauseBtn;
 }
 
 - (GPUImageView *)filterView{
@@ -103,7 +123,12 @@
     
     if (!_movieWrite) {
         NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Movie.m4v"];
-        unlink([pathToMovie UTF8String]); // If a file already exists, AVAssetWriter won't let you record new frames, so delete the old movie
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:pathToMovie]) {
+            [[NSFileManager defaultManager] removeItemAtPath:pathToMovie error:nil];
+        }
+        
+        //unlink([pathToMovie UTF8String]); // If a file already exists, AVAssetWriter won't let you record new frames, so delete the old movie
         NSURL *movieURL = [NSURL fileURLWithPath:pathToMovie];
         _movieWrite = [[GPUImageMovieWriter alloc] initWithMovieURL:movieURL size:CGSizeMake(320, 320)];
         _movieWrite.encodingLiveVideo = YES;
@@ -147,10 +172,41 @@
 
 - (void)takeBtn_Pressed:(UIButton *)sender{
     
-    [self.videoCamera stopCameraCapture];
+    sender.selected = !sender.selected;
     
-//    self.videoCamera.audioEncodingTarget = self.movieWrite;
-//    [self.movieWrite startRecording];
+    if (sender.selected) {
+        
+        [sender setTitle:@"完成" forState:UIControlStateNormal];
+        self.videoCamera.audioEncodingTarget = self.movieWrite;
+        [self.movieWrite startRecording];
+        
+    }else{
+        
+        [sender setTitle:@"拍摄" forState:UIControlStateNormal];
+        [self.movieWrite finishRecording];
+        
+    }
+}
+
+- (void)pauseBtn_Pressed:(UIButton *)sender{
     
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+    
+        [sender setTitle:@"继续" forState:UIControlStateNormal];
+        [self.videoCamera pauseCameraCapture];
+    }else{
+        [sender setTitle:@"暂停" forState:UIControlStateNormal];
+        [self.videoCamera resumeCameraCapture];
+    }
+}
+
+#pragma mark - GPUImageMovieWriter_Delegate
+- (void)movieRecordingCompleted{
+    
+    NSLog(@"录制成功");
+}
+- (void)movieRecordingFailedWithError:(NSError*)error{
+    NSLog(@"录制失败");
 }
 @end

@@ -40,6 +40,8 @@
 #import "XZTableViewHeadTensileViewController.h"
 #import "UIImage+Color.h"
 #import "XZMutableAttributeStringViewController.h"
+#import "XZKeyBoardViewController.h"
+
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
@@ -400,6 +402,14 @@
                 XZMutableAttributeStringViewController *mutableAttributeString = [[XZMutableAttributeStringViewController alloc] init];
                 mutableAttributeString.title = @"富文本";
                 [self.navigationController pushViewController:mutableAttributeString animated:YES];
+            }
+                break;
+            //自定义键盘
+            case 27:
+            {
+                XZKeyBoardViewController *keyBoardVc = [[XZKeyBoardViewController alloc] init];
+                keyBoardVc.title = _demoList[indexPath.row];
+                [self.navigationController pushViewController:keyBoardVc animated:YES];
             }
                 break;
             default:

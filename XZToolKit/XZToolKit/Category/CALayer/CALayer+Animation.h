@@ -21,5 +21,12 @@ typedef NS_ENUM(NSUInteger, Direction){
  *  @param direction 方向
  */
 - (void)shakeWithDirection:(Direction)direction;
-
+/**
+ *  位移
+ *
+ *  @param value1    其实位置
+ *  @param value2    终点为之
+ *  @param direction 持续时间
+ */
+- (void)positionFrom:(CGFloat)value1 to:(CGFloat)value2 direction:(CGFloat)direction;
 @end

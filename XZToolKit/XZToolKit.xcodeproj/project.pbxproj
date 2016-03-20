@@ -28,6 +28,8 @@
 		E9036A241C63027600384199 /* XZAlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9036A231C63027600384199 /* XZAlbumListController.m */; };
 		E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9036A261C633AC500384199 /* XZAlbumCell.m */; };
 		E9036A291C633AC500384199 /* XZAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9036A271C633AC500384199 /* XZAlbumCell.xib */; };
+		E906ABE11C9AD5FE00A73881 /* XZEmojiCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E906ABE01C9AD5FE00A73881 /* XZEmojiCollectionView.m */; };
+		E906ABE41C9ADEDF00A73881 /* XZEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = E906ABE31C9ADEDF00A73881 /* XZEmojiView.m */; };
 		E907A4791C75AD4F00BFA698 /* XZRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */; };
 		E907A47A1C75AD4F00BFA698 /* XZRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */; };
 		E907A47D1C75BEF600BFA698 /* XZMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E907A47C1C75BEF600BFA698 /* XZMovieViewController.m */; };
@@ -100,6 +102,8 @@
 		E938683E1C9267580045C6E2 /* XZGPUImageVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E938683D1C9267580045C6E2 /* XZGPUImageVideoViewController.m */; };
 		E93FD8051C95114400E3DE8E /* XZNavigationBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E93FD8041C95114400E3DE8E /* XZNavigationBackButton.m */; };
 		E94B04411C8EFFF700E6857B /* XZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94B04401C8EFFF700E6857B /* XZGradientView.m */; };
+		E951E6911C97A92E008A798F /* XZGPUImageImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E951E6901C97A92E008A798F /* XZGPUImageImageViewController.m */; };
+		E951E6941C97B6AE008A798F /* XZGPUImageFilterOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E951E6931C97B6AE008A798F /* XZGPUImageFilterOverlayViewController.m */; };
 		E9543EF01C5EF417006D7BEF /* ViewController的生命周期.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */; };
 		E9543EF21C5F0BC9006D7BEF /* Objective-C中关键字.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */; };
 		E9543EF41C5F0C73006D7BEF /* 单例创建.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9543EF31C5F0C73006D7BEF /* 单例创建.txt */; };
@@ -171,6 +175,8 @@
 		E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */; };
 		E9A4D05E1C59000C003B8855 /* XZImageBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */; };
 		E9A4D0611C5905B3003B8855 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E9A4D05F1C59058F003B8855 /* libReveal.dylib */; };
+		E9A9F7861C9E563E00AD9FA5 /* XZEmojiSectionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9F7851C9E563E00AD9FA5 /* XZEmojiSectionScrollView.m */; };
+		E9A9F7891C9E820200AD9FA5 /* XZEmojiPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9F7881C9E820200AD9FA5 /* XZEmojiPreview.m */; };
 		E9AF80F11C887B4C00962FD0 /* XZQuartz2DPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AF80F01C887B4C00962FD0 /* XZQuartz2DPolygonView.m */; };
 		E9AF80F41C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AF80F31C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m */; };
 		E9B1B2651C621F6400B7AADB /* 形参个数可变方法.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9B1B2641C621F6400B7AADB /* 形参个数可变方法.txt */; };
@@ -203,6 +209,11 @@
 		E9C0D3D91C7F298B0003528C /* XZQuartz2DShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0D3D81C7F298B0003528C /* XZQuartz2DShadowView.m */; };
 		E9C0D3DC1C7F2DDB0003528C /* XZQuartz2DPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0D3DB1C7F2DDB0003528C /* XZQuartz2DPathViewController.m */; };
 		E9C0D3DF1C7F2DF60003528C /* XZQuartz2DPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0D3DE1C7F2DF60003528C /* XZQuartz2DPathView.m */; };
+		E9C81E901C99837D00D10AC9 /* XZKeyBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C81E8F1C99837D00D10AC9 /* XZKeyBoardViewController.m */; };
+		E9C81E931C99843F00D10AC9 /* XZInputBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C81E921C99843F00D10AC9 /* XZInputBarView.m */; };
+		E9C81E971C99984800D10AC9 /* XZEmojiKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C81E961C99984800D10AC9 /* XZEmojiKeyBoard.m */; };
+		E9C81E9C1C99995100D10AC9 /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = E9C81E9B1C99995100D10AC9 /* emoji.json */; };
+		E9C81EA31C99A38F00D10AC9 /* XZEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C81EA21C99A38F00D10AC9 /* XZEmoji.m */; };
 		E9C8B41F1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */; };
 		E9C8B4221C7C8754003690A4 /* XZQuartz2DDashView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8B4211C7C8754003690A4 /* XZQuartz2DDashView.m */; };
 		E9D261AD1C8854730083D23F /* UIView+Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D261AC1C8854730083D23F /* UIView+Clip.m */; };
@@ -273,6 +284,7 @@
 		E9F6605A1C8C046300023486 /* XZGraphicsTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F660591C8C046300023486 /* XZGraphicsTransformViewController.m */; };
 		E9F6605E1C8C047E00023486 /* XZGraphicsTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F6605D1C8C047E00023486 /* XZGraphicsTransformView.m */; };
 		E9F660611C8C3FDC00023486 /* XZSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F660601C8C3FDC00023486 /* XZSnowView.m */; };
+		E9F66E801C983AB100D5D5AE /* XZGPUImageMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F66E7F1C983AB100D5D5AE /* XZGPUImageMovieViewController.m */; };
 		E9F705FA1C76BF1600708F5C /* XZImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */; };
 		E9F706071C76F8C900708F5C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F706061C76F8C900708F5C /* AudioToolbox.framework */; };
 		E9F706091C76F9CB00708F5C /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = E9F706081C76F9CB00708F5C /* videoRing.caf */; };
@@ -336,6 +348,10 @@
 		E9036A251C633AC500384199 /* XZAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAlbumCell.h; sourceTree = "<group>"; };
 		E9036A261C633AC500384199 /* XZAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAlbumCell.m; sourceTree = "<group>"; };
 		E9036A271C633AC500384199 /* XZAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZAlbumCell.xib; sourceTree = "<group>"; };
+		E906ABDF1C9AD5FE00A73881 /* XZEmojiCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEmojiCollectionView.h; sourceTree = "<group>"; };
+		E906ABE01C9AD5FE00A73881 /* XZEmojiCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEmojiCollectionView.m; sourceTree = "<group>"; };
+		E906ABE21C9ADEDF00A73881 /* XZEmojiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEmojiView.h; sourceTree = "<group>"; };
+		E906ABE31C9ADEDF00A73881 /* XZEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEmojiView.m; sourceTree = "<group>"; };
 		E907A4761C75AD4F00BFA698 /* XZRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecorderViewController.h; sourceTree = "<group>"; };
 		E907A4771C75AD4F00BFA698 /* XZRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecorderViewController.m; sourceTree = "<group>"; };
 		E907A4781C75AD4F00BFA698 /* XZRecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecorderViewController.xib; sourceTree = "<group>"; };
@@ -447,6 +463,10 @@
 		E93FD8041C95114400E3DE8E /* XZNavigationBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNavigationBackButton.m; sourceTree = "<group>"; };
 		E94B043F1C8EFFF700E6857B /* XZGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGradientView.h; sourceTree = "<group>"; };
 		E94B04401C8EFFF700E6857B /* XZGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGradientView.m; sourceTree = "<group>"; };
+		E951E68F1C97A92E008A798F /* XZGPUImageImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageImageViewController.h; sourceTree = "<group>"; };
+		E951E6901C97A92E008A798F /* XZGPUImageImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageImageViewController.m; sourceTree = "<group>"; };
+		E951E6921C97B6AE008A798F /* XZGPUImageFilterOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageFilterOverlayViewController.h; sourceTree = "<group>"; };
+		E951E6931C97B6AE008A798F /* XZGPUImageFilterOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageFilterOverlayViewController.m; sourceTree = "<group>"; };
 		E9543EEF1C5EF417006D7BEF /* ViewController的生命周期.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ViewController的生命周期.txt"; sourceTree = "<group>"; };
 		E9543EF11C5F0BC9006D7BEF /* Objective-C中关键字.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objective-C中关键字.txt"; sourceTree = "<group>"; };
 		E9543EF31C5F0C73006D7BEF /* 单例创建.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "单例创建.txt"; sourceTree = "<group>"; };
@@ -557,6 +577,10 @@
 		E9A4D05B1C59000C003B8855 /* XZImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImageBrowserCell.m; sourceTree = "<group>"; };
 		E9A4D05C1C59000C003B8855 /* XZImageBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZImageBrowserCell.xib; sourceTree = "<group>"; };
 		E9A4D05F1C59058F003B8855 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
+		E9A9F7841C9E563E00AD9FA5 /* XZEmojiSectionScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEmojiSectionScrollView.h; sourceTree = "<group>"; };
+		E9A9F7851C9E563E00AD9FA5 /* XZEmojiSectionScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEmojiSectionScrollView.m; sourceTree = "<group>"; };
+		E9A9F7871C9E820200AD9FA5 /* XZEmojiPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEmojiPreview.h; sourceTree = "<group>"; };
+		E9A9F7881C9E820200AD9FA5 /* XZEmojiPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEmojiPreview.m; sourceTree = "<group>"; };
 		E9AF80EF1C887B4C00962FD0 /* XZQuartz2DPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DPolygonView.h; sourceTree = "<group>"; };
 		E9AF80F01C887B4C00962FD0 /* XZQuartz2DPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DPolygonView.m; sourceTree = "<group>"; };
 		E9AF80F21C887B8A00962FD0 /* XZQuartz2DPolygonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DPolygonViewController.h; sourceTree = "<group>"; };
@@ -599,6 +623,15 @@
 		E9C0D3DB1C7F2DDB0003528C /* XZQuartz2DPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DPathViewController.m; sourceTree = "<group>"; };
 		E9C0D3DD1C7F2DF60003528C /* XZQuartz2DPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DPathView.h; sourceTree = "<group>"; };
 		E9C0D3DE1C7F2DF60003528C /* XZQuartz2DPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DPathView.m; sourceTree = "<group>"; };
+		E9C81E8E1C99837D00D10AC9 /* XZKeyBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZKeyBoardViewController.h; sourceTree = "<group>"; };
+		E9C81E8F1C99837D00D10AC9 /* XZKeyBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZKeyBoardViewController.m; sourceTree = "<group>"; };
+		E9C81E911C99843F00D10AC9 /* XZInputBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZInputBarView.h; sourceTree = "<group>"; };
+		E9C81E921C99843F00D10AC9 /* XZInputBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZInputBarView.m; sourceTree = "<group>"; };
+		E9C81E951C99984800D10AC9 /* XZEmojiKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEmojiKeyBoard.h; sourceTree = "<group>"; };
+		E9C81E961C99984800D10AC9 /* XZEmojiKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEmojiKeyBoard.m; sourceTree = "<group>"; };
+		E9C81E9B1C99995100D10AC9 /* emoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji.json; sourceTree = "<group>"; };
+		E9C81EA11C99A38F00D10AC9 /* XZEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEmoji.h; sourceTree = "<group>"; };
+		E9C81EA21C99A38F00D10AC9 /* XZEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEmoji.m; sourceTree = "<group>"; };
 		E9C8B41D1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DLineDashViewController.h; sourceTree = "<group>"; };
 		E9C8B41E1C7C85B9003690A4 /* XZQuartz2DLineDashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQuartz2DLineDashViewController.m; sourceTree = "<group>"; };
 		E9C8B4201C7C8754003690A4 /* XZQuartz2DDashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQuartz2DDashView.h; sourceTree = "<group>"; };
@@ -713,6 +746,8 @@
 		E9F6605D1C8C047E00023486 /* XZGraphicsTransformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGraphicsTransformView.m; sourceTree = "<group>"; };
 		E9F6605F1C8C3FDC00023486 /* XZSnowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSnowView.h; sourceTree = "<group>"; };
 		E9F660601C8C3FDC00023486 /* XZSnowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSnowView.m; sourceTree = "<group>"; };
+		E9F66E7E1C983AB100D5D5AE /* XZGPUImageMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageMovieViewController.h; sourceTree = "<group>"; };
+		E9F66E7F1C983AB100D5D5AE /* XZGPUImageMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageMovieViewController.m; sourceTree = "<group>"; };
 		E9F705F81C76BF1600708F5C /* XZImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZImagePickerViewController.h; sourceTree = "<group>"; };
 		E9F705F91C76BF1600708F5C /* XZImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZImagePickerViewController.m; sourceTree = "<group>"; };
 		E9F706061C76F8C900708F5C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -1108,8 +1143,14 @@
 			children = (
 				E937F1E11C914F92001E383D /* XZGPUImagePhotoViewController.h */,
 				E937F1E21C914F92001E383D /* XZGPUImagePhotoViewController.m */,
+				E951E68F1C97A92E008A798F /* XZGPUImageImageViewController.h */,
+				E951E6901C97A92E008A798F /* XZGPUImageImageViewController.m */,
 				E938683C1C9267580045C6E2 /* XZGPUImageVideoViewController.h */,
 				E938683D1C9267580045C6E2 /* XZGPUImageVideoViewController.m */,
+				E951E6921C97B6AE008A798F /* XZGPUImageFilterOverlayViewController.h */,
+				E951E6931C97B6AE008A798F /* XZGPUImageFilterOverlayViewController.m */,
+				E9F66E7E1C983AB100D5D5AE /* XZGPUImageMovieViewController.h */,
+				E9F66E7F1C983AB100D5D5AE /* XZGPUImageMovieViewController.m */,
 				E937F1DE1C914DDA001E383D /* XZGPUImageViewController.h */,
 				E937F1DF1C914DDA001E383D /* XZGPUImageViewController.m */,
 			);
@@ -1547,6 +1588,7 @@
 		E99E32241C4F1D6B0016D25D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E9C81E8C1C99835300D10AC9 /* KeyBoard */,
 				E9F143A91C96EAC400DC8D91 /* NSMutableAttributeString */,
 				E92428751C94297E002F59DA /* TableViewHeadTensile */,
 				E92411831C6F5B870009A8EA /* AVFoundation */,
@@ -1801,6 +1843,62 @@
 				E9F0E8531C61A3A700268CE2 /* XZAlbumHelper.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		E9C81E8C1C99835300D10AC9 /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E9C81E9D1C99A14500D10AC9 /* Helper */,
+				E9C81E981C9998BC00D10AC9 /* Source */,
+				E9C81E941C99844900D10AC9 /* View */,
+				E9C81E8D1C99835D00D10AC9 /* ViewController */,
+			);
+			name = KeyBoard;
+			sourceTree = "<group>";
+		};
+		E9C81E8D1C99835D00D10AC9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C81E8E1C99837D00D10AC9 /* XZKeyBoardViewController.h */,
+				E9C81E8F1C99837D00D10AC9 /* XZKeyBoardViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E9C81E941C99844900D10AC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9C81E951C99984800D10AC9 /* XZEmojiKeyBoard.h */,
+				E9C81E961C99984800D10AC9 /* XZEmojiKeyBoard.m */,
+				E9C81E911C99843F00D10AC9 /* XZInputBarView.h */,
+				E9C81E921C99843F00D10AC9 /* XZInputBarView.m */,
+				E906ABDF1C9AD5FE00A73881 /* XZEmojiCollectionView.h */,
+				E906ABE01C9AD5FE00A73881 /* XZEmojiCollectionView.m */,
+				E9A9F7841C9E563E00AD9FA5 /* XZEmojiSectionScrollView.h */,
+				E9A9F7851C9E563E00AD9FA5 /* XZEmojiSectionScrollView.m */,
+				E906ABE21C9ADEDF00A73881 /* XZEmojiView.h */,
+				E906ABE31C9ADEDF00A73881 /* XZEmojiView.m */,
+				E9A9F7871C9E820200AD9FA5 /* XZEmojiPreview.h */,
+				E9A9F7881C9E820200AD9FA5 /* XZEmojiPreview.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E9C81E981C9998BC00D10AC9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9C81E9B1C99995100D10AC9 /* emoji.json */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E9C81E9D1C99A14500D10AC9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E9C81EA11C99A38F00D10AC9 /* XZEmoji.h */,
+				E9C81EA21C99A38F00D10AC9 /* XZEmoji.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		E9D261A31C8853AE0083D23F /* NSData */ = {
@@ -2730,6 +2828,7 @@
 				E920DE401C5098BB00F08A9C /* XZAddressBookCell.xib in Resources */,
 				E924118C1C6F678E0009A8EA /* 音效.txt in Resources */,
 				E97006701C55C96C0071E0E3 /* XZDayCalendarViewController.xib in Resources */,
+				E9C81E9C1C99995100D10AC9 /* emoji.json in Resources */,
 				E9ED31D31C6450A400DCDFD0 /* CAShapeLayer.txt in Resources */,
 				E9E6C33D1C74AAEA00B9E2B8 /* XZMusicLibraryViewController.xib in Resources */,
 				E9B1B2751C6230ED00B7AADB /* 对象复制.txt in Resources */,
@@ -2852,6 +2951,7 @@
 				E9C0D3DF1C7F2DF60003528C /* XZQuartz2DPathView.m in Sources */,
 				E97344C31C8056C8005E453D /* XZAPIHelper.m in Sources */,
 				E984B9BC1C5E178100C00BC7 /* XZPopViewViewController.m in Sources */,
+				E9A9F7891C9E820200AD9FA5 /* XZEmojiPreview.m in Sources */,
 				E9028A941C7BFA65000F5693 /* XZQuartz2DBasicView.m in Sources */,
 				E9EBE6601C8ADD4500104F5A /* XZImageCategoryViewController.m in Sources */,
 				E93821A01C5A0B6F004F7EC4 /* XZCollectionLayoutStyleOne.m in Sources */,
@@ -2864,6 +2964,7 @@
 				E932F8961C8FC12500ABE7E2 /* XZLabelFlowTwoLayout.m in Sources */,
 				E99E32331C4F1E0B0016D25D /* UINavigationController+Common.m in Sources */,
 				E91994281C7D7E9000C5EBE1 /* XZTabBar.m in Sources */,
+				E9C81E931C99843F00D10AC9 /* XZInputBarView.m in Sources */,
 				E9B9BDA51C66E97200C45040 /* XZBezierPathViewController.m in Sources */,
 				E920DE581C50CD6D00F08A9C /* XZDayView.m in Sources */,
 				E9774D4D1C7FE42100F4A0A9 /* XZMultiThreadViewController.m in Sources */,
@@ -2871,6 +2972,7 @@
 				E97006751C55CBF60071E0E3 /* XZDayCalendarCell.m in Sources */,
 				E9FD545D1C8292720035639F /* XZLabelFlowOneViewController.m in Sources */,
 				E937F1E01C914DDA001E383D /* XZGPUImageViewController.m in Sources */,
+				E906ABE41C9ADEDF00A73881 /* XZEmojiView.m in Sources */,
 				E9ED31E11C64732700DCDFD0 /* NSData+AES256.m in Sources */,
 				E9DF7B181C8E5E8C00C418AD /* XZGesturesPasswordViewController.m in Sources */,
 				E9F918DF1C900E2D006F1246 /* XZNumberInfoView.m in Sources */,
@@ -2907,6 +3009,7 @@
 				E970066F1C55C96C0071E0E3 /* XZDayCalendarViewController.m in Sources */,
 				E9EBE6631C8ADD6C00104F5A /* UIImage+Bitmap.m in Sources */,
 				E970067A1C5614000071E0E3 /* XZTimeRecordCell.m in Sources */,
+				E9C81E901C99837D00D10AC9 /* XZKeyBoardViewController.m in Sources */,
 				E99E325B1C4F6B3D0016D25D /* XZUtils.m in Sources */,
 				E9FD54671C82B4910035639F /* XZLabelFlowTwoViewController.m in Sources */,
 				E99E32511C4F1E350016D25D /* XZCalendarViewController.m in Sources */,
@@ -2923,12 +3026,15 @@
 				E9EBE65B1C8AC4DB00104F5A /* XZQuartz2DDrawBoardView.m in Sources */,
 				E937F1E31C914F92001E383D /* XZGPUImagePhotoViewController.m in Sources */,
 				E919942B1C7D85B700C5EBE1 /* UIImage+Color.m in Sources */,
+				E951E6941C97B6AE008A798F /* XZGPUImageFilterOverlayViewController.m in Sources */,
 				E9ED31E21C64732700DCDFD0 /* NSString+AES256.m in Sources */,
+				E951E6911C97A92E008A798F /* XZGPUImageImageViewController.m in Sources */,
 				E9DF7B241C8E675500C418AD /* XZLockLabel.m in Sources */,
 				E9BC74291C6045900033BF4D /* XZCommonListViewController.m in Sources */,
 				E919941D1C7D562C00C5EBE1 /* XZTabBarTestViewController.m in Sources */,
 				E9D461FB1C7B40620011C6F4 /* XZTestCell.m in Sources */,
 				E9F918DC1C900C99006F1246 /* XZNumberLockView.m in Sources */,
+				E9F66E801C983AB100D5D5AE /* XZGPUImageMovieViewController.m in Sources */,
 				E9ED31E51C64747300DCDFD0 /* NSString+Format.m in Sources */,
 				E9028A991C7BFDAE000F5693 /* XZGifPlayerViewController.m in Sources */,
 				E9FD54561C828FE60035639F /* XZLabelFlowLlistViewController.m in Sources */,
@@ -2941,6 +3047,7 @@
 				E9028A8E1C7BF5EE000F5693 /* XZStripTableViewProtocolViewController.m in Sources */,
 				E99E32301C4F1E0B0016D25D /* NSDate+String.m in Sources */,
 				E9E0C1921C570C400041193A /* XZCodeViewController.m in Sources */,
+				E906ABE11C9AD5FE00A73881 /* XZEmojiCollectionView.m in Sources */,
 				E920DE3F1C5098BB00F08A9C /* XZAddressBookCell.m in Sources */,
 				E99E32341C4F1E0B0016D25D /* UIView+Frame.m in Sources */,
 				E96559681C7D514E0078245D /* XZTestTwoViewController.m in Sources */,
@@ -2958,6 +3065,7 @@
 				E9124C421C7B054E00F733B0 /* XZTableViewDataSource.m in Sources */,
 				E99E32011C4F1B2E0016D25D /* AppDelegate.m in Sources */,
 				E99E32671C4F81BE0016D25D /* XZPageControl.m in Sources */,
+				E9C81EA31C99A38F00D10AC9 /* XZEmoji.m in Sources */,
 				E9EBE6561C8AC12700104F5A /* XZQuartz2DDrawBoardViewController.m in Sources */,
 				E9AF80F41C887B8A00962FD0 /* XZQuartz2DPolygonViewController.m in Sources */,
 				E9A4D05D1C59000C003B8855 /* XZImageBrowserCell.m in Sources */,
@@ -2967,10 +3075,12 @@
 				E99E32501C4F1E350016D25D /* XZMonthView.m in Sources */,
 				E9C0D3DC1C7F2DDB0003528C /* XZQuartz2DPathViewController.m in Sources */,
 				E9036A281C633AC500384199 /* XZAlbumCell.m in Sources */,
+				E9C81E971C99984800D10AC9 /* XZEmojiKeyBoard.m in Sources */,
 				E99E32311C4F1E0B0016D25D /* UIButton+FillColor.m in Sources */,
 				E9F918E21C901178006F1246 /* XZNumberCircle.m in Sources */,
 				E99E31FE1C4F1B2E0016D25D /* main.m in Sources */,
 				E920DE4A1C50B7CB00F08A9C /* XZMonthCalendarViewController.m in Sources */,
+				E9A9F7861C9E563E00AD9FA5 /* XZEmojiSectionScrollView.m in Sources */,
 				E920DE351C5079C800F08A9C /* XZAddressBookViewController.m in Sources */,
 				E97344C01C8051D0005E453D /* XZBlogWebViewController.m in Sources */,
 				E9D5F7CF1C7DDBB800E8593B /* XZQuartz2DTextView.m in Sources */,

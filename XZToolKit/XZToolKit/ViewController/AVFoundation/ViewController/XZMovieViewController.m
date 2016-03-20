@@ -47,7 +47,7 @@
  */
 -(void)thumbnailImageRequest{
     //获取13.0s、21.5s的缩略图
-    [self.moviePlayer requestThumbnailImagesAtTimes:@[@13.0,@21.5] timeOption:MPMovieTimeOptionNearestKeyFrame];
+//    [self.moviePlayer requestThumbnailImagesAtTimes:@[@13.0,@21.5] timeOption:MPMovieTimeOptionNearestKeyFrame];
     
     //方法二:
     
@@ -85,12 +85,15 @@
     if (!_moviePlayer) {
         
         //文件路径
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"mp4"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"guide" ofType:@"mp4"];
         path=[path stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         NSURL *url = [NSURL fileURLWithPath:path];
         
         _moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
-        _moviePlayer.view.frame = CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_HEIGHT/2);
+        _moviePlayer.scalingMode = MPMovieScalingModeAspectFill;
+        
+        _moviePlayer.controlStyle = MPMovieControlStyleNone;
+        _moviePlayer.view.frame = CGRectMake(0, 0, UISCREEN_WIDTH, UISCREEN_HEIGHT);
         [self.view addSubview:_moviePlayer.view];
     }
     return _moviePlayer;
